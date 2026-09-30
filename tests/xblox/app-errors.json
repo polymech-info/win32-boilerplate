@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "comment": "Exercises the error paths: missing args, no matching window. Used to assert clear errors come through as events.",
+  "roots": [
+    { "kind": "appActivate", "id": "no-selector" },
+    { "kind": "appClick", "id": "missing-coords", "title": "Cursor" },
+    { "kind": "appType", "id": "missing-text", "title": "Cursor" },
+    { "kind": "appOpen", "id": "missing-exe" },
+    { "kind": "appActivate", "id": "no-such-window", "title": "ThisWindowDoesNotExist____zzz" }
+  ]
+}

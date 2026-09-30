@@ -1,0 +1,4155 @@
+{
+  "blocks": [
+    {
+      "block": {
+        "kind": "appActivate",
+        "title": "Notepad"
+      },
+      "description": "Bring a target window to the foreground.",
+      "flags": {},
+      "group": "App",
+      "kind": "appActivate",
+      "label": "App Activate",
+      "params": [
+        {
+          "description": "Window title substring",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "description": "Process-name substring",
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "description": "Exact PID",
+          "name": "pid",
+          "type": "integer"
+        },
+        {
+          "description": "Exact HWND",
+          "name": "hwnd",
+          "type": "integer"
+        },
+        {
+          "description": "Target the current foreground window",
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "defaultDelayMs": 50,
+        "kind": "appBatch",
+        "steps": [
+          {
+            "action": "activate",
+            "title": "Notepad"
+          },
+          {
+            "action": "type",
+            "text": "Hello"
+          }
+        ]
+      },
+      "description": "Run a sequence of app_batch actions in one block.",
+      "flags": {},
+      "group": "App",
+      "kind": "appBatch",
+      "label": "App Batch",
+      "params": [
+        {
+          "description": "Array of {action, …}",
+          "name": "steps",
+          "required": true,
+          "type": "json"
+        },
+        {
+          "default": 50,
+          "name": "defaultDelayMs",
+          "type": "integer"
+        },
+        {
+          "default": 5000,
+          "name": "defaultWaitTimeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": 100,
+          "name": "defaultWaitIntervalMs",
+          "type": "integer"
+        },
+        {
+          "default": false,
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "button": "left",
+        "count": 1,
+        "kind": "appClick",
+        "title": "Notepad",
+        "xw": 100,
+        "yw": 100
+      },
+      "description": "Click at (x,y) or (xw,yw) on a target window.",
+      "flags": {},
+      "group": "App",
+      "kind": "appClick",
+      "label": "App Click",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "description": "Absolute screen X",
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        },
+        {
+          "description": "Window-relative X (preferred)",
+          "name": "xw",
+          "type": "integer"
+        },
+        {
+          "name": "yw",
+          "type": "integer"
+        },
+        {
+          "default": "left",
+          "name": "button",
+          "type": "string"
+        },
+        {
+          "default": 1,
+          "name": "count",
+          "type": "integer"
+        },
+        {
+          "default": false,
+          "description": "PostMessage click; for background apps",
+          "name": "virtual",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "force": false,
+        "kind": "appClose",
+        "title": "Notepad"
+      },
+      "description": "Send WM_CLOSE (or TerminateProcess with force=true).",
+      "flags": {},
+      "group": "App",
+      "kind": "appClose",
+      "label": "App Close",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "pid",
+          "type": "integer"
+        },
+        {
+          "name": "hwnd",
+          "type": "integer"
+        },
+        {
+          "default": false,
+          "description": "TerminateProcess instead of WM_CLOSE",
+          "name": "force",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "durationMs": 250,
+        "kind": "appDrag",
+        "title": "Notepad",
+        "toXw": 300,
+        "toYw": 200,
+        "xw": 100,
+        "yw": 100
+      },
+      "description": "Drag linear / polyline / arc with smooth pacing.",
+      "flags": {},
+      "group": "App",
+      "kind": "appDrag",
+      "label": "App Drag",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "description": "Start (screen)",
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        },
+        {
+          "description": "Start (window-relative)",
+          "name": "xw",
+          "type": "integer"
+        },
+        {
+          "name": "yw",
+          "type": "integer"
+        },
+        {
+          "name": "toX",
+          "type": "integer"
+        },
+        {
+          "name": "toY",
+          "type": "integer"
+        },
+        {
+          "name": "toXw",
+          "type": "integer"
+        },
+        {
+          "name": "toYw",
+          "type": "integer"
+        },
+        {
+          "name": "dx",
+          "type": "integer"
+        },
+        {
+          "name": "dy",
+          "type": "integer"
+        },
+        {
+          "description": "Polyline: [{x,y}|{xw,yw}, …]",
+          "name": "path",
+          "type": "json"
+        },
+        {
+          "description": "{cx,cy,radius,startDeg,endDeg,segments}",
+          "name": "arc",
+          "type": "json"
+        },
+        {
+          "default": "left",
+          "name": "button",
+          "type": "string"
+        },
+        {
+          "default": 250,
+          "name": "durationMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "keys": "ctrl+s",
+        "kind": "appHotkey",
+        "title": "Notepad"
+      },
+      "description": "Send a key combination (e.g. ctrl+shift+t).",
+      "flags": {},
+      "group": "App",
+      "kind": "appHotkey",
+      "label": "App Hotkey",
+      "params": [
+        {
+          "description": "Combo e.g. ctrl+shift+t",
+          "name": "keys",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "format": "md",
+        "kind": "appInspectDump",
+        "title": "Notepad"
+      },
+      "description": "Dump UI Automation tree of matching windows.",
+      "flags": {},
+      "group": "App",
+      "kind": "appInspectDump",
+      "label": "App Inspect Dump",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "default": "md",
+          "description": "md | json",
+          "name": "format",
+          "type": "string"
+        },
+        {
+          "default": 160,
+          "name": "limit",
+          "type": "integer"
+        },
+        {
+          "default": "buttons,menus,editable",
+          "name": "controls",
+          "type": "string"
+        },
+        {
+          "default": 1200,
+          "name": "textMaxChars",
+          "type": "integer"
+        },
+        {
+          "default": false,
+          "name": "probeCells",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind the result to this context var",
+          "name": "storeAs",
+          "type": "string"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "appInspectFind",
+        "name": "File",
+        "title": "Notepad"
+      },
+      "description": "Filter UIA elements by name/value/automationId/className.",
+      "flags": {},
+      "group": "App",
+      "kind": "appInspectFind",
+      "label": "App Inspect Find",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "name": "automationId",
+          "type": "string"
+        },
+        {
+          "name": "className",
+          "type": "string"
+        },
+        {
+          "default": -1,
+          "name": "nth",
+          "type": "integer"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "holdMs": 100,
+        "key": "a",
+        "kind": "appKey"
+      },
+      "description": "Press one key with optional modifiers and hold duration.",
+      "flags": {},
+      "group": "App",
+      "kind": "appKey",
+      "label": "App Key",
+      "params": [
+        {
+          "name": "key",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "description": "ctrl/shift/alt/win",
+          "name": "modifiers",
+          "type": "string[]"
+        },
+        {
+          "default": 0,
+          "description": "Note-sustain for piano-style apps",
+          "name": "holdMs",
+          "type": "integer"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "appMouseMove",
+        "smooth": true,
+        "title": "Notepad",
+        "xw": 200,
+        "yw": 200
+      },
+      "description": "Smoothly move the cursor (auto-paced) or teleport.",
+      "flags": {},
+      "group": "App",
+      "kind": "appMouseMove",
+      "label": "App Mouse Move",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        },
+        {
+          "name": "xw",
+          "type": "integer"
+        },
+        {
+          "name": "yw",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "smooth",
+          "type": "boolean"
+        },
+        {
+          "default": -1,
+          "description": "-1 = auto from distance, 0 = teleport",
+          "name": "durationMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "exe": "notepad.exe",
+        "kind": "appOpen",
+        "waitMs": 3000
+      },
+      "description": "Launch an executable and (optionally) wait for its window.",
+      "flags": {},
+      "group": "App",
+      "kind": "appOpen",
+      "label": "App Open",
+      "params": [
+        {
+          "name": "exe",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "args",
+          "type": "string"
+        },
+        {
+          "name": "cwd",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        },
+        {
+          "name": "width",
+          "type": "integer"
+        },
+        {
+          "name": "height",
+          "type": "integer"
+        },
+        {
+          "default": 3000,
+          "name": "waitMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "appScreenshot",
+        "outputPath": "out/shot.jpg",
+        "quality": 85,
+        "title": "Notepad"
+      },
+      "description": "Capture a window / element / explicit rect to a JPEG file.",
+      "flags": {},
+      "group": "App",
+      "kind": "appScreenshot",
+      "label": "App Screenshot",
+      "params": [
+        {
+          "name": "outputPath",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "description": "Optional 'x,y,w,h' screen rect",
+          "name": "rect",
+          "type": "string"
+        },
+        {
+          "name": "elementIndex",
+          "type": "integer"
+        },
+        {
+          "default": 85,
+          "name": "quality",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "activate",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "clicks": -3,
+        "kind": "appScroll",
+        "title": "Notepad"
+      },
+      "description": "Wheel scroll (vertical or horizontal) at an optional point.",
+      "flags": {},
+      "group": "App",
+      "kind": "appScroll",
+      "label": "App Scroll",
+      "params": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "description": "Positive = up/right",
+          "name": "clicks",
+          "required": true,
+          "type": "integer"
+        },
+        {
+          "default": "vertical",
+          "description": "vertical | horizontal",
+          "name": "axis",
+          "type": "string"
+        },
+        {
+          "description": "Pre-target cursor X (optional)",
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        },
+        {
+          "name": "xw",
+          "type": "integer"
+        },
+        {
+          "name": "yw",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "appType",
+        "text": "Hello",
+        "title": "Notepad"
+      },
+      "description": "Type a string into the activated window.",
+      "flags": {},
+      "group": "App",
+      "kind": "appType",
+      "label": "App Type",
+      "params": [
+        {
+          "name": "text",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "process",
+          "type": "string"
+        },
+        {
+          "name": "foreground",
+          "type": "boolean"
+        },
+        {
+          "default": true,
+          "description": "Skip this block when false.",
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "If this block errors, the runtime still runs the next sibling.",
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "description": "'continue' | 'abort' (alias for continueOnError).",
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "description": "Force-abort the surrounding block list on error (default for app blocks).",
+          "name": "abortOnError",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "description": "Run the block in a detached thread; the parent loop does not wait.",
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "description": "Bind this block's 'result' field to a context variable for later blocks.",
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "getVariable",
+        "name": "value",
+        "target": "PREVIOUS"
+      },
+      "description": "Read a value from root scope.",
+      "flags": {},
+      "group": "Context",
+      "kind": "getVariable",
+      "label": "Get Variable",
+      "params": [
+        {
+          "name": "name",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "log",
+        "level": "info",
+        "message": "PREVIOUS"
+      },
+      "description": "Log a message, expression, variable, or the whole scope.",
+      "flags": {},
+      "group": "Context",
+      "kind": "log",
+      "label": "Log",
+      "params": [
+        {
+          "default": "info",
+          "name": "level",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "setVariable",
+        "name": "value",
+        "value": null
+      },
+      "description": "Write a value into root scope.",
+      "flags": {},
+      "group": "Context",
+      "kind": "setVariable",
+      "label": "Set Variable",
+      "params": [
+        {
+          "name": "name",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "json"
+        },
+        {
+          "name": "expression",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "filter": ".",
+        "kind": "Parse",
+        "parser": "jq",
+        "storeAs": "parsed"
+      },
+      "description": "Parse PREVIOUS or named input with a jq-style selector.",
+      "flags": {},
+      "group": "Data",
+      "kind": "Parse",
+      "label": "Parse JSON",
+      "params": [
+        {
+          "default": "jq",
+          "name": "parser",
+          "type": "string"
+        },
+        {
+          "default": ".",
+          "name": "filter",
+          "type": "string"
+        },
+        {
+          "default": "PREVIOUS",
+          "name": "input",
+          "type": "string"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "break"
+      },
+      "description": "Break out of the current loop.",
+      "flags": {},
+      "group": "Flow",
+      "kind": "break",
+      "label": "Break",
+      "params": [],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "comparator": "<",
+        "final": "3",
+        "initial": "0",
+        "items": [],
+        "kind": "for",
+        "modifier": "+1"
+      },
+      "description": "Run child blocks over a numeric range.",
+      "flags": {},
+      "group": "Flow",
+      "kind": "for",
+      "label": "For",
+      "params": [],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "alternate": [],
+        "condition": "true",
+        "consequent": [],
+        "kind": "if"
+      },
+      "description": "Run consequent or alternate blocks based on a condition.",
+      "flags": {},
+      "group": "Flow",
+      "kind": "if",
+      "label": "If",
+      "params": [],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "items": [],
+        "kind": "switch",
+        "variable": "mode"
+      },
+      "description": "Run the first matching case.",
+      "flags": {},
+      "group": "Flow",
+      "kind": "switch",
+      "label": "Switch",
+      "params": [],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "kind": "wait",
+        "ms": 500
+      },
+      "description": "Sleep for a fixed number of milliseconds.",
+      "flags": {},
+      "group": "Flow",
+      "kind": "wait",
+      "label": "Wait",
+      "params": [
+        {
+          "default": 500,
+          "name": "ms",
+          "type": "integer"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "condition": "false",
+        "items": [],
+        "kind": "while",
+        "loopLimit": 10
+      },
+      "description": "Run child blocks while a condition is true.",
+      "flags": {},
+      "group": "Flow",
+      "kind": "while",
+      "label": "While",
+      "params": [],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "address": 0,
+        "count": 3,
+        "kind": "modbusReadHoldingRegisters",
+        "storeAs": "values",
+        "url": "tcp:127.0.0.1:15020"
+      },
+      "description": "Read holding registers from a Modbus TCP/RTU endpoint.",
+      "flags": {},
+      "group": "Modbus",
+      "kind": "modbusReadHoldingRegisters",
+      "label": "Modbus Read Holding Registers",
+      "params": [
+        {
+          "name": "url",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "default": 0,
+          "name": "address",
+          "type": "integer"
+        },
+        {
+          "default": 1,
+          "name": "count",
+          "type": "integer"
+        },
+        {
+          "name": "slave",
+          "type": "integer"
+        },
+        {
+          "default": 30000,
+          "name": "timeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        },
+        {
+          "default": false,
+          "name": "background",
+          "type": "boolean"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "durationMs": 3000,
+        "holdingRegisters": [
+          11,
+          22,
+          33
+        ],
+        "kind": "modbusServer",
+        "url": "tcp:127.0.0.1:15020"
+      },
+      "description": "Run a Modbus TCP server until cancelled, durationMs expires, or maxRequests is reached.",
+      "flags": {},
+      "group": "Modbus",
+      "kind": "modbusServer",
+      "label": "Modbus Server",
+      "params": [
+        {
+          "default": "tcp:127.0.0.1:15020",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "holdingRegisters",
+          "type": "integer[]"
+        },
+        {
+          "default": 128,
+          "name": "registerCount",
+          "type": "integer"
+        },
+        {
+          "default": 0,
+          "name": "durationMs",
+          "type": "integer"
+        },
+        {
+          "default": 0,
+          "name": "maxRequests",
+          "type": "integer"
+        },
+        {
+          "default": 1,
+          "name": "unitId",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        },
+        {
+          "default": false,
+          "name": "background",
+          "type": "boolean"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "address": 0,
+        "kind": "modbusWriteRegister",
+        "url": "tcp:127.0.0.1:15020",
+        "value": 123
+      },
+      "description": "Write a single holding register.",
+      "flags": {},
+      "group": "Modbus",
+      "kind": "modbusWriteRegister",
+      "label": "Modbus Write Register",
+      "params": [
+        {
+          "name": "url",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "default": 0,
+          "name": "address",
+          "type": "integer"
+        },
+        {
+          "name": "value",
+          "required": true,
+          "type": "integer"
+        },
+        {
+          "name": "slave",
+          "type": "integer"
+        },
+        {
+          "default": 30000,
+          "name": "timeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        },
+        {
+          "default": false,
+          "name": "background",
+          "type": "boolean"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "address": 0,
+        "kind": "modbusWriteRegisters",
+        "url": "tcp:127.0.0.1:15020",
+        "values": [
+          101,
+          202
+        ]
+      },
+      "description": "Write multiple holding registers.",
+      "flags": {},
+      "group": "Modbus",
+      "kind": "modbusWriteRegisters",
+      "label": "Modbus Write Registers",
+      "params": [
+        {
+          "name": "url",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "default": 0,
+          "name": "address",
+          "type": "integer"
+        },
+        {
+          "name": "values",
+          "required": true,
+          "type": "integer[]"
+        },
+        {
+          "name": "slave",
+          "type": "integer"
+        },
+        {
+          "default": 30000,
+          "name": "timeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "name": "continueOnError",
+          "type": "boolean"
+        },
+        {
+          "name": "onError",
+          "type": "string"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        },
+        {
+          "default": false,
+          "name": "background",
+          "type": "boolean"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "decode": "raw",
+        "followRedirects": true,
+        "kind": "fetch",
+        "storeAs": "response",
+        "timeoutMs": 30000,
+        "url": "https://"
+      },
+      "description": "Fetch a URL and store the raw response in PREVIOUS.",
+      "flags": {},
+      "group": "Network",
+      "kind": "fetch",
+      "label": "Fetch",
+      "params": [
+        {
+          "name": "url",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "default": "GET",
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "default": "raw",
+          "enum": [
+            "raw",
+            "json"
+          ],
+          "name": "decode",
+          "type": "string"
+        },
+        {
+          "default": ".",
+          "name": "parse",
+          "type": "string"
+        },
+        {
+          "default": 30000,
+          "name": "timeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": 10000,
+          "name": "connectTimeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": true,
+          "name": "followRedirects",
+          "type": "boolean"
+        },
+        {
+          "default": 2,
+          "name": "retries",
+          "type": "integer"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    },
+    {
+      "block": {
+        "command": "echo hello",
+        "kind": "shell",
+        "log": false,
+        "mode": "shell",
+        "shell": "auto",
+        "stderr": "error",
+        "stdout": "info",
+        "storeAs": "stdout",
+        "timeoutMs": 30000
+      },
+      "description": "Run a shell command through the native RunTool.",
+      "flags": {},
+      "group": "Shell",
+      "kind": "shell",
+      "label": "Shell",
+      "params": [
+        {
+          "default": "shell",
+          "name": "mode",
+          "type": "string"
+        },
+        {
+          "default": "auto",
+          "name": "shell",
+          "type": "string"
+        },
+        {
+          "name": "command",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "cwd",
+          "type": "string"
+        },
+        {
+          "name": "args",
+          "type": "string[]"
+        },
+        {
+          "default": 30000,
+          "name": "timeoutMs",
+          "type": "integer"
+        },
+        {
+          "default": false,
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "default": false,
+          "name": "log",
+          "type": "boolean"
+        },
+        {
+          "default": "info",
+          "name": "stdout",
+          "type": "logger::level"
+        },
+        {
+          "default": "error",
+          "name": "stderr",
+          "type": "logger::level"
+        },
+        {
+          "name": "storeAs",
+          "type": "string"
+        }
+      ],
+      "platformMask": 4294967295
+    }
+  ],
+  "commands": {
+    "commandsPath": "C:\\Users\\zx\\AppData\\Roaming\\PolyMech\\pm-image\\commands.json",
+    "customCommands": [
+      {
+        "action": "metadata",
+        "group": "Pictures",
+        "id": "custom.capture",
+        "label": "Capture",
+        "type": "dropdown"
+      },
+      {
+        "action": "app:browse",
+        "group": "Pictures",
+        "id": "custom.capture.screenshot",
+        "label": "Take screenshot",
+        "type": "button"
+      },
+      {
+        "action": "ribbon:appSettings",
+        "group": "Pictures",
+        "id": "custom.command-mpi5b1hw-8bdc2",
+        "label": "browse",
+        "type": "button"
+      },
+      {
+        "action": "cli:audio",
+        "group": "Pictures",
+        "id": "custom.mic-start",
+        "label": "Mic Capture Start",
+        "type": "button"
+      },
+      {
+        "action": "cli:audio",
+        "group": "Pictures",
+        "id": "custom.mic-stop",
+        "label": "Mic Capture Stop",
+        "type": "button"
+      },
+      {
+        "action": "cli:audio",
+        "group": "Pictures",
+        "id": "custom.mic-status",
+        "label": "Mic Capture Status",
+        "type": "button"
+      },
+      {
+        "action": "cli:video",
+        "group": "Pictures",
+        "id": "custom.video-start",
+        "label": "Video Capture Start",
+        "type": "button"
+      },
+      {
+        "action": "cli:video",
+        "group": "Pictures",
+        "id": "custom.video-stop",
+        "label": "Video Capture Stop",
+        "type": "button"
+      },
+      {
+        "action": "cli:video",
+        "group": "Pictures",
+        "id": "custom.video-status",
+        "label": "Video Capture Status",
+        "type": "button"
+      },
+      {
+        "action": "metadata",
+        "group": "Pictures",
+        "id": "custom.tools",
+        "label": "Tools",
+        "type": "dropdown"
+      },
+      {
+        "action": "ribbon:theme",
+        "group": "Pictures",
+        "id": "custom.tools.theme",
+        "label": "Toggle theme",
+        "type": "button"
+      },
+      {
+        "action": "ribbon:resetLayout",
+        "group": "Pictures",
+        "id": "custom.tools.resetLayout",
+        "label": "Reset layout",
+        "type": "button"
+      },
+      {
+        "action": "cli:llm",
+        "group": "Files",
+        "id": "custom.command-mpcmqepq-ee6f3",
+        "label": "AI:Images List",
+        "type": "button"
+      },
+      {
+        "action": "external",
+        "group": "Files",
+        "id": "custom.command-mpduqkaw-b621b",
+        "label": "cat",
+        "type": "button"
+      },
+      {
+        "action": "cli:transform",
+        "group": "Files",
+        "id": "custom.command-mpch9gdx-44982",
+        "label": "AI:Illustration",
+        "type": "button"
+      },
+      {
+        "action": "external",
+        "group": "Files",
+        "id": "custom.command-mpejo01t-98bf0",
+        "label": "ls",
+        "type": "button"
+      },
+      {
+        "action": "cli:daemon",
+        "group": "Files",
+        "id": "custom.command-mpi5stmy-8e9cb",
+        "label": "x1",
+        "type": "button"
+      }
+    ],
+    "document": {
+      "ribbon": {
+        "groups": [
+          {
+            "items": [
+              {
+                "icon": "run",
+                "id": "custom.capture",
+                "items": [
+                  {
+                    "appCommand": "browse",
+                    "args": [
+                      "${KNOWNFOLDER:Profile}"
+                    ],
+                    "icon": "photo",
+                    "id": "custom.capture.screenshot",
+                    "label": "Take screenshot",
+                    "tint": "#A855F7",
+                    "userData": {
+                      "kind": "screenshot"
+                    }
+                  },
+                  {
+                    "args": [
+                      "C:\\Users\\zx\\AppData\\Roaming\\PolyMech\\pm-image"
+                    ],
+                    "enabled": true,
+                    "icon": "settings",
+                    "id": "custom.command-mpi5b1hw-8bdc2",
+                    "label": "browse",
+                    "output": {},
+                    "ribbonCommand": "appSettings",
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "tint": "#22C55E",
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  },
+                  {
+                    "args": [
+                      "record",
+                      "--text-out",
+                      "${KNOWNFOLDER:Config}/last.md"
+                    ],
+                    "cliCommand": "audio",
+                    "enabled": true,
+                    "icon": "settings",
+                    "id": "custom.mic-start",
+                    "label": "Mic Capture Start",
+                    "logLevel": "trace",
+                    "output": {},
+                    "runOptions": {
+                      "closeOnExit": true,
+                      "newShellWindow": false
+                    },
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  },
+                  {
+                    "args": [
+                      "record",
+                      "stop"
+                    ],
+                    "cliCommand": "audio",
+                    "enabled": true,
+                    "icon": "settings",
+                    "id": "custom.mic-stop",
+                    "label": "Mic Capture Stop",
+                    "output": {},
+                    "runOptions": {
+                      "closeOnExit": true,
+                      "newShellWindow": false
+                    },
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  },
+                  {
+                    "args": [
+                      "record",
+                      "status"
+                    ],
+                    "cliCommand": "audio",
+                    "enabled": true,
+                    "icon": "settings",
+                    "id": "custom.mic-status",
+                    "label": "Mic Capture Status",
+                    "output": {},
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  },
+                  {
+                    "args": [
+                      "record",
+                      "--dst",
+                      "${KNOWNFOLDER:Videos}/capture.avi"
+                    ],
+                    "cliCommand": "video",
+                    "enabled": true,
+                    "icon": "photo",
+                    "id": "custom.video-start",
+                    "label": "Video Capture Start",
+                    "logLevel": "trace",
+                    "output": {},
+                    "runOptions": {
+                      "closeOnExit": true,
+                      "newShellWindow": false
+                    },
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  },
+                  {
+                    "args": [
+                      "record",
+                      "stop"
+                    ],
+                    "cliCommand": "video",
+                    "enabled": true,
+                    "icon": "photo",
+                    "id": "custom.video-stop",
+                    "label": "Video Capture Stop",
+                    "output": {},
+                    "runOptions": {
+                      "closeOnExit": true
+                    },
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  },
+                  {
+                    "args": [
+                      "record",
+                      "status"
+                    ],
+                    "cliCommand": "video",
+                    "enabled": true,
+                    "icon": "photo",
+                    "id": "custom.video-status",
+                    "label": "Video Capture Status",
+                    "output": {},
+                    "source": {
+                      "kind": "selection"
+                    },
+                    "type": "button",
+                    "userData": {},
+                    "visible": true
+                  }
+                ],
+                "label": "Capture",
+                "tooltip": "Session and screenshot examples",
+                "type": "dropdown",
+                "userData": {
+                  "example": "dropdown",
+                  "source": "commands.js"
+                }
+              },
+              {
+                "icon": "settings",
+                "id": "custom.tools",
+                "items": [
+                  {
+                    "id": "custom.tools.theme",
+                    "label": "Toggle theme",
+                    "ribbonCommand": "theme"
+                  },
+                  {
+                    "id": "custom.tools.resetLayout",
+                    "label": "Reset layout",
+                    "ribbonCommand": "resetLayout"
+                  }
+                ],
+                "label": "Tools",
+                "tooltip": "Built-in ribbon command examples",
+                "type": "dropdown"
+              }
+            ],
+            "label": "Pictures"
+          },
+          {
+            "id": "group-mpcmq9ck-bdd74",
+            "items": [
+              {
+                "args": [
+                  "agent",
+                  "--prompt",
+                  "create directory listing, for images, in images.md"
+                ],
+                "cliCommand": "llm",
+                "cwd": "${CURRENT_PATH}",
+                "enabled": true,
+                "icon": "folder",
+                "id": "custom.command-mpcmqepq-ee6f3",
+                "label": "AI:Images List",
+                "logLevel": "trace",
+                "output": {},
+                "registerInExplorer": true,
+                "runOptions": {
+                  "newShellWindow": true
+                },
+                "source": {
+                  "kind": "selection"
+                },
+                "type": "button",
+                "userData": {},
+                "visible": true
+              },
+              {
+                "enabled": true,
+                "externalCommand": {
+                  "args": [],
+                  "command": "cat",
+                  "cwd": "",
+                  "mode": "shell",
+                  "shellLine": "cat ${CURRENT_FILE}"
+                },
+                "icon": "settings",
+                "id": "custom.command-mpduqkaw-b621b",
+                "label": "cat",
+                "output": {},
+                "source": {
+                  "kind": "selection"
+                },
+                "type": "button",
+                "userData": {},
+                "visible": true
+              },
+              {
+                "args": [
+                  "--prompt",
+                  "as technical illustration",
+                  "--src",
+                  "${CURRENT_FILE}"
+                ],
+                "cliCommand": "transform",
+                "enabled": true,
+                "icon": "photo",
+                "id": "custom.command-mpch9gdx-44982",
+                "label": "AI:Illustration",
+                "output": {},
+                "registerInExplorer": true,
+                "source": {
+                  "files": [
+                    "tests/assets/commands/illustration.jpg"
+                  ],
+                  "kind": "files"
+                },
+                "tint": "#EC4899",
+                "type": "button",
+                "userData": {},
+                "visible": true
+              },
+              {
+                "enabled": true,
+                "externalCommand": {
+                  "args": [],
+                  "command": "dir",
+                  "cwd": ""
+                },
+                "icon": "settings",
+                "id": "custom.command-mpejo01t-98bf0",
+                "label": "ls",
+                "output": {},
+                "source": {
+                  "kind": "selection"
+                },
+                "tint": "#F59E0B",
+                "type": "button",
+                "userData": {},
+                "visible": true
+              },
+              {
+                "args": [],
+                "cliCommand": "daemon",
+                "cwd": "",
+                "enabled": true,
+                "icon": "settings",
+                "id": "custom.command-mpi5stmy-8e9cb",
+                "label": "x1",
+                "logLevel": "trace",
+                "output": {},
+                "runOptions": {
+                  "newShellWindow": true
+                },
+                "source": {
+                  "kind": "selection"
+                },
+                "type": "button",
+                "userData": {},
+                "visible": true
+              }
+            ],
+            "label": "Files"
+          }
+        ]
+      },
+      "version": 1
+    },
+    "documentError": "",
+    "registeredCommands": [
+      {
+        "available": true,
+        "id": "resize",
+        "label": "Resize"
+      },
+      {
+        "available": false,
+        "id": "compress",
+        "label": "Compress"
+      },
+      {
+        "available": true,
+        "id": "transform",
+        "label": "Transform"
+      },
+      {
+        "available": true,
+        "id": "create",
+        "label": "Create"
+      },
+      {
+        "available": false,
+        "id": "meta",
+        "label": "Meta"
+      },
+      {
+        "available": false,
+        "id": "find",
+        "label": "Find"
+      },
+      {
+        "available": false,
+        "id": "search",
+        "label": "Search"
+      },
+      {
+        "available": false,
+        "id": "duplicates",
+        "label": "Duplicates"
+      },
+      {
+        "available": false,
+        "id": "serve",
+        "label": "Serve"
+      },
+      {
+        "available": false,
+        "id": "ipc",
+        "label": "IPC"
+      },
+      {
+        "available": true,
+        "id": "settings",
+        "label": "Settings"
+      },
+      {
+        "available": true,
+        "id": "provider",
+        "label": "Provider models"
+      },
+      {
+        "available": true,
+        "id": "llm",
+        "label": "LLM"
+      },
+      {
+        "available": true,
+        "id": "register-explorer",
+        "label": "Register Explorer"
+      },
+      {
+        "available": true,
+        "id": "register-startmenu",
+        "label": "Register Start Menu"
+      },
+      {
+        "available": true,
+        "id": "installer",
+        "label": "Installer helper"
+      },
+      {
+        "available": true,
+        "id": "app",
+        "label": "App Commands"
+      },
+      {
+        "available": true,
+        "id": "service",
+        "label": "Service"
+      },
+      {
+        "available": false,
+        "id": "batch",
+        "label": "Batch"
+      },
+      {
+        "available": true,
+        "id": "login",
+        "label": "Login"
+      },
+      {
+        "available": true,
+        "id": "audio",
+        "label": "Audio Capture / TTS / STT"
+      },
+      {
+        "available": true,
+        "id": "video",
+        "label": "Video Capture"
+      },
+      {
+        "available": true,
+        "id": "xblox",
+        "label": "XBlox"
+      },
+      {
+        "available": false,
+        "id": "test",
+        "label": "Test"
+      },
+      {
+        "available": false,
+        "id": "license",
+        "label": "License"
+      },
+      {
+        "available": false,
+        "id": "status",
+        "label": "Status"
+      },
+      {
+        "available": true,
+        "id": "commands",
+        "label": "List registered commands"
+      },
+      {
+        "available": true,
+        "id": "daemon",
+        "label": "Global shortcut daemon"
+      },
+      {
+        "available": true,
+        "id": "assistant",
+        "label": "AI assistant / UIA spy + STT dictation"
+      },
+      {
+        "available": true,
+        "id": "info",
+        "label": "Generated agent skill references"
+      }
+    ]
+  },
+  "description": "XBlox block-tree command flow metadata for LLM composition.",
+  "documentShape": {
+    "context": {},
+    "roots": [],
+    "version": 1
+  },
+  "groups": {
+    "App": [
+      {
+        "block": {
+          "kind": "appActivate",
+          "title": "Notepad"
+        },
+        "description": "Bring a target window to the foreground.",
+        "flags": {},
+        "group": "App",
+        "kind": "appActivate",
+        "label": "App Activate",
+        "params": [
+          {
+            "description": "Window title substring",
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "description": "Process-name substring",
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "description": "Exact PID",
+            "name": "pid",
+            "type": "integer"
+          },
+          {
+            "description": "Exact HWND",
+            "name": "hwnd",
+            "type": "integer"
+          },
+          {
+            "description": "Target the current foreground window",
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "defaultDelayMs": 50,
+          "kind": "appBatch",
+          "steps": [
+            {
+              "action": "activate",
+              "title": "Notepad"
+            },
+            {
+              "action": "type",
+              "text": "Hello"
+            }
+          ]
+        },
+        "description": "Run a sequence of app_batch actions in one block.",
+        "flags": {},
+        "group": "App",
+        "kind": "appBatch",
+        "label": "App Batch",
+        "params": [
+          {
+            "description": "Array of {action, …}",
+            "name": "steps",
+            "required": true,
+            "type": "json"
+          },
+          {
+            "default": 50,
+            "name": "defaultDelayMs",
+            "type": "integer"
+          },
+          {
+            "default": 5000,
+            "name": "defaultWaitTimeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": 100,
+            "name": "defaultWaitIntervalMs",
+            "type": "integer"
+          },
+          {
+            "default": false,
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "button": "left",
+          "count": 1,
+          "kind": "appClick",
+          "title": "Notepad",
+          "xw": 100,
+          "yw": 100
+        },
+        "description": "Click at (x,y) or (xw,yw) on a target window.",
+        "flags": {},
+        "group": "App",
+        "kind": "appClick",
+        "label": "App Click",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "description": "Absolute screen X",
+            "name": "x",
+            "type": "integer"
+          },
+          {
+            "name": "y",
+            "type": "integer"
+          },
+          {
+            "description": "Window-relative X (preferred)",
+            "name": "xw",
+            "type": "integer"
+          },
+          {
+            "name": "yw",
+            "type": "integer"
+          },
+          {
+            "default": "left",
+            "name": "button",
+            "type": "string"
+          },
+          {
+            "default": 1,
+            "name": "count",
+            "type": "integer"
+          },
+          {
+            "default": false,
+            "description": "PostMessage click; for background apps",
+            "name": "virtual",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "force": false,
+          "kind": "appClose",
+          "title": "Notepad"
+        },
+        "description": "Send WM_CLOSE (or TerminateProcess with force=true).",
+        "flags": {},
+        "group": "App",
+        "kind": "appClose",
+        "label": "App Close",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "pid",
+            "type": "integer"
+          },
+          {
+            "name": "hwnd",
+            "type": "integer"
+          },
+          {
+            "default": false,
+            "description": "TerminateProcess instead of WM_CLOSE",
+            "name": "force",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "durationMs": 250,
+          "kind": "appDrag",
+          "title": "Notepad",
+          "toXw": 300,
+          "toYw": 200,
+          "xw": 100,
+          "yw": 100
+        },
+        "description": "Drag linear / polyline / arc with smooth pacing.",
+        "flags": {},
+        "group": "App",
+        "kind": "appDrag",
+        "label": "App Drag",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "description": "Start (screen)",
+            "name": "x",
+            "type": "integer"
+          },
+          {
+            "name": "y",
+            "type": "integer"
+          },
+          {
+            "description": "Start (window-relative)",
+            "name": "xw",
+            "type": "integer"
+          },
+          {
+            "name": "yw",
+            "type": "integer"
+          },
+          {
+            "name": "toX",
+            "type": "integer"
+          },
+          {
+            "name": "toY",
+            "type": "integer"
+          },
+          {
+            "name": "toXw",
+            "type": "integer"
+          },
+          {
+            "name": "toYw",
+            "type": "integer"
+          },
+          {
+            "name": "dx",
+            "type": "integer"
+          },
+          {
+            "name": "dy",
+            "type": "integer"
+          },
+          {
+            "description": "Polyline: [{x,y}|{xw,yw}, …]",
+            "name": "path",
+            "type": "json"
+          },
+          {
+            "description": "{cx,cy,radius,startDeg,endDeg,segments}",
+            "name": "arc",
+            "type": "json"
+          },
+          {
+            "default": "left",
+            "name": "button",
+            "type": "string"
+          },
+          {
+            "default": 250,
+            "name": "durationMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "keys": "ctrl+s",
+          "kind": "appHotkey",
+          "title": "Notepad"
+        },
+        "description": "Send a key combination (e.g. ctrl+shift+t).",
+        "flags": {},
+        "group": "App",
+        "kind": "appHotkey",
+        "label": "App Hotkey",
+        "params": [
+          {
+            "description": "Combo e.g. ctrl+shift+t",
+            "name": "keys",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "format": "md",
+          "kind": "appInspectDump",
+          "title": "Notepad"
+        },
+        "description": "Dump UI Automation tree of matching windows.",
+        "flags": {},
+        "group": "App",
+        "kind": "appInspectDump",
+        "label": "App Inspect Dump",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "default": "md",
+            "description": "md | json",
+            "name": "format",
+            "type": "string"
+          },
+          {
+            "default": 160,
+            "name": "limit",
+            "type": "integer"
+          },
+          {
+            "default": "buttons,menus,editable",
+            "name": "controls",
+            "type": "string"
+          },
+          {
+            "default": 1200,
+            "name": "textMaxChars",
+            "type": "integer"
+          },
+          {
+            "default": false,
+            "name": "probeCells",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind the result to this context var",
+            "name": "storeAs",
+            "type": "string"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "appInspectFind",
+          "name": "File",
+          "title": "Notepad"
+        },
+        "description": "Filter UIA elements by name/value/automationId/className.",
+        "flags": {},
+        "group": "App",
+        "kind": "appInspectFind",
+        "label": "App Inspect Find",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          },
+          {
+            "name": "automationId",
+            "type": "string"
+          },
+          {
+            "name": "className",
+            "type": "string"
+          },
+          {
+            "default": -1,
+            "name": "nth",
+            "type": "integer"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "holdMs": 100,
+          "key": "a",
+          "kind": "appKey"
+        },
+        "description": "Press one key with optional modifiers and hold duration.",
+        "flags": {},
+        "group": "App",
+        "kind": "appKey",
+        "label": "App Key",
+        "params": [
+          {
+            "name": "key",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "ctrl/shift/alt/win",
+            "name": "modifiers",
+            "type": "string[]"
+          },
+          {
+            "default": 0,
+            "description": "Note-sustain for piano-style apps",
+            "name": "holdMs",
+            "type": "integer"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "appMouseMove",
+          "smooth": true,
+          "title": "Notepad",
+          "xw": 200,
+          "yw": 200
+        },
+        "description": "Smoothly move the cursor (auto-paced) or teleport.",
+        "flags": {},
+        "group": "App",
+        "kind": "appMouseMove",
+        "label": "App Mouse Move",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "x",
+            "type": "integer"
+          },
+          {
+            "name": "y",
+            "type": "integer"
+          },
+          {
+            "name": "xw",
+            "type": "integer"
+          },
+          {
+            "name": "yw",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "smooth",
+            "type": "boolean"
+          },
+          {
+            "default": -1,
+            "description": "-1 = auto from distance, 0 = teleport",
+            "name": "durationMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "exe": "notepad.exe",
+          "kind": "appOpen",
+          "waitMs": 3000
+        },
+        "description": "Launch an executable and (optionally) wait for its window.",
+        "flags": {},
+        "group": "App",
+        "kind": "appOpen",
+        "label": "App Open",
+        "params": [
+          {
+            "name": "exe",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "args",
+            "type": "string"
+          },
+          {
+            "name": "cwd",
+            "type": "string"
+          },
+          {
+            "name": "x",
+            "type": "integer"
+          },
+          {
+            "name": "y",
+            "type": "integer"
+          },
+          {
+            "name": "width",
+            "type": "integer"
+          },
+          {
+            "name": "height",
+            "type": "integer"
+          },
+          {
+            "default": 3000,
+            "name": "waitMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "appScreenshot",
+          "outputPath": "out/shot.jpg",
+          "quality": 85,
+          "title": "Notepad"
+        },
+        "description": "Capture a window / element / explicit rect to a JPEG file.",
+        "flags": {},
+        "group": "App",
+        "kind": "appScreenshot",
+        "label": "App Screenshot",
+        "params": [
+          {
+            "name": "outputPath",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "description": "Optional 'x,y,w,h' screen rect",
+            "name": "rect",
+            "type": "string"
+          },
+          {
+            "name": "elementIndex",
+            "type": "integer"
+          },
+          {
+            "default": 85,
+            "name": "quality",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "activate",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "clicks": -3,
+          "kind": "appScroll",
+          "title": "Notepad"
+        },
+        "description": "Wheel scroll (vertical or horizontal) at an optional point.",
+        "flags": {},
+        "group": "App",
+        "kind": "appScroll",
+        "label": "App Scroll",
+        "params": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "description": "Positive = up/right",
+            "name": "clicks",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "default": "vertical",
+            "description": "vertical | horizontal",
+            "name": "axis",
+            "type": "string"
+          },
+          {
+            "description": "Pre-target cursor X (optional)",
+            "name": "x",
+            "type": "integer"
+          },
+          {
+            "name": "y",
+            "type": "integer"
+          },
+          {
+            "name": "xw",
+            "type": "integer"
+          },
+          {
+            "name": "yw",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "appType",
+          "text": "Hello",
+          "title": "Notepad"
+        },
+        "description": "Type a string into the activated window.",
+        "flags": {},
+        "group": "App",
+        "kind": "appType",
+        "label": "App Type",
+        "params": [
+          {
+            "name": "text",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "type": "string"
+          },
+          {
+            "name": "foreground",
+            "type": "boolean"
+          },
+          {
+            "default": true,
+            "description": "Skip this block when false.",
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "If this block errors, the runtime still runs the next sibling.",
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "description": "'continue' | 'abort' (alias for continueOnError).",
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "description": "Force-abort the surrounding block list on error (default for app blocks).",
+            "name": "abortOnError",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "description": "Run the block in a detached thread; the parent loop does not wait.",
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "description": "Bind this block's 'result' field to a context variable for later blocks.",
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      }
+    ],
+    "Context": [
+      {
+        "block": {
+          "kind": "getVariable",
+          "name": "value",
+          "target": "PREVIOUS"
+        },
+        "description": "Read a value from root scope.",
+        "flags": {},
+        "group": "Context",
+        "kind": "getVariable",
+        "label": "Get Variable",
+        "params": [
+          {
+            "name": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "target",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "log",
+          "level": "info",
+          "message": "PREVIOUS"
+        },
+        "description": "Log a message, expression, variable, or the whole scope.",
+        "flags": {},
+        "group": "Context",
+        "kind": "log",
+        "label": "Log",
+        "params": [
+          {
+            "default": "info",
+            "name": "level",
+            "type": "string"
+          },
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "setVariable",
+          "name": "value",
+          "value": null
+        },
+        "description": "Write a value into root scope.",
+        "flags": {},
+        "group": "Context",
+        "kind": "setVariable",
+        "label": "Set Variable",
+        "params": [
+          {
+            "name": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "json"
+          },
+          {
+            "name": "expression",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      }
+    ],
+    "Data": [
+      {
+        "block": {
+          "filter": ".",
+          "kind": "Parse",
+          "parser": "jq",
+          "storeAs": "parsed"
+        },
+        "description": "Parse PREVIOUS or named input with a jq-style selector.",
+        "flags": {},
+        "group": "Data",
+        "kind": "Parse",
+        "label": "Parse JSON",
+        "params": [
+          {
+            "default": "jq",
+            "name": "parser",
+            "type": "string"
+          },
+          {
+            "default": ".",
+            "name": "filter",
+            "type": "string"
+          },
+          {
+            "default": "PREVIOUS",
+            "name": "input",
+            "type": "string"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      }
+    ],
+    "Flow": [
+      {
+        "block": {
+          "kind": "break"
+        },
+        "description": "Break out of the current loop.",
+        "flags": {},
+        "group": "Flow",
+        "kind": "break",
+        "label": "Break",
+        "params": [],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "comparator": "<",
+          "final": "3",
+          "initial": "0",
+          "items": [],
+          "kind": "for",
+          "modifier": "+1"
+        },
+        "description": "Run child blocks over a numeric range.",
+        "flags": {},
+        "group": "Flow",
+        "kind": "for",
+        "label": "For",
+        "params": [],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "alternate": [],
+          "condition": "true",
+          "consequent": [],
+          "kind": "if"
+        },
+        "description": "Run consequent or alternate blocks based on a condition.",
+        "flags": {},
+        "group": "Flow",
+        "kind": "if",
+        "label": "If",
+        "params": [],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "items": [],
+          "kind": "switch",
+          "variable": "mode"
+        },
+        "description": "Run the first matching case.",
+        "flags": {},
+        "group": "Flow",
+        "kind": "switch",
+        "label": "Switch",
+        "params": [],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "kind": "wait",
+          "ms": 500
+        },
+        "description": "Sleep for a fixed number of milliseconds.",
+        "flags": {},
+        "group": "Flow",
+        "kind": "wait",
+        "label": "Wait",
+        "params": [
+          {
+            "default": 500,
+            "name": "ms",
+            "type": "integer"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "condition": "false",
+          "items": [],
+          "kind": "while",
+          "loopLimit": 10
+        },
+        "description": "Run child blocks while a condition is true.",
+        "flags": {},
+        "group": "Flow",
+        "kind": "while",
+        "label": "While",
+        "params": [],
+        "platformMask": 4294967295
+      }
+    ],
+    "Modbus": [
+      {
+        "block": {
+          "address": 0,
+          "count": 3,
+          "kind": "modbusReadHoldingRegisters",
+          "storeAs": "values",
+          "url": "tcp:127.0.0.1:15020"
+        },
+        "description": "Read holding registers from a Modbus TCP/RTU endpoint.",
+        "flags": {},
+        "group": "Modbus",
+        "kind": "modbusReadHoldingRegisters",
+        "label": "Modbus Read Holding Registers",
+        "params": [
+          {
+            "name": "url",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": 0,
+            "name": "address",
+            "type": "integer"
+          },
+          {
+            "default": 1,
+            "name": "count",
+            "type": "integer"
+          },
+          {
+            "name": "slave",
+            "type": "integer"
+          },
+          {
+            "default": 30000,
+            "name": "timeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          },
+          {
+            "default": false,
+            "name": "background",
+            "type": "boolean"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "durationMs": 3000,
+          "holdingRegisters": [
+            11,
+            22,
+            33
+          ],
+          "kind": "modbusServer",
+          "url": "tcp:127.0.0.1:15020"
+        },
+        "description": "Run a Modbus TCP server until cancelled, durationMs expires, or maxRequests is reached.",
+        "flags": {},
+        "group": "Modbus",
+        "kind": "modbusServer",
+        "label": "Modbus Server",
+        "params": [
+          {
+            "default": "tcp:127.0.0.1:15020",
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "holdingRegisters",
+            "type": "integer[]"
+          },
+          {
+            "default": 128,
+            "name": "registerCount",
+            "type": "integer"
+          },
+          {
+            "default": 0,
+            "name": "durationMs",
+            "type": "integer"
+          },
+          {
+            "default": 0,
+            "name": "maxRequests",
+            "type": "integer"
+          },
+          {
+            "default": 1,
+            "name": "unitId",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          },
+          {
+            "default": false,
+            "name": "background",
+            "type": "boolean"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "address": 0,
+          "kind": "modbusWriteRegister",
+          "url": "tcp:127.0.0.1:15020",
+          "value": 123
+        },
+        "description": "Write a single holding register.",
+        "flags": {},
+        "group": "Modbus",
+        "kind": "modbusWriteRegister",
+        "label": "Modbus Write Register",
+        "params": [
+          {
+            "name": "url",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": 0,
+            "name": "address",
+            "type": "integer"
+          },
+          {
+            "name": "value",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "slave",
+            "type": "integer"
+          },
+          {
+            "default": 30000,
+            "name": "timeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          },
+          {
+            "default": false,
+            "name": "background",
+            "type": "boolean"
+          }
+        ],
+        "platformMask": 4294967295
+      },
+      {
+        "block": {
+          "address": 0,
+          "kind": "modbusWriteRegisters",
+          "url": "tcp:127.0.0.1:15020",
+          "values": [
+            101,
+            202
+          ]
+        },
+        "description": "Write multiple holding registers.",
+        "flags": {},
+        "group": "Modbus",
+        "kind": "modbusWriteRegisters",
+        "label": "Modbus Write Registers",
+        "params": [
+          {
+            "name": "url",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": 0,
+            "name": "address",
+            "type": "integer"
+          },
+          {
+            "name": "values",
+            "required": true,
+            "type": "integer[]"
+          },
+          {
+            "name": "slave",
+            "type": "integer"
+          },
+          {
+            "default": 30000,
+            "name": "timeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "enabled",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "name": "continueOnError",
+            "type": "boolean"
+          },
+          {
+            "name": "onError",
+            "type": "string"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          },
+          {
+            "default": false,
+            "name": "background",
+            "type": "boolean"
+          }
+        ],
+        "platformMask": 4294967295
+      }
+    ],
+    "Network": [
+      {
+        "block": {
+          "decode": "raw",
+          "followRedirects": true,
+          "kind": "fetch",
+          "storeAs": "response",
+          "timeoutMs": 30000,
+          "url": "https://"
+        },
+        "description": "Fetch a URL and store the raw response in PREVIOUS.",
+        "flags": {},
+        "group": "Network",
+        "kind": "fetch",
+        "label": "Fetch",
+        "params": [
+          {
+            "name": "url",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": "GET",
+            "name": "method",
+            "type": "string"
+          },
+          {
+            "default": "raw",
+            "enum": [
+              "raw",
+              "json"
+            ],
+            "name": "decode",
+            "type": "string"
+          },
+          {
+            "default": ".",
+            "name": "parse",
+            "type": "string"
+          },
+          {
+            "default": 30000,
+            "name": "timeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": 10000,
+            "name": "connectTimeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": true,
+            "name": "followRedirects",
+            "type": "boolean"
+          },
+          {
+            "default": 2,
+            "name": "retries",
+            "type": "integer"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      }
+    ],
+    "Shell": [
+      {
+        "block": {
+          "command": "echo hello",
+          "kind": "shell",
+          "log": false,
+          "mode": "shell",
+          "shell": "auto",
+          "stderr": "error",
+          "stdout": "info",
+          "storeAs": "stdout",
+          "timeoutMs": 30000
+        },
+        "description": "Run a shell command through the native RunTool.",
+        "flags": {},
+        "group": "Shell",
+        "kind": "shell",
+        "label": "Shell",
+        "params": [
+          {
+            "default": "shell",
+            "name": "mode",
+            "type": "string"
+          },
+          {
+            "default": "auto",
+            "name": "shell",
+            "type": "string"
+          },
+          {
+            "name": "command",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cwd",
+            "type": "string"
+          },
+          {
+            "name": "args",
+            "type": "string[]"
+          },
+          {
+            "default": 30000,
+            "name": "timeoutMs",
+            "type": "integer"
+          },
+          {
+            "default": false,
+            "name": "background",
+            "type": "boolean"
+          },
+          {
+            "default": false,
+            "name": "log",
+            "type": "boolean"
+          },
+          {
+            "default": "info",
+            "name": "stdout",
+            "type": "logger::level"
+          },
+          {
+            "default": "error",
+            "name": "stderr",
+            "type": "logger::level"
+          },
+          {
+            "name": "storeAs",
+            "type": "string"
+          }
+        ],
+        "platformMask": 4294967295
+      }
+    ]
+  },
+  "version": 1
+}

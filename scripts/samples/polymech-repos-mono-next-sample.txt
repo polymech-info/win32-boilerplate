@@ -1,0 +1,7 @@
+# Repo basenames under REMOTE_ORG (`polymech` by default).
+# Passed to migrate-polymech-gitea-disk.sh via REPOS_FILE=...
+#
+# Uncomment or add lines to migrate more repos in one run:
+media-app
+# mono-next
+# other-repo

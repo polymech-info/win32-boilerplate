@@ -1,0 +1,48 @@
+[2026-05-02 13:25:16.713] ----
+[2026-05-02 13:25:16.713] ui-log: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\assets\raw\ui-log.log
+[2026-05-02 13:25:16.713] 0 ms  session start (monotonic ms below)
+[2026-05-02 13:25:16.713] 0 ms  pre-session: 2 ms process entry to after CLI11 parse; 1 ms after parse to this session; 4 ms entry to session (before CoInit, …)
+[2026-05-02 13:25:16.713]     0 ms  pm_image_run: no subcommand (e.g. double-click), default --ui-next
+[2026-05-02 13:25:16.714] ----
+[2026-05-02 13:25:16.714] ui-log: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\assets\raw\ui-log.log
+[2026-05-02 13:25:16.714] 0 ms  session start (monotonic ms below)
+[2026-05-02 13:25:16.714] 0 ms  pre-session: 2 ms process entry to after CLI11 parse; 2 ms after parse to this session; 5 ms entry to session (before CoInit, …)
+[2026-05-02 13:25:16.714]     0 ms  launch: launch_ui_next (resize --ui-next, default seed, or caller)
+[2026-05-02 13:25:16.714]     0 ms  run_pm_image_ui: start (next: CoInitEx, vips, then frame Create)
+[2026-05-02 13:25:16.715]     1 ms  after CoInitializeEx
+[2026-05-02 13:25:16.715]     1 ms  load_settings miss #1 reason=appearance
+[2026-05-02 13:25:16.717]     3 ms  after apply_display_language_from_settings
+[2026-05-02 13:25:16.721]     7 ms  after vips_init
+[2026-05-02 13:25:16.722]     8 ms  after ui_font_init_from_settings (loads appearance)
+[2026-05-02 13:25:16.723]     9 ms  after theme_init_from_settings (loads appearance again)
+[2026-05-02 13:25:16.723]     9 ms  after enable_app_dark_mode
+[2026-05-02 13:25:16.828]   114 ms  splash: shown (layered, 790x467) — primary frame painted synchronously
+[2026-05-02 13:25:16.828]   114 ms  before CPmImageApp (frame Create + OnInitialUpdate)
+[2026-05-02 13:25:16.831]   117 ms  CMainFrame ctor after LoadPresets (parse settings for presets)
+[2026-05-02 13:25:16.850]   136 ms  OnInitialUpdate enter (win32_dock in settings.json or default layout)
+[2026-05-02 13:25:16.852]   138 ms  OnInitialUpdate: after load_window_layout prime (defer_dock flag; uses settings cache if warm)
+[2026-05-02 13:25:16.853]   139 ms  LoadDockFromSettings: read win32_dock JSON from settings 0 ms
+[2026-05-02 13:25:16.860]   146 ms  OnInitialUpdate: dock panel id=7 (filetree (IExplorerBrowser)) docked (NewDocker+AddDockedChild) 7 ms
+[2026-05-02 13:25:16.860]   146 ms  OnInitialUpdate: apply_dock_tree_from_json total (all panels above) 7 ms
+[2026-05-02 13:25:16.861]   147 ms  LoadDockFromSettings: total wall time 9 ms (settings.json win32_dock only)
+[2026-05-02 13:25:16.861]   147 ms  OnInitialUpdate: after LoadDockLayout (win32_dock JSON, AddDockedChild/CreateWindow; tab order may defer)
+[2026-05-02 13:25:16.861]   147 ms  OnInitialUpdate phase: LoadDock + dock pointers (layout source: settings win32_dock)
+[2026-05-02 13:25:16.861]   147 ms  OnInitialUpdate phase: after lazy AddDockedChild (workbench-specific: main vs chat vs viewer)
+[2026-05-02 13:25:16.862]   148 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-02 13:25:16.862]   148 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-02 13:25:16.871]   157 ms  OnInitialUpdate after LoadLayout
+[2026-05-02 13:25:16.872]   158 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-02 13:25:16.873]   159 ms  ApplyAppearance leave
+[2026-05-02 13:25:16.873]   159 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-02 13:25:16.874]   160 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-02 13:25:16.874]   160 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-02 13:25:16.917]   203 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-02 13:25:17.036]   322 ms  OnDeferredPostLayoutInit (150ms timer) — replay / startup queue / file tree browse
+[2026-05-02 13:25:27.592] 10878 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-02 13:25:27.592] 10878 ms  load_settings miss #2 reason=save_window_layout
+[2026-05-02 13:25:29.380] 12666 ms  WM_CLOSE: begin (timer kill, optional worker join, SaveDockLayout, SaveLayout, then destroy)
+[2026-05-02 13:25:29.381] 12667 ms  load_settings miss #3 reason=(unlabeled)
+[2026-05-02 13:25:29.384] 12670 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-02 13:25:29.385] 12671 ms  load_settings miss #4 reason=save_window_layout
+[2026-05-02 13:25:29.405] 12691 ms  after CWinApp::Run (message pump exit)
+[2026-05-02 13:25:29.407] 12693 ms  end session (load_settings cache-misses logged: 4)

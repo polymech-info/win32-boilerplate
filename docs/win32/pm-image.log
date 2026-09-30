@@ -1,0 +1,28 @@
+[2026-05-22 18:46:38.571] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4483379
+[2026-05-22 18:46:38.574] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-22 18:46:38.574] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-22 18:46:38.574] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=513x862
+[2026-05-22 18:46:38.574] [pm-image] [info] [chat-web] WebView2 controller ready @000001CB12DD2F50 hwnd=0000000000090918
+[2026-05-22 18:46:38.589] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-22 18:46:38.633] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-22 18:46:38.743] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-22 18:46:38.846] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":281,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-22 18:46:38.887] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-22 18:46:38.903] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-22 18:46:39.114] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 18:46:39.163] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 18:46:39.175] [pm-image] [info] [viewer-web] ctor @000001CB1DFE9310
+[2026-05-22 18:46:39.491] [pm-image] [info] [viewer-web] WebView2 controller ready @000001CB1534AF50 hwnd=00000000001208A4
+[2026-05-22 18:46:39.533] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-22 18:46:39.615] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-22 18:46:39.636] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:39.636] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:40.039] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:50.002] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:50.102] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:50.754] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:50.754] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:57.252] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:46:57.266] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:47:05.509] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 18:47:05.510] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\docs\win32" sel=1 hostedUrl=(none) hostedErr=(none)

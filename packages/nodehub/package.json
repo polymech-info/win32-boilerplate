@@ -1,0 +1,23 @@
+{
+  "name": "NodeHub",
+  "version": "0.0.0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:core",
+    "test:core": "cmake --build build --config Debug --target core_tests && ctest --test-dir build/tests --output-on-failure",
+    "test:e2e:core": "vitest run",
+    "mcp-server": "computer-control-mcp server",
+    "docs": "doxygen",
+    "docs:serve": "cd docs/html && serve",
+    "build:init": "cmake -S applications -B build -DCMAKE_TOOLCHAIN_FILE=\"REPLACE_WITH_YOUR_PATH/vcpkg/scripts/buildsystems/vcpkg.cmake\"",
+    "build": "sh scripts/build.sh",
+    "build:clean": "cmake --build build --config Debug --target clean",
+    "run": "sh run.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Mars Limited",
+  "dependencies": {
+    "vitest": "^4.0.10"
+  }
+}

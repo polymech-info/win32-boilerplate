@@ -1,0 +1,112 @@
+[2026-05-21 18:11:35.252] [pm-image] [info] [viewer-web] ctor @0000023B550A3C20
+[2026-05-21 18:11:35.484] [pm-image] [info] [viewer-web] WebView2 controller ready @0000023B56E43570 hwnd=00000000000C0084
+[2026-05-21 18:11:35.663] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:11:35.682] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:11:35.682] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:11:35.697] [pm-image] [error] [viewer-web] js error ChunkLoadError: Loading chunk 359 failed.
+(error: https://pm-vw.invalid/viewer.359.df8f14f2.js)
+[2026-05-21 18:11:35.697] [pm-image] [error] [viewer-web] js error ChunkLoadError: Loading chunk 359 failed.
+(error: https://pm-vw.invalid/viewer.359.df8f14f2.js) https://pm-vw.invalid/viewer.html:2
+[2026-05-21 18:11:36.107] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:12:00.430] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 18:20:45.996] [pm-image] [info] [viewer-web] ctor @000002742E419BF0
+[2026-05-21 18:20:46.222] [pm-image] [info] [viewer-web] WebView2 controller ready @000002743022A950 hwnd=00000000000A0286
+[2026-05-21 18:20:46.368] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:20:46.387] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:46.388] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:46.804] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:46.806] [pm-image] [warning] [viewer-web] js warn THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2026-05-21 18:20:46.854] [pm-image] [warning] [viewer-web] js warn THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2026-05-21 18:20:48.563] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:48.644] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:48.644] [pm-image] [warning] [viewer-web] js warn THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2026-05-21 18:20:48.822] [pm-image] [warning] [viewer-web] js warn THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2026-05-21 18:20:48.938] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=pdf folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/Cassandra_1x2m.pdf hostedErr=(none)
+[2026-05-21 18:20:48.944] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=pdf folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/Cassandra_1x2m.pdf hostedErr=(none)
+[2026-05-21 18:20:49.499] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:49.532] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:49.955] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:49.961] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:50.003] [pm-image] [warning] [viewer-web] js warn THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2026-05-21 18:20:50.025] [pm-image] [warning] [viewer-web] js warn THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2026-05-21 18:20:50.528] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:51.022] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:51.597] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=81
+[2026-05-21 18:20:51.597] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-21 18:20:51.648] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:20:51.656] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:52.076] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en-updated.csv hostedErr=(none)
+[2026-05-21 18:20:52.076] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en-updated.csv hostedErr=(none)
+[2026-05-21 18:20:52.079] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en-updated.csv hostedErr=(none)
+[2026-05-21 18:20:52.548] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en-v2.xlsx hostedErr=(none)
+[2026-05-21 18:20:52.549] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en-v2.xlsx hostedErr=(none)
+[2026-05-21 18:20:52.954] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en.xlsx hostedErr=(none)
+[2026-05-21 18:20:52.955] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en.xlsx hostedErr=(none)
+[2026-05-21 18:20:53.405] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:53.879] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:54.397] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:55.257] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 18:20:55.271] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:55.831] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:56.081] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:56.302] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:56.556] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=81
+[2026-05-21 18:20:56.556] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-21 18:20:56.603] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:20:56.612] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/flux-6_as_technical_illustration.mp4 hostedErr=(none)
+[2026-05-21 18:20:56.790] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:57.036] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:57.038] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:57.657] [pm-image] [info] [chat-web] ctor @000002743412D7D8
+[2026-05-21 18:20:57.660] [pm-image] [info] [agent_scheduler] started
+[2026-05-21 18:20:57.660] [pm-image] [info] [scheduler] loop running
+[2026-05-21 18:20:57.778] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:20:57.893] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-21 18:20:57.893] [pm-image] [info] [chat-web] WebView2 controller ready @000002743412E6F0 hwnd=00000000000603F0
+[2026-05-21 18:20:58.147] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-21 18:20:58.170] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-21 18:20:58.741] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-21 18:21:00.869] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=81
+[2026-05-21 18:21:00.918] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:21:00.927] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:01.365] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:01.595] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:01.739] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:02.102] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:02.262] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:02.835] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:02.983] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:04.343] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:04.501] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:04.903] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:04.915] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.369] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.369] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.392] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.404] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.647] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.659] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.872] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:05.884] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:07.783] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:07.795] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:08.256] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:08.262] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:08.551] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:08.562] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:10.567] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:12.648] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:12.653] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:13.143] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:13.155] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:13.983] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:13.987] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:15.096] [pm-image] [info] [viewer-web] ctor @000001DCFFF1F2C0
+[2026-05-21 18:21:15.238] [pm-image] [info] [viewer-web] WebView2 controller ready @000001DC81A33BA0 hwnd=00000000002909AC
+[2026-05-21 18:21:15.362] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:21:15.397] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:15.398] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:15.619] [pm-image] [warning] [viewer-web] js warn THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2026-05-21 18:21:15.651] [pm-image] [warning] [viewer-web] js warn THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2026-05-21 18:21:15.830] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:21:15.831] [pm-image] [warning] [viewer-web] js warn THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.

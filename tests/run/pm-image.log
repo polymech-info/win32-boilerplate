@@ -1,0 +1,153 @@
+[chat] Sending: router=openai model=gpt-5.5 sel=1 base_url=https://api.openai.com/v1 (package.json)
+[chat] Prompt: install and run, create readme.md, with reports
+[chat] Turn started — folder=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run-tool\cli-app
+[chat] Tool call: file_read args={"path":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\\package.json"}
+[chat] Tool result: file_read ✓ 1/1
+[chat] Tool call: file_glob args={"options":{"max_results":100,"recursive":true,"skip_dev_folders":true},"pattern":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app"}
+[chat] Tool result: file_glob ✓ 1/1
+[chat] Tool call: file_read args={"path":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\\src\\index.ts"}
+[chat] Tool result: file_read ✓ 1/1
+[chat] Tool call: file_read args={"path":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\\tsconfig.json"}
+[chat] Tool result: file_read ✓ 1/1
+[chat] Tool call: run args={"command":"cd \"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\"; npm install; npm run build; npm start -- .","shell":"auto","timeout_ms":120000}
+[chat] Tool result: run (done)
+[chat] Tool call: write_file args={"content":"#!/usr/bin/env node\nimport * as fs from 'fs';\nimport * as path from 'path';\nimport yargs from 'yargs';\nimport { hideBin } from 'yargs/helpers';\n\ninterface Arguments {\n  folderPath: string;\n}\n\nfunction calculateFolderSize(folderPath: string): number {\n  let totalSize = 0;\n\n  function traverse(currentPath: string): void {\n    try {\n      const stats = fs.statSync(currentPath);\n\n      if (stats.isFile()) {\n        totalSize += stats.size;\n      } else if (stats.isDirectory()) {\n        const entries = fs.readdirSync(currentPath);\n        for (const entry of entries) {\n          traverse(path.join(currentPath, entry));\n        }\n      }\n    } catch (error) {\n      // Silently skip files/folders that can't be accessed\n    }\n  }\n\n  traverse(folderPath);\n  return totalSize;\n}\n\nconst argv = yargs(hideBin(process.argv))\n  .command('$0 <folderPath>', 'Calculate folder size recursively', (commandYargs) => {\n    return commandYargs.positional('folderPath', {\n      describe: 'Path to the folder',\n      type: 'string',\n      demandOption: true\n    });\n  })\n  .help()\n  .strict()\n  .parseSync() as unknown as Arguments;\n\nconst size = calculateFolderSize(argv.folderPath);\nconsole.log(`FOLDER_SIZE_BYTES=${size}`);\n","options":{"append":false},"path":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\\src\\index.ts"}
+[chat] Tool result: write_file ✓ 1/1  → index.ts
+[chat] viewer-reload: notify frame for index.ts
+[chat] viewer-reload: no match (open='C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run-tool\cli-app\package.json' written='C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run-tool\cli-app\src\index.ts')
+[chat] Tool call: run args={"command":"cd \"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\"; New-Item -ItemType Directory -Force reports | Out-Null; \"# Install report`n`nCommand: npm install`nTimestamp: $(Get-Date -Format o)`n\" | Set-Content reports\\install-report.md; (npm install 2>&1 | Tee-Object -FilePath reports\\install-output.log -Append); \"Exit code: $LASTEXITCODE\" | Add-Content reports\\install-report.md; \"# Build report`n`nCommand: npm run build`nTimestamp: $(Get-Date -Format o)`n\" | Set-Content reports\\build-report.md; (npm run build 2>&1 | Tee-Object -FilePath reports\\build-output.log -Append); $buildExit=$LASTEXITCODE; \"Exit code: $buildExit\" | Add-Content reports\\build-report.md; \"# Run report`n`nCommand: npm start -- .`nTimestamp: $(Get-Date -Format o)`n\" | Set-Content reports\\run-report.md; (npm start -- . 2>&1 | Tee-Object -FilePath reports\\run-output.log -Append); $runExit=$LASTEXITCODE; \"Exit code: $runExit\" | Add-Content reports\\run-report.md; exit ([Math]::Max($buildExit,$runExit))","shell":"pwsh","timeout_ms":120000}
+[chat] Tool result: run (done)
+[chat] Tool call: write_file args={"content":"# folder-size-cli\n\nCLI to calculate the total size of a folder recursively and print the result in bytes.\n\n## Project\n\n- Package: `folder-size-cli`\n- Version: `1.0.0`\n- Entry point: `src/index.ts`\n- Build output: `dist/index.js`\n- Binary name: `folder-size`\n\n## Install\n\n```bash\nnpm install\n```\n\n## Build\n\n```bash\nnpm run build\n```\n\n## Run\n\nRun with TypeScript:\n\n```bash\nnpm start -- <folderPath>\n```\n\nExample:\n\n```bash\nnpm start -- .\n```\n\nAfter building, run the compiled CLI:\n\n```bash\nnode dist/index.js <folderPath>\n```\n\nExample output:\n\n```text\nFOLDER_SIZE_BYTES=28854443\n```\n\n## Reports\n\nReports were generated in the `reports/` directory.\n\n| Step | Command | Result | Report files |\n| --- | --- | --- | --- |\n| Install | `npm install` | Passed, 0 vulnerabilities | `reports/install-report.md`, `reports/install-output.log` |\n| Build | `npm run build` | Passed | `reports/build-report.md`, `reports/build-output.log` |\n| Run | `npm start -- .` | Passed, returned `FOLDER_SIZE_BYTES=28854443` | `reports/run-report.md`, `reports/run-output.log` |\n\n## Latest command output summary\n\n### Install\n\n```text\nup to date, audited 39 packages\nfound 0 vulnerabilities\n```\n\n### Build\n\n```text\n> folder-size-cli@1.0.0 build\n> tsc\n```\n\n### Run\n\n```text\n> folder-size-cli@1.0.0 start\n> ts-node src/index.ts .\n\nFOLDER_SIZE_BYTES=28854443\n```\n\n## Notes\n\n- The CLI walks files and subdirectories recursively using Node.js `fs` and `path`.\n- Files or folders that cannot be accessed are skipped silently.\n- A TypeScript compile issue in the yargs parse cast was corrected so the project builds successfully under `strict` mode.\n","options":{"append":false},"path":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app\\README.md"}
+[chat] Tool result: write_file ✓ 1/1  → README.md
+[chat] viewer-reload: notify frame for README.md
+[chat] viewer-reload: no match (open='C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run-tool\cli-app\package.json' written='C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run-tool\cli-app\README.md')
+[chat] Tool call: file_glob args={"options":{"max_results":50,"recursive":true,"skip_dev_folders":true},"pattern":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\run-tool\\cli-app"}
+[chat] Tool result: file_glob ✓ 1/1
+[chat] Assistant text received (552 chars)
+[chat] ✦ Done.  - Installed dependencies with `npm install` - Fixed the TypeScript build issue in `src/index.ts` - Built succe...
+[chat] LLM usage (aggregated): prompt=57838 completion=2264 total=60102
+[chat] Turn done — iterations=8, final_text_chars=552
+[2026-05-14 17:34:27.254] [pm-image] [info] [startup]   155 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-14 17:34:27.268] [pm-image] [info] [startup]   168 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-14 17:34:27.268] [pm-image] [info] [startup]   169 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-14 17:34:27.269] [pm-image] [info] [startup]   169 ms  [layout] LoadWindowLayout: enter slot='main'
+[2026-05-14 17:34:27.271] [pm-image] [info] [startup]   171 ms  [layout] ParseWindowLayout: enter
+[2026-05-14 17:34:27.271] [pm-image] [info] [startup]   172 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=1,C=1,FR=0,DR=0]
+[2026-05-14 17:34:27.272] [pm-image] [info] [startup]   172 ms  [layout] LoadWindowLayout: OK
+[2026-05-14 17:34:27.326] [pm-image] [info] [startup]   226 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-14 17:34:27.361] [pm-image] [info] [startup]   261 ms  ApplyAppearance leave
+[2026-05-14 17:34:27.361] [pm-image] [info] [startup]   262 ms  ApplyWindowLayoutData: Explorer SetInitialFolder from CLI cwd="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run"
+[2026-05-14 17:34:27.362] [pm-image] [info] [startup]   262 ms  OnInitialUpdate after LoadLayout
+[2026-05-14 17:34:27.362] [pm-image] [info] [startup]   262 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-14 17:34:27.396] [pm-image] [info] [startup]   296 ms  ApplyAppearance leave
+[2026-05-14 17:34:27.396] [pm-image] [info] [startup]   297 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-14 17:34:27.398] [pm-image] [info] [startup]   298 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-14 17:34:27.399] [pm-image] [info] [startup]   299 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-14 17:34:27.548] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-14 17:34:27.548] [pm-image] [info] [chat-web] WebView2 ready
+[2026-05-14 17:34:27.570] [pm-image] [info] [startup]   470 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-14 17:34:27.699] [pm-image] [info] [startup]   599 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-14 17:34:27.699] [pm-image] [info] [startup]   600 ms    phase 0: SplashDismiss
+[2026-05-14 17:34:27.700] [pm-image] [info] [startup]   600 ms    phase 2: StartupFlush (0 pending paths)
+[2026-05-14 17:34:27.700] [pm-image] [info] [startup]   600 ms    phase 3: ScreenshotSize
+[2026-05-14 17:34:27.700] [pm-image] [info] [startup]   601 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-14 17:34:27.701] [pm-image] [info] [startup]   601 ms  OnDeferredPostLayoutInit leave
+[2026-05-14 17:34:27.832] [pm-image] [info] openai_models: cache cold: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openai-models-cache.json
+[2026-05-14 17:34:27.833] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-14 17:34:27.982] [pm-image] [info] replicate_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\replicate-models-cache.json fresh=1 has_fetched_at=1
+[2026-05-14 17:34:27.983] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-14 17:34:28.021] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=392 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-14 17:34:28.061] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-14 17:34:28.098] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=392 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-14 17:34:28.346] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-14 17:34:31.322] [pm-image] [info] [startup]  4222 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-14 17:34:31.323] [pm-image] [info] [startup]  4223 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=1,L=1,S=0,FT=1,C=1]
+[2026-05-14 17:34:31.324] [pm-image] [info] [startup] 4224 ms  load_settings miss #2 reason=save_window_layout
+[2026-05-14 17:34:31.329] [pm-image] [info] [startup]  4229 ms  [layout] SaveWindowLayout: OK
+[2026-05-14 17:34:37.027] [pm-image] [info] [startup] 9927 ms  load_settings miss #3 reason=load_chat_provider
+[2026-05-14 17:34:38.174] [pm-image] [info] [startup] 11074 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-14 17:34:38.178] [pm-image] [info] [startup] 11078 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run\memory.json"
+[2026-05-14 17:34:38.186] [pm-image] [info] [startup] 11086 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run\memory.json"
+[2026-05-14 17:34:39.388] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-14 17:34:39.414] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-14 17:34:39.417] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-14 17:34:39.838] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-14 17:34:42.763] [pm-image] [info] [startup]   169 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-14 17:34:42.777] [pm-image] [info] [startup]   183 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-14 17:34:42.778] [pm-image] [info] [startup]   183 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-14 17:34:42.778] [pm-image] [info] [startup]   184 ms  [layout] LoadWindowLayout: enter slot='main'
+[2026-05-14 17:34:42.780] [pm-image] [info] [startup]   186 ms  [layout] ParseWindowLayout: enter
+[2026-05-14 17:34:42.780] [pm-image] [info] [startup]   186 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=1,C=1,FR=0,DR=0]
+[2026-05-14 17:34:42.780] [pm-image] [info] [startup]   186 ms  [layout] LoadWindowLayout: OK
+[2026-05-14 17:34:42.835] [pm-image] [info] [startup]   241 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-14 17:34:42.868] [pm-image] [info] [startup]   274 ms  ApplyAppearance leave
+[2026-05-14 17:34:42.868] [pm-image] [info] [startup]   274 ms  ApplyWindowLayoutData: Explorer SetInitialFolder from CLI cwd="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\run"
+[2026-05-14 17:34:42.869] [pm-image] [info] [startup]   275 ms  OnInitialUpdate after LoadLayout
+[2026-05-14 17:34:42.869] [pm-image] [info] [startup]   275 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-14 17:34:42.900] [pm-image] [info] [startup]   306 ms  ApplyAppearance leave
+[2026-05-14 17:34:42.901] [pm-image] [info] [startup]   307 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-14 17:34:42.902] [pm-image] [info] [startup]   308 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-14 17:34:42.902] [pm-image] [info] [startup]   308 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-14 17:34:43.064] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-14 17:34:43.064] [pm-image] [info] [chat-web] WebView2 ready
+[2026-05-14 17:34:43.087] [pm-image] [info] [startup]   493 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-14 17:34:43.211] [pm-image] [info] [startup]   617 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-14 17:34:43.211] [pm-image] [info] [startup]   617 ms    phase 0: SplashDismiss
+[2026-05-14 17:34:43.212] [pm-image] [info] [startup]   618 ms    phase 2: StartupFlush (0 pending paths)
+[2026-05-14 17:34:43.212] [pm-image] [info] [startup]   618 ms    phase 3: ScreenshotSize
+[2026-05-14 17:34:43.212] [pm-image] [info] [startup]   618 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-14 17:34:43.212] [pm-image] [info] [startup]   618 ms  OnDeferredPostLayoutInit leave
+[2026-05-14 17:34:43.341] [pm-image] [info] openai_models: cache cold: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openai-models-cache.json
+[2026-05-14 17:34:43.342] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-14 17:34:43.481] [pm-image] [info] replicate_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\replicate-models-cache.json fresh=1 has_fetched_at=1
+[2026-05-14 17:34:43.482] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-14 17:34:43.519] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=392 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-14 17:34:43.559] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-14 17:34:43.591] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=392 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-14 17:34:43.844] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-14 17:34:47.483] [pm-image] [info] [startup]  4889 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-14 17:34:47.484] [pm-image] [info] [startup]  4890 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=1,L=1,S=0,FT=0,C=1]
+[2026-05-14 17:34:47.486] [pm-image] [info] [startup] 4892 ms  load_settings miss #2 reason=save_window_layout
+[2026-05-14 17:34:47.491] [pm-image] [info] [startup]  4897 ms  [layout] SaveWindowLayout: OK
+[2026-05-14 17:34:49.159] [pm-image] [info] [startup] 6565 ms  load_settings miss #3 reason=(unlabeled)
+[2026-05-14 17:34:49.164] [pm-image] [info] [startup]  6570 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-14 17:34:49.164] [pm-image] [info] [startup]  6570 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=1,L=1,S=0,FT=0,C=1]
+[2026-05-14 17:34:49.166] [pm-image] [info] [startup] 6571 ms  load_settings miss #4 reason=save_window_layout
+[2026-05-14 17:34:49.170] [pm-image] [info] [startup]  6576 ms  [layout] SaveWindowLayout: OK
+[2026-05-14 17:34:50.551] [pm-image] [info] [startup] 7957 ms  load_settings miss #5 reason=load_subtree
+[2026-05-14 17:34:54.043] [pm-image] [info] [startup] 11449 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-14 17:34:54.043] [pm-image] [info] [startup] 11449 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=1,L=1,S=0,FT=0,C=1]
+[2026-05-14 17:34:54.044] [pm-image] [info] [startup] 11450 ms  load_settings miss #6 reason=save_window_layout
+[2026-05-14 17:34:54.049] [pm-image] [info] [startup] 11455 ms  [layout] SaveWindowLayout: OK
+[2026-05-14 17:34:57.439] [pm-image] [info] [startup]   140 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-14 17:34:57.449] [pm-image] [info] [startup]   150 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-14 17:34:57.450] [pm-image] [info] [startup]   151 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-14 17:34:57.450] [pm-image] [info] [startup]   151 ms  [layout] LoadWindowLayout: enter slot='main'
+[2026-05-14 17:34:57.453] [pm-image] [info] [startup]   153 ms  [layout] ParseWindowLayout: enter
+[2026-05-14 17:34:57.453] [pm-image] [info] [startup]   154 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=0,C=1,FR=0,DR=0]
+[2026-05-14 17:34:57.454] [pm-image] [info] [startup]   154 ms  [layout] LoadWindowLayout: OK
+[2026-05-14 17:34:57.504] [pm-image] [info] [startup]   205 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-14 17:34:57.532] [pm-image] [info] [startup]   232 ms  ApplyAppearance leave
+[2026-05-14 17:34:57.533] [pm-image] [info] [startup]   233 ms  OnInitialUpdate after LoadLayout
+[2026-05-14 17:34:57.533] [pm-image] [info] [startup]   233 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-14 17:34:57.571] [pm-image] [info] [startup]   272 ms  ApplyAppearance leave
+[2026-05-14 17:34:57.572] [pm-image] [info] [startup]   272 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-14 17:34:57.573] [pm-image] [info] [startup]   274 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-14 17:34:57.574] [pm-image] [info] [startup]   274 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-14 17:34:57.656] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-14 17:34:57.656] [pm-image] [info] [chat-web] WebView2 ready
+[2026-05-14 17:34:57.684] [pm-image] [info] [startup]   384 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-14 17:34:57.739] [pm-image] [info] [startup]   440 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-14 17:34:57.740] [pm-image] [info] [startup]   440 ms    phase 0: SplashDismiss
+[2026-05-14 17:34:57.740] [pm-image] [info] [startup]   441 ms    phase 2: StartupFlush (0 pending paths)
+[2026-05-14 17:34:57.740] [pm-image] [info] [startup]   441 ms    phase 3: ScreenshotSize
+[2026-05-14 17:34:57.740] [pm-image] [info] [startup]   441 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-14 17:34:57.741] [pm-image] [info] [startup]   441 ms  OnDeferredPostLayoutInit leave
+[2026-05-14 17:34:57.899] [pm-image] [info] openai_models: cache cold: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openai-models-cache.json
+[2026-05-14 17:34:57.899] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-14 17:34:58.045] [pm-image] [info] replicate_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\replicate-models-cache.json fresh=1 has_fetched_at=1
+[2026-05-14 17:34:58.046] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-14 17:34:58.080] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=392 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-14 17:34:58.117] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-14 17:34:58.149] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=392 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-14 17:34:58.438] [pm-image] [info] openai_models: source=disk_cache n=130

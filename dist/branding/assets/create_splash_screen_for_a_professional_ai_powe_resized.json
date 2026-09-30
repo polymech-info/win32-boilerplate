@@ -1,0 +1,76 @@
+{
+  "alt": "A digital hand touches a glowing 'PW' button above \"Pixel Wizard ... is loading\" text on a dark background with a \"v1.0 - PolyMech\" watermark.",
+  "characters": [
+    {
+      "count": 1,
+      "notes": "digital, glowing",
+      "type": "hand"
+    },
+    {
+      "count": 0,
+      "notes": "",
+      "type": "person"
+    },
+    {
+      "count": 0,
+      "notes": "",
+      "type": "animal"
+    }
+  ],
+  "confidence": 1,
+  "description": "The layout features large, central white text \"Pixel Wizard\" below a hand touching a glowing button. Smaller text \"... is loading\" is below the title. The \"v1.0 - PolyMech\" text is in the bottom right corner. The main elements are a dark grey button device with a glowing \"PW\" logo, a glowing digital hand interacting with it, and the title text. The background is a dark gradient with subtle light effects.",
+  "estimated_location": "unknown",
+  "exif": {
+    "bands": 3,
+    "exif-data": "SUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAABMCAwABAAAAAQAAAGmHBAABAAAAZgAAAAAAAADgkwQA6AMAAOCTBADoAwAABgAAkAcABAAAADAyMTABkQcABAAAAAECAwAAoAcABAAAADAxMDABoAMAAQAAAP//AAACoAQAAQAAAHADAAADoAQAAQAAAAgCAAAAAAAA",
+    "exif-ifd0-Orientation": "1",
+    "exif-ifd0-ResolutionUnit": "2",
+    "exif-ifd0-XResolution": "300000/1000",
+    "exif-ifd0-YCbCrPositioning": "1",
+    "exif-ifd0-YResolution": "300000/1000",
+    "exif-ifd2-ColorSpace": "65535",
+    "exif-ifd2-ComponentsConfiguration": "Y Cb Cr -",
+    "exif-ifd2-ExifVersion": "Exif Version 2.1",
+    "exif-ifd2-FlashpixVersion": "FlashPix Version 1.0",
+    "exif-ifd2-PixelXDimension": "880",
+    "exif-ifd2-PixelYDimension": "520",
+    "height": 520,
+    "width": 880
+  },
+  "model": "gemini-3-pro-image-preview",
+  "objects": [
+    {
+      "count": 1,
+      "type": "button device"
+    },
+    {
+      "count": 3,
+      "type": "text"
+    },
+    {
+      "count": 1,
+      "type": "logo"
+    },
+    {
+      "count": 1,
+      "type": "hand"
+    }
+  ],
+  "provider": "google",
+  "scene": "dark, digital loading screen",
+  "source": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\docs\\assets\\create_splash_screen_for_a_professional_ai_powe_resized.png",
+  "tags": [
+    "pixel wizard",
+    "loading",
+    "button",
+    "hand",
+    "digital",
+    "glow",
+    "polymech",
+    "logo",
+    "dark background",
+    "technology",
+    "interface"
+  ],
+  "title": "Pixel Wizard Loading Screen with Hand and Button"
+}

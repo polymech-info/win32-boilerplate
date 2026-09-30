@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "presets": [
+    {
+      "id": "design_noir_bnw_high_contrast",
+      "group": "Classic photo looks",
+      "name": "Noir (B&W, high contrast)",
+      "icon": "🕵️",
+      "prompt": "Film noir look: convert to black & white with deep blacks, strong contrast, subtle film grain, and a slight vignette. Keep faces natural and preserve all details. Do not add text, logos, or watermarks."
+    },
+    {
+      "id": "design_cinematic_teal_orange",
+      "group": "Classic photo looks",
+      "name": "Cinematic (teal & orange grade)",
+      "icon": "🎬",
+      "prompt": "Apply a cinematic teal-and-orange color grade. Preserve skin tones, avoid oversaturation, keep fine texture and details. Do not add any text, logos, or frames."
+    },
+    {
+      "id": "design_vintage_35mm",
+      "group": "Classic photo looks",
+      "name": "Vintage 35mm film",
+      "icon": "📷",
+      "prompt": "Make this look like a vintage 35mm film photo: slightly faded colors, gentle halation, fine film grain, soft highlight roll-off. Keep it realistic and preserve details. No text or watermarks."
+    },
+    {
+      "id": "design_editorial_fashion",
+      "group": "Editorial",
+      "name": "Editorial fashion (clean, glossy)",
+      "icon": "📰",
+      "prompt": "Editorial fashion retouch + grade: clean, glossy, high-end magazine look. Preserve identity, keep skin texture (no plastic skin), controlled highlights, neutral background if present. No text, no logos."
+    },
+    {
+      "id": "design_minimal_poster",
+      "group": "Posters & graphics",
+      "name": "Minimal poster",
+      "icon": "🧾",
+      "prompt": "Turn this into a minimal graphic poster style while preserving the main subject silhouette and key details. Use a simple limited palette, clean shapes, and a balanced composition. Do not add any typography or logos."
+    },
+    {
+      "id": "design_swiss_international_style",
+      "group": "Posters & graphics",
+      "name": "Swiss / International Typographic Style (no text)",
+      "icon": "📐",
+      "prompt": "Swiss/International Typographic Style look WITHOUT adding text: strict grid feeling, clean geometry, lots of negative space, crisp edges, modern minimal color palette. Keep the subject recognizable. No typography, no logos."
+    },
+    {
+      "id": "design_bauhaus_geometric",
+      "group": "Posters & graphics",
+      "name": "Bauhaus geometric",
+      "icon": "🔺",
+      "prompt": "Apply a Bauhaus-inspired geometric design look: simple shapes, bold blocks of primary/neutral colors, strong composition. Preserve the subject in a stylized but recognizable way. Do not add text or logos."
+    },
+    {
+      "id": "design_art_deco_glam",
+      "group": "Posters & graphics",
+      "name": "Art Deco glam (no text)",
+      "icon": "🏛️",
+      "prompt": "Art Deco inspired treatment: elegant geometry, symmetrical accents, metallic gold/bronze highlights (subtle), rich blacks, glamorous lighting. Keep the original subject and details. No text or logos."
+    },
+    {
+      "id": "design_grainy_risograph",
+      "group": "Trendy looks",
+      "name": "Risograph / print grain",
+      "icon": "🖨️",
+      "prompt": "Risograph print look: limited ink palette (2–3 colors), visible print grain, slight misregistration, paper texture. Keep subject clear and preserve details. Do not add text or watermarks."
+    },
+    {
+      "id": "design_y2k_chrome_pop",
+      "group": "Trendy looks",
+      "name": "Y2K chrome pop",
+      "icon": "💿",
+      "prompt": "Y2K-inspired pop look: glossy highlights, chrome-like accents, vibrant but controlled colors. Keep the original subject and preserve facial identity. Do not add any text, logos, or watermarks."
+    },
+    {
+      "id": "design_retro_80s_neon",
+      "group": "Trendy looks",
+      "name": "Retro 80s neon",
+      "icon": "🌆",
+      "prompt": "Retro 80s neon aesthetic: magenta/cyan lighting vibe, subtle glow, deep shadows, synthwave feel. Preserve the scene and subject. No text or logos."
+    },
+    {
+      "id": "design_soft_pastel_dreamy",
+      "group": "Trendy looks",
+      "name": "Soft pastel dreamy",
+      "icon": "☁️",
+      "prompt": "Soft pastel dreamy look: airy highlights, gentle contrast, pastel toning, subtle bloom. Preserve details and keep it tasteful (not washed out). No text or watermarks."
+    },
+    {
+      "id": "design_brutalist_poster_no_text",
+      "group": "Trendy looks",
+      "name": "Brutalist poster (no text)",
+      "icon": "🧱",
+      "prompt": "Brutalist graphic design look without adding text: harsh contrast, raw textures, asymmetric layout feel, bold shapes, utilitarian palette. Preserve the subject and key details. No typography/logos/watermarks."
+    },
+    {
+      "id": "design_duotone",
+      "group": "Trendy looks",
+      "name": "Duotone",
+      "icon": "🎛️",
+      "prompt": "Create a duotone version of this image using two well-chosen colors (dark + light). Keep the subject recognizable and preserve edges/details. No text, no logos."
+    },
+    {
+      "id": "design_sticker_cutout",
+      "group": "Social graphics",
+      "name": "Sticker cutout (no text)",
+      "icon": "🏷️",
+      "prompt": "Make the main subject a clean sticker cutout: accurate silhouette, subtle outline, slight drop shadow, clean background. Preserve details (hair, edges). Do not add any text or logos."
+    },
+    {
+      "id": "design_polaroid_frame",
+      "group": "Social graphics",
+      "name": "Polaroid-style frame (no text)",
+      "icon": "🧷",
+      "prompt": "Present the photo inside a tasteful Polaroid-style frame: off-white paper border, slight shadow, mild film tone. Do not write any caption text on the border. Preserve the photo content."
+    },
+    {
+      "id": "design_photo_collage_grid",
+      "group": "Merge / collage",
+      "name": "Merge selection into a clean collage grid",
+      "icon": "🧩",
+      "prompt": "Create a clean collage grid from all provided photos. Keep each photo recognizable (no heavy stylization), balance sizes, align edges, use consistent spacing, and a neutral background. Do NOT add text, dates, stickers, or watermarks."
+    },
+    {
+      "id": "design_double_exposure",
+      "group": "Merge / collage",
+      "name": "Double exposure (two images)",
+      "icon": "🌗",
+      "prompt": "Create a tasteful double-exposure by blending the first two provided images. Preserve the main subject silhouette, keep it realistic and clean, avoid muddy midtones. No text, no logos, no watermark."
+    },
+    {
+      "id": "design_storyboard_contact_sheet",
+      "group": "Merge / collage",
+      "name": "Contact sheet / storyboard (no text)",
+      "icon": "🗂️",
+      "prompt": "Arrange all provided images into a contact-sheet / storyboard grid: consistent margins, subtle border lines, clean neutral background. Do not add frame numbers or text labels. Preserve each image content."
+    },
+    {
+      "id": "design_brand_moodboard",
+      "group": "Merge / collage",
+      "name": "Brand moodboard (no text)",
+      "icon": "🎨",
+      "prompt": "Create a clean brand moodboard from the provided images: balanced layout, cohesive spacing, consistent color feel. Do NOT add any text labels. Preserve each image’s key content."
+    }
+  ]
+}

@@ -1,0 +1,1497 @@
+2026-05-22 16:06:46  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:06:46  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:06:46  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:06:46  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:06:46  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:06:46  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:06:46  SetSite: site set
+2026-05-22 16:06:46  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:06:46  paths_from_items: null shell item array or out
+2026-05-22 16:06:46  explorer_view_path: SHGetPathFromIDListW ok pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:06:46  GetState: no selection/count failed hr=0x80004003 count=0 fallbackPaths=1 state=enabled
+2026-05-22 16:06:46  PrepareExplorerCommands: kind=root paths=1
+2026-05-22 16:06:46  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:06:46  GetState: root ready commands=2
+2026-05-22 16:06:46  GetTitle: root
+2026-05-22 16:06:46  SetSite: site cleared
+2026-05-22 16:06:51  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:11:25  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:11:25  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:11:25  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:25  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:25  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:11:25  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:11:25  SetSite: site set
+2026-05-22 16:11:25  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:11:25  paths_from_items: count=1
+2026-05-22 16:11:25  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests\apps
+2026-05-22 16:11:25  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:11:25  PrepareExplorerCommands: kind=root paths=1
+2026-05-22 16:11:25  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:11:25  GetState: root ready commands=2
+2026-05-22 16:11:25  GetTitle: root
+2026-05-22 16:11:25  SetSite: site cleared
+2026-05-22 16:11:30  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 16:11:30  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:11:30  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:30  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:30  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:11:30  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:30  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:11:30  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:11:30  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\tests\apps
+2026-05-22 16:11:30  SetSite: site set
+2026-05-22 16:11:30  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31113 idLast=31482 flags=132244 legacyPaths=1
+2026-05-22 16:11:30  IContextMenu::QueryContextMenu: inserted root submenu with 2 commands
+2026-05-22 16:11:31  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:11:31  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:11:31  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:31  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:11:31  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:11:31  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:11:31  SetSite: site set
+2026-05-22 16:11:31  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:11:31  GetTitle: root
+2026-05-22 16:11:33  SetSite: site cleared
+2026-05-22 16:11:33  SetSite: site cleared
+2026-05-22 16:11:33  SetSite: site cleared
+2026-05-22 16:11:38  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:11:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:11:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:12:03  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:12:03  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:12:03  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:03  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:03  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:12:03  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:12:03  SetSite: site set
+2026-05-22 16:12:03  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:12:03  paths_from_items: count=1
+2026-05-22 16:12:03  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:12:03  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:12:03  PrepareExplorerCommands: kind=root paths=1
+2026-05-22 16:12:03  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:12:03  GetState: root ready commands=2
+2026-05-22 16:12:03  GetTitle: root
+2026-05-22 16:12:03  SetSite: site cleared
+2026-05-22 16:12:08  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:12:37  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:12:37  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:12:37  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:37  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:37  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:12:37  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:12:37  SetSite: site set
+2026-05-22 16:12:37  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:12:37  paths_from_items: count=1
+2026-05-22 16:12:37  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests\apps
+2026-05-22 16:12:37  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:12:37  PrepareExplorerCommands: kind=root paths=1
+2026-05-22 16:12:37  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:12:37  GetState: root ready commands=2
+2026-05-22 16:12:37  GetTitle: root
+2026-05-22 16:12:37  SetSite: site cleared
+2026-05-22 16:12:39  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:12:39  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:39  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:39  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:12:39  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:39  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:12:39  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:12:39  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\tests\apps
+2026-05-22 16:12:39  SetSite: site set
+2026-05-22 16:12:39  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31113 idLast=31482 flags=132244 legacyPaths=1
+2026-05-22 16:12:39  IContextMenu::QueryContextMenu: inserted root submenu with 2 commands
+2026-05-22 16:12:39  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:12:39  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:39  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:12:39  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:12:39  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:12:39  SetSite: site set
+2026-05-22 16:12:39  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:12:39  GetTitle: root
+2026-05-22 16:12:42  SetSite: site cleared
+2026-05-22 16:12:42  SetSite: site cleared
+2026-05-22 16:12:42  SetSite: site cleared
+2026-05-22 16:13:08  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:14:05  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:14:05  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:14:05  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:14:05  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:14:05  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:14:05  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:14:06  SetSite: site set
+2026-05-22 16:14:06  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:14:06  paths_from_items: null shell item array or out
+2026-05-22 16:14:06  explorer_view_path: SHGetPathFromIDListW ok pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:14:06  GetState: no selection/count failed hr=0x80004003 count=0 fallbackPaths=1 state=enabled
+2026-05-22 16:14:06  GetTitle: root
+2026-05-22 16:14:06  SetSite: site cleared
+2026-05-22 16:14:11  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:14:37  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:14:37  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:14:37  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:14:37  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:14:37  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:14:37  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:14:37  SetSite: site set
+2026-05-22 16:14:37  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:14:37  paths_from_items: count=1
+2026-05-22 16:14:37  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:14:37  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:14:37  GetTitle: root
+2026-05-22 16:14:37  SetSite: site cleared
+2026-05-22 16:14:42  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:15:49  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:15:49  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:15:49  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:49  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:49  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:15:49  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:15:49  SetSite: site set
+2026-05-22 16:15:49  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:15:49  paths_from_items: count=1
+2026-05-22 16:15:49  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 16:15:49  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:15:49  GetTitle: root
+2026-05-22 16:15:49  SetSite: site cleared
+2026-05-22 16:15:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:15:56  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 16:15:56  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:15:56  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:56  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:56  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:15:56  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:56  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:15:56  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:15:56  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 16:15:56  SetSite: site set
+2026-05-22 16:15:56  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31113 idLast=31482 flags=132240 legacyPaths=1
+2026-05-22 16:15:56  IContextMenu::QueryContextMenu: inserted root submenu with 2 commands
+2026-05-22 16:15:56  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:15:56  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:15:56  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:56  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:15:56  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:15:56  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:15:56  SetSite: site set
+2026-05-22 16:15:56  GetFlags: kind=root ECF_DEFAULT
+2026-05-22 16:15:56  GetTitle: root
+2026-05-22 16:16:04  SetSite: site cleared
+2026-05-22 16:16:04  SetSite: site cleared
+2026-05-22 16:16:04  SetSite: site cleared
+2026-05-22 16:16:07  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:16:07  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:16:09  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:17:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:17:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:18:09  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:18:14  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:20:30  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:20:30  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:20:30  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:30  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:30  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:20:30  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:20:30  SetSite: site set
+2026-05-22 16:20:30  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:20:30  paths_from_items: count=1
+2026-05-22 16:20:30  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:20:30  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:20:30  GetTitle: root
+2026-05-22 16:20:30  SetSite: site cleared
+2026-05-22 16:20:35  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:20:41  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:20:41  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:20:41  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:41  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:41  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:20:41  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:20:41  SetSite: site set
+2026-05-22 16:20:41  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:20:41  paths_from_items: null shell item array or out
+2026-05-22 16:20:41  explorer_view_path: SHGetPathFromIDListW ok pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:20:41  GetState: no selection/count failed hr=0x80004003 count=0 fallbackPaths=1 state=enabled
+2026-05-22 16:20:41  GetTitle: root
+2026-05-22 16:20:41  SetSite: site cleared
+2026-05-22 16:20:46  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 16:20:46  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:20:46  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:46  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:46  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:20:46  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:46  IShellExtInit::Initialize: dataObject=no
+2026-05-22 16:20:46  SetSite: site set
+2026-05-22 16:20:46  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31034 idLast=31482 flags=132132 legacyPaths=0
+2026-05-22 16:20:46  IContextMenu::QueryContextMenu: inserted root submenu with 2 commands
+2026-05-22 16:20:46  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:20:46  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:46  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:20:46  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:20:46  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:20:46  SetSite: site set
+2026-05-22 16:20:46  GetFlags: kind=root ECF_DEFAULT
+2026-05-22 16:20:46  GetTitle: root
+2026-05-22 16:21:32  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:21:32  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:21:35  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:23:52  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:23:52  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:23:52  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:52  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:52  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:23:52  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:23:52  SetSite: site set
+2026-05-22 16:23:52  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:23:52  paths_from_items: count=1
+2026-05-22 16:23:52  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:23:52  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:23:52  GetTitle: root
+2026-05-22 16:23:52  SetSite: site cleared
+2026-05-22 16:23:55  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:23:55  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:55  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:55  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:23:55  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:23:55  SetSite: site set
+2026-05-22 16:23:55  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:23:55  paths_from_items: count=1
+2026-05-22 16:23:55  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:23:55  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:23:55  GetTitle: root
+2026-05-22 16:23:55  SetSite: site cleared
+2026-05-22 16:23:57  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 16:23:57  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:23:57  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:57  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:57  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:23:57  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:57  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:23:57  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:23:57  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:23:57  SetSite: site set
+2026-05-22 16:23:57  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31113 idLast=31482 flags=132240 legacyPaths=1 disabled=win11-packaged-command-only
+2026-05-22 16:23:57  SetSite: site cleared
+2026-05-22 16:23:57  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:23:57  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:57  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:23:57  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:23:57  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:23:57  SetSite: site set
+2026-05-22 16:23:58  GetFlags: kind=root ECF_DEFAULT
+2026-05-22 16:23:58  GetTitle: root
+2026-05-22 16:24:03  SetSite: site cleared
+2026-05-22 16:24:03  SetSite: site cleared
+2026-05-22 16:24:08  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:24:23  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:24:23  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:25:52  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:25:52  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:25:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:26:58  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:26:58  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:26:58  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:26:58  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:26:58  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:26:58  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:26:58  SetSite: site set
+2026-05-22 16:26:58  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:26:58  paths_from_items: count=1
+2026-05-22 16:26:58  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:26:58  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:26:58  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:26:58  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:26:58  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:26:58  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:26:58  GetState: root ready commands=2
+2026-05-22 16:26:58  GetTitle: root
+2026-05-22 16:26:58  SetSite: site cleared
+2026-05-22 16:27:03  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:27:03  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 16:27:03  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:27:03  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:27:03  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:27:03  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:27:03  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:27:03  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:27:03  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:27:03  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:27:03  SetSite: site set
+2026-05-22 16:27:03  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31113 idLast=31482 flags=132240 legacyPaths=1
+2026-05-22 16:27:03  IContextMenu::QueryContextMenu: visible classic menu disabled for packaged command
+2026-05-22 16:27:03  SetSite: site cleared
+2026-05-22 16:27:04  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:27:04  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:27:04  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:27:04  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:27:04  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:27:04  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:27:04  SetSite: site set
+2026-05-22 16:27:04  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:27:04  GetTitle: root
+2026-05-22 16:27:16  SetSite: site cleared
+2026-05-22 16:27:16  SetSite: site cleared
+2026-05-22 16:27:21  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:27:38  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:27:38  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:32:04  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:32:04  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:32:04  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:04  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:04  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:32:04  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:32:04  SetSite: site set
+2026-05-22 16:32:04  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:32:04  paths_from_items: count=1
+2026-05-22 16:32:04  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist\data
+2026-05-22 16:32:04  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:32:04  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:32:04  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:32:04  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:32:04  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:32:04  GetState: root ready commands=2
+2026-05-22 16:32:04  GetTitle: root
+2026-05-22 16:32:04  SetSite: site cleared
+2026-05-22 16:32:10  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\explorer.exe
+2026-05-22 16:32:10  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:32:10  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:10  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:10  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:32:10  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:10  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:32:10  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:32:10  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\dist\data
+2026-05-22 16:32:10  SetSite: site set
+2026-05-22 16:32:10  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31105 idLast=31482 flags=132244 legacyPaths=1
+2026-05-22 16:32:10  IContextMenu::QueryContextMenu: visible classic menu disabled for packaged command
+2026-05-22 16:32:10  SetSite: site cleared
+2026-05-22 16:32:10  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:32:10  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:32:10  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:10  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:32:10  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:32:10  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:32:10  SetSite: site set
+2026-05-22 16:32:10  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:32:10  GetTitle: root
+2026-05-22 16:32:12  SetSite: site cleared
+2026-05-22 16:32:12  SetSite: site cleared
+2026-05-22 16:32:17  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:34:26  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:34:26  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:34:26  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:26  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:26  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:34:26  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:34:26  SetSite: site set
+2026-05-22 16:34:26  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:34:26  paths_from_items: count=1
+2026-05-22 16:34:26  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:34:26  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:34:26  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:34:26  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:34:26  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:34:26  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:34:26  GetState: root ready commands=2
+2026-05-22 16:34:26  GetTitle: root
+2026-05-22 16:34:26  SetSite: site cleared
+2026-05-22 16:34:28  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 16:34:28  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:34:28  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:28  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:28  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 16:34:28  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:28  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 16:34:28  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 16:34:28  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:34:28  SetSite: site set
+2026-05-22 16:34:28  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31105 idLast=31482 flags=132240 legacyPaths=1
+2026-05-22 16:34:28  IContextMenu::QueryContextMenu: visible classic menu disabled for packaged command
+2026-05-22 16:34:28  SetSite: site cleared
+2026-05-22 16:34:29  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:34:29  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:29  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:34:29  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:34:29  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:34:29  SetSite: site set
+2026-05-22 16:34:29  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:34:29  GetTitle: root
+2026-05-22 16:34:31  SetSite: site cleared
+2026-05-22 16:34:31  SetSite: site cleared
+2026-05-22 16:34:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:34:39  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:34:39  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:37:04  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:37:04  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:37:04  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:37:04  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:37:04  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:37:04  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:37:04  SetSite: site set
+2026-05-22 16:37:04  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:37:04  paths_from_items: count=1
+2026-05-22 16:37:04  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:37:04  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:37:04  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:37:04  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:37:04  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:37:04  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:37:04  GetState: root ready commands=2
+2026-05-22 16:37:04  GetTitle: root
+2026-05-22 16:37:04  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:37:04  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:04  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:37:04  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:04  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:37:04  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:37:04  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:37:04  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:37:04  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:37:04  EnumSubCommands: root returning commands=2
+2026-05-22 16:37:04  Leaf GetState: open-pixlwiz enabled
+2026-05-22 16:37:04  Leaf GetTitle: open-pixlwiz
+2026-05-22 16:37:04  Leaf GetIcon: kind=open-pixlwiz iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:04  Leaf GetIcon: kind=open-pixlwiz iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:04  Leaf GetFlags: open-pixlwiz ECF_DEFAULT
+2026-05-22 16:37:04  Leaf GetState: viewer enabled
+2026-05-22 16:37:04  Leaf GetTitle: viewer
+2026-05-22 16:37:04  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:04  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:04  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:37:04  SetSite: site cleared
+2026-05-22 16:37:14  Leaf SetSite: site set
+2026-05-22 16:37:14  Leaf Invoke: entry kind=open-pixlwiz
+2026-05-22 16:37:14  paths_from_items: count=1
+2026-05-22 16:37:14  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:37:14  Leaf Invoke: paths count=1
+2026-05-22 16:37:14  invoke_kind_with_paths: kind=open-pixlwiz exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-22 16:37:14  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\tests" --ui-preset=main --src "C:\Users\cgofl\Desktop\tests"
+2026-05-22 16:37:14  CreateProcessW: ok
+2026-05-22 16:37:14  Leaf SetSite: site cleared
+2026-05-22 16:37:19  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:37:20  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:37:20  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:37:20  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:37:20  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:37:20  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:37:20  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:37:20  SetSite: site set
+2026-05-22 16:37:20  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:37:20  paths_from_items: count=1
+2026-05-22 16:37:20  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:37:20  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:37:20  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:37:20  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:37:20  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:37:20  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:37:20  GetState: root ready commands=2
+2026-05-22 16:37:20  GetTitle: root
+2026-05-22 16:37:20  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:37:20  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:20  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:37:20  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:20  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:37:20  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:37:20  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:37:20  PrepareExplorerCommands: root prepared commands=2
+2026-05-22 16:37:20  IContextMenu::QueryContextMenu: null hmenu prepared commands=2 hr=0x00000000
+2026-05-22 16:37:20  EnumSubCommands: root returning commands=2
+2026-05-22 16:37:20  Leaf GetState: open-pixlwiz enabled
+2026-05-22 16:37:20  Leaf GetTitle: open-pixlwiz
+2026-05-22 16:37:20  Leaf GetIcon: kind=open-pixlwiz iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:20  Leaf GetIcon: kind=open-pixlwiz iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:20  Leaf GetFlags: open-pixlwiz ECF_DEFAULT
+2026-05-22 16:37:20  Leaf GetState: viewer enabled
+2026-05-22 16:37:20  Leaf GetTitle: viewer
+2026-05-22 16:37:20  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:20  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:37:20  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:37:20  SetSite: site cleared
+2026-05-22 16:40:48  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:40:48  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:40:48  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:40:48  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:40:48  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:40:48  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:40:48  SetSite: site set
+2026-05-22 16:40:48  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:40:48  paths_from_items: count=1
+2026-05-22 16:40:48  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:40:48  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:40:48  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:40:48  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:40:48  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:40:48  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:40:48  GetState: root ready commands=3
+2026-05-22 16:40:48  GetTitle: root
+2026-05-22 16:40:48  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:40:48  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:40:48  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:40:48  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:40:48  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:40:48  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:40:48  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:40:48  EnumSubCommands: root returning commands=3
+2026-05-22 16:40:48  Leaf GetState: chat enabled
+2026-05-22 16:40:48  Leaf GetTitle: chat
+2026-05-22 16:40:48  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 16:40:48  Leaf GetState: viewer enabled
+2026-05-22 16:40:48  Leaf GetTitle: viewer
+2026-05-22 16:40:48  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:40:48  Leaf GetState: workbench enabled
+2026-05-22 16:40:48  Leaf GetTitle: workbench
+2026-05-22 16:40:48  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:40:48  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 16:40:48  SetSite: site cleared
+2026-05-22 16:40:54  Leaf SetSite: site set
+2026-05-22 16:40:54  Leaf Invoke: entry kind=workbench
+2026-05-22 16:40:54  paths_from_items: count=1
+2026-05-22 16:40:54  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:40:54  Leaf Invoke: paths count=1
+2026-05-22 16:40:54  invoke_kind_with_paths: kind=workbench exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-22 16:40:54  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\tests" --ui-preset=main --src "C:\Users\cgofl\Desktop\tests"
+2026-05-22 16:40:54  CreateProcessW: ok
+2026-05-22 16:40:54  Leaf SetSite: site cleared
+2026-05-22 16:40:59  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:52:25  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:52:25  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:52:25  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:52:25  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:52:25  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:52:25  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:52:25  SetSite: site set
+2026-05-22 16:52:25  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:52:25  paths_from_items: count=1
+2026-05-22 16:52:25  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:52:25  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:52:25  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:52:25  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:52:25  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:52:25  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:52:25  GetState: root ready commands=3
+2026-05-22 16:52:25  GetTitle: root
+2026-05-22 16:52:25  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:52:25  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:52:25  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:52:25  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:52:25  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:52:25  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:52:25  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:52:25  EnumSubCommands: root returning commands=3
+2026-05-22 16:52:25  Leaf GetState: chat enabled
+2026-05-22 16:52:25  Leaf GetTitle: chat
+2026-05-22 16:52:25  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 16:52:25  Leaf GetState: viewer enabled
+2026-05-22 16:52:25  Leaf GetTitle: viewer
+2026-05-22 16:52:25  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:52:25  Leaf GetState: workbench enabled
+2026-05-22 16:52:25  Leaf GetTitle: workbench
+2026-05-22 16:52:25  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:52:25  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 16:52:25  SetSite: site cleared
+2026-05-22 16:53:30  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:53:30  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:53:30  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:53:30  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:53:30  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:53:30  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:53:30  SetSite: site set
+2026-05-22 16:53:30  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:53:30  paths_from_items: count=1
+2026-05-22 16:53:30  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:53:30  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:53:30  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:53:30  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:53:30  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:53:30  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:53:30  GetState: root ready commands=3
+2026-05-22 16:53:30  GetTitle: root
+2026-05-22 16:53:30  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:53:30  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:53:30  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:53:30  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:53:30  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:53:30  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:53:30  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:53:30  EnumSubCommands: root returning commands=3
+2026-05-22 16:53:30  Leaf GetState: chat enabled
+2026-05-22 16:53:30  Leaf GetTitle: chat
+2026-05-22 16:53:30  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 16:53:30  Leaf GetState: viewer enabled
+2026-05-22 16:53:30  Leaf GetTitle: viewer
+2026-05-22 16:53:30  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:53:30  Leaf GetState: workbench enabled
+2026-05-22 16:53:30  Leaf GetTitle: workbench
+2026-05-22 16:53:30  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:53:30  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 16:53:30  SetSite: site cleared
+2026-05-22 16:53:40  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:54:06  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:54:06  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:54:06  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:54:06  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:54:06  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:54:06  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:54:06  SetSite: site set
+2026-05-22 16:54:06  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:54:06  paths_from_items: count=1
+2026-05-22 16:54:06  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 16:54:06  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:54:06  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:54:06  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:54:06  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:54:06  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:54:06  GetState: root ready commands=3
+2026-05-22 16:54:06  GetTitle: root
+2026-05-22 16:54:06  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:54:06  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:54:06  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:54:06  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:54:06  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:54:06  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:54:06  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:54:06  EnumSubCommands: root returning commands=3
+2026-05-22 16:54:06  Leaf GetState: chat enabled
+2026-05-22 16:54:06  Leaf GetTitle: chat
+2026-05-22 16:54:06  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 16:54:06  Leaf GetState: viewer enabled
+2026-05-22 16:54:06  Leaf GetTitle: viewer
+2026-05-22 16:54:06  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:54:06  Leaf GetState: workbench enabled
+2026-05-22 16:54:06  Leaf GetTitle: workbench
+2026-05-22 16:54:06  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:54:06  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 16:54:06  SetSite: site cleared
+2026-05-22 16:54:19  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 16:57:21  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 16:57:21  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 16:57:21  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:57:21  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 16:57:21  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 16:57:21  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 16:57:21  SetSite: site set
+2026-05-22 16:57:21  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 16:57:21  paths_from_items: count=1
+2026-05-22 16:57:21  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 16:57:21  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 16:57:21  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:57:21  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:57:21  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:57:21  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:57:21  GetState: root ready commands=3
+2026-05-22 16:57:21  GetTitle: root
+2026-05-22 16:57:21  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:57:21  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:57:21  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 16:57:21  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 16:57:21  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 16:57:21  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 16:57:21  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 16:57:21  EnumSubCommands: root returning commands=3
+2026-05-22 16:57:21  Leaf GetState: chat enabled
+2026-05-22 16:57:21  Leaf GetTitle: chat
+2026-05-22 16:57:21  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 16:57:21  Leaf GetState: viewer enabled
+2026-05-22 16:57:21  Leaf GetTitle: viewer
+2026-05-22 16:57:21  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 16:57:21  Leaf GetState: workbench enabled
+2026-05-22 16:57:21  Leaf GetTitle: workbench
+2026-05-22 16:57:21  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 16:57:21  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 16:57:21  SetSite: site cleared
+2026-05-22 16:57:31  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:09:52  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 17:09:52  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 17:09:52  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:09:52  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:09:52  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 17:09:52  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 17:09:52  SetSite: site set
+2026-05-22 17:09:52  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 17:09:52  paths_from_items: count=1
+2026-05-22 17:09:52  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 17:09:52  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 17:09:52  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:09:52  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:09:52  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 17:09:52  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 17:09:52  GetState: root ready commands=3
+2026-05-22 17:09:52  GetTitle: root
+2026-05-22 17:09:52  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:09:52  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:09:52  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 17:09:52  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:09:52  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:09:52  PrepareExplorerCommands: root prepared commands=3
+2026-05-22 17:09:52  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-22 17:09:52  EnumSubCommands: root returning commands=3
+2026-05-22 17:09:52  Leaf GetState: chat enabled
+2026-05-22 17:09:52  Leaf GetTitle: chat
+2026-05-22 17:09:52  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 17:09:52  Leaf GetState: viewer enabled
+2026-05-22 17:09:52  Leaf GetTitle: viewer
+2026-05-22 17:09:52  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 17:09:52  Leaf GetState: workbench enabled
+2026-05-22 17:09:52  Leaf GetTitle: workbench
+2026-05-22 17:09:52  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:09:52  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 17:09:52  SetSite: site cleared
+2026-05-22 17:10:44  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 17:10:44  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 17:10:44  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:10:44  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:10:44  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 17:10:44  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 17:10:44  SetSite: site set
+2026-05-22 17:10:44  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 17:10:44  paths_from_items: null shell item array or out
+2026-05-22 17:10:44  explorer_view_path: SHGetPathFromIDListW ok pathU8=C:\Users\cgofl\Desktop
+2026-05-22 17:10:44  GetState: no selection/count failed hr=0x80004003 count=0 fallbackPaths=1 state=enabled
+2026-05-22 17:10:44  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:10:44  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:10:44  Win11 classic mirror: reading HKCU\Software\Classes\Directory\shell\PM Media\shell
+2026-05-22 17:10:44  Win11 classic mirror: groups=2 payloads=5
+2026-05-22 17:10:44  PrepareExplorerCommands: root prepared commands=5
+2026-05-22 17:10:44  IContextMenu::QueryContextMenu: null hmenu prepared commands=5 hr=0x00000000
+2026-05-22 17:10:44  GetState: root ready commands=5
+2026-05-22 17:10:44  GetTitle: root
+2026-05-22 17:10:44  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:10:44  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:10:44  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 17:10:44  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:10:44  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:10:44  Win11 classic mirror: reading HKCU\Software\Classes\Directory\shell\PM Media\shell
+2026-05-22 17:10:44  Win11 classic mirror: groups=2 payloads=5
+2026-05-22 17:10:44  PrepareExplorerCommands: root prepared commands=5
+2026-05-22 17:10:44  IContextMenu::QueryContextMenu: null hmenu prepared commands=5 hr=0x00000000
+2026-05-22 17:10:44  EnumSubCommands: root returning commands=5
+2026-05-22 17:10:44  Leaf GetState: chat enabled
+2026-05-22 17:10:44  Leaf GetTitle: chat
+2026-05-22 17:10:44  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 17:10:44  Leaf GetState: viewer enabled
+2026-05-22 17:10:44  Leaf GetTitle: viewer
+2026-05-22 17:10:44  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 17:10:44  Leaf GetState: workbench enabled
+2026-05-22 17:10:44  Leaf GetTitle: workbench
+2026-05-22 17:10:44  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 17:10:44  Menu GetTitle: Files 
+2026-05-22 17:10:44  Leaf GetState: custom enabled
+2026-05-22 17:10:44  Leaf GetTitle: custom
+2026-05-22 17:10:44  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: custom ECF_DEFAULT
+2026-05-22 17:10:44  Leaf GetState: custom enabled
+2026-05-22 17:10:44  Leaf GetTitle: custom
+2026-05-22 17:10:44  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: custom ECF_DEFAULT
+2026-05-22 17:10:44  Menu GetTitle: Presets 
+2026-05-22 17:10:44  Leaf GetState: transform-preset enabled
+2026-05-22 17:10:44  Leaf GetTitle: transform-preset
+2026-05-22 17:10:44  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:10:44  Leaf GetState: transform-preset enabled
+2026-05-22 17:10:44  Leaf GetTitle: transform-preset
+2026-05-22 17:10:44  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:10:44  Leaf GetState: transform-preset enabled
+2026-05-22 17:10:44  Leaf GetTitle: transform-preset
+2026-05-22 17:10:44  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:10:44  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:10:44  SetSite: site cleared
+2026-05-22 17:10:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:14:03  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 17:14:03  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 17:14:03  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:14:03  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:14:03  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 17:14:03  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 17:14:03  SetSite: site set
+2026-05-22 17:14:03  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 17:14:03  paths_from_items: count=1
+2026-05-22 17:14:03  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 17:14:03  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 17:14:03  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:14:03  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:14:03  Win11 classic mirror: reading HKCU\Software\Classes\Directory\shell\PM Media\shell
+2026-05-22 17:14:03  Win11 classic mirror: entries=5 payloads=5
+2026-05-22 17:14:03  PrepareExplorerCommands: root prepared commands=8
+2026-05-22 17:14:03  IContextMenu::QueryContextMenu: null hmenu prepared commands=8 hr=0x00000000
+2026-05-22 17:14:03  GetState: root ready commands=8
+2026-05-22 17:14:03  GetTitle: root
+2026-05-22 17:14:03  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:14:03  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:03  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:14:03  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:03  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 17:14:03  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:14:03  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:14:03  Win11 classic mirror: reading HKCU\Software\Classes\Directory\shell\PM Media\shell
+2026-05-22 17:14:04  Win11 classic mirror: entries=5 payloads=5
+2026-05-22 17:14:04  PrepareExplorerCommands: root prepared commands=8
+2026-05-22 17:14:04  IContextMenu::QueryContextMenu: null hmenu prepared commands=8 hr=0x00000000
+2026-05-22 17:14:04  EnumSubCommands: root returning commands=8
+2026-05-22 17:14:04  Leaf GetState: chat enabled
+2026-05-22 17:14:04  Leaf GetTitle: chat
+2026-05-22 17:14:04  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: viewer enabled
+2026-05-22 17:14:04  Leaf GetTitle: viewer
+2026-05-22 17:14:04  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: workbench enabled
+2026-05-22 17:14:04  Leaf GetTitle: workbench
+2026-05-22 17:14:04  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: custom enabled
+2026-05-22 17:14:04  Leaf GetTitle: custom
+2026-05-22 17:14:04  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: custom ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: custom enabled
+2026-05-22 17:14:04  Leaf GetTitle: custom
+2026-05-22 17:14:04  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: custom ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: transform-preset enabled
+2026-05-22 17:14:04  Leaf GetTitle: transform-preset
+2026-05-22 17:14:04  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: transform-preset enabled
+2026-05-22 17:14:04  Leaf GetTitle: transform-preset
+2026-05-22 17:14:04  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:14:04  Leaf GetState: transform-preset enabled
+2026-05-22 17:14:04  Leaf GetTitle: transform-preset
+2026-05-22 17:14:04  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:14:04  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:14:04  SetSite: site cleared
+2026-05-22 17:14:49  Leaf SetSite: site set
+2026-05-22 17:14:49  Leaf Invoke: entry kind=workbench
+2026-05-22 17:14:49  paths_from_items: count=1
+2026-05-22 17:14:49  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 17:14:49  Leaf Invoke: paths count=1
+2026-05-22 17:14:49  invoke_kind_with_paths: kind=workbench exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-22 17:14:49  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\dist" --ui-preset=main --src "C:\Users\cgofl\Desktop\dist"
+2026-05-22 17:14:49  CreateProcessW: ok
+2026-05-22 17:14:49  Leaf SetSite: site cleared
+2026-05-22 17:14:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:17:15  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-22 17:17:15  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 17:17:15  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:17:15  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:17:15  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-22 17:17:15  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-22 17:17:15  SetSite: site set
+2026-05-22 17:17:15  GetState: entry kind=root fOkToBeSlow=true
+2026-05-22 17:17:15  paths_from_items: count=1
+2026-05-22 17:17:15  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-22 17:17:15  GetState: selection count=1 paths=1 state=enabled
+2026-05-22 17:17:15  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:17:15  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:17:15  Win11 classic mirror: reading HKCU\Software\Classes\Directory\shell\PM Media\shell
+2026-05-22 17:17:15  Win11 classic mirror: + submenu title=Files  items=2 submenus=0
+2026-05-22 17:17:15  Win11 classic mirror: + submenu title=Presets  items=3 submenus=0
+2026-05-22 17:17:15  Win11 classic mirror: groups=2 payloads=5
+2026-05-22 17:17:15  PrepareExplorerCommands: + classic submenu title=Files  items=2 submenus=0
+2026-05-22 17:17:15  PrepareExplorerCommands: + classic submenu title=Presets  items=3 submenus=0
+2026-05-22 17:17:15  PrepareExplorerCommands: root prepared commands=5
+2026-05-22 17:17:15  IContextMenu::QueryContextMenu: null hmenu prepared commands=5 hr=0x00000000
+2026-05-22 17:17:15  GetState: root ready commands=5
+2026-05-22 17:17:15  GetTitle: root
+2026-05-22 17:17:15  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:17:15  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 17:17:15  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-22 17:17:15  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-22 17:17:15  PrepareExplorerCommands: kind=root paths=0
+2026-05-22 17:17:15  Win11 classic mirror: reading HKCU\Software\Classes\Directory\shell\PM Media\shell
+2026-05-22 17:17:15  Win11 classic mirror: + submenu title=Files  items=2 submenus=0
+2026-05-22 17:17:15  Win11 classic mirror: + submenu title=Presets  items=3 submenus=0
+2026-05-22 17:17:15  Win11 classic mirror: groups=2 payloads=5
+2026-05-22 17:17:15  PrepareExplorerCommands: + classic submenu title=Files  items=2 submenus=0
+2026-05-22 17:17:15  PrepareExplorerCommands: + classic submenu title=Presets  items=3 submenus=0
+2026-05-22 17:17:15  PrepareExplorerCommands: root prepared commands=5
+2026-05-22 17:17:15  IContextMenu::QueryContextMenu: null hmenu prepared commands=5 hr=0x00000000
+2026-05-22 17:17:15  EnumSubCommands: root returning commands=5
+2026-05-22 17:17:15  Leaf GetState: chat enabled
+2026-05-22 17:17:15  Leaf GetTitle: chat
+2026-05-22 17:17:15  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-22 17:17:15  Leaf GetState: viewer enabled
+2026-05-22 17:17:15  Leaf GetTitle: viewer
+2026-05-22 17:17:15  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-22 17:17:15  Leaf GetState: workbench enabled
+2026-05-22 17:17:15  Leaf GetTitle: workbench
+2026-05-22 17:17:15  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-22 17:17:15  Menu GetState: title=Files  items=2 submenus=0 state=enabled
+2026-05-22 17:17:15  Menu GetTitle: Files 
+2026-05-22 17:17:15  Menu GetFlags: title=Files  ECF_HASSUBCOMMANDS
+2026-05-22 17:17:15  Menu EnumSubCommands: title=Files  items=2 submenus=0
+2026-05-22 17:17:15  Menu EnumSubCommands: + leaf title=AI:Illustration  kind=custom payload=custom.command-mpch9gdx-44982 
+2026-05-22 17:17:15  Menu EnumSubCommands: + leaf title=AI:Images List  kind=custom payload=custom.command-mpcmqepq-ee6f3 
+2026-05-22 17:17:15  Leaf GetState: custom enabled
+2026-05-22 17:17:15  Leaf GetTitle: custom
+2026-05-22 17:17:15  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: custom ECF_DEFAULT
+2026-05-22 17:17:15  Leaf GetState: custom enabled
+2026-05-22 17:17:15  Leaf GetTitle: custom
+2026-05-22 17:17:15  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=custom iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: custom ECF_DEFAULT
+2026-05-22 17:17:15  Menu GetState: title=Presets  items=3 submenus=0 state=enabled
+2026-05-22 17:17:15  Menu GetTitle: Presets 
+2026-05-22 17:17:15  Menu GetFlags: title=Presets  ECF_HASSUBCOMMANDS
+2026-05-22 17:17:15  Menu EnumSubCommands: title=Presets  items=3 submenus=0
+2026-05-22 17:17:15  Menu EnumSubCommands: + leaf title=Transform: Enhance  kind=transform-preset payload=chat-1 
+2026-05-22 17:17:15  Menu EnumSubCommands: + leaf title=Transform: Illustration  kind=transform-preset payload=chat-qa-1776945868277-lczvdrf 
+2026-05-22 17:17:15  Menu EnumSubCommands: + leaf title=Transform: Technical Illustration  kind=transform-preset payload=chat-qa-1776952741939-tqv0reb 
+2026-05-22 17:17:15  Leaf GetState: transform-preset enabled
+2026-05-22 17:17:15  Leaf GetTitle: transform-preset
+2026-05-22 17:17:15  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:17:15  Leaf GetState: transform-preset enabled
+2026-05-22 17:17:15  Leaf GetTitle: transform-preset
+2026-05-22 17:17:15  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:17:15  Leaf GetState: transform-preset enabled
+2026-05-22 17:17:15  Leaf GetTitle: transform-preset
+2026-05-22 17:17:15  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetIcon: kind=transform-preset iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-22 17:17:15  Leaf GetFlags: transform-preset ECF_DEFAULT
+2026-05-22 17:17:15  SetSite: site cleared
+2026-05-22 17:17:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:21:26  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\Explorer.EXE
+2026-05-22 17:21:26  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-22 17:21:26  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:21:26  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:21:26  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-22 17:21:26  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-22 17:21:26  IShellExtInit::Initialize: dataObject=yes
+2026-05-22 17:21:26  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-22 17:21:26  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-22 17:21:26  SetSite: site set
+2026-05-22 17:21:26  IContextMenu::QueryContextMenu: hmenu=yes idFirst=31105 idLast=31482 flags=132240 legacyPaths=1
+2026-05-22 17:21:26  IContextMenu::QueryContextMenu: visible classic menu disabled for packaged command
+2026-05-22 17:21:26  SetSite: site cleared
+2026-05-22 17:21:33  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:21:35  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:22:29  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:22:29  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:23:01  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:23:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:23:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:24:30  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:25:27  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:25:27  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:25:59  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:26:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:26:56  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:26:56  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:27:28  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:28:25  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:28:25  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:28:57  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:29:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:29:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:30:26  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:31:23  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:31:23  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:31:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:31:55  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:32:52  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:32:52  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:33:24  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:34:21  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:34:21  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:34:53  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:35:50  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:35:50  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:36:22  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:36:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:41:44  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:42:07  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:42:08  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:42:39  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:43:08  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:43:36  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:43:37  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:44:08  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:45:05  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:45:06  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:45:37  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:46:24  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:46:35  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:46:35  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:46:52  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:47:06  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:48:04  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:48:04  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:48:35  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:49:33  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:49:33  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:50:04  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:51:02  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:51:02  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:51:24  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:51:33  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:52:31  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:52:31  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:53:02  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:54:00  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:54:00  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:54:32  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:55:29  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:55:29  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:56:01  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:56:24  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:56:31  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:56:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:56:58  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:57:30  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:58:27  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:58:27  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:58:59  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:59:56  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 17:59:56  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:00:28  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:01:24  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:01:25  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:01:25  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:01:57  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:02:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:02:54  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:03:26  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:26:41  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:26:57  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-22 18:26:57  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-23 08:59:06  DllMain: pm-image-explorer11 loaded hostU8=C:\Program Files\Altap Salamander\salamand.exe
+2026-05-23 08:59:06  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 08:59:06  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:06  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:06  ClassFactory::CreateInstance: kind=root riid={000214E4-0000-0000-C000-000000000046}
+2026-05-23 08:59:06  ClassFactory::CreateInstance: QI riid={000214E4-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:06  IShellExtInit::Initialize: dataObject=yes
+2026-05-23 08:59:06  IShellExtInit::Initialize: CF_HDROP count=1
+2026-05-23 08:59:06  IShellExtInit::Initialize: item[0] pathU8=C:\Users\cgofl\Desktop\dist\openssh-server
+2026-05-23 08:59:06  SetSite: site set
+2026-05-23 08:59:06  IContextMenu::QueryContextMenu: hmenu=yes idFirst=128 idLast=4994 flags=20 legacyPaths=1
+2026-05-23 08:59:06  IContextMenu::QueryContextMenu: visible classic menu disabled for packaged command
+2026-05-23 08:59:06  SetSite: site cleared
+2026-05-23 08:59:09  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-23 08:59:09  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 08:59:09  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:09  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:09  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 08:59:09  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 08:59:09  SetSite: site set
+2026-05-23 08:59:09  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 08:59:09  paths_from_items: null shell item array or out
+2026-05-23 08:59:09  explorer_view_path: SHGetPathFromIDListW ok pathU8=C:\Users\cgofl\Desktop
+2026-05-23 08:59:09  GetState: no selection/count failed hr=0x80004003 count=0 fallbackPaths=1 state=enabled
+2026-05-23 08:59:09  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 08:59:09  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 08:59:09  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 08:59:09  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 08:59:09  GetState: root ready commands=3
+2026-05-23 08:59:09  GetTitle: root
+2026-05-23 08:59:09  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 08:59:09  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 08:59:09  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 08:59:09  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 08:59:09  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 08:59:09  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 08:59:09  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 08:59:09  EnumSubCommands: root returning commands=3
+2026-05-23 08:59:09  Leaf GetState: chat enabled
+2026-05-23 08:59:09  Leaf GetTitle: chat
+2026-05-23 08:59:09  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 08:59:09  Leaf GetState: viewer enabled
+2026-05-23 08:59:09  Leaf GetTitle: viewer
+2026-05-23 08:59:09  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 08:59:09  Leaf GetState: workbench enabled
+2026-05-23 08:59:09  Leaf GetTitle: workbench
+2026-05-23 08:59:09  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:09  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 08:59:09  SetSite: site cleared
+2026-05-23 08:59:09  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 08:59:09  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:09  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 08:59:09  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 08:59:09  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 08:59:09  SetSite: site set
+2026-05-23 08:59:09  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 08:59:09  paths_from_items: count=1
+2026-05-23 08:59:09  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-23 08:59:09  GetState: selection count=1 paths=1 state=enabled
+2026-05-23 08:59:09  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 08:59:09  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 08:59:10  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 08:59:10  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 08:59:10  GetState: root ready commands=3
+2026-05-23 08:59:10  GetTitle: root
+2026-05-23 08:59:10  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 08:59:10  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 08:59:10  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 08:59:10  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 08:59:10  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 08:59:10  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 08:59:10  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 08:59:10  EnumSubCommands: root returning commands=3
+2026-05-23 08:59:10  Leaf GetState: chat enabled
+2026-05-23 08:59:10  Leaf GetTitle: chat
+2026-05-23 08:59:10  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 08:59:10  Leaf GetState: viewer enabled
+2026-05-23 08:59:10  Leaf GetTitle: viewer
+2026-05-23 08:59:10  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 08:59:10  Leaf GetState: workbench enabled
+2026-05-23 08:59:10  Leaf GetTitle: workbench
+2026-05-23 08:59:10  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 08:59:10  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 08:59:10  SetSite: site cleared
+2026-05-23 08:59:18  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-23 09:03:51  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-23 09:03:51  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 09:03:51  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:03:51  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:03:51  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 09:03:51  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 09:03:51  SetSite: site set
+2026-05-23 09:03:51  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 09:03:51  paths_from_items: count=1
+2026-05-23 09:03:51  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-23 09:03:51  GetState: selection count=1 paths=1 state=enabled
+2026-05-23 09:03:51  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:03:51  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:03:51  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:03:51  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:03:51  GetState: root ready commands=3
+2026-05-23 09:03:51  GetTitle: root
+2026-05-23 09:03:51  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:03:51  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:03:51  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 09:03:51  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:03:51  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:03:51  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:03:51  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:03:51  EnumSubCommands: root returning commands=3
+2026-05-23 09:03:51  Leaf GetState: chat enabled
+2026-05-23 09:03:51  Leaf GetTitle: chat
+2026-05-23 09:03:51  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 09:03:51  Leaf GetState: viewer enabled
+2026-05-23 09:03:51  Leaf GetTitle: viewer
+2026-05-23 09:03:51  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 09:03:51  Leaf GetState: workbench enabled
+2026-05-23 09:03:51  Leaf GetTitle: workbench
+2026-05-23 09:03:51  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:03:51  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 09:03:51  SetSite: site cleared
+2026-05-23 09:03:56  Leaf SetSite: site set
+2026-05-23 09:03:56  Leaf Invoke: entry kind=viewer
+2026-05-23 09:03:56  paths_from_items: count=1
+2026-05-23 09:03:56  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\dist
+2026-05-23 09:03:56  Leaf Invoke: paths count=1
+2026-05-23 09:03:56  invoke_kind_with_paths: kind=viewer exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-23 09:03:56  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\dist" --ui-preset=viewer --src "C:\Users\cgofl\Desktop\dist"
+2026-05-23 09:03:56  CreateProcessW: ok
+2026-05-23 09:03:56  Leaf SetSite: site cleared
+2026-05-23 09:04:01  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-23 09:04:08  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-23 09:04:08  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 09:04:08  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:04:08  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:04:08  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 09:04:08  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 09:04:08  SetSite: site set
+2026-05-23 09:04:08  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 09:04:08  paths_from_items: count=1
+2026-05-23 09:04:08  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-23 09:04:08  GetState: selection count=1 paths=1 state=enabled
+2026-05-23 09:04:08  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:04:08  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:04:08  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:04:08  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:04:08  GetState: root ready commands=3
+2026-05-23 09:04:08  GetTitle: root
+2026-05-23 09:04:08  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:04:08  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:04:08  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 09:04:08  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:04:08  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:04:08  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:04:08  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:04:08  EnumSubCommands: root returning commands=3
+2026-05-23 09:04:08  Leaf GetState: chat enabled
+2026-05-23 09:04:08  Leaf GetTitle: chat
+2026-05-23 09:04:08  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 09:04:08  Leaf GetState: viewer enabled
+2026-05-23 09:04:08  Leaf GetTitle: viewer
+2026-05-23 09:04:08  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 09:04:08  Leaf GetState: workbench enabled
+2026-05-23 09:04:08  Leaf GetTitle: workbench
+2026-05-23 09:04:08  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:04:08  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 09:04:08  SetSite: site cleared
+2026-05-23 09:04:11  Leaf SetSite: site set
+2026-05-23 09:04:11  Leaf Invoke: entry kind=workbench
+2026-05-23 09:04:11  paths_from_items: count=1
+2026-05-23 09:04:11  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-23 09:04:11  Leaf Invoke: paths count=1
+2026-05-23 09:04:11  invoke_kind_with_paths: kind=workbench exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-23 09:04:11  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\tests" --ui-preset=main --src "C:\Users\cgofl\Desktop\tests"
+2026-05-23 09:04:11  CreateProcessW: ok
+2026-05-23 09:04:11  Leaf SetSite: site cleared
+2026-05-23 09:04:16  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-23 09:05:06  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-23 09:05:06  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 09:05:06  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:05:06  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:05:06  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 09:05:06  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 09:05:06  SetSite: site set
+2026-05-23 09:05:06  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 09:05:06  paths_from_items: null shell item array or out
+2026-05-23 09:05:06  explorer_view_path: SHGetPathFromIDListW ok pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-23 09:05:06  GetState: no selection/count failed hr=0x80004003 count=0 fallbackPaths=1 state=enabled
+2026-05-23 09:05:06  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:05:06  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:05:06  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:05:06  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:05:06  GetState: root ready commands=3
+2026-05-23 09:05:06  GetTitle: root
+2026-05-23 09:05:06  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:05:06  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:05:06  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 09:05:06  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:05:06  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:05:06  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:05:06  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:05:06  EnumSubCommands: root returning commands=3
+2026-05-23 09:05:06  Leaf GetState: chat enabled
+2026-05-23 09:05:06  Leaf GetTitle: chat
+2026-05-23 09:05:06  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 09:05:06  Leaf GetState: viewer enabled
+2026-05-23 09:05:06  Leaf GetTitle: viewer
+2026-05-23 09:05:06  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 09:05:06  Leaf GetState: workbench enabled
+2026-05-23 09:05:06  Leaf GetTitle: workbench
+2026-05-23 09:05:06  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:05:06  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 09:05:06  SetSite: site cleared
+2026-05-23 09:05:08  Leaf SetSite: site set
+2026-05-23 09:05:08  Leaf Invoke: entry kind=viewer
+2026-05-23 09:05:08  paths_from_items: count=1
+2026-05-23 09:05:08  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests
+2026-05-23 09:05:08  Leaf Invoke: paths count=1
+2026-05-23 09:05:08  invoke_kind_with_paths: kind=viewer exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-23 09:05:08  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\tests" --ui-preset=viewer --src "C:\Users\cgofl\Desktop\tests"
+2026-05-23 09:05:08  CreateProcessW: ok
+2026-05-23 09:05:08  Leaf SetSite: site cleared
+2026-05-23 09:05:13  DllCanUnloadNow: locks=0 hr=0x00000000
+2026-05-23 09:06:31  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-23 09:06:31  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 09:06:31  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:06:31  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 09:06:31  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 09:06:31  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 09:06:31  SetSite: site set
+2026-05-23 09:06:31  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 09:06:31  paths_from_items: count=1
+2026-05-23 09:06:31  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\cs-2\60mm
+2026-05-23 09:06:31  GetState: selection count=1 paths=1 state=enabled
+2026-05-23 09:06:31  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:06:31  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:06:31  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:06:31  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:06:31  GetState: root ready commands=3
+2026-05-23 09:06:31  GetTitle: root
+2026-05-23 09:06:31  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:06:31  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 09:06:31  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 09:06:31  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 09:06:31  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 09:06:31  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 09:06:31  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 09:06:31  EnumSubCommands: root returning commands=3
+2026-05-23 09:06:31  Leaf GetState: chat enabled
+2026-05-23 09:06:31  Leaf GetTitle: chat
+2026-05-23 09:06:31  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 09:06:31  Leaf GetState: viewer enabled
+2026-05-23 09:06:31  Leaf GetTitle: viewer
+2026-05-23 09:06:31  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 09:06:31  Leaf GetState: workbench enabled
+2026-05-23 09:06:31  Leaf GetTitle: workbench
+2026-05-23 09:06:31  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 09:06:31  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 09:06:31  SetSite: site cleared
+2026-05-23 09:06:34  Leaf SetSite: site set
+2026-05-23 09:06:34  Leaf Invoke: entry kind=workbench
+2026-05-23 09:06:34  paths_from_items: count=1
+2026-05-23 09:06:34  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\cs-2\60mm
+2026-05-23 09:06:34  Leaf Invoke: paths count=1
+2026-05-23 09:06:34  invoke_kind_with_paths: kind=workbench exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-23 09:06:34  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\cs-2\60mm" --ui-preset=main --src "C:\Users\cgofl\Desktop\cs-2\60mm"
+2026-05-23 09:06:34  CreateProcessW: ok
+2026-05-23 09:06:34  Leaf SetSite: site cleared
+2026-05-23 13:50:55  DllMain: pm-image-explorer11 loaded hostU8=C:\WINDOWS\system32\DllHost.exe
+2026-05-23 13:50:55  DllGetClassObject: rclsid={A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D} kind=root riid={00000001-0000-0000-C000-000000000046}
+2026-05-23 13:50:55  ClassFactory::QueryInterface: riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 13:50:55  DllGetClassObject: factory QI riid={00000001-0000-0000-C000-000000000046} hr=0x00000000
+2026-05-23 13:50:55  ClassFactory::CreateInstance: kind=root riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9}
+2026-05-23 13:50:55  ClassFactory::CreateInstance: QI riid={A08CE4D0-FA25-44AB-B57C-C7B1C323E0B9} hr=0x00000000
+2026-05-23 13:50:56  SetSite: site set
+2026-05-23 13:50:56  GetState: entry kind=root fOkToBeSlow=true
+2026-05-23 13:50:56  paths_from_items: count=1
+2026-05-23 13:50:56  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests\3d
+2026-05-23 13:50:56  GetState: selection count=1 paths=1 state=enabled
+2026-05-23 13:50:56  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 13:50:56  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 13:50:56  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 13:50:56  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 13:50:56  GetState: root ready commands=3
+2026-05-23 13:50:56  GetTitle: root
+2026-05-23 13:50:56  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 13:50:56  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  GetIcon: kind=root exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-23 13:50:56  GetIcon: kind=root iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  GetFlags: kind=root ECF_HASSUBCOMMANDS
+2026-05-23 13:50:56  IContextMenu::QueryContextMenu: hmenu=no idFirst=0 idLast=0 flags=256 legacyPaths=0
+2026-05-23 13:50:56  PrepareExplorerCommands: kind=root paths=0
+2026-05-23 13:50:56  PrepareExplorerCommands: root prepared commands=3
+2026-05-23 13:50:56  IContextMenu::QueryContextMenu: null hmenu prepared commands=3 hr=0x00000000
+2026-05-23 13:50:56  EnumSubCommands: root returning commands=3
+2026-05-23 13:50:56  Leaf GetState: chat enabled
+2026-05-23 13:50:56  Leaf GetTitle: chat
+2026-05-23 13:50:56  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  Leaf GetIcon: kind=chat iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  Leaf GetFlags: chat ECF_DEFAULT
+2026-05-23 13:50:56  Leaf GetState: viewer enabled
+2026-05-23 13:50:56  Leaf GetTitle: viewer
+2026-05-23 13:50:56  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  Leaf GetIcon: kind=viewer iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  Leaf GetFlags: viewer ECF_DEFAULT
+2026-05-23 13:50:56  Leaf GetState: workbench enabled
+2026-05-23 13:50:56  Leaf GetTitle: workbench
+2026-05-23 13:50:56  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  Leaf GetIcon: kind=workbench iconU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe,0
+2026-05-23 13:50:56  Leaf GetFlags: workbench ECF_DEFAULT
+2026-05-23 13:50:56  SetSite: site cleared
+2026-05-23 13:50:58  Leaf SetSite: site set
+2026-05-23 13:50:58  Leaf Invoke: entry kind=viewer
+2026-05-23 13:50:58  paths_from_items: count=1
+2026-05-23 13:50:58  paths_from_items: item[0] pathU8=C:\Users\cgofl\Desktop\tests\3d
+2026-05-23 13:50:58  Leaf Invoke: paths count=1
+2026-05-23 13:50:58  invoke_kind_with_paths: kind=viewer exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes paths=1
+2026-05-23 13:50:58  CreateProcessW: cmdU8="C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe" --cwd "C:\Users\cgofl\Desktop\tests\3d" --ui-preset=viewer --src "C:\Users\cgofl\Desktop\tests\3d"
+2026-05-23 13:50:58  CreateProcessW: ok
+2026-05-23 13:50:58  Leaf SetSite: site cleared

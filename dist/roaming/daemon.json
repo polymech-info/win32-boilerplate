@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "enabled": true,
+  "shortcuts": [
+    {
+      "id": "open-chat",
+      "enabled": true,
+      "accelerator": "Ctrl+Alt+F8",
+      "description": "Open PM-Image in the chat workbench.",
+      "action": {
+        "type": "open-ui",
+        "preset": "chat"
+      }
+    },
+    {
+      "id": "open-chat-mic",
+      "enabled": true,
+      "accelerator": "Ctrl+Alt+F10",
+      "description": "Open PM-Image in the chat workbench and start STT.",
+      "action": {
+        "type": "open-ui",
+        "preset": "chat",
+        "args": ["--mic", "start"]
+      }
+    }
+  ]
+}

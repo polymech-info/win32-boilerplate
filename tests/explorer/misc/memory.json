@@ -1,0 +1,13 @@
+[
+  {
+    "events": [
+      {
+        "assistant": "Created `images.md` with a listing of 1 image:\n\n`C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md`",
+        "ts": "2026-05-20T11:22:23Z",
+        "user": "create directory listing, for images, in images.md"
+      }
+    ],
+    "id": "session-1",
+    "memory_state": {}
+  }
+]

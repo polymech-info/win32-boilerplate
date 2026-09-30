@@ -1,0 +1,18 @@
+[chat] Sending: router=openai model=gpt-5.5 sel=0 base_url=https://api.openai.com/v1 folder=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\memory
+[chat] Prompt: list files
+[chat] Turn started — folder=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\memory
+[chat] Tool call: file_glob args={"options":{"max_results":500,"recursive":true,"skip_dev_folders":true},"pattern":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\memory"}
+[chat] Tool result: file_glob ✓ 1/1
+[chat] Assistant text received (182 chars)
+[chat] ✦ Files in `C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\memory`:  - `inject-short.md` (6,276 by...
+[chat] LLM usage (aggregated): prompt=11020 completion=133 total=11153
+[chat] Turn done — iterations=2, final_text_chars=182
+[chat] Sending: router=openai model=gpt-5.5 sel=1 base_url=https://api.openai.com/v1 (meta)
+[chat] Prompt: list files
+[chat] Turn started — folder=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\meta
+[chat] Tool call: file_glob args={"options":{"max_results":500,"recursive":true,"skip_dev_folders":true},"pattern":"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\meta"}
+[chat] Tool result: file_glob ✓ 1/1
+[chat] Assistant text received (168 chars)
+[chat] ✦ No text-friendly files found in:  `C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\meta`  7 files...
+[chat] LLM usage (aggregated): prompt=11081 completion=114 total=11195
+[chat] Turn done — iterations=2, final_text_chars=168

@@ -1,0 +1,150 @@
+{
+  "ribbon": {
+    "groups": [
+      {
+        "items": [
+          {
+            "icon": "run",
+            "id": "custom.capture",
+            "items": [
+              {
+                "appCommand": "takescreenshot",
+                "icon": "photo",
+                "id": "custom.capture.screenshot",
+                "label": "Take screenshot",
+                "ribbonCommand": "filetree",
+                "tint": "#A855F7",
+                "userData": {
+                  "kind": "screenshot"
+                }
+              }
+            ],
+            "label": "Capture",
+            "tooltip": "Session and screenshot examples",
+            "type": "dropdown",
+            "userData": {
+              "example": "dropdown",
+              "source": "commands.js"
+            }
+          },
+          {
+            "icon": "settings",
+            "id": "custom.tools",
+            "items": [
+              {
+                "id": "custom.tools.theme",
+                "label": "Toggle theme",
+                "ribbonCommand": "theme"
+              },
+              {
+                "id": "custom.tools.resetLayout",
+                "label": "Reset layout",
+                "ribbonCommand": "resetLayout"
+              }
+            ],
+            "label": "Tools",
+            "tooltip": "Built-in ribbon command examples",
+            "type": "dropdown"
+          }
+        ],
+        "label": "Pictures"
+      },
+      {
+        "id": "group-mpcmq9ck-bdd74",
+        "items": [
+          {
+            "args": [
+              "agent",
+              "--prompt",
+              "create directory listing, for images, in images.md"
+            ],
+            "cliCommand": "llm",
+            "cwd": "${CURRENT_PATH}",
+            "enabled": true,
+            "icon": "folder",
+            "id": "custom.command-mpcmqepq-ee6f3",
+            "label": "AI:Images List",
+            "logLevel": "trace",
+            "output": {},
+            "registerInExplorer": true,
+            "runOptions": {
+              "newShellWindow": false
+            },
+            "source": {
+              "kind": "selection"
+            },
+            "type": "button",
+            "userData": {},
+            "visible": true
+          },
+          {
+            "enabled": true,
+            "externalCommand": {
+              "args": [],
+              "command": "cat",
+              "cwd": "",
+              "mode": "shell",
+              "shellLine": "cat ${CURRENT_FILE}"
+            },
+            "icon": "settings",
+            "id": "custom.command-mpduqkaw-b621b",
+            "label": "cat",
+            "output": {},
+            "source": {
+              "kind": "selection"
+            },
+            "type": "button",
+            "userData": {},
+            "visible": true
+          },
+          {
+            "args": [
+              "--prompt",
+              "as technical illustration",
+              "--src",
+              "${CURRENT_FILE}"
+            ],
+            "cliCommand": "transform",
+            "enabled": true,
+            "icon": "photo",
+            "id": "custom.command-mpch9gdx-44982",
+            "label": "AI:Illustration",
+            "output": {},
+            "registerInExplorer": true,
+            "source": {
+              "files": [
+                "tests/assets/commands/illustration.jpg"
+              ],
+              "kind": "files"
+            },
+            "tint": "#EC4899",
+            "type": "button",
+            "userData": {},
+            "visible": true
+          },
+          {
+            "enabled": true,
+            "externalCommand": {
+              "args": [],
+              "command": "dir",
+              "cwd": ""
+            },
+            "icon": "settings",
+            "id": "custom.command-mpejo01t-98bf0",
+            "label": "ls",
+            "output": {},
+            "source": {
+              "kind": "selection"
+            },
+            "tint": "#F59E0B",
+            "type": "button",
+            "userData": {},
+            "visible": true
+          }
+        ],
+        "label": "Files"
+      }
+    ]
+  },
+  "version": 1
+}

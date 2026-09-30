@@ -1,0 +1,12 @@
+#!/bin/sh
+# Bundled CLI shim for CodeEdit.app — Settings can symlink this to /usr/local/bin/codeedit.
+set -e
+SCRIPT_PATH="$0"
+case "$SCRIPT_PATH" in
+/*) ;;
+*) SCRIPT_PATH="$(pwd)/$SCRIPT_PATH" ;;
+esac
+SCRIPT_DIR="$(CDPATH= cd "$(dirname "$SCRIPT_PATH")" && pwd)"
+CONTENTS_DIR="$(CDPATH= cd "$SCRIPT_DIR/.." && pwd)"
+APP_BUNDLE="$(CDPATH= cd "$CONTENTS_DIR/.." && pwd)"
+exec open -n "$APP_BUNDLE" --args "$@"

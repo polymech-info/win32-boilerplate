@@ -1,0 +1,24 @@
+[
+  {
+    "events": [
+      {
+        "assistant": "Files in `C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\memory`:\n\n- `inject-short.md` (6,276 bytes)\n- `injectors.md` (45,727 bytes)\n- `pm-image.log` (502 bytes)",
+        "tools": [
+          "file_glob"
+        ],
+        "ts": "2026-05-14T15:05:27Z",
+        "user": "list files"
+      },
+      {
+        "assistant": "No text-friendly files found in:\n\n`C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\meta`\n\n7 files were skipped due to unsupported/binary extensions.",
+        "tools": [
+          "file_glob"
+        ],
+        "ts": "2026-05-14T15:05:52Z",
+        "user": "list files"
+      }
+    ],
+    "id": "session-1",
+    "memory_state": {}
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "composite": false,
+    "importHelpers": false,
+    "inlineSourceMap": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@pm/shared/*": ["../shared/*"],
+      "preact": ["./node_modules/preact"],
+      "preact/*": ["./node_modules/preact/*"],
+      "react": ["./node_modules/@types/react"],
+      "react/jsx-runtime": ["./node_modules/@types/react/jsx-runtime"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "../shared/**/*.ts", "../shared/**/*.tsx", "vite.config.ts", "../../dist/data/resize-templates.json", "../../dist/data/design-presets.json"],
+  "exclude": ["../shared/cac/**"]
+}

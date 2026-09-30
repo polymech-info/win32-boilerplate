@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "comment": "Non-destructive smoke: just inspects the foreground window. Safe to run anywhere.",
+  "roots": [
+    { "kind": "log", "level": "info", "message": "app-inspect-only: starting" },
+    {
+      "kind": "appInspectDump",
+      "id": "dump-fg",
+      "foreground": true,
+      "format": "md",
+      "controls": "buttons,menus,editable",
+      "textMaxChars": 80,
+      "limit": 40
+    }
+  ]
+}

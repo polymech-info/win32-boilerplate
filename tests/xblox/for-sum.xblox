@@ -1,0 +1,20 @@
+{
+  "context": {
+    "x": 0
+  },
+  "roots": [
+    {
+      "alternate": [],
+      "condition": "true",
+      "consequent": [
+        {
+          "id": "custom.tools.theme",
+          "kind": "runScript",
+          "method": "return host.runCustomCommand({\"id\":\"custom.tools.theme\",\"label\":\"Toggle theme\",\"ribbonCommand\":\"theme\"});"
+        }
+      ],
+      "kind": "if"
+    }
+  ],
+  "version": 1
+}

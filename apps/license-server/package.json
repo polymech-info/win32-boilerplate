@@ -1,0 +1,19 @@
+{
+  "name": "pm-image-license-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sample Hono server: issue Ed25519-signed license JSON for pm-image (dev only).",
+  "scripts": {
+    "start": "node -r dotenv/config src/index.js",
+    "gen-keys": "node scripts/gen-keys.cjs",
+    "issue-dev": "node -r dotenv/config scripts/issue-dev.mjs",
+    "test": "node --test test/license-dat.test.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "hono": "^4.7.0",
+    "@hono/node-server": "^1.13.0",
+    "libsodium-wrappers": "^0.7.15"
+  }
+}

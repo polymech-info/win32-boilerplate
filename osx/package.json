@@ -1,0 +1,32 @@
+{
+  "name": "pm-image-osx-remote",
+  "private": true,
+  "description": "pm-image / pm-media on macOS — npm scripts run cmake on a Mac over ssh (e.g. VMware guest + shared tree)",
+  "scripts": {
+    "install:mac": "node ./scripts/run-ssh.cjs -- bash osx/install.sh",
+    "ssh": "node ./scripts/run-ssh.cjs",
+    "configure": "node ./scripts/run-ssh.cjs -- cmake --preset release-macos -G Ninja",
+    "configure:gui": "node ./scripts/run-ssh.cjs -- cmake --preset release-macos -G Ninja -DPM_BUILD_MACOS_APP=ON",
+    "configure:pixlwiz": "node ./scripts/run-ssh.cjs -- cmake --preset release-macos -G Ninja -DPM_BUILD_CODEEDIT=ON",
+    "configure:codeedit": "npm run configure:pixlwiz",
+    "build": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos",
+    "rebuild": "node ./scripts/run-ssh.cjs \"cmake --preset release-macos -G Ninja && cmake --build --preset release-macos\"",
+    "build:lib": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos --target pm-media",
+    "build:cli": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos --target pm-image",
+    "build:gui": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos --target pm-image-gui",
+    "build:pixlwiz": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos --target pm-codeedit",
+    "build:osx": "npm run configure:pixlwiz && npm run build:cli && npm run build:pixlwiz",
+    "build:codeedit": "npm run build:pixlwiz",
+    "build:test-app": "node ./scripts/run-ssh.cjs -- bash osx/pm-image/build_test_app.sh",
+    "buildf": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos",
+    "clean:build": "node ./scripts/run-ssh.cjs -- cmake --build --preset release-macos --target clean",
+    "clean:mac": "node ./scripts/run-ssh.cjs \"rm -rf $HOME/.pm-media-build/macos-release\"",
+    "clean:fetch": "node ./scripts/run-ssh.cjs \"rm -rf $HOME/.pm-media-fetchcontent\"",
+    "clean:all": "node ./scripts/run-ssh.cjs \"rm -rf $HOME/.pm-media-build/macos-release && rm -rf $HOME/.pm-media-fetchcontent\"",
+    "test:all": "node ./scripts/run-ssh.cjs \"cd $HOME/.pm-media-build/macos-release && ctest --output-on-failure\"",
+    "test:docker-ui": "node ./scripts/run-ssh.cjs -- bash osx/pm-image/run_uitest_screenshots.sh",
+    "test:docker-ui:all": "node ./scripts/run-ssh.cjs -- bash osx/pm-image/run_uitest_screenshots.sh all",
+    "run:pm-image": "node ./scripts/run-ssh.cjs -- dist-osx/pm-image",
+    "rebuild:retail": "node ./scripts/run-ssh.cjs \"cmake --preset release-macos -G Ninja -DFEATURE_TRIAL_CHECK=ON -DFEATURE_LICENSE_FILE=ON && cmake --build --preset release-macos\""
+  }
+}

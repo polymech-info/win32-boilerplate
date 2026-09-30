@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../../AppData/Roaming/PolyMech/pm-image"
+		},
+		{
+			"path": "../../../../pm-pics/shared"
+		},
+		{
+			"path": "../../../../extern/TortoiseGit"
+		}
+	],
+	"settings": {}
+}

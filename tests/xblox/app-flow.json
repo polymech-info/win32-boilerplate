@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "comment": "Exercises runtime-inherited flags (storeAs, continueOnError, enabled) and chained context access across app blocks. log.message is a *variable name* — runtime resolves it to the bound value.",
+  "context": {},
+  "roots": [
+    { "kind": "log", "level": "info", "message": "app-flow: starting" },
+
+    {
+      "kind": "appOpen",
+      "id": "open-np",
+      "exe": "notepad.exe",
+      "waitMs": 1500,
+      "storeAs": "np"
+    },
+
+    { "kind": "log", "level": "info", "message": "np" },
+    { "kind": "log", "level": "info", "message": "np.pid" },
+    { "kind": "log", "level": "info", "message": "PREVIOUS" },
+
+    {
+      "kind": "appType",
+      "id": "type-flow",
+      "title": "Notepad",
+      "text": "stored=np, flow OK",
+      "storeAs": "lastTyped"
+    },
+
+    { "kind": "log", "level": "info", "message": "lastTyped" },
+
+    {
+      "kind": "appActivate",
+      "id": "bogus-but-continues",
+      "title": "ThisWindowDoesNotExist____ZZ",
+      "continueOnError": true
+    },
+
+    { "kind": "log", "level": "warn", "message": "app-flow: continueOnError survived" },
+
+    {
+      "kind": "appActivate",
+      "id": "disabled-step",
+      "title": "Notepad",
+      "enabled": false
+    },
+
+    {
+      "kind": "appInspectFind",
+      "id": "find-edit",
+      "title": "Notepad",
+      "name": "Text Editor",
+      "nth": 0,
+      "storeAs": "edit"
+    },
+
+    { "kind": "log", "level": "info", "message": "edit.hwnd" },
+    { "kind": "log", "level": "info", "message": "edit.rect.w" },
+
+    {
+      "kind": "appClose",
+      "id": "close-np",
+      "title": "Notepad",
+      "force": true
+    },
+
+    { "kind": "log", "level": "info", "message": "app-flow: done" }
+  ]
+}

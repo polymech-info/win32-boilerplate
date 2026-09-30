@@ -1,0 +1,88 @@
+--- Resize started ---
+1 file(s)  |  Max: 3840x2160  |  Q: 85
+[1/1] flux-5_resized.jpg
+  → C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps\flux-5_resized_resized.jpg
+Done: 1 succeeded, 0 failed
+--- Resize started ---
+1 file(s)  |  Max: 3840x2160  |  Q: 85
+[1/1] flux-5_resized_make_the_image_more_abstract_carve_out_a_fix_the_table_top_so_its_style_texture_a.jpg
+  → C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps\flux-5_resized_make_the_image_more_abstract_carve_out_a_fix_the_table_top_so_its_style_texture_a_resized.jpg
+Done: 1 succeeded, 0 failed
+[Pixlwiz] Login: same ZITADEL PKCE flow as pm-image login (hidden child). Issuer and OAuth client id default from built-in constants when .env is absent — optional. The system browser opens; [zitadel-login] lines appear in this log when the run finishes.
+[Pixlwiz login] [zitadel-login] command: login (verbose logging; stderr lines use the prefix above)
+[Pixlwiz login] [zitadel-login] interactive: GET discovery https://auth.polymech.info/.well-known/openid-configuration
+[Pixlwiz login] [zitadel-login] interactive: authorization_endpoint = https://auth.polymech.info/oauth/v2/authorize
+[Pixlwiz login] [zitadel-login] interactive: token_endpoint         = https://auth.polymech.info/oauth/v2/token
+[Pixlwiz login] [zitadel-login] interactive: PKCE code_verifier length = 64 (keep secret until exchange completes)
+[Pixlwiz login] [zitadel-login] interactive: PKCE code_challenge method = S256 (length 43)
+[Pixlwiz login] [zitadel-login] interactive: ----------------------------------------------------------------------
+[Pixlwiz login] [zitadel-login] interactive: redirect_uri used on this run (must match ZITADEL app config byte-for-byte):
+[Pixlwiz login] [zitadel-login] interactive:   http://127.0.0.1:8844/callback
+[Pixlwiz login] [zitadel-login] interactive: ZITADEL Console -> your Project -> Applications -> <this client> -> Redirect settings
+[Pixlwiz login] [zitadel-login] interactive: Add Native / User Agent redirect URI exactly as above (use 127.0.0.1, not localhost).
+[Pixlwiz login] [zitadel-login] interactive: If the authorize page shows invalid_request / redirect_uri missing, the URI above is not in that list.
+[Pixlwiz login] [zitadel-login] interactive: ----------------------------------------------------------------------
+[Pixlwiz login] [zitadel-login] listen: httplib thread starting (127.0.0.1 callback)
+[Pixlwiz login] [zitadel-login] listen: server wait_until_ready() returned (callback listener up)
+[Pixlwiz login] [zitadel-login] interactive: full authorize URL length = 320
+[Pixlwiz login] [zitadel-login] interactive: launching system browser ...
+[Pixlwiz login] [zitadel-login] interactive: waiting for browser redirect (timeout 300s) ...
+[Pixlwiz login] [zitadel-login] callback: request target = /callback?code=UOBme28edQW95fx4HAMNIJ4uF-5eydBhMerBw-nl3jpcgg&state=a41fed6f1096eb7276fad10f32276370
+[Pixlwiz login] [zitadel-login] callback: received authorization code, len=46
+[Pixlwiz login] [zitadel-login] interactive: exchanging code at token_endpoint ...
+[Pixlwiz login] [zitadel-login] interactive: token response HTTP 200, bytes=2823
+[Pixlwiz login] [zitadel-login] interactive: received access_token, len=1140
+[Pixlwiz login] [zitadel-login] interactive: received refresh_token, len=104
+[Pixlwiz login] [zitadel-login] --- JWT payload (unverified; for diagnostics only) ---
+[Pixlwiz login] [zitadel-login]   iss: https://auth.polymech.info
+[Pixlwiz login] [zitadel-login]   sub: 367439252033634305
+[Pixlwiz login] [zitadel-login]   aud (array):
+[Pixlwiz login] [zitadel-login]     - 367440527605432321
+[Pixlwiz login] [zitadel-login]     - 368160284600238081
+[Pixlwiz login] [zitadel-login]     - 368188142244593665
+[Pixlwiz login] [zitadel-login]     - 372468061954899969
+[Pixlwiz login] [zitadel-login]     - 367439956911587329
+[Pixlwiz login] [zitadel-login]   exp: 1779146335 (unix seconds)
+[Pixlwiz login] [zitadel-login]   client_id: 367440527605432321
+[Pixlwiz login] [zitadel-login] --- `sub` vs app user id (server `ref/pm-pics/zitadel.ts`) ---
+[Pixlwiz login] [zitadel-login]   Access-token JWT `sub` is what ZITADEL issues (often a numeric string for human users).
+[Pixlwiz login] [zitadel-login]   After verifyZitadelAccessToken(), the service calls resolveAppUserId(zitadelUser.id, email).
+[Pixlwiz login] [zitadel-login]   When that returns an app UUID, the in-memory User.id becomes the UUID and user_metadata.zitadel_sub keeps the original JWT sub.
+[Pixlwiz login] [zitadel-login]   So: API / DB "user id" may NOT equal raw JWT `sub` - compare logs to AuthZ / browser `profile.sub` accordingly.
+[Pixlwiz login] [zitadel-login]   This token's `sub` looks like a ZITADEL numeric subject - expect resolveAppUserId() to map it to profiles.user_id (UUID) when configured.
+[Pixlwiz login] [zitadel-login] interactive: SERVER_URL / VITE_SERVER_IMAGE_API_URL / CLIENT_URL unset — skip GET /api/me/identity (app_user_id not saved). Set SERVER_URL to persist resolved UUID.
+[Pixlwiz login] [zitadel-login] interactive: wrote token bundle to C:\Users\zx\AppData\Roaming\PolyMech\pm-image\zitadel-oauth.json
+[Pixlwiz login] [13:18:53] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[Pixlwiz login] Signed in. Tokens saved to C:\Users\zx\AppData\Roaming\PolyMech\pm-image\zitadel-oauth.json
+[Pixlwiz] Login: signed in (tokens saved).
+[chat] Sending: router=openrouter model=anthropic/claude-haiku-4.5 sel=2 base_url=https://openrouter.ai/api/v1 (aaron-swartz.webp +1)
+[chat] Prompt: cwd?
+[chat] Turn started — folder=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps
+[chat] Assistant text received (165 chars)
+[chat] ✦ Your current working directory is:  **C:\Users\zx\Desktop\ppcat\logos**  This is the folder containing your two selec...
+[chat] LLM usage (aggregated): prompt=12446 completion=51 total=12497 cost=0.012701
+[chat] Turn done — iterations=1, final_text_chars=165
+[chat] Sending: router=openrouter model=anthropic/claude-haiku-4.5 sel=2 base_url=https://openrouter.ai/api/v1 (aaron-swartz.webp +1)
+[chat] Prompt: pout this 2 cuties  in a photo collage, polaroid style
+[chat] Turn started — folder=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps
+[chat] Tool call: image_create args={"options":{"prompt":"Create a polaroid style photo collage with two cute images arranged artistically. Include polaroid frame effects with white borders, slight tilts, and vintage polaroid aesthetic. The collage should show a playful arrangement with shadow effects and a warm, nostalgic vibe."}}
+[chat] Tool result: image_create ✓ 1/1  → create_create_a_polaroid_style_photo_collage_wi.png
+[chat] Tool call: image_transform args={"options":{"prompt":"Create a polaroid style photo collage with these two images. Arrange them as two tilted polaroid frames side by side or overlapping slightly. Add white polaroid borders around each photo, add a small amount of tilt/rotation to each frame for a playful look, and include soft shadows beneath the frames. Set on a plain neutral background with a warm, vintage polaroid aesthetic."},"paths":["C:\\Users\\zx\\Desktop\\ppcat\\logos\\aaron-swartz.webp","C:\\Users\\zx\\Desktop\\ppcat\\logos\\cat-eager.JPG"]}
+[chat] Tool progress: image_transform  → aaron-swartz_create_a_polaroid_style_photo_collage_wi.webp
+[chat] Tool progress: image_transform  → cat-eager_create_a_polaroid_style_photo_collage_wi.JPG
+[chat] Tool result: image_transform ✓ 2/2  → aaron-swartz_create_a_polaroid_style_photo_collage_wi.webp cat-eager_create_a_polaroid_style_photo_collage_wi.JPG
+[chat] Assistant text received (399 chars)
+[chat] ✦ Done! 🎉 I've created a polaroid-style collage with your two cuties:  - **aaron-swartz_create_a_polaroid_style_phot...
+[chat] LLM usage (aggregated): prompt=38850 completion=466 total=39316 cost=0.041180
+[chat] Turn done — iterations=3, final_text_chars=399
+[2026-05-21 18:36:19.115] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-21 18:36:19.115] [pm-image] [info] [chat-web] WebView2 controller ready @000002A99EA89230 hwnd=00000000000D039C
+[2026-05-21 18:36:19.329] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-21 18:36:19.351] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-21 18:36:20.185] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-21 18:36:30.142] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 18:36:37.463] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-21 18:36:37.463] [pm-image] [info] [chat-web] WebView2 controller ready @0000024B1EBA0440 hwnd=000000000013035C
+[2026-05-21 18:36:37.792] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-21 18:36:37.810] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-21 18:36:38.383] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180

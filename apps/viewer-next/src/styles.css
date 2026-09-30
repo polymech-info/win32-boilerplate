@@ -1,0 +1,497 @@
+/* Aligned with apps/chat-next/src/styles.css - Tailwind v4 + Win32-neutral dark surfaces + .pm-md */
+@import "tailwindcss";
+@source "./**/*.{tsx,ts}";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-surface-dark: #1e1e1e;
+  --color-surface-dimmed: #2d2d2d;
+  --color-surface-mute: #3d3d3d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  /* WebView2: percentage height + flex so three.js Canvas ResizeObserver gets real viewport pixels */
+  height: 100%;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+html.dark body {
+  color: #e4e4e7;
+}
+
+/* ThreeDViewer (ported from pm-pics) - shadcn-style tokens on :root */
+html {
+  --background: #f8fafc;
+  --border: #e2e8f0;
+  --muted: #f1f5f9;
+}
+html.dark {
+  --background: #1e1e1e;
+  --border: #3f3f46;
+  --muted: #2d2d2d;
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-sky-600 dark:text-sky-400;
+  }
+  .text-muted-foreground {
+    @apply text-slate-500 dark:text-slate-400;
+  }
+}
+
+/* Markdown (same as chat-next .pm-md) */
+@layer components {
+  .pm-md-shell {
+    @apply relative flex min-h-0 flex-1 overflow-hidden bg-slate-50 text-slate-900 dark:bg-[#101010] dark:text-zinc-200;
+  }
+  .pm-md-scroll {
+    scroll-behavior: smooth;
+  }
+  .pm-md-toc-panel {
+    @apply hidden w-64 shrink-0 overflow-hidden border-r border-slate-200 bg-white/70
+      dark:border-slate-800 dark:bg-[#171717]/88;
+  }
+  .pm-md-shell--toc-open .pm-md-toc-panel {
+    @apply flex flex-col;
+  }
+  .pm-md-toc-head {
+    @apply flex h-9 shrink-0 items-center justify-between border-b border-slate-200 px-3 text-xs font-semibold
+      uppercase tracking-wide text-slate-500 dark:border-slate-800 dark:text-slate-400;
+  }
+  .pm-md-toc-toggle,
+  .pm-md-toc-fab {
+    @apply inline-flex items-center justify-center rounded-md border border-slate-200 bg-white/80 text-slate-500
+      shadow-sm transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none
+      focus-visible:ring-2 focus-visible:ring-blue-500/40
+      dark:border-slate-700 dark:bg-surface-dimmed/85 dark:text-slate-300 dark:hover:bg-surface-mute dark:hover:text-white;
+  }
+  .pm-md-toc-toggle {
+    @apply h-6 w-6;
+  }
+  .pm-md-toc-fab {
+    @apply absolute top-1.5 left-1.5 z-20 h-7 w-7;
+  }
+  .pm-md-shell--toc-open .pm-md-toc-fab {
+    @apply hidden;
+  }
+  .pm-md-toc-toggle svg,
+  .pm-md-toc-fab svg {
+    @apply h-4 w-4;
+  }
+  .pm-md-toc {
+    @apply min-h-0 flex-1 overflow-auto px-2 py-3;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(148 163 184 / 0.55) transparent;
+  }
+  .pm-toc-search {
+    @apply relative mb-3 px-1;
+  }
+  .pm-toc-search svg {
+    @apply pointer-events-none absolute top-1/2 left-3 h-3.5 w-3.5 -translate-y-1/2 text-slate-400;
+  }
+  .pm-toc-search input {
+    @apply h-8 w-full rounded-md border border-slate-200 bg-slate-50/80 pr-2 pl-8 text-xs text-slate-800
+      placeholder:text-slate-400 focus:border-transparent focus:outline-none focus:ring-1 focus:ring-blue-500/60
+      dark:border-slate-700 dark:bg-surface-dark/80 dark:text-slate-100 dark:placeholder:text-slate-500;
+  }
+  .pm-toc-nav {
+    @apply text-[0.8125rem];
+  }
+  .pm-toc-list {
+    @apply m-0 list-none p-0;
+  }
+  .pm-toc-list--nested {
+    @apply ml-[11px] border-l border-slate-200 pl-2 dark:border-slate-800;
+  }
+  .pm-toc-item {
+    @apply m-0 p-0;
+  }
+  .pm-toc-row {
+    @apply relative my-0.5 flex items-start rounded-sm px-2 py-1 text-slate-500 transition-colors
+      hover:bg-slate-100/75 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-surface-mute/60 dark:hover:text-slate-100;
+  }
+  .pm-toc-row--active {
+    @apply bg-slate-100/80 font-medium text-blue-700 dark:bg-surface-mute/70 dark:text-blue-300;
+  }
+  .pm-toc-row--active::before {
+    content: "";
+    @apply absolute top-1 bottom-1 left-0 w-0.5 rounded-full bg-blue-500;
+  }
+  .pm-toc-disclosure {
+    @apply mt-[2px] mr-1.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-sm
+      text-slate-400 transition hover:bg-slate-200/70 hover:text-slate-700
+      dark:hover:bg-slate-700/70 dark:hover:text-slate-200;
+  }
+  .pm-toc-disclosure svg {
+    @apply h-3.5 w-3.5;
+  }
+  .pm-toc-disclosure--empty {
+    @apply invisible pointer-events-none;
+  }
+  .pm-toc-link {
+    @apply min-w-0 flex-1 break-words pt-0.5 text-[0.8125rem] leading-snug no-underline;
+  }
+  .pm-toc-link:hover {
+    @apply no-underline;
+  }
+  .pm-md p,
+  .pm-md li,
+  .pm-md a,
+  .pm-md td,
+  .pm-md th,
+  .pm-md blockquote {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .pm-md p {
+    @apply my-2 first:mt-0 last:mb-0;
+  }
+  .pm-md ul {
+    @apply my-2 ml-5 list-disc;
+  }
+  .pm-md ol {
+    @apply my-2 ml-5 list-decimal;
+  }
+  .pm-md li {
+    @apply my-1;
+  }
+  .pm-md strong {
+    @apply font-semibold;
+  }
+  .pm-md em {
+    @apply italic;
+  }
+  .pm-md code {
+    @apply rounded-md border-0 bg-slate-100 px-1 py-0.5 font-mono text-sm text-pink-700 shadow-none
+      dark:bg-surface-dark/95 dark:text-rose-300;
+  }
+  .pm-md pre {
+    @apply my-2 overflow-x-auto rounded-md bg-white p-3 leading-5 text-slate-900 shadow-none
+      dark:bg-[#141414] dark:text-slate-100;
+  }
+  .pm-code-block {
+    @apply relative my-2;
+  }
+  .pm-code-block pre {
+    @apply my-0 pr-28;
+  }
+  .pm-code-actions {
+    @apply absolute top-1.5 right-1.5 z-10 inline-flex h-7 w-7 items-center justify-center rounded-md
+      gap-1 opacity-0 transition;
+    width: auto;
+  }
+  .pm-code-action-btn {
+    @apply inline-flex h-7 w-7 items-center justify-center rounded-md
+      border border-slate-300/70 bg-white/80 text-slate-600 opacity-0 shadow-sm backdrop-blur-sm
+      cursor-pointer transition hover:bg-white hover:text-slate-950 active:scale-95 focus-visible:opacity-100 focus-visible:outline-none
+      focus-visible:ring-2 focus-visible:ring-blue-500/45
+      dark:border-slate-600/70 dark:bg-surface-dimmed/85 dark:text-slate-300 dark:hover:bg-surface-mute dark:hover:text-white;
+  }
+  .pm-code-block:hover .pm-code-actions,
+  .pm-code-block:focus-within .pm-code-actions,
+  .pm-code-block:hover .pm-code-action-btn,
+  .pm-code-block:focus-within .pm-code-action-btn {
+    @apply opacity-100;
+  }
+  .pm-code-action-btn svg {
+    @apply h-4 w-4;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.9;
+  }
+  .pm-mermaid-block {
+    @apply relative my-3 overflow-x-auto rounded-md bg-white p-3 text-center shadow-none
+      dark:bg-[#141414];
+  }
+  .pm-mermaid-open {
+    @apply relative inline-block max-w-full cursor-zoom-in rounded-md border-0 bg-transparent p-0 text-inherit;
+  }
+  .pm-mermaid-open:focus-visible {
+    @apply outline-none ring-2 ring-blue-500/45;
+  }
+  .pm-mermaid-open-label {
+    @apply absolute top-2 right-2 z-10 rounded-md border border-slate-200 bg-white/90 px-2 py-1 text-xs font-medium
+      text-slate-700 opacity-0 shadow-sm backdrop-blur transition
+      dark:border-slate-700 dark:bg-[#1f1f1f]/90 dark:text-slate-200;
+  }
+  .pm-mermaid-open:hover .pm-mermaid-open-label,
+  .pm-mermaid-open:focus-visible .pm-mermaid-open-label {
+    @apply opacity-100;
+  }
+  .pm-mermaid-svg {
+    @apply inline-block max-w-full align-top leading-none;
+  }
+  .pm-mermaid-svg svg {
+    @apply block h-full w-full max-w-full;
+  }
+  .pm-mermaid-error {
+    @apply my-0 whitespace-pre-wrap bg-white text-left text-sm text-red-600
+      dark:bg-[#141414] dark:text-red-300;
+  }
+  .pm-mermaid-modal {
+    @apply fixed inset-0 z-[1000] flex flex-col bg-slate-950/92 text-slate-100 backdrop-blur-sm;
+  }
+  .pm-mermaid-modal-toolbar {
+    @apply flex shrink-0 items-center justify-end gap-2 border-b border-white/10 bg-slate-950/80 p-3;
+  }
+  .pm-mermaid-modal-toolbar button {
+    @apply rounded-md border border-white/15 bg-white/10 px-3 py-1.5 text-sm font-medium text-slate-100
+      transition hover:bg-white/18 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60;
+  }
+  .pm-mermaid-modal-toolbar button:disabled {
+    @apply cursor-default opacity-40 hover:bg-white/10;
+  }
+  .pm-mermaid-modal-close {
+    @apply ml-2;
+  }
+  .pm-mermaid-modal-canvas {
+    @apply flex min-h-0 flex-1 cursor-grab touch-none select-none items-start justify-start overflow-auto p-6 active:cursor-grabbing;
+  }
+  .pm-mermaid-modal-diagram {
+    @apply m-auto origin-center rounded-lg bg-white shadow-2xl transition-transform duration-75 dark:bg-[#141414];
+  }
+  .pm-mermaid-modal-diagram svg {
+    @apply block h-full w-full max-w-none;
+  }
+  /* Prism theme also targets `pre[class*="language-"]`; keep chat shell colors */
+  .pm-md pre[class*="language-"],
+  .pm-md code[class*="language-"] {
+    @apply bg-white text-slate-900 dark:bg-[#141414] dark:text-slate-100;
+    text-shadow: none !important;
+  }
+  .pm-md pre code {
+    @apply rounded-none bg-transparent p-0 text-inherit;
+    text-shadow: none !important;
+  }
+
+  /* Prism syntax highlighting - light theme */
+  .pm-md pre code .token.comment,
+  .pm-md pre code .token.prolog,
+  .pm-md pre code .token.doctype,
+  .pm-md pre code .token.cdata {
+    color: #64748b !important;
+  }
+  .pm-md pre code .token.punctuation {
+    color: #334155 !important;
+  }
+  .pm-md pre code .token.property,
+  .pm-md pre code .token.tag,
+  .pm-md pre code .token.constant,
+  .pm-md pre code .token.symbol,
+  .pm-md pre code .token.deleted {
+    color: #be123c !important;
+  }
+  .pm-md pre code .token.boolean,
+  .pm-md pre code .token.number {
+    color: #7c3aed !important;
+  }
+  .pm-md pre code .token.selector,
+  .pm-md pre code .token.attr-name,
+  .pm-md pre code .token.string,
+  .pm-md pre code .token.char,
+  .pm-md pre code .token.builtin,
+  .pm-md pre code .token.inserted {
+    color: #15803d !important;
+  }
+  .pm-md pre code .token.operator,
+  .pm-md pre code .token.entity,
+  .pm-md pre code .token.url,
+  .pm-md pre code .token.variable {
+    color: #0f766e !important;
+  }
+  .pm-md pre code .token.atrule,
+  .pm-md pre code .token.attr-value,
+  .pm-md pre code .token.keyword {
+    color: #2563eb !important;
+  }
+  .pm-md pre code .token.function,
+  .pm-md pre code .token.class-name {
+    color: #9333ea !important;
+  }
+  .pm-md pre code .token.regex,
+  .pm-md pre code .token.important {
+    color: #ea580c !important;
+  }
+
+  /* Prism syntax highlighting - high contrast tokens for dark mode */
+  .dark .pm-md pre code .token.comment,
+  .dark .pm-md pre code .token.prolog,
+  .dark .pm-md pre code .token.doctype,
+  .dark .pm-md pre code .token.cdata {
+    color: #8b9bb4 !important;
+  }
+  .dark .pm-md pre code .token.punctuation {
+    color: #d4d4d4 !important;
+  }
+  .dark .pm-md pre code .token.property,
+  .dark .pm-md pre code .token.tag,
+  .dark .pm-md pre code .token.constant,
+  .dark .pm-md pre code .token.symbol,
+  .dark .pm-md pre code .token.deleted {
+    color: #ff6b6b !important;
+  }
+  .dark .pm-md pre code .token.boolean,
+  .dark .pm-md pre code .token.number {
+    color: #82aaff !important;
+  }
+  .dark .pm-md pre code .token.selector,
+  .dark .pm-md pre code .token.attr-name,
+  .dark .pm-md pre code .token.string,
+  .dark .pm-md pre code .token.char,
+  .dark .pm-md pre code .token.builtin,
+  .dark .pm-md pre code .token.inserted {
+    color: #c3e88d !important;
+  }
+  .dark .pm-md pre code .token.operator,
+  .dark .pm-md pre code .token.entity,
+  .dark .pm-md pre code .token.url,
+  .dark .pm-md pre code .token.variable {
+    color: #ffcb6b !important;
+  }
+  .dark .pm-md pre code .token.atrule,
+  .dark .pm-md pre code .token.attr-value,
+  .dark .pm-md pre code .token.keyword {
+    color: #c792ea !important;
+  }
+  .dark .pm-md pre code .token.function,
+  .dark .pm-md pre code .token.class-name {
+    color: #ffd700 !important;
+  }
+  .dark .pm-md pre code .token.regex,
+  .dark .pm-md pre code .token.important {
+    color: #f78c6c !important;
+  }
+
+  .pm-md a {
+    @apply text-blue-600 underline hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300;
+  }
+  .pm-md h1 {
+    @apply mt-5 mb-2.5 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50;
+  }
+  .pm-md h2 {
+    @apply mt-4 mb-2 text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-50;
+  }
+  .pm-md h3 {
+    @apply mt-3 mb-1.5 text-base font-semibold tracking-normal text-slate-800 normal-case dark:text-slate-100;
+  }
+  .pm-md h4 {
+    @apply mt-2.5 mb-1 text-sm font-semibold text-slate-700 dark:text-slate-200;
+  }
+  .pm-md blockquote {
+    @apply my-2 border-l-2 border-slate-300 pl-3 text-slate-600 dark:border-slate-700 dark:text-slate-300;
+  }
+  .pm-md table {
+    @apply my-2 w-full border-collapse;
+    font-size: 0.92em;
+  }
+  .pm-md th,
+  .pm-md td {
+    @apply border border-slate-200 px-2 py-1 text-left align-top dark:border-slate-700;
+  }
+  .pm-md th {
+    @apply font-semibold;
+  }
+  .pm-md hr {
+    @apply my-3 border-slate-200 dark:border-surface-mute;
+  }
+  .pm-md img {
+    @apply my-3 h-auto max-h-[480px] max-w-full rounded-md border border-slate-200 object-contain
+      dark:border-surface-mute;
+  }
+
+  /* PixlWiz Page JSON viewer */
+  .pm-page-shell {
+    @apply relative flex min-h-0 flex-1 overflow-hidden bg-slate-50 text-slate-900 dark:bg-[#101010] dark:text-zinc-200;
+  }
+  .pm-page-toc-panel {
+    @apply hidden w-64 shrink-0 overflow-hidden border-r border-slate-200 bg-white/80
+      dark:border-slate-800 dark:bg-[#171717]/90;
+  }
+  .pm-page-shell--toc-open .pm-page-toc-panel {
+    @apply flex flex-col;
+  }
+  .pm-page-markdown-widget .pm-md h1 {
+    @apply text-2xl;
+  }
+  .pm-page-markdown-widget .pm-md h2 {
+    @apply mt-6 text-xl;
+  }
+  .pm-page-markdown-widget .pm-md h3 {
+    @apply mt-4 text-base normal-case tracking-normal text-slate-800 dark:text-slate-100;
+  }
+
+  /* XLSX preview (`sheet_to_html`) - padding + even-row tint only */
+  .pm-xlsx {
+    @apply p-3 text-sm leading-snug text-slate-900 sm:p-4 dark:text-slate-100;
+  }
+  .pm-xlsx table {
+    @apply w-full border-collapse;
+    font-size: 0.8125rem;
+  }
+  .pm-xlsx td,
+  .pm-xlsx th {
+    @apply px-2 py-1.5 text-left align-top;
+  }
+  .pm-xlsx tr:nth-child(even) td,
+  .pm-xlsx tr:nth-child(even) th {
+    @apply bg-slate-50/90;
+  }
+}
+
+/* Match apps/chat-next/src/styles.css - thin neutral bars in WebView2 (light + dark) */
+.pm-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 120, 120, 0.5) transparent;
+}
+.pm-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.pm-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.pm-scroll::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.5);
+  border-radius: 4px;
+}
+.pm-scroll::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.dark .pm-scroll {
+  scrollbar-color: rgb(120 120 120 / 0.75) rgb(30 30 30 / 0.45);
+}
+.dark .pm-scroll::-webkit-scrollbar-thumb {
+  background: rgb(100 100 100 / 0.7);
+}

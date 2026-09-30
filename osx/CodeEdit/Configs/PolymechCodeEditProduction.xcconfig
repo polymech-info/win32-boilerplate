@@ -1,0 +1,7 @@
+//
+//  PolymechCodeEditProduction.xcconfig
+//  PixelWiz app target — production / App Store–style build (same flags as former Release).
+//
+
+#include "Release.xcconfig"
+#include? "../../../dist-osx/polymech-cmake-libs/polymech_codeedit_link.xcconfig"

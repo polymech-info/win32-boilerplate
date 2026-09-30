@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "groups": [
+    "9:16 — vertical social",
+    "16:9 — landscape / YouTube",
+    "4:5 & 1:1 — feed & square",
+    "UI & product",
+    "Video"
+  ],
+  "templates": [
+    {
+      "id": "resize_9x16_social_crop",
+      "group": "9:16 — vertical social",
+      "name": "Resize to 9:16 (1080×1920) — crop/reframe (social vertical)",
+      "target": {
+        "w": 1080,
+        "h": 1920,
+        "aspect": "9:16"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "You are resizing and reframing the provided content for a vertical social frame.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} (aspect {{TARGET_ASPECT}}).\n\nRules:\n- Preserve all important details and the original intent.\n- Prefer reframing (crop/scale) over inventing new content.\n- You MAY rotate slightly and correct perspective if it helps composition and keeps lines natural.\n- Do NOT add text, watermarks, stickers, or platform UI.\n- Keep colors and style consistent with the source ({{STYLE_HINT}}).\n- Subject priority: {{SUBJECT_HINT}}\n\nOutput should look like the same shot, just reframed for {{TARGET_ASPECT}}."
+    },
+    {
+      "id": "resize_9x16_social_extend",
+      "group": "9:16 — vertical social",
+      "name": "Resize to 9:16 (1080×1920) — preserve edges (extend background)",
+      "target": {
+        "w": 1080,
+        "h": 1920,
+        "aspect": "9:16"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "Reframe the content to a vertical social format without losing important edge details.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nGuidance:\n- Preserve the main subject and all meaningful details.\n- If simple crop would cut off important content, use content-aware extension (outpaint) to add realistic continuation of background/scene.\n- You MAY rotate slightly and adjust perspective to make the scene fit naturally.\n- Do NOT introduce new objects, logos, text, or UI.\n- Keep lighting, grain, and color consistent ({{STYLE_HINT}}).\n- Subject priority: {{SUBJECT_HINT}}\n\nResult must feel like the original scene expanded/reframed, not redesigned."
+    },
+    {
+      "id": "resize_16x9_youtube_crop",
+      "group": "16:9 — landscape / YouTube",
+      "name": "Resize to 16:9 (1920×1080) — crop/reframe (YouTube landscape)",
+      "target": {
+        "w": 1920,
+        "h": 1080,
+        "aspect": "16:9"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "Reframe the provided content into a clean 16:9 landscape master.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nRules:\n- Preserve details, identities, and the core scene.\n- Prefer reframing via crop/scale; avoid adding new elements.\n- You MAY rotate slightly and correct perspective to keep horizons/verticals natural.\n- Do NOT add captions, logos, or watermarks.\n- Maintain the original look/grade ({{STYLE_HINT}}).\n- Subject priority: {{SUBJECT_HINT}}\n\nReturn a natural-looking 16:9 composition."
+    },
+    {
+      "id": "resize_16x9_youtube_extend",
+      "group": "16:9 — landscape / YouTube",
+      "name": "Resize to 16:9 (1920×1080) — portrait→landscape (extend sides)",
+      "target": {
+        "w": 1920,
+        "h": 1080,
+        "aspect": "16:9"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "Convert the content to a 16:9 landscape frame while preserving the full subject. This often requires extending the scene to the left/right.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nInstructions:\n- Do not crop away important parts of the subject.\n- Use realistic content-aware extension to create missing background/scene.\n- You MAY rotate and adjust perspective if needed to keep composition natural.\n- Preserve lighting/color/style ({{STYLE_HINT}}).\n- Do NOT add new objects, text, logos, or UI.\n- Subject priority: {{SUBJECT_HINT}}\n\nResult should look like the same moment, naturally widened to 16:9."
+    },
+    {
+      "id": "resize_4x5_instagram_feed",
+      "group": "4:5 & 1:1 — feed & square",
+      "name": "Resize to 4:5 (1080×1350) — Instagram feed portrait",
+      "target": {
+        "w": 1080,
+        "h": 1350,
+        "aspect": "4:5"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "Reframe the content for an Instagram feed portrait post.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nRules:\n- Preserve key details and the subject.\n- Prefer crop/reframe; if needed, extend background minimally to avoid cutting important elements.\n- You MAY rotate slightly and correct perspective to improve composition.\n- Keep the subject readable at phone size (avoid tiny elements).\n- No added text, watermarks, or UI.\n- Keep style consistent ({{STYLE_HINT}}).\n- Subject priority: {{SUBJECT_HINT}}"
+    },
+    {
+      "id": "resize_1x1_square",
+      "group": "4:5 & 1:1 — feed & square",
+      "name": "Resize to 1:1 (1080×1080) — square",
+      "target": {
+        "w": 1080,
+        "h": 1080,
+        "aspect": "1:1"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "Reframe the content into a square format.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nRules:\n- Preserve the subject and all important details.\n- Crop/reframe first; if cropping would remove important content, extend background subtly.\n- You MAY rotate slightly and adjust perspective to keep geometry natural.\n- Do NOT add text, logos, watermarks, or UI.\n- Keep the original style ({{STYLE_HINT}}).\n- Subject priority: {{SUBJECT_HINT}}"
+    },
+    {
+      "id": "resize_screenshot_to_9x16_ui_safe",
+      "group": "UI & product",
+      "name": "UI/Screenshot → 9:16 (1080×1920) — keep text sharp",
+      "target": {
+        "w": 1080,
+        "h": 1920,
+        "aspect": "9:16"
+      },
+      "variables": ["SUBJECT_HINT"],
+      "prompt": "Reframe this UI/screenshot for a vertical 9:16 frame.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nStrict rules for UI:\n- Preserve exact text, icons, and UI layout; do not hallucinate new buttons or labels.\n- Keep text crisp and readable; avoid heavy blur or painterly artifacts.\n- If you must extend background, extend only neutral areas (solid/gradient) and do not invent UI components.\n- You MAY correct perspective/rotation so the UI is perfectly rectangular.\n- No added watermarks or platform UI.\n- Priority: {{SUBJECT_HINT}}"
+    },
+    {
+      "id": "resize_product_shot_square_clean",
+      "group": "UI & product",
+      "name": "Product photo → 1:1 (1080×1080) — clean studio framing",
+      "target": {
+        "w": 1080,
+        "h": 1080,
+        "aspect": "1:1"
+      },
+      "variables": ["SUBJECT_HINT", "STYLE_HINT"],
+      "prompt": "Reframe this product shot into a clean square composition.\n\nTarget: {{TARGET_W}}×{{TARGET_H}} ({{TARGET_ASPECT}}).\n\nRules:\n- Keep product shape and branding accurate; no logo changes.\n- Preserve fine details, edges, and materials.\n- If needed, extend background to keep the full product in frame.\n- You MAY correct perspective to make verticals straight and the product centered.\n- Keep background simple and clean; do not add props.\n- No text, no watermarks.\n- Style: {{STYLE_HINT}}\n- Priority: {{SUBJECT_HINT}}"
+    }
+    
+  ]
+}

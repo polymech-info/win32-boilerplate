@@ -1,0 +1,817 @@
+[app] running command: takescreenshot
+[app] screenshot saved: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox\screenshots\pm-image-20260520-121430.png
+[app] running command: takescreenshot
+[app] screenshot saved: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox\screenshots\pm-image-20260520-121521.png
+[2026-05-21 23:01:50.316] [pm-image] [info] [viewer-web] ctor @0000022A9DF3C530
+[2026-05-21 23:01:50.523] [pm-image] [info] [viewer-web] WebView2 controller ready @0000022A9AB020C0 hwnd=00000000002F03BA
+[2026-05-21 23:01:50.658] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 23:01:50.680] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:01:50.680] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:01:51.105] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:01:56.196] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:01:56.198] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:04:14.481] [pm-image] [info] [viewer-web] ctor @000002759D55CBA0
+[2026-05-21 23:04:14.725] [pm-image] [info] [viewer-web] WebView2 controller ready @000002759D55DE00 hwnd=00000000002C0A90
+[2026-05-21 23:04:14.725] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:00.548] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:00.666] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:00.850] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:02.161] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:02.251] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:02.441] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:03.501] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:03.588] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:03.776] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:04.601] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:04.701] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:04.899] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:07.157] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:07.252] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:07.453] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:08.227] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:08.328] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:08.523] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:09.735] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:09.828] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:10.019] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:16.984] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:17.100] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:17.277] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:18.238] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:18.323] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:18.496] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:20.061] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:20.144] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:20.316] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:05:24.813] [pm-image] [info] [viewer-web] ctor @0000023212D5D5C0
+[2026-05-21 23:05:24.919] [pm-image] [info] [viewer-web] WebView2 controller ready @000002320F766800 hwnd=0000000000470976
+[2026-05-21 23:05:25.068] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 23:05:25.102] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:25.103] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:25.503] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:25.503] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:25.506] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:31.458] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:31.564] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-21 23:05:31.564] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-21 23:05:31.574] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:31.817] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 23:05:31.826] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:32.250] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:34.077] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:34.077] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:37.212] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:05:37.315] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-21 23:05:37.315] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-21 23:05:37.324] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:37.567] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 23:05:37.576] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:37.983] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:39.562] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:39.563] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:40.103] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:40.103] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 23:05:45.328] [pm-image] [info] [viewer-web] ctor @0000013888D8DE40
+[2026-05-21 23:05:45.547] [pm-image] [info] [viewer-web] WebView2 controller ready @00000138857269F0 hwnd=0000000000310826
+[2026-05-21 23:05:45.549] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:06:03.464] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:06:03.574] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:06:03.749] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:06:17.702] [pm-image] [info] [xblox] {"attempts":1,"effectiveUrl":"https://api.open-meteo.com/v1/forecast?latitude=41.3851&longitude=2.1734&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe/Madrid","headers":["HTTP/1.1 200 OK","Date: Thu, 21 May 2026 21:06:17 GMT","Content-Type: application/json; charset=utf-8","Transfer-Encoding: chunked","Connection: keep-alive"],"method":"GET","ok":true,"raw":"{\"latitude\":41.375,\"longitude\":2.125,\"generationtime_ms\":0.06091594696044922,\"utc_offset_seconds\":7200,\"timezone\":\"Europe/Madrid\",\"timezone_abbreviation\":\"GMT+2\",\"elevation\":28.0,\"current_units\":{\"time\":\"iso8601\",\"interval\":\"seconds\",\"temperature_2m\":\"°C\",\"weather_code\":\"wmo code\",\"wind_speed_10m\":\"km/h\"},\"current\":{\"time\":\"2026-05-21T23:00\",\"interval\":900,\"temperature_2m\":19.8,\"weather_code\":0,\"wind_speed_10m\":0.8}}","statusCode":200,"type":"network","url":"https://api.open-meteo.com/v1/forecast?latitude=41.3851&longitude=2.1734&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe/Madrid"}
+[2026-05-21 23:06:17.703] [pm-image] [info] [xblox] Weather is PREVIOUS
+[2026-05-21 23:06:17.704] [pm-image] [info] [xblox] command dispatch id=custom.capture.screenshot action=app label=Take screenshot
+[app] running command: takescreenshot
+[app] screenshot saved: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox\screenshots\pm-image-20260521-230617.png
+[2026-05-21 23:06:17.704] [pm-image] [info] [xblox] command ok id=custom.capture.screenshot action=app message=app command posted: takescreenshot
+[2026-05-21 23:06:40.252] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:06:42.450] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:06:43.635] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:07:12.719] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-1","method":"settingsSkillsGet"}
+[2026-05-21 23:07:12.721] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-2","method":"settingsProvidersGet"}
+[2026-05-21 23:07:12.724] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-3","method":"settingsChatGet"}
+[2026-05-21 23:07:12.726] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-4","method":"settingsGeneralGet"}
+[2026-05-21 23:07:12.728] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-5","method":"settingsChatPresetsGet"}
+[2026-05-21 23:07:12.730] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-6","method":"settingsMcpGet"}
+[2026-05-21 23:07:12.730] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-7","method":"settingsToolsGet"}
+[2026-05-21 23:07:12.731] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-8","method":"settingsCustomCommandsGet"}
+[2026-05-21 23:07:12.737] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-9","method":"settingsTablerIconsGet"}
+[2026-05-21 23:07:14.249] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-10","method":"settingsCliCommandsGet"}
+[2026-05-21 23:07:14.249] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-11","method":"settingsCommandVariablesGet"}
+[2026-05-21 23:07:14.250] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-12","method":"settingsPixlwizGet"}
+[2026-05-21 23:07:14.499] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-13","method":"settingsProviderOAuthGet","providerId":"openrouter"}
+[2026-05-21 23:07:14.500] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-14","method":"settingsProviderOAuthGet","providerId":"openai"}
+[2026-05-21 23:07:14.501] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-15","method":"settingsProviderOAuthGet","providerId":"github"}
+[2026-05-21 23:07:14.501] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-16","method":"settingsRouterModelsGet","routerId":"openrouter","forceRefresh":false}
+[2026-05-21 23:07:14.515] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-21 23:07:14.526] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-21 23:07:14.541] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-17","method":"settingsProviderModelsGet","providerId":"google","forceRefresh":false}
+[2026-05-21 23:07:14.543] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-18","method":"settingsProviderModelsGet","providerId":"google","forceRefresh":false}
+[2026-05-21 23:07:14.543] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-19","method":"settingsProviderModelsGet","providerId":"google","forceRefresh":false}
+[2026-05-21 23:07:14.548] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-20","method":"settingsProviderModelsGet","providerId":"replicate","forceRefresh":false,"collectionSlug":"official"}
+[2026-05-21 23:07:14.740] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-21","method":"settingsProviderModelsGet","providerId":"replicate","forceRefresh":false,"collectionSlug":"official"}
+[2026-05-21 23:07:14.781] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-22","method":"settingsProviderModelsGet","providerId":"replicate","forceRefresh":false,"collectionSlug":"official"}
+[2026-05-21 23:07:14.822] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-23","method":"settingsReplicateCollectionsGet","forceRefresh":false}
+[2026-05-21 23:07:14.823] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-24","method":"settingsCliCommandHelpGet","command":"resize"}
+[2026-05-21 23:07:14.826] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-25","method":"settingsCliCommandHelpGet","command":"transform"}
+[2026-05-21 23:07:14.829] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-26","method":"settingsCliCommandHelpGet","command":"create"}
+[2026-05-21 23:07:14.831] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-27","method":"settingsCliCommandHelpGet","command":"settings"}
+[2026-05-21 23:07:14.833] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-28","method":"settingsCliCommandHelpGet","command":"provider"}
+[2026-05-21 23:07:14.835] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-29","method":"settingsCliCommandHelpGet","command":"llm"}
+[2026-05-21 23:07:14.837] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-30","method":"settingsCliCommandHelpGet","command":"register-explorer"}
+[2026-05-21 23:07:14.840] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-31","method":"settingsCliCommandHelpGet","command":"app"}
+[2026-05-21 23:07:14.842] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-32","method":"settingsCliCommandHelpGet","command":"service"}
+[2026-05-21 23:07:14.844] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-33","method":"settingsCliCommandHelpGet","command":"login"}
+[2026-05-21 23:07:14.846] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-34","method":"settingsCliCommandHelpGet","command":"audio"}
+[2026-05-21 23:07:14.848] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-35","method":"settingsCliCommandHelpGet","command":"video"}
+[2026-05-21 23:07:14.850] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-36","method":"settingsCliCommandHelpGet","command":"xblox"}
+[2026-05-21 23:07:14.853] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-37","method":"settingsCliCommandHelpGet","command":"commands"}
+[2026-05-21 23:07:14.855] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-38","method":"settingsCliCommandHelpGet","command":"daemon"}
+[2026-05-21 23:07:14.860] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-39","method":"settingsCliCommandHelpGet","command":"settings path"}
+[2026-05-21 23:07:14.862] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-40","method":"settingsCliCommandHelpGet","command":"provider models"}
+[2026-05-21 23:07:14.864] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-41","method":"settingsCliCommandHelpGet","command":"llm info"}
+[2026-05-21 23:07:14.867] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-42","method":"settingsCliCommandHelpGet","command":"app takescreenshot"}
+[2026-05-21 23:07:14.869] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-43","method":"settingsCliCommandHelpGet","command":"service upload"}
+[2026-05-21 23:07:14.871] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-44","method":"settingsCliCommandHelpGet","command":"audio info"}
+[2026-05-21 23:07:14.873] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-45","method":"settingsCliCommandHelpGet","command":"video info"}
+[2026-05-21 23:07:14.875] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-46","method":"settingsCliCommandHelpGet","command":"xblox run"}
+[2026-05-21 23:07:14.879] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-47","method":"settingsCliCommandHelpGet","command":"daemon run"}
+[2026-05-21 23:07:14.881] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-48","method":"settingsCliCommandHelpGet","command":"settings import"}
+[2026-05-21 23:07:14.883] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-49","method":"settingsCliCommandHelpGet","command":"provider models list"}
+[2026-05-21 23:07:14.885] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-50","method":"settingsCliCommandHelpGet","command":"llm info providers"}
+[2026-05-21 23:07:14.887] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-51","method":"settingsCliCommandHelpGet","command":"app pausebatch"}
+[2026-05-21 23:07:14.889] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-52","method":"settingsCliCommandHelpGet","command":"service posts"}
+[2026-05-21 23:07:14.891] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-53","method":"settingsCliCommandHelpGet","command":"audio record"}
+[2026-05-21 23:07:14.894] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-54","method":"settingsCliCommandHelpGet","command":"video image"}
+[2026-05-21 23:07:14.899] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-55","method":"settingsCliCommandHelpGet","command":"daemon tray"}
+[2026-05-21 23:07:14.901] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-56","method":"settingsCliCommandHelpGet","command":"settings export"}
+[2026-05-21 23:07:14.903] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-57","method":"settingsCliCommandHelpGet","command":"llm info models"}
+[2026-05-21 23:07:14.905] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-58","method":"settingsCliCommandHelpGet","command":"app resumebatch"}
+[2026-05-21 23:07:14.907] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-59","method":"settingsCliCommandHelpGet","command":"service posts create"}
+[2026-05-21 23:07:14.910] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-60","method":"settingsCliCommandHelpGet","command":"audio play"}
+[2026-05-21 23:07:14.913] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-61","method":"settingsCliCommandHelpGet","command":"video video"}
+[2026-05-21 23:07:14.915] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-62","method":"settingsCliCommandHelpGet","command":"daemon register"}
+[2026-05-21 23:07:14.917] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-63","method":"settingsCliCommandHelpGet","command":"llm info tools"}
+[2026-05-21 23:07:14.919] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-64","method":"settingsCliCommandHelpGet","command":"app cancelbatch"}
+[2026-05-21 23:07:14.922] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-65","method":"settingsCliCommandHelpGet","command":"audio tts"}
+[2026-05-21 23:07:14.925] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-66","method":"settingsCliCommandHelpGet","command":"daemon unregister"}
+[2026-05-21 23:07:14.927] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-67","method":"settingsCliCommandHelpGet","command":"llm info skills"}
+[2026-05-21 23:07:14.929] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-68","method":"settingsCliCommandHelpGet","command":"app chat"}
+[2026-05-21 23:07:14.932] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-69","method":"settingsCliCommandHelpGet","command":"daemon stop"}
+[2026-05-21 23:07:14.934] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-70","method":"settingsCliCommandHelpGet","command":"llm tools-list"}
+[2026-05-21 23:07:14.936] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-71","method":"settingsCliCommandHelpGet","command":"app browse"}
+[2026-05-21 23:07:14.939] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-72","method":"settingsCliCommandHelpGet","command":"daemon path"}
+[2026-05-21 23:07:14.941] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-73","method":"settingsCliCommandHelpGet","command":"llm tools-call"}
+[2026-05-21 23:07:14.943] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-74","method":"settingsCliCommandHelpGet","command":"app recordstart"}
+[2026-05-21 23:07:14.946] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-75","method":"settingsCliCommandHelpGet","command":"llm agent"}
+[2026-05-21 23:07:14.948] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-76","method":"settingsCliCommandHelpGet","command":"app recordstop"}
+[2026-05-21 23:07:14.951] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-77","method":"settingsCliCommandHelpGet","command":"app videorecordstart"}
+[2026-05-21 23:07:14.953] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-78","method":"settingsCliCommandHelpGet","command":"app videorecordstop"}
+[2026-05-21 23:07:14.955] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-79","method":"settingsCliCommandHelpGet","command":"app videorecordpause"}
+[2026-05-21 23:07:14.958] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-80","method":"settingsCliCommandHelpGet","command":"app replay"}
+[2026-05-21 23:07:22.633] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:07:22.644] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:07:27.067] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-21 23:07:27.080] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:07:27.090] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:07:27.153] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-21 23:08:11.626] [pm-image] [info] [viewer-web] ctor @000001EFFFF6CD60
+[2026-05-21 23:08:11.850] [pm-image] [info] [viewer-web] WebView2 controller ready @000001EFFFE17D00 hwnd=00000000004D070C
+[2026-05-21 23:08:11.851] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-22 09:43:41.816] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4483379
+[2026-05-22 09:43:41.818] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-22 09:43:41.818] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-22 09:43:41.818] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=414x678
+[2026-05-22 09:43:41.819] [pm-image] [info] [chat-web] WebView2 controller ready @0000025913F00BD0 hwnd=00000000005108FA
+[2026-05-22 09:43:41.929] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-22 09:43:41.934] [pm-image] [info] [viewer-web] ctor @0000025914969160
+[2026-05-22 09:43:41.944] [pm-image] [info] [chat-web] ContentLoading: navigationId=5
+[2026-05-22 09:43:42.019] [pm-image] [info] [viewer-web] WebView2 controller ready @000002591492D280 hwnd=000000000023034E
+[2026-05-22 09:43:42.079] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=5 source=https://pm-chat.invalid/chat.html
+[2026-05-22 09:43:42.144] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":700,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-22 09:43:42.177] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-22 09:43:42.195] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-22 09:43:42.214] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-22 09:43:42.232] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 09:43:42.232] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 09:43:42.443] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 09:43:42.443] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 09:43:42.835] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 09:43:42.853] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 09:43:43.092] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-22 09:43:43.114] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-22 12:31:22.691] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4483379
+[2026-05-22 12:31:22.693] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-22 12:31:22.693] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-22 12:31:22.693] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=412x333
+[2026-05-22 12:31:22.693] [pm-image] [info] [chat-web] WebView2 controller ready @00000262E6B7B720 hwnd=000000000003040A
+[2026-05-22 12:31:22.728] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-22 12:31:22.779] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-22 12:31:22.852] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-22 12:31:22.911] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":281,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-22 12:31:22.945] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-22 12:31:22.969] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-22 12:31:23.193] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 12:31:23.259] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 12:31:23.604] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=357 bytes_out=425180
+[2026-05-23 00:42:35.530] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4484537
+[2026-05-23 00:42:35.533] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:42:35.533] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:42:35.534] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=584x606
+[2026-05-23 00:42:35.534] [pm-image] [info] [chat-web] WebView2 controller ready @000001FCA8373800 hwnd=00000000000D0700
+[2026-05-23 00:42:35.551] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:42:35.569] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 00:42:35.664] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:42:35.716] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:42:35.748] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:42:35.770] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:42:35.956] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:42:36.006] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:42:36.327] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:43:41.288] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 00:43:41.291] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:43:41.292] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:43:41.292] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=584x606
+[2026-05-23 00:43:41.292] [pm-image] [info] [chat-web] WebView2 controller ready @00000182D356F490 hwnd=00000000000C0596
+[2026-05-23 00:43:41.313] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:43:41.332] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 00:43:41.428] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:43:41.484] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:43:41.518] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:43:41.542] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:43:41.750] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:43:41.802] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:43:42.124] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:33.839] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 00:46:33.841] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:46:33.842] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:46:33.842] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=584x606
+[2026-05-23 00:46:33.842] [pm-image] [info] [chat-web] WebView2 controller ready @00000203C8F23800 hwnd=0000000000280860
+[2026-05-23 00:46:33.866] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:33.884] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 00:46:33.985] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:34.047] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:46:34.081] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:46:34.105] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:34.299] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:34.348] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:34.679] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:44.161] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 00:46:44.166] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:46:44.166] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:46:44.167] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=754x864
+[2026-05-23 00:46:44.170] [pm-image] [info] [chat-web] WebView2 controller ready @000002014362EED0 hwnd=0000000000110542
+[2026-05-23 00:46:44.413] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:44.317] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 00:46:44.320] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:46:44.320] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:46:44.321] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=754x864
+[2026-05-23 00:46:44.322] [pm-image] [info] [chat-web] WebView2 controller ready @00000163418BE3C0 hwnd=00000000000C05AE
+[2026-05-23 00:46:44.537] [pm-image] [info] [viewer-web] ctor @0000020144112300
+[2026-05-23 00:46:44.572] [pm-image] [info] [chat-web] ContentLoading: navigationId=6
+[2026-05-23 00:46:44.629] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=6 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:44.570] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:44.761] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:46:44.755] [pm-image] [info] [viewer-web] ctor @00000163440164F0
+[2026-05-23 00:46:44.782] [pm-image] [info] [chat-web] ContentLoading: navigationId=7
+[2026-05-23 00:46:44.884] [pm-image] [info] [viewer-web] WebView2 controller ready @0000020143698760 hwnd=000000000006063A
+[2026-05-23 00:46:44.902] [pm-image] [info] [viewer-web] WebView2 controller ready @0000016343FA0CE0 hwnd=00000000000F0186
+[2026-05-23 00:46:44.945] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=7 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:44.972] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":true,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:46:44.959] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:46:44.986] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:45.021] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:45.029] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:46:45.056] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:45.287] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:45.292] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 00:46:45.293] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:45.313] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.314] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.357] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 00:46:45.359] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:45.378] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.382] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.429] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.453] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.691] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:45.711] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:45.768] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:45.770] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:46.166] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:46.357] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:46.720] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:46.722] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:46.737] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:46.741] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 00:46:57.962] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 00:46:57.966] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:46:57.966] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:46:57.967] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=584x606
+[2026-05-23 00:46:57.968] [pm-image] [info] [chat-web] WebView2 controller ready @00000294814D3820 hwnd=00000000001F0532
+[2026-05-23 00:46:57.989] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:58.005] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 00:46:58.101] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:46:58.154] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:46:58.186] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:46:58.210] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:46:58.400] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:58.450] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:46:58.791] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:47:12.241] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 00:47:12.245] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 00:47:12.245] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 00:47:12.246] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=342x606
+[2026-05-23 00:47:12.247] [pm-image] [info] [chat-web] WebView2 controller ready @000001AB00943800 hwnd=0000000000090776
+[2026-05-23 00:47:12.280] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 00:47:12.385] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 00:47:12.445] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 00:47:12.488] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 00:47:12.527] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 00:47:12.550] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:47:12.748] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:47:12.801] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 00:47:13.142] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 00:47:19.915] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:03:19.080] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=1278x606
+[2026-05-23 01:03:19.106] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 01:03:19.112] [pm-image] [info] [chat-web] ContentLoading: navigationId=5
+[2026-05-23 01:03:19.209] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=5 source=https://pm-chat.invalid/chat.html
+[2026-05-23 01:03:19.261] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 01:03:19.290] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 01:03:19.305] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:03:19.535] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:03:19.538] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:03:19.845] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:03:26.263] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:03:28.475] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:03:29.866] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:03:29.885] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:03:30.235] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:03:37.323] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:03:58.842] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:04:12.238] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:04:12.242] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:04:14.478] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:13:09.496] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 01:13:09.499] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 01:13:09.499] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 01:13:09.500] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=1278x606
+[2026-05-23 01:13:09.501] [pm-image] [info] [chat-web] WebView2 controller ready @000001F7E15F8A80 hwnd=00000000000D06DA
+[2026-05-23 01:13:09.518] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 01:13:09.591] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 01:13:09.699] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 01:13:09.752] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 01:13:09.791] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 01:13:09.812] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:13:10.002] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:13:10.055] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:13:10.424] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:13:30.870] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:13:33.549] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:13:34.322] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:13:36.712] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:13:39.300] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:16:52.265] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 01:16:52.267] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 01:16:52.267] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 01:16:52.268] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=556x727
+[2026-05-23 01:16:52.268] [pm-image] [info] [chat-web] WebView2 controller ready @0000016A75082090 hwnd=0000000000100508
+[2026-05-23 01:16:52.288] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 01:16:52.297] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 01:16:52.396] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 01:16:52.449] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 01:16:52.481] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 01:16:52.502] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:16:52.685] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:16:52.801] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:16:53.092] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:16:56.592] [pm-image] [info] [viewer-web] ctor @0000016A7AF9D9E0
+[2026-05-23 01:16:56.808] [pm-image] [info] [viewer-web] WebView2 controller ready @0000016A7E4E33B0 hwnd=00000000001205C8
+[2026-05-23 01:16:56.947] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:16:56.972] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:16:56.973] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:16:57.387] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:06.337] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 01:17:06.340] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 01:17:06.340] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 01:17:06.340] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=556x727
+[2026-05-23 01:17:06.340] [pm-image] [info] [chat-web] WebView2 controller ready @000002A41E43E3B0 hwnd=000000000077093C
+[2026-05-23 01:17:06.367] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 01:17:06.376] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 01:17:06.483] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 01:17:06.536] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 01:17:06.571] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 01:17:06.592] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:17:06.789] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:17:06.944] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:17:07.092] [pm-image] [info] [viewer-web] ctor @000002A422E8A340
+[2026-05-23 01:17:07.347] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A4227EFA20 hwnd=00000000002704FA
+[2026-05-23 01:17:07.404] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:17:07.506] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:17:07.506] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:07.507] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:07.936] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:17.566] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:17.570] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:20.104] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:20.105] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:36.749] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:17:36.749] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:17:36.802] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:17:36.811] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:37.233] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:42.466] [pm-image] [info] [viewer-web] ctor @000002A426B98660
+[2026-05-23 01:17:42.523] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A4227F2C20 hwnd=00000000001A04AC
+[2026-05-23 01:17:42.541] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:17:42.661] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:17:42.673] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:17:42.684] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:42.685] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:43.098] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:46.809] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:17:49.516] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:17:51.913] [pm-image] [info] [viewer-web] ctor @000002A42266B490
+[2026-05-23 01:17:51.960] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A4227F06A0 hwnd=00000000002A08B2
+[2026-05-23 01:17:52.075] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:17:52.114] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:52.114] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:17:52.546] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:18:57.660] [pm-image] [info] [viewer-web] ctor @000002A42266BB20
+[2026-05-23 01:18:57.709] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A4227F1960 hwnd=00000000000B0666
+[2026-05-23 01:18:57.851] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:18:57.882] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:18:57.882] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:18:58.281] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:19:02.021] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:09.452] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:09.457] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:17.110] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:17.220] [pm-image] [info] [viewer-web] ctor @000002A42266B4F0
+[2026-05-23 01:19:17.267] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A4227F0CE0 hwnd=0000000000220612
+[2026-05-23 01:19:17.390] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:19:17.442] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:19:17.442] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:19:17.847] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:19:34.152] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:38.372] [pm-image] [info] [chat-web] WM_DESTROY @000002A41E43E388 hwnd=000000000077093C — closing WebVi
+[2026-05-23 01:19:38.392] [pm-image] [info] [viewer-web] WM_DESTROY @000002A42266B490 hwnd=00000000002A08B2 — closing Web
+[2026-05-23 01:19:38.406] [pm-image] [info] [viewer-web] WM_DESTROY @000002A42266BB20 hwnd=00000000000B0666 — closing Web
+[2026-05-23 01:19:38.418] [pm-image] [info] [viewer-web] WM_DESTROY @000002A426B98660 hwnd=00000000001A04AC — closing Web
+[2026-05-23 01:19:38.429] [pm-image] [info] [viewer-web] WM_DESTROY @000002A42266B4F0 hwnd=0000000000220612 — closing Web
+[2026-05-23 01:19:38.449] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:38.621] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:38.624] [pm-image] [info] [chat-web] dtor @000002A41E43E388
+[2026-05-23 01:19:38.630] [pm-image] [info] [viewer-web] dtor @000002A426B98660
+[2026-05-23 01:19:38.630] [pm-image] [info] [viewer-web] dtor @000002A42266B490
+[2026-05-23 01:19:38.646] [pm-image] [info] [viewer-web] dtor @000002A42266BB20
+[2026-05-23 01:19:38.650] [pm-image] [info] [viewer-web] dtor @000002A42266B4F0
+[2026-05-23 01:19:49.895] [pm-image] [info] [chat-web] ctor @000002A427E96328
+[2026-05-23 01:19:49.895] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:19:50.025] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:19:50.144] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 01:19:50.147] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 01:19:50.147] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 01:19:50.147] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=414x523
+[2026-05-23 01:19:50.147] [pm-image] [info] [chat-web] WebView2 controller ready @000002A425697BB0 hwnd=00000000000C064E
+[2026-05-23 01:19:50.200] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 01:19:50.212] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 01:19:50.304] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 01:19:50.355] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 01:19:50.402] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:19:50.772] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:19:50.772] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 01:19:50.801] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 01:19:58.538] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:20:15.225] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:20:15.233] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:15.240] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:15.760] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:15.765] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:17.030] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:20:17.030] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:20:17.100] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:20:17.112] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:17.540] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:18.050] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:18.058] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:19.090] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:19.097] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:19.867] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:19.873] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:20.178] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:20.184] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:20.416] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:20.421] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:20.654] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:20:20.654] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:20:20.715] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:20:20.726] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:21.150] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:22.251] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:20:23.033] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 01:20:23.040] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:23.045] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:23.476] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:23.489] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:23.768] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:23.774] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:25.589] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:20:25.589] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:20:25.640] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:20:25.652] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:26.094] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:26.442] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:26.452] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:27.155] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:20:27.165] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:27.304] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:27.311] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:28.127] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:28.133] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:28.703] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:28.708] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:29.072] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:26:29.072] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:26:29.129] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:26:29.140] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:29.569] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:31.480] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:31.487] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:31.774] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:31.779] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:32.039] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:32.044] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:32.247] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:26:32.247] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:26:32.314] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:26:32.330] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:32.491] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:32.503] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:32.752] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:33.259] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:33.266] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:33.560] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:33.566] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:33.840] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:26:33.840] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:26:33.893] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:26:33.904] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.316] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.387] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.393] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.691] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.697] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.952] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:34.958] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:35.231] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-23 01:26:35.231] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-23 01:26:35.285] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 01:26:35.297] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:35.725] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:35.888] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:35.893] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:38.231] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:40.527] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:40.778] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:44.404] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:45.430] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:46.175] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:49.528] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 01:26:50.031] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 08:27:03.532] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 08:27:03.534] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 08:27:03.534] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 08:27:03.535] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=412x505
+[2026-05-23 08:27:03.535] [pm-image] [info] [chat-web] WebView2 controller ready @000001D0DE8929B0 hwnd=00000000000205A4
+[2026-05-23 08:27:03.653] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 08:27:03.664] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 08:27:03.755] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 08:27:03.806] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":282,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 08:27:03.848] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 08:27:03.866] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 08:27:04.179] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 08:27:04.179] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-23 08:27:04.626] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 08:27:07.485] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:27:38.940] [pm-image] [info] [console-open] RunViewPanelCommand enter visible=0 dockPtr=0
+[2026-05-23 08:27:39.020] [pm-image] [info] [console-open] RunViewPanelCommand leave visible=1 elapsed=78 ms
+[2026-05-23 08:27:40.784] [pm-image] [info] [console-open] RunViewPanelCommand enter visible=1 dockPtr=1339376711824
+[2026-05-23 08:27:40.793] [pm-image] [info] [console-open] RunViewPanelCommand leave visible=0 elapsed=16 ms
+[2026-05-23 08:27:40.799] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:27:41.384] [pm-image] [info] [console-open] RunViewPanelCommand enter visible=0 dockPtr=1339376711824
+[2026-05-23 08:27:41.404] [pm-image] [info] [console-open] RunViewPanelCommand leave visible=1 elapsed=31 ms
+[2026-05-23 08:27:42.322] [pm-image] [info] [console-open] RunViewPanelCommand enter visible=1 dockPtr=1339376711824
+[2026-05-23 08:27:42.330] [pm-image] [info] [console-open] RunViewPanelCommand leave visible=0 elapsed=16 ms
+[2026-05-23 08:27:42.332] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:27:42.336] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:27:42.733] [pm-image] [info] [console-open] RunViewPanelCommand enter visible=0 dockPtr=1339376711824
+[2026-05-23 08:27:42.755] [pm-image] [info] [console-open] RunViewPanelCommand leave visible=1 elapsed=31 ms
+[2026-05-23 08:27:45.811] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:27:46.082] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-1","method":"settingsSkillsGet"}
+[2026-05-23 08:27:46.086] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-2","method":"settingsProvidersGet"}
+[2026-05-23 08:27:46.089] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-3","method":"settingsChatGet"}
+[2026-05-23 08:27:46.092] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-4","method":"settingsGeneralGet"}
+[2026-05-23 08:27:46.095] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-5","method":"settingsChatPresetsGet"}
+[2026-05-23 08:27:46.096] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-6","method":"settingsMcpGet"}
+[2026-05-23 08:27:46.097] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-7","method":"settingsToolsGet"}
+[2026-05-23 08:27:46.098] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-8","method":"settingsCustomCommandsGet"}
+[2026-05-23 08:27:46.116] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-9","method":"settingsTablerIconsGet"}
+[2026-05-23 08:27:47.634] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-10","method":"settingsCliCommandsGet"}
+[2026-05-23 08:27:47.634] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-11","method":"settingsCommandVariablesGet"}
+[2026-05-23 08:27:47.635] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-12","method":"settingsPixlwizGet"}
+[2026-05-23 08:27:47.863] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-13","method":"settingsProviderOAuthGet","providerId":"openrouter"}
+[2026-05-23 08:27:47.864] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-14","method":"settingsProviderOAuthGet","providerId":"openai"}
+[2026-05-23 08:27:47.864] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-15","method":"settingsProviderOAuthGet","providerId":"github"}
+[2026-05-23 08:27:47.865] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-16","method":"settingsRouterModelsGet","routerId":"openrouter","forceRefresh":false}
+[2026-05-23 08:27:47.879] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 08:27:47.890] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426384
+[2026-05-23 08:27:47.906] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-17","method":"settingsProviderModelsGet","providerId":"google","forceRefresh":false}
+[2026-05-23 08:27:47.908] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-18","method":"settingsProviderModelsGet","providerId":"google","forceRefresh":false}
+[2026-05-23 08:27:47.909] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-19","method":"settingsProviderModelsGet","providerId":"google","forceRefresh":false}
+[2026-05-23 08:27:47.913] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-20","method":"settingsProviderModelsGet","providerId":"replicate","forceRefresh":false,"collectionSlug":"official"}
+[2026-05-23 08:27:48.102] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-21","method":"settingsProviderModelsGet","providerId":"replicate","forceRefresh":false,"collectionSlug":"official"}
+[2026-05-23 08:27:48.145] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-22","method":"settingsProviderModelsGet","providerId":"replicate","forceRefresh":false,"collectionSlug":"official"}
+[2026-05-23 08:27:48.188] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-23","method":"settingsReplicateCollectionsGet","forceRefresh":false}
+[2026-05-23 08:27:48.189] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-24","method":"settingsCliCommandHelpGet","command":"resize"}
+[2026-05-23 08:27:48.192] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-25","method":"settingsCliCommandHelpGet","command":"transform"}
+[2026-05-23 08:27:48.194] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-26","method":"settingsCliCommandHelpGet","command":"create"}
+[2026-05-23 08:27:48.196] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-27","method":"settingsCliCommandHelpGet","command":"settings"}
+[2026-05-23 08:27:48.198] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-28","method":"settingsCliCommandHelpGet","command":"provider"}
+[2026-05-23 08:27:48.201] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-29","method":"settingsCliCommandHelpGet","command":"llm"}
+[2026-05-23 08:27:48.203] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-30","method":"settingsCliCommandHelpGet","command":"register-explorer"}
+[2026-05-23 08:27:48.205] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-31","method":"settingsCliCommandHelpGet","command":"register-startmenu"}
+[2026-05-23 08:27:48.207] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-32","method":"settingsCliCommandHelpGet","command":"installer"}
+[2026-05-23 08:27:48.209] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-33","method":"settingsCliCommandHelpGet","command":"app"}
+[2026-05-23 08:27:48.212] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-34","method":"settingsCliCommandHelpGet","command":"service"}
+[2026-05-23 08:27:48.214] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-35","method":"settingsCliCommandHelpGet","command":"login"}
+[2026-05-23 08:27:48.216] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-36","method":"settingsCliCommandHelpGet","command":"audio"}
+[2026-05-23 08:27:48.218] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-37","method":"settingsCliCommandHelpGet","command":"video"}
+[2026-05-23 08:27:48.220] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-38","method":"settingsCliCommandHelpGet","command":"xblox"}
+[2026-05-23 08:27:48.222] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-39","method":"settingsCliCommandHelpGet","command":"commands"}
+[2026-05-23 08:27:48.225] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-40","method":"settingsCliCommandHelpGet","command":"daemon"}
+[2026-05-23 08:27:48.227] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-41","method":"settingsCliCommandHelpGet","command":"assistant"}
+[2026-05-23 08:27:48.233] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-42","method":"settingsCliCommandHelpGet","command":"settings path"}
+[2026-05-23 08:27:48.235] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-43","method":"settingsCliCommandHelpGet","command":"provider models"}
+[2026-05-23 08:27:48.237] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-44","method":"settingsCliCommandHelpGet","command":"llm info"}
+[2026-05-23 08:27:48.239] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-45","method":"settingsCliCommandHelpGet","command":"app takescreenshot"}
+[2026-05-23 08:27:48.242] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-46","method":"settingsCliCommandHelpGet","command":"service upload"}
+[2026-05-23 08:27:48.244] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-47","method":"settingsCliCommandHelpGet","command":"audio info"}
+[2026-05-23 08:27:48.246] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-48","method":"settingsCliCommandHelpGet","command":"video info"}
+[2026-05-23 08:27:48.248] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-49","method":"settingsCliCommandHelpGet","command":"xblox run"}
+[2026-05-23 08:27:48.250] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-50","method":"settingsCliCommandHelpGet","command":"daemon run"}
+[2026-05-23 08:27:48.254] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-51","method":"settingsCliCommandHelpGet","command":"assistant spy"}
+[2026-05-23 08:27:48.257] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-52","method":"settingsCliCommandHelpGet","command":"settings import"}
+[2026-05-23 08:27:48.259] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-53","method":"settingsCliCommandHelpGet","command":"provider models list"}
+[2026-05-23 08:27:48.262] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-54","method":"settingsCliCommandHelpGet","command":"llm info providers"}
+[2026-05-23 08:27:48.264] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-55","method":"settingsCliCommandHelpGet","command":"app pausebatch"}
+[2026-05-23 08:27:48.266] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-56","method":"settingsCliCommandHelpGet","command":"service posts"}
+[2026-05-23 08:27:48.268] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-57","method":"settingsCliCommandHelpGet","command":"audio record"}
+[2026-05-23 08:27:48.270] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-58","method":"settingsCliCommandHelpGet","command":"video image"}
+[2026-05-23 08:27:48.274] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-59","method":"settingsCliCommandHelpGet","command":"daemon tray"}
+[2026-05-23 08:27:48.276] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-60","method":"settingsCliCommandHelpGet","command":"settings export"}
+[2026-05-23 08:27:48.279] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-61","method":"settingsCliCommandHelpGet","command":"llm info models"}
+[2026-05-23 08:27:48.281] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-62","method":"settingsCliCommandHelpGet","command":"app resumebatch"}
+[2026-05-23 08:27:48.283] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-63","method":"settingsCliCommandHelpGet","command":"service posts create"}
+[2026-05-23 08:27:48.285] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-64","method":"settingsCliCommandHelpGet","command":"audio play"}
+[2026-05-23 08:27:48.288] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-65","method":"settingsCliCommandHelpGet","command":"video video"}
+[2026-05-23 08:27:48.290] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-66","method":"settingsCliCommandHelpGet","command":"daemon register"}
+[2026-05-23 08:27:48.293] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-67","method":"settingsCliCommandHelpGet","command":"llm info tools"}
+[2026-05-23 08:27:48.295] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-68","method":"settingsCliCommandHelpGet","command":"app cancelbatch"}
+[2026-05-23 08:27:48.297] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-69","method":"settingsCliCommandHelpGet","command":"audio tts"}
+[2026-05-23 08:27:48.300] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-70","method":"settingsCliCommandHelpGet","command":"daemon unregister"}
+[2026-05-23 08:27:48.302] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-71","method":"settingsCliCommandHelpGet","command":"llm info skills"}
+[2026-05-23 08:27:48.305] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-72","method":"settingsCliCommandHelpGet","command":"app chat"}
+[2026-05-23 08:27:48.307] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-73","method":"settingsCliCommandHelpGet","command":"daemon stop"}
+[2026-05-23 08:27:48.309] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-74","method":"settingsCliCommandHelpGet","command":"llm tools-list"}
+[2026-05-23 08:27:48.311] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-75","method":"settingsCliCommandHelpGet","command":"app browse"}
+[2026-05-23 08:27:48.314] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-76","method":"settingsCliCommandHelpGet","command":"daemon path"}
+[2026-05-23 08:27:48.316] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-77","method":"settingsCliCommandHelpGet","command":"llm tools-call"}
+[2026-05-23 08:27:48.319] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-78","method":"settingsCliCommandHelpGet","command":"app recordstart"}
+[2026-05-23 08:27:48.321] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-79","method":"settingsCliCommandHelpGet","command":"llm agent"}
+[2026-05-23 08:27:48.324] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-80","method":"settingsCliCommandHelpGet","command":"app recordstop"}
+[2026-05-23 08:27:48.326] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-81","method":"settingsCliCommandHelpGet","command":"app videorecordstart"}
+[2026-05-23 08:27:48.328] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-82","method":"settingsCliCommandHelpGet","command":"app videorecordstop"}
+[2026-05-23 08:27:48.330] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-83","method":"settingsCliCommandHelpGet","command":"app videorecordpause"}
+[2026-05-23 08:27:48.333] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-84","method":"settingsCliCommandHelpGet","command":"app replay"}
+[2026-05-23 08:27:57.145] [pm-image] [info] [settings] msg: {"kind":"providerRpc","rpcId":"settings-rpc-85","method":"settingsGeneralSave","display_language":"en","theme":2,"font_size_extra_pt":4,"filetree_show_shell_frames":false,"register_in_explorer":false}
+[2026-05-23 08:27:57.150] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:27:57.154] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-23 08:28:05.107] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-25 00:03:54.125] [pm-image] [info] [xblox] {}
+[2026-05-25 00:04:15.119] [pm-image] [info] [xblox] {}
+[2026-05-25 00:04:47.473] [pm-image] [info] [xblox] app-inspect-only: starting
+[2026-05-25 00:04:47.473] [pm-image] [info] [xblox] {}
+[2026-05-25 00:06:55.875] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-25 00:07:07.260] [pm-image] [info] [xblox] computer-use-notepad: starting
+[2026-05-25 00:07:07.261] [pm-image] [info] [xblox] editor.rect
+[2026-05-25 00:07:07.262] [pm-image] [info] [xblox] computer-use-notepad: done
+[2026-05-25 00:07:22.464] [pm-image] [info] [xblox] computer-use-notepad: starting
+[2026-05-25 00:07:26.436] [pm-image] [info] settings: loaded from roaming profile: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+[2026-05-25 00:07:32.088] [pm-image] [info] [xblox] computer-use-notepad: starting
+[2026-05-25 00:07:37.336] [pm-image] [info] [xblox] editor.rect
+[2026-05-25 00:07:38.496] [pm-image] [info] [xblox] computer-use-notepad: done
+[2026-05-25 00:21:54.913] [pm-image] [info] [viewer-web] ctor @000001C58E2185C0
+[2026-05-25 00:21:55.131] [pm-image] [info] [viewer-web] WebView2 controller ready @000001C58E3D5B90 hwnd=0000000000400B4C
+[2026-05-25 00:21:55.274] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-25 00:21:55.301] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:55.305] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:55.710] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:55.938] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:55.942] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:57.459] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=73
+[2026-05-25 00:21:57.459] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-25 00:21:57.516] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-25 00:21:57.532] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:57.954] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:58.014] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:21:58.017] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:23:22.939] [pm-image] [info] [viewer-web] ctor @000002433066C950
+[2026-05-25 00:23:23.189] [pm-image] [info] [viewer-web] WebView2 controller ready @00000243306340B0 hwnd=00000000002C090E
+[2026-05-25 00:23:23.189] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:23:26.634] [pm-image] [info] [xblox] app-inspect-only: starting
+[2026-05-25 00:23:26.634] [pm-image] [info] [xblox] {}
+[2026-05-25 00:23:41.073] [pm-image] [info] [xblox] foregroundDump
+[2026-05-25 00:23:44.729] [pm-image] [info] [xblox] foregroundDump
+[2026-05-25 00:23:46.976] [pm-image] [info] [xblox] app-inspect-only: starting
+[2026-05-25 00:23:49.499] [pm-image] [info] [xblox] app-inspect-only: starting
+[2026-05-25 00:23:49.499] [pm-image] [info] [xblox] {}
+[2026-05-25 00:23:53.954] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:23:54.050] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:25:05.257] [pm-image] [info] [viewer-web] ctor @00000208882E2870
+[2026-05-25 00:25:05.525] [pm-image] [info] [viewer-web] WebView2 controller ready @000002088813D5E0 hwnd=00000000002D0A04
+[2026-05-25 00:25:05.525] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:25:16.587] [pm-image] [info] [viewer-web] ctor @000002A96D3CCBB0
+[2026-05-25 00:25:16.846] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A96D397820 hwnd=0000000000310338
+[2026-05-25 00:25:16.846] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:26:16.467] [pm-image] [info] [viewer-web] ctor @000002A070057F40
+[2026-05-25 00:26:16.739] [pm-image] [info] [viewer-web] WebView2 controller ready @000002A06F93C580 hwnd=0000000000320338
+[2026-05-25 00:26:16.739] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:26:45.865] [pm-image] [info] [viewer-web] ctor @0000022DF59DBC90
+[2026-05-25 00:26:46.119] [pm-image] [info] [viewer-web] WebView2 controller ready @0000022DF5BE9CF0 hwnd=00000000001F0844
+[2026-05-25 00:26:46.119] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:28:23.419] [pm-image] [info] [viewer-web] ctor @000001E78813DDF0
+[2026-05-25 00:28:23.674] [pm-image] [info] [viewer-web] WebView2 controller ready @000001E7880063A0 hwnd=00000000003E0946
+[2026-05-25 00:28:23.674] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:36:43.872] [pm-image] [info] [viewer-web] ctor @00000208DE4B0C50
+[2026-05-25 00:36:44.136] [pm-image] [info] [viewer-web] WebView2 controller ready @00000208DE4B5870 hwnd=00000000001302EA
+[2026-05-25 00:36:44.136] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:16.787] [pm-image] [info] [xblox] {"connections":1,"replies":0,"requests":0,"url":"tcp:127.0.0.1:15020"}
+[2026-05-25 00:38:53.780] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:53.817] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:53.848] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:53.884] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:53.930] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:53.964] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.000] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.037] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.075] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.114] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.172] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.219] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.261] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.315] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:38:54.359] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:02.962] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:02.993] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.021] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.050] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.081] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.114] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.147] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.179] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.213] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.249] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:03.305] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:39:40.950] [pm-image] [info] [viewer-web] ctor @000001D8B2D50790
+[2026-05-25 00:39:41.038] [pm-image] [info] [viewer-web] WebView2 controller ready @000001D8B2C61980 hwnd=0000000000180026
+[2026-05-25 00:39:41.196] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-25 00:39:41.234] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\xblox" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:39:41.241] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:39:41.545] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:39:41.566] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:39:41.655] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-25 00:39:51.711] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:39:51.715] [pm-image] [info] [xblox] {"connections":3,"replies":3,"requests":3,"url":"tcp:127.0.0.1:15020"}
+[2026-05-25 00:39:51.715] [pm-image] [info] [xblox] [11,77,33]
+[2026-05-25 00:40:15.161] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:15.947] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:16.213] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:16.431] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:16.858] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:17.166] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:17.371] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:17.554] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:20.143] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:40:20.975] [pm-image] [info] [xblox] [11,22,33]
+[2026-05-25 00:41:11.714] [pm-image] [info] [viewer-web] ctor @000002354363AFD0
+[2026-05-25 00:41:11.975] [pm-image] [info] [viewer-web] WebView2 controller ready @000002354358DCB0 hwnd=00000000001502B2
+[2026-05-25 00:41:11.975] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:41:14.723] [pm-image] [info] [xblox] computer-use-notepad: starting
+[2026-05-25 00:41:15.559] [pm-image] [info] [xblox] {"bottom":869,"center":{"x":650,"y":510},"h":718,"left":108,"right":1192,"top":151,"w":1084,"x":108,"y":151}
+[2026-05-25 00:41:15.630] [pm-image] [info] [xblox] computer-use-notepad: done
+[2026-05-25 00:41:25.885] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:41:33.205] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:41:33.258] [pm-image] [info] [viewer-web] EnsureNavigated: host not visible yet (defer until WM_SHOWWINDOW / WM_SIZE)
+[2026-05-25 00:41:36.480] [pm-image] [info] [xblox] computer-use-notepad: starting
+[2026-05-25 00:41:37.038] [pm-image] [info] [xblox] {"bottom":869,"center":{"x":650,"y":510},"h":718,"left":108,"right":1192,"top":151,"w":1084,"x":108,"y":151}
+[2026-05-25 00:41:37.097] [pm-image] [info] [xblox] computer-use-notepad: done

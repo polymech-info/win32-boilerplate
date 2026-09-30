@@ -1,0 +1,15 @@
+2026-05-22 16:11:33  DllMain: pm-image-execute loaded (verify IExecute path — Win11 sparse menu uses explorer11 DLL, no iexecute log)
+2026-05-22 16:11:33  IExecute: first DllGetClassObject in this process (hostU8=C:\WINDOWS\Explorer.EXE)
+2026-05-22 16:11:33  DllGetClassObject rclsidU8={AFA5039F-9073-40FE-B142-D70ABD942412}
+2026-05-22 16:11:33  DllGetClassObject map ok kind=3
+2026-05-22 16:11:33  Execute: entry kind=3 selection=set
+2026-05-22 16:11:33  Execute: exepU8=C:\Users\cgofl\Desktop\dist\win-x64\pm-image.exe exists=yes
+2026-05-22 16:11:33  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-22 16:11:33  Execute: openUi/Chat item[0] pathU8=C:\Users\cgofl\Desktop\tests\apps
+2026-05-22 16:11:33  Execute: paths count=1 (browse_verb)
+2026-05-22 16:11:33  Execute: first pathU8=C:\Users\cgofl\Desktop\tests\apps
+2026-05-22 16:11:33  Execute: openUi --ui-preset=main --src joinLenWchars=33 (8191=typical CreateProcess cap)
+2026-05-22 16:11:33  CreateProcessW ok (process started)
+2026-05-22 16:11:33  Execute: openUi done hr=S_OK
+2026-05-23 09:07:56  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-23 09:08:15  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)

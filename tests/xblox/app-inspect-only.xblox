@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "comment": "Non-destructive app/computer-use sample. Inspects the current foreground window and stores markdown in PREVIOUS. Run: pm-image-cli xblox run --json --no-wait --src tests/xblox/app-inspect-only.xblox",
+  "roots": [
+    { "kind": "log", "level": "info", "message": "app-inspect-only: starting" },
+    {
+      "kind": "appInspectDump",
+      "id": "dump-foreground",
+      "foreground": true,
+      "format": "md",
+      "controls": "buttons,menus,editable",
+      "textMaxChars": 120,
+      "limit": 50,
+      "storeAs": "foregroundDump"
+    },
+    { "kind": "log", "level": "info", "message": "foregroundDump" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "context": {
+    "steps": []
+  },
+  "roots": [
+    {
+      "id": "custom.command-ls",
+      "kind": "runScript",
+      "method": "return host.runCustomCommand({\"enabled\":true,\"externalCommand\":{\"args\":[],\"command\":\"dir\",\"cwd\":\"\"},\"icon\":\"settings\",\"id\":\"custom.command-ls\",\"label\":\"ls\",\"output\":{},\"runOptions\":{\"newShellWindow\":false},\"source\":{\"kind\":\"selection\"},\"type\":\"button\",\"userData\":{},\"visible\":true});"
+    }
+  ],
+  "version": 1
+}

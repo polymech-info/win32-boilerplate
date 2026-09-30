@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1024 768" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="768" fill="#f5f5f5"/>
+  
+  <!-- Shadow on ground -->
+  <ellipse cx="512" cy="700" rx="280" ry="40" fill="#00000015"/>
+  
+  <!-- Shadow on right side -->
+  <polygon points="650,550 680,700 750,700 720,550" fill="#00000010"/>
+  
+  <!-- Left orange leg panel -->
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8c00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff9920;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Left leg -->
+  <rect x="200" y="420" width="100" height="260" rx="4" fill="url(#orangeGradient)" stroke="#ff7a00" stroke-width="1"/>
+  
+  <!-- Right leg -->
+  <rect x="680" y="420" width="100" height="260" rx="4" fill="url(#orangeGradient)" stroke="#ff7a00" stroke-width="1"/>
+  
+  <!-- Horizontal beam connecting legs (left side) -->
+  <rect x="200" y="400" width="130" height="45" rx="3" fill="url(#metalGradient)" stroke="#a0a0a0" stroke-width="0.5"/>
+  
+  <!-- Horizontal beam connecting legs (right side) -->
+  <rect x="720" y="400" width="130" height="45" rx="3" fill="url(#metalGradient)" stroke="#a0a0a0" stroke-width="0.5"/>
+  
+  <!-- Central connecting frame -->
+  <rect x="320" y="385" width="360" height="65" rx="4" fill="url(#metalGradient)" stroke="#a0a0a0" stroke-width="1"/>
+  
+  <!-- Inner frame details -->
+  <rect x="335" y="395" width="330" height="45" rx="2" fill="none" stroke="#d0d0d0" stroke-width="1" opacity="0.7"/>
+  
+  <!-- Metallic rods on left leg -->
+  <rect x="210" y="435" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  <rect x="210" y="480" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  <rect x="210" y="525" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  <rect x="210" y="600" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  
+  <!-- Metallic rods on right leg -->
+  <rect x="690" y="435" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  <rect x="690" y="480" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  <rect x="690" y="525" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  <rect x="690" y="600" width="80" height="4" rx="2" fill="#c0c0c0" opacity="0.8"/>
+  
+  <!-- Fasteners (bolts) on left leg -->
+  <circle cx="215" cy="450" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="245" cy="450" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="275" cy="450" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="215" cy="510" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="245" cy="510" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="275" cy="510" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  
+  <!-- Fasteners (bolts) on right leg -->
+  <circle cx="695" cy="450" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="725" cy="450" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="755" cy="450" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="695" cy="510" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="725" cy="510" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  <circle cx="755" cy="510" r="4" fill="#a0a0a0" stroke="#808080" stroke-width="0.5"/>
+  
+  <!-- Glass tabletop with perspective -->
+  <defs>
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tabletop surface -->
+  <polygon points="280,350 720,350 760,220 240,220" fill="url(#glassGradient)" stroke="#d0d0d0" stroke-width="2" opacity="0.95"/>
+  
+  <!-- Glass edge highlight -->
+  <polygon points="282,352 718,352 758,222 242,222" fill="none" stroke="#f0f0f0" stroke-width="1" opacity="0.7"/>
+  
+  <!-- Inner glass detail -->
+  <polygon points="300,360 700,360 740,230 260,230" fill="none" stroke="#c0c0c0" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Reflection on glass -->
+  <ellipse cx="450" cy="270" rx="120" ry="40" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="600" cy="290" rx="80" ry="30" fill="#ffffff" opacity="0.1"/>
+</svg>

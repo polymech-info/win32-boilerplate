@@ -1,0 +1,7 @@
+//
+//  PolymechCodeEditDebug.xcconfig
+//  CodeEdit app target only — Polymech static link flags (same as Release; see polymech_codeedit_link.xcconfig).
+//
+
+#include "Debug.xcconfig"
+#include? "../../../dist-osx/polymech-cmake-libs/polymech_codeedit_link.xcconfig"

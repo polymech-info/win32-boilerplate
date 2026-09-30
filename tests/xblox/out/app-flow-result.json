@@ -1,0 +1,511 @@
+﻿{
+  "eventCount": 28,
+  "events": [
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "0",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "app-flow: starting"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "app-flow: starting",
+      "path": "0",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "appOpen",
+      "message": "",
+      "path": "1",
+      "status": "running",
+      "type": "appOpen"
+    },
+    {
+      "blockId": "open-np",
+      "data": {
+        "hwnd": 4327206,
+        "kind": "appOpen",
+        "ok": true,
+        "pid": 2620,
+        "rect": {
+          "bottom": 900,
+          "center": {
+            "x": 650,
+            "y": 500
+          },
+          "h": 800,
+          "left": 100,
+          "right": 1200,
+          "top": 100,
+          "w": 1100,
+          "x": 100,
+          "y": 100
+        },
+        "result": {
+          "hwnd": 4327206,
+          "pid": 2620,
+          "rect": {
+            "bottom": 900,
+            "center": {
+              "x": 650,
+              "y": 500
+            },
+            "h": 800,
+            "left": 100,
+            "right": 1200,
+            "top": 100,
+            "w": 1100,
+            "x": 100,
+            "y": 100
+          },
+          "title": "Untitled - Notepad"
+        },
+        "title": "Untitled - Notepad",
+        "tool": "app_open"
+      },
+      "exitCode": 0,
+      "kind": "appOpen",
+      "message": "process launched",
+      "path": "1",
+      "status": "ok",
+      "type": "app"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "2",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "{\"hwnd\":4327206,\"pid\":2620,\"rect\":{\"bottom\":900,\"center\":{\"x\":650,\"y\":500},\"h\":800,\"left\":100,\"right\":1200,\"top\":100,\"w\":1100,\"x\":100,\"y\":100},\"title\":\"Untitled - Notepad\"}"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "{\"hwnd\":4327206,\"pid\":2620,\"rect\":{\"bottom\":900,\"center\":{\"x\":650,\"y\":500},\"h\":800,\"left\":100,\"right\":1200,\"top\":100,\"w\":1100,\"x\":100,\"y\":100},\"title\":\"Untitled - Notepad\"}",
+      "path": "2",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "3",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "2620"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "2620",
+      "path": "3",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "4",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "{\"hwnd\":4327206,\"pid\":2620,\"rect\":{\"bottom\":900,\"center\":{\"x\":650,\"y\":500},\"h\":800,\"left\":100,\"right\":1200,\"top\":100,\"w\":1100,\"x\":100,\"y\":100},\"title\":\"Untitled - Notepad\"}"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "{\"hwnd\":4327206,\"pid\":2620,\"rect\":{\"bottom\":900,\"center\":{\"x\":650,\"y\":500},\"h\":800,\"left\":100,\"right\":1200,\"top\":100,\"w\":1100,\"x\":100,\"y\":100},\"title\":\"Untitled - Notepad\"}",
+      "path": "4",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "appType",
+      "message": "",
+      "path": "5",
+      "status": "running",
+      "type": "appType"
+    },
+    {
+      "blockId": "type-flow",
+      "data": {
+        "activated": {
+          "hwnd": 4327206,
+          "pid": 2620,
+          "rect": {
+            "bottom": 900,
+            "center": {
+              "x": 650,
+              "y": 500
+            },
+            "h": 800,
+            "left": 100,
+            "right": 1200,
+            "top": 100,
+            "w": 1100,
+            "x": 100,
+            "y": 100
+          },
+          "title": "Untitled - Notepad"
+        },
+        "chars": 18,
+        "kind": "appType",
+        "ok": true,
+        "result": "stored=np, flow OK",
+        "tool": "app_type"
+      },
+      "exitCode": 0,
+      "kind": "appType",
+      "message": "text typed",
+      "path": "5",
+      "status": "ok",
+      "type": "app"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "6",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "stored=np, flow OK"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "stored=np, flow OK",
+      "path": "6",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "appActivate",
+      "message": "",
+      "path": "7",
+      "status": "running",
+      "type": "appActivate"
+    },
+    {
+      "blockId": "bogus-but-continues",
+      "data": {
+        "error": "appActivate: matching window not found",
+        "kind": "appActivate",
+        "ok": false
+      },
+      "errorCode": 1,
+      "exitCode": 1,
+      "kind": "appActivate",
+      "message": "appActivate: matching window not found",
+      "path": "7",
+      "status": "error",
+      "type": "app"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "8",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "warn",
+        "message": "app-flow: continueOnError survived"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "app-flow: continueOnError survived",
+      "path": "8",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "appInspectFind",
+      "message": "",
+      "path": "10",
+      "status": "running",
+      "type": "appInspectFind"
+    },
+    {
+      "blockId": "find-edit",
+      "data": {
+        "count": 1,
+        "kind": "appInspectFind",
+        "matches": [
+          {
+            "automationId": "15",
+            "center": {
+              "x": 650,
+              "y": 510
+            },
+            "className": "Edit",
+            "controlType": "Edit",
+            "enabled": true,
+            "focused": true,
+            "frameworkId": "Win32",
+            "hwnd": 4327206,
+            "index": 1,
+            "keyboardFocusable": true,
+            "name": "Text Editor",
+            "nativeHwnd": 2230432,
+            "offscreen": false,
+            "patterns": {
+              "expandCollapse": false,
+              "invoke": false,
+              "scroll": true,
+              "selectionItem": false,
+              "text": false,
+              "value": true
+            },
+            "pid": 2620,
+            "process": "notepad.exe",
+            "rect": {
+              "bottom": 869,
+              "center": {
+                "x": 650,
+                "y": 510
+              },
+              "h": 718,
+              "left": 108,
+              "right": 1192,
+              "top": 151,
+              "w": 1084,
+              "x": 108,
+              "y": 151
+            },
+            "value": "stored=np, flow OK",
+            "windowTitle": "Untitled - Notepad"
+          }
+        ],
+        "ok": true,
+        "result": {
+          "automationId": "15",
+          "center": {
+            "x": 650,
+            "y": 510
+          },
+          "className": "Edit",
+          "controlType": "Edit",
+          "enabled": true,
+          "focused": true,
+          "frameworkId": "Win32",
+          "hwnd": 4327206,
+          "index": 1,
+          "keyboardFocusable": true,
+          "name": "Text Editor",
+          "nativeHwnd": 2230432,
+          "offscreen": false,
+          "patterns": {
+            "expandCollapse": false,
+            "invoke": false,
+            "scroll": true,
+            "selectionItem": false,
+            "text": false,
+            "value": true
+          },
+          "pid": 2620,
+          "process": "notepad.exe",
+          "rect": {
+            "bottom": 869,
+            "center": {
+              "x": 650,
+              "y": 510
+            },
+            "h": 718,
+            "left": 108,
+            "right": 1192,
+            "top": 151,
+            "w": 1084,
+            "x": 108,
+            "y": 151
+          },
+          "value": "stored=np, flow OK",
+          "windowTitle": "Untitled - Notepad"
+        },
+        "selected": {
+          "automationId": "15",
+          "center": {
+            "x": 650,
+            "y": 510
+          },
+          "className": "Edit",
+          "controlType": "Edit",
+          "enabled": true,
+          "focused": true,
+          "frameworkId": "Win32",
+          "hwnd": 4327206,
+          "index": 1,
+          "keyboardFocusable": true,
+          "name": "Text Editor",
+          "nativeHwnd": 2230432,
+          "offscreen": false,
+          "patterns": {
+            "expandCollapse": false,
+            "invoke": false,
+            "scroll": true,
+            "selectionItem": false,
+            "text": false,
+            "value": true
+          },
+          "pid": 2620,
+          "process": "notepad.exe",
+          "rect": {
+            "bottom": 869,
+            "center": {
+              "x": 650,
+              "y": 510
+            },
+            "h": 718,
+            "left": 108,
+            "right": 1192,
+            "top": 151,
+            "w": 1084,
+            "x": 108,
+            "y": 151
+          },
+          "value": "stored=np, flow OK",
+          "windowTitle": "Untitled - Notepad"
+        },
+        "tool": "app_inspect_find"
+      },
+      "exitCode": 0,
+      "kind": "appInspectFind",
+      "message": "find complete",
+      "path": "10",
+      "status": "ok",
+      "type": "app"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "11",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "4327206"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "4327206",
+      "path": "11",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "12",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "1084"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "1084",
+      "path": "12",
+      "status": "ok",
+      "type": "log"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "appClose",
+      "message": "",
+      "path": "13",
+      "status": "running",
+      "type": "appClose"
+    },
+    {
+      "blockId": "close-np",
+      "data": {
+        "kind": "appClose",
+        "method": "terminate",
+        "ok": true,
+        "pid": 2620,
+        "result": {
+          "method": "terminate",
+          "pid": 2620
+        },
+        "tool": "app_close"
+      },
+      "exitCode": 0,
+      "kind": "appClose",
+      "message": "process terminated",
+      "path": "13",
+      "status": "ok",
+      "type": "app"
+    },
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "log",
+      "message": "",
+      "path": "14",
+      "status": "running",
+      "type": "log"
+    },
+    {
+      "data": {
+        "level": "info",
+        "message": "app-flow: done"
+      },
+      "exitCode": 0,
+      "kind": "log",
+      "message": "app-flow: done",
+      "path": "14",
+      "status": "ok",
+      "type": "log"
+    }
+  ],
+  "exitCode": 1,
+  "ok": false,
+  "src": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\xblox\\app-flow.json"
+}

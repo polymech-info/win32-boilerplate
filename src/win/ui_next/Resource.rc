@@ -1,0 +1,191 @@
+// UTF-8 source: Spanish/German/… accented letters in locales/*.rc. Required so rc.exe does not
+// misread UTF-8 as the system ANSI code page (would show mojibake e.g. AÃ±adir for Añadir).
+#pragma code_page(65001)
+
+// pm-image-ui resource script
+#include "Resource.h"
+
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+// Own-ribbon toolbar: string + bitmap resources (`RibbonUI.h` ids; no Ribbon.bml / UIRibbon)
+#include "RibbonUI.rc"
+
+// es / de / it / fr STRINGTABLE overlays (same IDs as RibbonUI.h — see locales/RibbonStrings_i18n.rc)
+#include "locales/RibbonStrings_i18n.rc"
+
+// Manifest is provided by media-img-win.manifest (already linked to pm-image).
+
+// RibbonStrings_i18n.rc ends in a non-English LANGUAGE; reset before neutral English resources.
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+// Fallback menu (when ribbon unavailable)
+IDW_MAIN MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Add Files...",       IDM_ADD_FILES
+        MENUITEM "Add &Folder...",      IDM_ADD_FOLDER
+        POPUP "Recent &files"
+        BEGIN
+            MENUITEM "(none)", IDM_RECENT_MENU_DUMMY_FILE, GRAYED INACTIVE
+        END
+        POPUP "Recent fo&lders"
+        BEGIN
+            MENUITEM "(none)", IDM_RECENT_MENU_DUMMY_FOLDER, GRAYED INACTIVE
+        END
+        MENUITEM "&Save\tCtrl+S",       IDM_FILE_SAVE
+        MENUITEM "Save &As…",         IDM_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Save La&yout…",       IDM_FILE_SAVE_LAYOUT
+        MENUITEM "&Load Layout…",       IDM_FILE_LOAD_LAYOUT
+        MENUITEM "&Reset Layout",       IDC_CMD_RESET_LAYOUT
+#if defined(FEATURE_BROWSER)
+        MENUITEM SEPARATOR
+        MENUITEM "&Settings…",          IDC_CMD_FILE_SETTINGS
+#endif
+#if FEATURE_REGISTER_EXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "Update &Explorer shell...", IDC_CMD_UPDATE_EXPLORER
+        MENUITEM "Remove E&xplorer shell…",   IDC_CMD_UNREGISTER_EXPLORER
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",       IDM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+#if defined(FEATURE_HOME_PAGE) && defined(FEATURE_BROWSER)
+        MENUITEM "&Home",               IDC_CMD_VIEW_HOME
+        MENUITEM SEPARATOR
+#endif
+#if FEATURE_COMMAND_QUEUE_VIEW
+        MENUITEM "&Queue",              IDC_CMD_VIEW_QUEUE
+#endif
+#if FEATURE_COMMAND_LOG_VIEW
+        MENUITEM "&Log",                IDC_CMD_VIEW_LOG
+#endif
+        MENUITEM "&Resize settings",    IDC_CMD_VIEW_SETTINGS
+#if FEATURE_COMMAND_FIND
+        MENUITEM "Find &results",       IDC_CMD_VIEW_FINDRESULTS
+#endif
+#if FEATURE_COMMAND_DUPLICATES
+        MENUITEM "&Duplicate groups",   IDC_CMD_VIEW_DUPLICATERESULTS
+#endif
+#if defined(FEATURE_CHAT_WEB)
+        MENUITEM "&Chat",               IDC_CMD_VIEW_CHAT
+#endif
+        MENUITEM "E&xplorer",           IDC_CMD_VIEW_FILETREE
+#if defined(FEATURE_VIEWER_DOCKER_TEST)        
+        MENUITEM "&Viewer",             IDC_CMD_VIEW_VIEWER_PANEL
+#endif
+        MENUITEM "&Tabbed",             IDC_CMD_VIEW_TABBED
+        MENUITEM "&Pin tab",            IDC_CMD_VIEW_PIN_TAB
+#if defined(FEATURE_CONSOLE)
+        MENUITEM "&Console",            IDC_CMD_VIEW_CONSOLE
+#endif
+
+#if defined(FEATURE_NODES)
+        MENUITEM "&Nodes",              IDC_CMD_VIEW_NODES
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "&Debug",              IDC_CMD_DEBUG_STATE
+
+    END
+#if FEATURE_PIXLWIZ_AUTH || FEATURE_PIXLWIZ_SHARE
+    POPUP "&Pixlwiz"
+    BEGIN
+#if FEATURE_PIXLWIZ_AUTH
+        MENUITEM "&Login…",            IDM_PIXLWIZ_LOGIN
+        MENUITEM "Log&out",            IDM_PIXLWIZ_LOGOUT
+#endif
+#if FEATURE_PIXLWIZ_SHARE
+        MENUITEM "&Share…",            IDM_PIXLWIZ_SHARE
+#endif
+    END
+#endif
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About\tF1",           IDM_ABOUT
+    END
+END
+
+// Fallback toolbar bitmap (16x15 per button placeholder – tiny 3-button strip)
+// We can add real bitmaps later; for now the toolbar works without.
+
+#if FEATURE_PIXLWIZ_SHARE
+// Pixlwiz Share — post metadata before upload (multi-select / folders use Explorer selection)
+IDD_PIXLWIZ_SHARE_POST DIALOGEX 0, 0, 320, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Share to Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Post title:", -1, 8, 8, 200, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_TITLE, 8, 20, 304, 14, ES_AUTOHSCROLL
+    LTEXT           "Short description (optional):", -1, 8, 40, 240, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_DESC, 8, 52, 304, 60, ES_MULTILINE | ES_WANTRETURN | ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "Who can see this", -1, 8, 118, 240, 10
+    CONTROL         "Private — only you", IDC_PIXLWIZ_SHARE_PRIVATE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP | WS_GROUP, 8, 130, 304, 12
+    CONTROL         "Visible in feeds — homepage & discover", IDC_PIXLWIZ_SHARE_IN_FEEDS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 146, 304, 12
+    DEFPUSHBUTTON   "Share", IDOK, 164, 192, 72, 16
+    PUSHBUTTON      "Cancel", IDCANCEL, 242, 192, 72, 16
+END
+
+// Pixlwiz Share — success (replaces Task Dialog so theme + ui_font match the post dialog)
+IDD_PIXLWIZ_SHARE_SUCCESS DIALOGEX 0, 0, 300, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pixlwiz Share"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Post created", -1, 8, 8, 280, 12
+    LTEXT           "", IDC_PIXLWIZ_SUCCESS_STATUS, 8, 26, 280, 36
+    DEFPUSHBUTTON   "Open in browser", IDC_PIXLWIZ_SUCCESS_OPEN, 8, 96, 130, 18
+    PUSHBUTTON      "Close", IDCANCEL, 190, 96, 102, 18
+END
+#endif
+
+// About dialog
+IDW_ABOUT DIALOGEX 0, 0, 200, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About pm-image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 75, 56, 50, 14
+    CTEXT           "pm-image — resize & transform", -1, 10, 12, 180, 10
+    CTEXT           "Win32++ UI", -1, 10, 26, 180, 10
+END
+
+// Accelerators
+IDW_MAIN ACCELERATORS
+BEGIN
+    VK_F5, IDM_RESIZE, VIRTKEY, NOINVERT
+    0x53, IDM_FILE_SAVE, VIRTKEY, CONTROL, NOINVERT   /* VK_S */
+END
+
+// String table (English / default; other languages in locales/Resource_ui_i18n.rc)
+STRINGTABLE
+BEGIN
+    IDW_MAIN    "pm-image"
+    IDW_READY   "Ready"
+END
+
+// es / de / it / fr: fallback menu, About dialog, localized IDW_* strings
+#include "locales/Resource_ui_i18n.rc"
+
+// Splitter resize cursors
+IDW_SPLITH              CURSOR  "res/SplitH.cur"
+IDW_SPLITV              CURSOR  "res/SplitV.cur"
+
+// Docking bitmaps — required by Win32++ dock framework for drag indicators.
+IDW_SDBOTTOM            BITMAP  "res/SDbottom.bmp"
+IDW_SDCENTER            BITMAP  "res/SDcenter.bmp"
+IDW_SDLEFT              BITMAP  "res/SDleft.bmp"
+IDW_SDMIDDLE            BITMAP  "res/SDmiddle.bmp"
+IDW_SDRIGHT             BITMAP  "res/SDright.bmp"
+IDW_SDTOP               BITMAP  "res/SDtop.bmp"
+
+// Startup splash (FEATURE_SPLASH) — id macros in Resource.h; kept here so the main .res always links them
+#if PM_HAS_BRANDING_SPLASH
+IDB_PM_LOGO_PNG         RCDATA "../../../dist/branding/logo.png"
+IDB_PM_SPLASH_1_PNG     RCDATA "../../../dist/branding/splash-1.png"
+#endif

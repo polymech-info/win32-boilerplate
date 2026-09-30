@@ -1,0 +1,30 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "composite": false,
+    "importHelpers": false,
+    "inlineSourceMap": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@viewer-next/*": ["../viewer-next/src/*"],
+      "@/viewers/markdown/*": ["../viewer-next/src/viewers/markdown/*"],
+      "@/bridge/*": ["../viewer-next/src/bridge/*"],
+      "@pm/shared/*": ["../shared/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "../shared/**/*.ts", "../shared/**/*.tsx", "vite.config.ts", "../../dist/data/resize-templates.json", "../../dist/data/design-presets.json"]
+}

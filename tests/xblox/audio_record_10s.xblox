@@ -1,0 +1,78 @@
+{
+  "context": {},
+  "roots": [
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "Starting 10-second audio and video recording..."
+    },
+    {
+      "background": true,
+      "command": "pm-image-cli custom.mic-start",
+      "kind": "shell",
+      "log": true,
+      "shell": "auto",
+      "stderr": "trace",
+      "stdout": "trace",
+      "storeAs": "start_result"
+    },
+    {
+      "background": true,
+      "command": "pm-image-cli custom.video-start",
+      "kind": "shell",
+      "log": true,
+      "shell": "auto",
+      "stderr": "trace",
+      "stdout": "trace",
+      "storeAs": "video_start_result"
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "Recording started. Wait step 1/2: waiting 5 seconds..."
+    },
+    {
+      "kind": "wait",
+      "ms": 5000
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "Wait step 1/2 complete. Wait step 2/2: waiting 5 more seconds..."
+    },
+    {
+      "kind": "wait",
+      "ms": 5000
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "10-second wait complete. Stopping video recording..."
+    },
+    {
+      "command": "pm-image-cli custom.video-stop",
+      "kind": "shell",
+      "log": true,
+      "shell": "auto",
+      "storeAs": "video_stop_result"
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "Video recording stopped. Stopping audio recording..."
+    },
+    {
+      "command": "pm-image-cli custom.mic-stop",
+      "kind": "shell",
+      "log": true,
+      "shell": "auto",
+      "storeAs": "stop_result"
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "Audio and video recording stopped."
+    }
+  ],
+  "version": 1
+}

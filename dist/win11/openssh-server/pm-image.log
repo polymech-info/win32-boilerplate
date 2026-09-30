@@ -1,0 +1,14 @@
+[2026-05-22 15:20:34.424] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\cgofl\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4483379
+[2026-05-22 15:20:34.428] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\cgofl\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-22 15:20:34.428] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-22 15:20:34.428] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=412x738
+[2026-05-22 15:20:34.428] [pm-image] [info] [chat-web] WebView2 controller ready @000001DB2EDBF070 hwnd=00000000001304B2
+[2026-05-22 15:20:34.455] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-22 15:20:34.840] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-22 15:20:34.992] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-22 15:20:35.074] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":699,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-22 15:20:35.145] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\cgofl\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-22 15:20:35.172] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426417
+[2026-05-22 15:20:35.420] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 15:20:35.427] [pm-image] [warning] [chat-web] pixlwiz credit fetch failed: HTTP 401: {"error":{"message":"ZITADEL token expired","type":"auth_error","param":"api_key","code":"401"}}
+[2026-05-22 15:20:35.831] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426417

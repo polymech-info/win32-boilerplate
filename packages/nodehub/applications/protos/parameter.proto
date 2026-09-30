@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package nodehub;
+
+message ParameterValue {
+  oneof value {
+    int32 int_val = 1;
+    float float_val = 2;
+    bool bool_val = 3;
+    string string_val = 4;
+  }
+}

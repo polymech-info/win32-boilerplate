@@ -1,0 +1,32 @@
+﻿{
+  "eventCount": 2,
+  "events": [
+    {
+      "data": {},
+      "exitCode": 0,
+      "kind": "appActivate",
+      "message": "",
+      "path": "0",
+      "status": "running",
+      "type": "appActivate"
+    },
+    {
+      "blockId": "no-selector",
+      "data": {
+        "error": "appActivate: a target selector is required (process/title/pid/hwnd/foreground)",
+        "kind": "appActivate",
+        "ok": false
+      },
+      "errorCode": 1,
+      "exitCode": 1,
+      "kind": "appActivate",
+      "message": "appActivate: a target selector is required (process/title/pid/hwnd/foreground)",
+      "path": "0",
+      "status": "error",
+      "type": "app"
+    }
+  ],
+  "exitCode": 1,
+  "ok": false,
+  "src": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\xblox\\app-errors.json"
+}

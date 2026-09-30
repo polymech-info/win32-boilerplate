@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package nodehub.tests;
+
+message IntValue {
+  int32 value = 1;
+}
+
+message FloatValue {
+  float value = 1;
+}
+
+message BoolValue {
+  bool value = 1;
+}
+
+message StringValue {
+  string value = 1;
+}
+

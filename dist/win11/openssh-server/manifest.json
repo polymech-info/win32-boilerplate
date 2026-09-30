@@ -1,0 +1,9 @@
+﻿{
+    "release":  "10.0.0.0p2-Preview",
+    "name":  "OpenSSH-Win64.zip",
+    "url":  "https://github.com/PowerShell/Win32-OpenSSH/releases/download/10.0.0.0p2-Preview/OpenSSH-Win64.zip",
+    "downloadedAt":  "2026-05-22T12:43:14.6004171+02:00",
+    "size":  5704583,
+    "installHint":  "Extract OpenSSH-Win64.zip, then run install-sshd.ps1 from an elevated PowerShell prompt.",
+    "sha256":  "23F50F3458C4C5D0B12217C6A5DDFDE0137210A30FA870E98B29827F7B43ABA5"
+}

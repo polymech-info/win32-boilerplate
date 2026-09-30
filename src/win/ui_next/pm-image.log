@@ -1,0 +1,7 @@
+[2026-05-04 13:07:00.425] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-04 13:07:00.425] [pm-image] [info] [chat-web] WebView2 ready
+[2026-05-04 13:07:00.605] [pm-image] [info] replicate_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\replicate-models-cache.json fresh=1 has_fetched_at=1
+[2026-05-04 13:07:00.606] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-04 13:07:00.631] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=387 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-04 13:07:00.648] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-04 13:07:00.679] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=387 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official

@@ -1,0 +1,13 @@
+   ,Lydia – v3.5,Lydia – v4.8,Lydia – v5.1,Lydia – Printhead
+Weight,40 Kg,150 Kg,145 Kg,40 Kg
+Package Dimensions,60 x 35 x 55 cm,140 x 60 x 140 cm,135 x 58 x 135 cm,60 x 35 x 55 cm
+Screw Diameter,25 mm,35 mm,38 mm,25 mm
+Usable Screw Length,35cm,90 cm,95 cm,35cm
+Supported Voltage,220V / 480V,480V,220V / 480V,220V / 480V
+Input Flake Size,Small - Medium,Small - Medium,Small - Large,Small - Medium
+Heatbands,4 (250W) / Ceramic,8 (600W) / Ceramic,8 (750W) / Ceramic,4 (250W) / Ceramic
+Temperature Controller,2x RexC100,4x RexC100,4x Omron E5B,2x Omron E5B
+Motor Power,1.5 kW,7 kW,9 kW,1.5 kW
+Options,PLC / Feeder / Cart / Filament,PLC / Feeder / Filament / Omron VFD & PID,PLC / Feeder / Filament / Omron VFD & PID / IoT Dashboard,Material-Feeder
+Price,2600 Euros ,8600 Euros,9800 Euros,4800 Euros
+Applications,"Education, Research & Development, Filament, 3D-Print","Research & Development, Filament, 3D-Print, Production","Research & Development, Filament, 3D-Print, Production, Industrial","Research & Development, Filament, 3D-Print, Production"

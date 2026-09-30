@@ -1,0 +1,116 @@
+{
+  "context": {
+    "stdout": "hello\n",
+    "weather": {
+      "attempts": 1,
+      "effectiveUrl": "https://api.open-meteo.com/v1/forecast?latitude=41.3851&longitude=2.1734&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe/Madrid",
+      "headers": [
+        "HTTP/1.1 200 OK",
+        "Date: Thu, 21 May 2026 21:59:50 GMT",
+        "Content-Type: application/json; charset=utf-8",
+        "Transfer-Encoding: chunked",
+        "Connection: keep-alive"
+      ],
+      "method": "GET",
+      "ok": true,
+      "raw": "{\"latitude\":41.375,\"longitude\":2.125,\"generationtime_ms\":0.054955482482910156,\"utc_offset_seconds\":7200,\"timezone\":\"Europe/Madrid\",\"timezone_abbreviation\":\"GMT+2\",\"elevation\":28.0,\"current_units\":{\"time\":\"iso8601\",\"interval\":\"seconds\",\"temperature_2m\":\"°C\",\"weather_code\":\"wmo code\",\"wind_speed_10m\":\"km/h\"},\"current\":{\"time\":\"2026-05-21T23:45\",\"interval\":900,\"temperature_2m\":19.7,\"weather_code\":1,\"wind_speed_10m\":0.7}}",
+      "statusCode": 200,
+      "type": "network",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=41.3851&longitude=2.1734&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe/Madrid"
+    },
+    "weather_data": 19.7
+  },
+  "roots": [
+    {
+      "connectTimeoutMs": 10000,
+      "followRedirects": true,
+      "id": "weather-fetch",
+      "kind": "fetch",
+      "maxRedirects": 5,
+      "retries": 2,
+      "retryDelayMs": 250,
+      "storeAs": "weather",
+      "timeoutMs": 30000,
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=41.3851&longitude=2.1734&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe/Madrid"
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "PREVIOUS"
+    },
+    {
+      "filter": ".current.temperature_2m",
+      "kind": "Parse",
+      "parser": "jq",
+      "storeAs": "weather_data"
+    },
+    {
+      "kind": "log",
+      "level": "info",
+      "message": "Weather is PREVIOUS"
+    },
+    {
+      "command": {
+        "appCommand": "takescreenshot",
+        "icon": "photo",
+        "id": "custom.capture.screenshot",
+        "label": "Take screenshot",
+        "ribbonCommand": "filetree",
+        "tint": "#A855F7",
+        "userData": {
+          "kind": "screenshot"
+        }
+      },
+      "id": "custom.capture.screenshot",
+      "kind": "command"
+    },
+    {
+      "followRedirects": true,
+      "kind": "fetch",
+      "storeAs": "response",
+      "timeoutMs": 30000,
+      "url": "https://"
+    },
+    {
+      "command": "echo hello",
+      "kind": "shell",
+      "log": false,
+      "mode": "shell",
+      "shell": "auto",
+      "stderr": "error",
+      "stdout": "info",
+      "storeAs": "stdout",
+      "timeoutMs": 30000
+    },
+    {
+      "command": {
+        "args": [
+          "--prompt",
+          "as technical illustration",
+          "--src",
+          "${CURRENT_FILE}"
+        ],
+        "cliCommand": "transform",
+        "enabled": true,
+        "icon": "photo",
+        "id": "custom.command-mpch9gdx-44982",
+        "label": "AI:Illustration",
+        "output": {},
+        "registerInExplorer": true,
+        "source": {
+          "files": [
+            "tests/assets/commands/illustration.jpg"
+          ],
+          "kind": "files"
+        },
+        "tint": "#EC4899",
+        "type": "button",
+        "userData": {},
+        "visible": true
+      },
+      "id": "custom.command-mpch9gdx-44982",
+      "kind": "command"
+    }
+  ],
+  "version": 1
+}

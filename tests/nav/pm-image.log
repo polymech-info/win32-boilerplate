@@ -1,0 +1,301 @@
+[2026-05-09 09:07:40.600] [pm-image] [info] [startup]   137 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-09 09:07:40.615] [pm-image] [info] [startup]   151 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-09 09:07:40.615] [pm-image] [info] [startup]   151 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-09 09:07:40.615] [pm-image] [info] [startup]   151 ms  [layout] LoadWindowLayout: enter slot='main'
+[2026-05-09 09:07:40.616] [pm-image] [info] [startup]   153 ms  [layout] ParseWindowLayout: enter
+[2026-05-09 09:07:40.617] [pm-image] [info] [startup]   153 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=1,C=0,FR=0,DR=0]
+[2026-05-09 09:07:40.617] [pm-image] [info] [startup]   153 ms  [layout] LoadWindowLayout: OK
+[2026-05-09 09:07:40.617] [pm-image] [info] [startup]   153 ms  ApplyWindowLayoutData: Explorer SetInitialFolder from window layout filetree_folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav"
+[2026-05-09 09:07:40.617] [pm-image] [info] [startup]   153 ms  OnInitialUpdate after LoadLayout
+[2026-05-09 09:07:40.617] [pm-image] [info] [startup]   153 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-09 09:07:40.637] [pm-image] [info] [startup]   173 ms  ApplyAppearance leave
+[2026-05-09 09:07:40.637] [pm-image] [info] [startup]   173 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-09 09:07:40.638] [pm-image] [info] [startup]   174 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-09 09:07:40.638] [pm-image] [info] [startup]   174 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-09 09:07:40.740] [pm-image] [info] [startup]   276 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-09 09:07:40.813] [pm-image] [info] [startup]   349 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-09 09:07:40.813] [pm-image] [info] [startup]   349 ms    phase 0: SplashDismiss
+[2026-05-09 09:07:40.813] [pm-image] [info] [startup]   350 ms    phase 2: StartupFlush (1 pending paths)
+[2026-05-09 09:07:40.814] [pm-image] [info] [startup]   351 ms  SelRouter: SetFromStartup filtered=1
+[2026-05-09 09:07:40.814] [pm-image] [info] [startup]   351 ms    phase 3: ScreenshotSize
+[2026-05-09 09:07:40.814] [pm-image] [info] [startup]   351 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-09 09:07:40.814] [pm-image] [info] [startup]   351 ms  ScheduleFileTreeBrowse seq=1 depth=1 paths=1
+[2026-05-09 09:07:40.814] [pm-image] [info] [startup]   351 ms  OnDeferredPostLayoutInit leave
+[2026-05-09 09:12:29.791] [pm-image] [info] [startup]   133 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-09 09:12:29.805] [pm-image] [info] [startup]   147 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-09 09:12:29.806] [pm-image] [info] [startup]   147 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-09 09:12:29.806] [pm-image] [info] [startup]   147 ms  [layout] LoadWindowLayout: enter slot='main'
+[2026-05-09 09:12:29.807] [pm-image] [info] [startup]   148 ms  [layout] ParseWindowLayout: enter
+[2026-05-09 09:12:29.807] [pm-image] [info] [startup]   148 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=1,C=0,FR=0,DR=0]
+[2026-05-09 09:12:29.807] [pm-image] [info] [startup]   149 ms  [layout] LoadWindowLayout: OK
+[2026-05-09 09:12:29.807] [pm-image] [info] [startup]   149 ms  ApplyWindowLayoutData: Explorer SetInitialFolder from window layout filetree_folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav"
+[2026-05-09 09:12:29.807] [pm-image] [info] [startup]   149 ms  OnInitialUpdate after LoadLayout
+[2026-05-09 09:12:29.807] [pm-image] [info] [startup]   149 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-09 09:12:29.827] [pm-image] [info] [startup]   168 ms  ApplyAppearance leave
+[2026-05-09 09:12:29.827] [pm-image] [info] [startup]   168 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-09 09:12:29.827] [pm-image] [info] [startup]   169 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-09 09:12:29.827] [pm-image] [info] [startup]   169 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-09 09:12:29.924] [pm-image] [info] [startup]   266 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-09 09:12:30.009] [pm-image] [info] [startup]   351 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-09 09:12:30.009] [pm-image] [info] [startup]   351 ms    phase 0: SplashDismiss
+[2026-05-09 09:12:30.009] [pm-image] [info] [startup]   351 ms    phase 2: StartupFlush (1 pending paths)
+[2026-05-09 09:12:30.010] [pm-image] [info] [startup]   351 ms  SelRouter: SetFromStartup filtered=2
+[2026-05-09 09:12:30.010] [pm-image] [info] [startup]   351 ms    phase 3: ScreenshotSize
+[2026-05-09 09:12:30.010] [pm-image] [info] [startup]   351 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-09 09:12:30.010] [pm-image] [info] [startup]   351 ms  ScheduleFileTreeBrowse seq=1 depth=1 paths=1
+[2026-05-09 09:12:30.010] [pm-image] [info] [startup]   351 ms  OnDeferredPostLayoutInit leave
+[2026-05-09 09:15:11.205] [pm-image] [info] [startup]   161 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-09 09:15:11.223] [pm-image] [info] [startup]   179 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-09 09:15:11.223] [pm-image] [info] [startup]   179 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-09 09:15:11.223] [pm-image] [info] [startup]   179 ms  [layout] LoadWindowLayout: enter slot='main'
+[2026-05-09 09:15:11.225] [pm-image] [info] [startup]   180 ms  [layout] ParseWindowLayout: enter
+[2026-05-09 09:15:11.225] [pm-image] [info] [startup]   180 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=1,C=0,FR=0,DR=0]
+[2026-05-09 09:15:11.225] [pm-image] [info] [startup]   181 ms  [layout] LoadWindowLayout: OK
+[2026-05-09 09:15:11.225] [pm-image] [info] [startup]   181 ms  ApplyWindowLayoutData: Explorer SetInitialFolder from window layout filetree_folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav"
+[2026-05-09 09:15:11.225] [pm-image] [info] [startup]   181 ms  OnInitialUpdate after LoadLayout
+[2026-05-09 09:15:11.225] [pm-image] [info] [startup]   181 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-09 09:15:11.247] [pm-image] [info] [startup]   203 ms  ApplyAppearance leave
+[2026-05-09 09:15:11.247] [pm-image] [info] [startup]   203 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-09 09:15:11.248] [pm-image] [info] [startup]   203 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-09 09:15:11.248] [pm-image] [info] [startup]   204 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-09 09:15:11.346] [pm-image] [info] [startup]   302 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-09 09:15:11.432] [pm-image] [info] [startup]   388 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-09 09:15:11.432] [pm-image] [info] [startup]   388 ms    phase 0: SplashDismiss
+[2026-05-09 09:15:11.432] [pm-image] [info] [startup]   388 ms    phase 2: StartupFlush (1 pending paths)
+[2026-05-09 09:15:11.432] [pm-image] [info] [startup]   388 ms  SelRouter: SetFromStartup filtered=2
+[2026-05-09 09:15:11.432] [pm-image] [info] [startup]   388 ms    phase 3: ScreenshotSize
+[2026-05-09 09:15:11.433] [pm-image] [info] [startup]   388 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-09 09:15:11.433] [pm-image] [info] [startup]   388 ms  ScheduleFileTreeBrowse seq=1 depth=1 paths=1
+[2026-05-09 09:15:11.433] [pm-image] [info] [startup]   388 ms  OnDeferredPostLayoutInit leave
+[2026-05-09 09:15:13.045] [pm-image] [info] [startup]  2001 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:15:13.045] [pm-image] [info] [startup]  2001 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:15:13.046] [pm-image] [info] [startup]  2001 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:15:13.539] [pm-image] [info] [startup]  2494 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:15:13.539] [pm-image] [info] [startup]  2494 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5 - Copy.jpg"
+[2026-05-09 09:15:13.539] [pm-image] [info] [startup]  2495 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5 - Copy.jpg"
+[2026-05-09 09:15:22.280] [pm-image] [info] [startup] 11236 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-09 09:15:22.280] [pm-image] [info] [startup] 11236 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=1,L=1,S=0,FT=1,C=0]
+[2026-05-09 09:15:22.280] [pm-image] [info] [startup] 11236 ms  load_settings miss #2 reason=save_window_layout
+[2026-05-09 09:15:22.284] [pm-image] [info] [startup] 11240 ms  [layout] SaveWindowLayout: OK
+[2026-05-09 09:15:23.692] [pm-image] [info] [startup] 12648 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:15:23.692] [pm-image] [info] [startup] 12648 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:15:23.693] [pm-image] [info] [startup] 12648 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:15:24.194] [pm-image] [info] [startup] 13150 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:15:24.194] [pm-image] [info] [startup] 13150 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5 - Copy.jpg"
+[2026-05-09 09:15:24.195] [pm-image] [info] [startup] 13150 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5 - Copy.jpg"
+[2026-05-09 09:15:25.475] [pm-image] [info] [startup] 14431 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:15:25.475] [pm-image] [info] [startup] 14431 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:15:25.476] [pm-image] [info] [startup] 14432 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:15:27.745] [pm-image] [info] [startup] 16701 ms  load_settings miss #3 reason=appearance
+[2026-05-09 09:15:27.868] [pm-image] [info] [startup] 16824 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-09 09:15:27.901] [pm-image] [info] [startup] 16857 ms  ApplyAppearance leave
+[2026-05-09 09:15:27.989] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-09 09:15:27.989] [pm-image] [info] [chat-web] WebView2 ready
+[2026-05-09 09:15:28.460] [pm-image] [info] replicate_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\replicate-models-cache.json fresh=1 has_fetched_at=1
+[2026-05-09 09:15:28.462] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-09 09:15:28.507] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=387 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-09 09:15:28.547] [pm-image] [info] pixlwiz_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\pixlwiz-models-cache.json fresh=1
+[2026-05-09 09:15:28.547] [pm-image] [info] pixlwiz_models: list_models: source=disk_cache url=https://llm.polymech.info/models?return_wildcard_routes=true&include_model_access_groups=false&only_model_access_groups=false&include_metadata=true n=9
+[2026-05-09 09:15:44.523] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-09 09:15:44.556] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=387 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-09 09:15:44.593] [pm-image] [info] pixlwiz_models: list_models: source=disk_cache url=https://llm.polymech.info/models?return_wildcard_routes=true&include_model_access_groups=false&only_model_access_groups=false&include_metadata=true n=9
+[2026-05-09 09:15:45.235] [pm-image] [info] [chat-web] sessions RPC saveChatSession id=aeca27d9-60b8-419a-8b83-be9bbb6ccae5 entries=6
+[2026-05-09 09:15:45.239] [pm-image] [info] [chat-web] sessions saveChatSession ok id=aeca27d9-60b8-419a-8b83-be9bbb6ccae5
+[2026-05-09 09:15:45.246] [pm-image] [info] [startup] 34202 ms  load_settings miss #4 reason=load_subtree
+── Debug snapshot → debug.json ──────────────────────────────────
+C:\Users\zx\AppData\Roaming\PolyMech\pm-image\debug.json
+── Selection ────────────────────────────────────────────────────
+  selection : C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg
+  initial   : C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav
+  initfiles : (none)
+  folder    : C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav
+  pending   : (none)
+  retry     : (none)
+  preview   : src=Explorer  active=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg
+[2026-05-09 09:16:18.600] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:16:18.627] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:18.632] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:19.049] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:22.832] [pm-image] [info] [startup] 71788 ms  SelRouter: ClearFromEmptyExplorerPick (had selection)
+[2026-05-09 09:16:22.835] [pm-image] [info] [startup] 71791 ms  PreviewCoord: Request src=Explorer paths=0 (clear)
+[2026-05-09 09:16:22.835] [pm-image] [info] [startup] 71791 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:22.853] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:23.107] [pm-image] [info] [startup] 72062 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:23.109] [pm-image] [info] [startup] 72065 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\pm-image.log"
+[2026-05-09 09:16:23.109] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=71
+[2026-05-09 09:16:23.109] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-09 09:16:23.118] [pm-image] [info] [startup] 72073 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\pm-image.log"
+[2026-05-09 09:16:23.623] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:16:23.638] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:24.056] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:24.410] [pm-image] [info] [startup] 73366 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:24.413] [pm-image] [info] [startup] 73368 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:16:24.413] [pm-image] [info] [startup] 73369 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5.jpg"
+[2026-05-09 09:16:24.420] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:24.931] [pm-image] [info] [startup] 73886 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:24.933] [pm-image] [info] [startup] 73889 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5 - Copy.jpg"
+[2026-05-09 09:16:24.934] [pm-image] [info] [startup] 73890 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav\flux-5 - Copy.jpg"
+[2026-05-09 09:16:24.941] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:25.958] [pm-image] [info] [startup] 74914 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:25.961] [pm-image] [info] [startup] 74916 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\nav"
+[2026-05-09 09:16:25.961] [pm-image] [info] [startup] 74917 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:25.972] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:27.580] [pm-image] [info] [startup] 76536 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:27.583] [pm-image] [info] [startup] 76539 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests"
+[2026-05-09 09:16:27.583] [pm-image] [info] [startup] 76539 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:27.593] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:30.616] [pm-image] [info] [startup] 79571 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:30.618] [pm-image] [info] [startup] 79574 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\sys_metrics.h"
+[2026-05-09 09:16:30.618] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=65
+[2026-05-09 09:16:30.618] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-09 09:16:30.629] [pm-image] [info] [startup] 79584 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\sys_metrics.h"
+[2026-05-09 09:16:31.125] [pm-image] [info] [startup] 80080 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:31.127] [pm-image] [info] [startup] 80083 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\sys_metrics.cpp"
+[2026-05-09 09:16:31.135] [pm-image] [info] [startup] 80091 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\sys_metrics.cpp"
+[2026-05-09 09:16:31.143] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:16:31.155] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:31.159] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:31.572] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:32.916] [pm-image] [info] [startup] 81872 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:32.918] [pm-image] [info] [startup] 81874 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src"
+[2026-05-09 09:16:32.919] [pm-image] [info] [startup] 81874 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:32.931] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:34.442] [pm-image] [info] [startup] 83398 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:34.444] [pm-image] [info] [startup] 83400 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests"
+[2026-05-09 09:16:34.445] [pm-image] [info] [startup] 83400 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:34.456] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:35.709] [pm-image] [info] [startup] 84664 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:35.711] [pm-image] [info] [startup] 84667 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\unit"
+[2026-05-09 09:16:35.711] [pm-image] [info] [startup] 84667 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:35.721] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:37.040] [pm-image] [info] [startup] 85996 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:37.043] [pm-image] [info] [startup] 85999 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\video"
+[2026-05-09 09:16:37.043] [pm-image] [info] [startup] 85999 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:37.053] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:37.560] [pm-image] [info] [startup] 86516 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:37.563] [pm-image] [info] [startup] 86518 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\2.mp4"
+[2026-05-09 09:16:37.563] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=74
+[2026-05-09 09:16:37.563] [pm-image] [info] [viewer-web] Reload() for folder/context reset; deferring FlushContextToWeb to NavigationCompleted
+[2026-05-09 09:16:37.572] [pm-image] [info] [startup] 86527 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\2.mp4"
+[2026-05-09 09:16:37.808] [pm-image] [info] [startup] 86763 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:37.810] [pm-image] [info] [startup] 86766 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest"
+[2026-05-09 09:16:37.811] [pm-image] [info] [startup] 86767 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:38.100] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:16:38.172] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:38.532] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:39.592] [pm-image] [info] [startup] 88548 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:39.595] [pm-image] [info] [startup] 88551 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\AR4_SG1_base.STEP"
+[2026-05-09 09:16:39.595] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=81
+[2026-05-09 09:16:39.604] [pm-image] [info] [startup] 88560 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\AR4_SG1_base.STEP"
+[2026-05-09 09:16:40.109] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:16:40.123] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:40.774] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:57.642] [pm-image] [info] [startup] 106597 ms  SelRouter: ClearFromEmptyExplorerPick (had selection)
+[2026-05-09 09:16:57.644] [pm-image] [info] [startup] 106600 ms  PreviewCoord: Request src=Explorer paths=0 (clear)
+[2026-05-09 09:16:57.644] [pm-image] [info] [startup] 106600 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:16:57.653] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:58.677] [pm-image] [info] [startup] 107633 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:16:58.680] [pm-image] [info] [startup] 107636 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\AR4_SG1_base.STEP"
+[2026-05-09 09:16:58.680] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=81
+[2026-05-09 09:16:58.689] [pm-image] [info] [startup] 107645 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\AR4_SG1_base.STEP"
+[2026-05-09 09:16:59.196] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:16:59.225] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:16:59.654] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:03.809] [pm-image] [info] [startup] 112765 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:03.812] [pm-image] [info] [startup] 112768 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\Auxiliary Enclosure.STL"
+[2026-05-09 09:17:03.820] [pm-image] [info] [startup] 112776 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\Auxiliary Enclosure.STL"
+[2026-05-09 09:17:03.828] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:03.913] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:25.709] [pm-image] [info] [startup] 134665 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:25.712] [pm-image] [info] [startup] 134668 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\extruders-de-v2.md"
+[2026-05-09 09:17:25.720] [pm-image] [info] [startup] 134676 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\extruders-de-v2.md"
+[2026-05-09 09:17:25.725] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:25.763] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:33.118] [pm-image] [info] [startup] 142073 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:33.120] [pm-image] [info] [startup] 142076 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\extruders-en.xlsx"
+[2026-05-09 09:17:33.128] [pm-image] [info] [startup] 142084 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\extruders-en.xlsx"
+[2026-05-09 09:17:33.135] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en.xlsx hostedErr=(none)
+[2026-05-09 09:17:33.142] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=spreadsheet folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=https://pm-md.invalid/extruders-en.xlsx hostedErr=(none)
+[2026-05-09 09:17:39.500] [pm-image] [info] [startup] 148456 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:39.503] [pm-image] [info] [startup] 148459 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5.jpg"
+[2026-05-09 09:17:39.504] [pm-image] [info] [startup] 148460 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5.jpg"
+[2026-05-09 09:17:39.515] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:42.585] [pm-image] [info] [startup] 151541 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:42.587] [pm-image] [info] [startup] 151543 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-6.png"
+[2026-05-09 09:17:42.589] [pm-image] [info] [startup] 151545 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-6.png"
+[2026-05-09 09:17:42.596] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:44.652] [pm-image] [info] [startup] 153608 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:44.654] [pm-image] [info] [startup] 153610 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\GearBracketsIn.step"
+[2026-05-09 09:17:44.655] [pm-image] [info] [viewer-web] Reload() after web preview context clear; next folder keyUtf8Bytes=81
+[2026-05-09 09:17:44.664] [pm-image] [info] [startup] 153620 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\GearBracketsIn.step"
+[2026-05-09 09:17:45.194] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-09 09:17:45.209] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:45.843] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:47.993] [pm-image] [info] [startup] 156949 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:47.996] [pm-image] [info] [startup] 156951 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\J1 Base Enclosure Fan Cover.STL"
+[2026-05-09 09:17:48.004] [pm-image] [info] [startup] 156959 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\J1 Base Enclosure Fan Cover.STL"
+[2026-05-09 09:17:48.011] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:48.153] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:49.792] [pm-image] [info] [startup] 158748 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:49.794] [pm-image] [info] [startup] 158750 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\J2 Arm Cover Spacer.stl"
+[2026-05-09 09:17:49.802] [pm-image] [info] [startup] 158758 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\J2 Arm Cover Spacer.stl"
+[2026-05-09 09:17:49.809] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:49.972] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=three folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:55.693] [pm-image] [info] [startup] 164649 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:17:55.696] [pm-image] [info] [startup] 164651 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\README.md"
+[2026-05-09 09:17:55.703] [pm-image] [info] [startup] 164659 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\README.md"
+[2026-05-09 09:17:55.711] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:17:55.718] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:04.594] [pm-image] [info] [startup] 173550 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-09 09:18:04.594] [pm-image] [info] [startup] 173550 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=0,L=0,S=0,FT=1,C=1]
+[2026-05-09 09:18:04.595] [pm-image] [info] [startup] 173551 ms  load_settings miss #5 reason=save_window_layout
+[2026-05-09 09:18:04.598] [pm-image] [info] [startup] 173554 ms  [layout] SaveWindowLayout: OK
+[2026-05-09 09:18:06.438] [pm-image] [info] [startup] 175394 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:18:06.439] [pm-image] [info] [startup] 175395 ms  load_settings miss #6 reason=appearance
+[2026-05-09 09:18:06.441] [pm-image] [info] [startup] 175397 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\ui-log.log"
+[2026-05-09 09:18:06.453] [pm-image] [info] [startup] 175409 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\ui-log.log"
+[2026-05-09 09:18:06.457] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:06.462] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:07.291] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:09.282] [pm-image] [info] [startup] 178238 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:18:09.285] [pm-image] [info] [startup] 178240 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5_technical_illustration.png"
+[2026-05-09 09:18:09.290] [pm-image] [info] [startup] 178246 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5_technical_illustration.png"
+[2026-05-09 09:18:09.292] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:10.043] [pm-image] [info] [startup] 178998 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:18:10.045] [pm-image] [info] [startup] 179001 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5.jpg"
+[2026-05-09 09:18:10.046] [pm-image] [info] [startup] 179002 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5.jpg"
+[2026-05-09 09:18:10.048] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:27.130] [pm-image] [info] [chat-web] openPathDefault: 'C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest\flux-5.jpg'
+[2026-05-09 09:18:30.897] [pm-image] [info] [startup] 199852 ms  SelRouter: ClearFromEmptyExplorerPick (had selection)
+[2026-05-09 09:18:30.897] [pm-image] [info] [startup] 199853 ms  load_settings miss #7 reason=appearance
+[2026-05-09 09:18:30.900] [pm-image] [info] [startup] 199856 ms  PreviewCoord: Request src=Explorer paths=0 (clear)
+[2026-05-09 09:18:30.900] [pm-image] [info] [startup] 199856 ms  PreviewCoord: result=NothingPreviewable active=""
+[2026-05-09 09:18:30.904] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:32.078] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-09 09:18:32.108] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=387 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-09 09:18:32.146] [pm-image] [info] pixlwiz_models: list_models: source=disk_cache url=https://llm.polymech.info/models?return_wildcard_routes=true&include_model_access_groups=false&only_model_access_groups=false&include_metadata=true n=9
+[2026-05-09 09:18:32.778] [pm-image] [info] [chat-web] sessions RPC saveChatSession id=f86778dc-b4d0-48e8-9d73-3f91edafe9be entries=23
+[2026-05-09 09:18:32.783] [pm-image] [info] [chat-web] sessions saveChatSession ok id=f86778dc-b4d0-48e8-9d73-3f91edafe9be
+[2026-05-09 09:18:32.785] [pm-image] [info] [startup] 201741 ms  load_settings miss #8 reason=load_subtree
+[2026-05-09 09:18:35.283] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-09 09:18:35.313] [pm-image] [info] replicate_models: fetch_collection_models: collection=official source=disk_cache_fresh count=387 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/official
+[2026-05-09 09:18:35.351] [pm-image] [info] pixlwiz_models: list_models: source=disk_cache url=https://llm.polymech.info/models?return_wildcard_routes=true&include_model_access_groups=false&only_model_access_groups=false&include_metadata=true n=9
+[2026-05-09 09:18:35.990] [pm-image] [info] [chat-web] sessions RPC saveChatSession id=04b30735-77cb-4ad9-8af7-e817bfb75e8e entries=4
+[2026-05-09 09:18:35.995] [pm-image] [info] [chat-web] sessions saveChatSession ok id=04b30735-77cb-4ad9-8af7-e817bfb75e8e
+[2026-05-09 09:18:35.999] [pm-image] [info] [startup] 204955 ms  load_settings miss #9 reason=load_subtree
+[2026-05-09 09:18:36.136] [pm-image] [info] [startup] 205091 ms  PreviewCoord: Request src=ChatGenerated paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2_convert_to_a_technical_illustration_in_b.jpg"
+[2026-05-09 09:18:36.139] [pm-image] [info] [startup] 205094 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2_convert_to_a_technical_illustration_in_b.jpg"
+[2026-05-09 09:18:36.139] [pm-image] [info] [startup] 205094 ms  ScheduleFileTreeBrowse seq=2 depth=1 paths=1
+[2026-05-09 09:18:36.140] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:36.325] [pm-image] [info] [startup] 205281 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:18:36.328] [pm-image] [info] [startup] 205284 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2_convert_to_a_technical_illustration_in_b.jpg"
+[2026-05-09 09:18:36.331] [pm-image] [info] [startup] 205287 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2_convert_to_a_technical_illustration_in_b.jpg"
+[2026-05-09 09:18:36.338] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:38.225] [pm-image] [info] [startup] 207180 ms  PreviewCoord: Request src=ChatGenerated paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2.jpg"
+[2026-05-09 09:18:38.225] [pm-image] [info] [startup] 207181 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2.jpg"
+[2026-05-09 09:18:38.225] [pm-image] [info] [startup] 207181 ms  ScheduleFileTreeBrowse seq=3 depth=1 paths=1
+[2026-05-09 09:18:38.226] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-09 09:18:38.426] [pm-image] [info] [startup] 207382 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-09 09:18:38.428] [pm-image] [info] [startup] 207384 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2.jpg"
+[2026-05-09 09:18:38.429] [pm-image] [info] [startup] 207385 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pix\2.jpg"
+[2026-05-09 09:18:38.431] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)

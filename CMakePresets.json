@@ -1,0 +1,274 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "description": "Canonical feature set for all presets. Platform/mode presets inherit and override as needed.",
+            "vendor": {
+                "pm.features": {
+                    "FEATURE_TRIAL_CHECK":               "14-day trial check (registry + %APPDATA% hidden file + HMAC). OFF for dev/internal builds.",
+                    "FEATURE_LICENSE_FILE":              "Offline Ed25519 license.json validation; skips trial when a valid license is present.",
+                    "FEATURE_ENCRYPT_SESSIONS":          "Encrypt sessions.json with a machine-derived key instead of plain JSON.",
+                    "FEATURE_PIXLWIZ_AUTH":              "Pixlwiz login/logout (headless OAuth child window + token store).",
+                    "FEATURE_PIXLWIZ_SHARE":             "Pixlwiz share post dialog (title / description / privacy / success).",
+                    "FEATURE_SESSION_VIDEO_RECORDER": "Record the main window to Videos/session-HHMMSS.mp4 via WGC + H.264 (MSVC + Windows 10+ SDK). Windows-only.",
+                    "FEATURE_RAW_PREVIEW":               "Fast RAW thumbnail via vips_thumbnail (stage-1 preview; sub-second even for 50 MP).",
+                    "FEATURE_RAW_VIEW":                  "Full-quality background Bayer decode via libvips (stage-2; replaces thumbnail after decode).",
+                    "FEATURE_D2D_GALLERY":               "D2D cover-flow filmstrip dock at the bottom of CFileViewer. Adds d2d1/dwrite/windowscodecs deps. Windows-only.",
+                    "FEATURE_STT":                       "Mic capture + realtime STT via miniaudio (WASAPI on Windows, CoreAudio on macOS).",
+                    "FEATURE_VIDEO":                     "Webcam / video preview capture via Media Foundation (Windows) or AVFoundation (macOS).",
+                    "FEATURE_USE_OWN_RIBBON":            "Win32++ CTab + hand-maintained RibbonUI.h toolbar strip. Only supported UI host (stock UIRibbon removed).",
+                    "FEATURE_SPLASH":                    "GDI+ startup splash window (splash-1.png + logo.png). See docs/splash.md.",
+                    "FEATURE_CHAT_WEB":                  "WebView2-hosted chat panel (apps/chat-next -> dist/shared/chat.html). Pulls Microsoft.Web.WebView2 NuGet via FetchContent.",
+                    "FEATURE_VIEWER_WEB":                "WebView2 viewer dock for text/viewer-next (apps/viewer-next -> dist/shared/viewer.html). Requires FEATURE_CHAT_WEB for the WebView2 SDK.",
+                    "FEATURE_SERVE":                     "HTTP REST API server subcommand (pm-image serve …). Includes src/http/serve.cpp and the embedded OpenAPI spec.",
+                    "FEATURE_IPC":                       "JSON-line IPC server subcommand (pm-image ipc …). Includes src/ipc/ipc_serve.cpp.",
+                    "FEATURE_MCP_SERVER":                "Embedded MCP Streamable HTTP server (--mcp / --mcp-port).",
+                    "FEATURE_MCP_CLIENT":                "MCP client bridge/probe for agent mcp.json tools.",
+                    "FEATURE_HOME_LLM_TOOLS":            "Home/agent LLM tools bundle: built-in path tools and MCP tools.",
+                    "FEATURE_HOME_LLM_SKILLS":           "Home/agent LLM skills discovery and prompt injection.",
+                    "FEATURE_NODES":                     "NodeHub graph editor dock (experimental). OFF until the node UI stabilises.",
+                    "FEATURE_XBLOX":                     "XBlox block-flow runtime, CLI command, and Windows .xblox viewer.",
+                    "FEATURE_MODBUS":                    "Modbus TCP/RTU client/server wrapper library (libmodbus).",
+                    "FEATURE_MODBUS_XBLOX":              "XBlox Modbus blocks. Requires FEATURE_XBLOX and FEATURE_MODBUS.",
+                    "FEATURE_COMMAND_RESIZE":            "CLI: resize command (pm-image resize …).",
+                    "FEATURE_COMMAND_COMPRESS":          "CLI: compress command (pm-image compress …).",
+                    "FEATURE_COMMAND_TRANSFORM":         "CLI: transform command (pm-image transform …).",
+                    "FEATURE_COMMAND_CREATE":            "CLI: create command (pm-image create …).",
+                    "FEATURE_COMMAND_META":              "CLI: meta command (pm-image meta …).",
+                    "FEATURE_COMMAND_FIND":              "CLI: find command (pm-image find …).",
+                    "FEATURE_COMMAND_SEARCH":            "CLI: search command (pm-image search …).",
+                    "FEATURE_COMMAND_DUPLICATES":        "CLI: duplicates command (pm-image duplicates …).",
+                    "FEATURE_COMMAND_PROVIDER_MODELS":   "CLI: provider models command (pm-image provider models …).",
+                    "FEATURE_COMMAND_LLM":               "CLI: llm command (pm-image llm …).",
+                    "FEATURE_REGISTER_EXPLORER": "CLI: register-explorer command (pm-image register-explorer …).",
+                    "FEATURE_COMMAND_APP":             "CLI: app command (pm-image app …).",
+                    "FEATURE_COMMAND_SERVICE":         "CLI: service command (pm-image service …).",
+                    "FEATURE_COMMAND_BATCH":           "CLI: batch command (pm-image batch …).",
+                    "FEATURE_COMMAND_SETTINGS":        "CLI: settings command (pm-image settings …).",
+                    "FEATURE_COMMAND_TEST":            "CLI: test command (pm-image test …). Win32 dev harness only.",
+                    "FEATURE_COMMAND_LICENSE":           "CLI: license command (pm-image license …). Win32 offline activation.",
+                    "FEATURE_COMMAND_STATUS":            "CLI: status command (pm-image status …). Win32 trial check only.",
+                    "FEATURE_COMMAND_REPLAY":            "CLI: replay command (pm-image replay …). Win32 session replay only.",
+                    "FEATURE_COMMAND_SERVE":             "CLI: serve command (pm-image serve …). HTTP server mode.",
+                    "FEATURE_COMMAND_IPC":               "CLI: ipc command (pm-image ipc …). Inter-process communication.",
+                    "FEATURE_COMMAND_AUDIO":             "CLI: audio command (pm-image audio …). Requires FEATURE_STT.",
+                    "FEATURE_COMMAND_VIDEO":             "CLI: video command (pm-image video …). Requires FEATURE_VIDEO.",
+                    "FEATURE_COMMAND_XBLOX":             "CLI: xblox command (pm-image xblox …). Requires FEATURE_XBLOX.",
+                    "FEATURE_COMMAND_SESSION_PERSISTENCE": "CLI/UI: Save/load session commands for persistence.",
+                    "FEATURE_COMMAND_LOG_VIEW":              "UI: Log panel view (View -> Log).",
+                    "FEATURE_COMMAND_QUEUE_VIEW":            "UI: Queue panel view (View -> Queue).",
+                    "FEATURE_COMMAND_UI_COMMAND_CONTROL":    "UI: Run/Pause/Resume/Cancel batch control buttons in ribbon.",
+                    "FEATURE_EXPLORER_INTEGRATION":          "Windows Explorer context menu integration (IExecute/IExplorerCommand).",
+                    "FEATURE_DAEMON":                       "Global shortcut daemon (Win32 hotkeys now; cross-platform surface).",
+                    "FEATURE_ASSISTANT":                    "UIAutomation assistant / spy PoC (auto spy command; Win32 + UIAutomationCore.dll; see docs/win32/computer-use.md)."
+                }
+            },
+            "cacheVariables": {
+                "FEATURE_TRIAL_CHECK":               "OFF",
+                "FEATURE_LICENSE_FILE":              "OFF",
+                "FEATURE_ENCRYPT_SESSIONS":          "OFF",
+                "FEATURE_PIXLWIZ_AUTH":              "ON",
+                "FEATURE_PIXLWIZ_SHARE":             "ON",
+                "FEATURE_SESSION_VIDEO_RECORDER":    "OFF",
+                "FEATURE_RAW_PREVIEW":               "ON",
+                "FEATURE_RAW_VIEW":                  "ON",
+                "FEATURE_D2D_GALLERY":               "ON",
+                "FEATURE_STT":                       "ON",
+                "FEATURE_VIDEO":                     "ON",
+                "FEATURE_USE_OWN_RIBBON":            "ON",
+                "FEATURE_SPLASH":                    "ON",
+                "FEATURE_CHAT_WEB":                  "ON",
+                "FEATURE_VIEWER_WEB":                "ON",
+                "FEATURE_SERVE":                     "OFF",
+                "FEATURE_IPC":                       "OFF",
+                "FEATURE_NODES":                     "OFF",
+                "FEATURE_XBLOX":                     "ON",
+                "FEATURE_MODBUS":                    "ON",
+                "FEATURE_MODBUS_XBLOX":              "ON",
+                "FEATURE_CONSOLE":                   "ON",
+                "FEATURE_COMMAND_RESIZE":            "ON",
+                "FEATURE_COMMAND_COMPRESS":          "OFF",
+                "FEATURE_COMMAND_TRANSFORM":         "ON",
+                "FEATURE_COMMAND_CREATE":            "ON",
+                "FEATURE_COMMAND_META":              "OFF",
+                "FEATURE_COMMAND_FIND":              "OFF",
+                "FEATURE_COMMAND_SEARCH":            "OFF",
+                "FEATURE_COMMAND_DUPLICATES":        "OFF",
+                "FEATURE_COMMAND_PROVIDER_MODELS":   "ON",
+                "FEATURE_COMMAND_LLM":               "ON",
+                "FEATURE_REGISTER_EXPLORER": "ON",
+                "FEATURE_COMMAND_APP":               "ON",
+                "FEATURE_COMMAND_SERVICE":           "ON",
+                "FEATURE_COMMAND_BATCH":             "OFF",
+                "FEATURE_COMMAND_SETTINGS":          "ON",
+                "FEATURE_COMMAND_TEST":              "OFF",
+                "FEATURE_COMMAND_LICENSE":           "ON",
+                "FEATURE_COMMAND_STATUS":            "ON",
+                "FEATURE_COMMAND_REPLAY":            "OFF",
+                "FEATURE_COMMAND_SERVE":             "ON",
+                "FEATURE_COMMAND_IPC":               "ON",
+                "FEATURE_COMMAND_AUDIO":             "ON",
+                "FEATURE_COMMAND_VIDEO":             "ON",
+                "FEATURE_COMMAND_XBLOX":             "ON",
+                "FEATURE_COMMAND_SESSION_PERSISTENCE": "OFF",
+                "FEATURE_COMMAND_LOG_VIEW":              "ON",
+                "FEATURE_COMMAND_QUEUE_VIEW":            "OFF",
+                "FEATURE_COMMAND_UI_COMMAND_CONTROL":    "OFF",
+                "FEATURE_EXPLORER_INTEGRATION":          "ON",
+                "FEATURE_HOME_PAGE": "ON",
+                "FEATURE_HOME_LLM_TOOLS": "ON",
+                "FEATURE_HOME_LLM_SKILLS": "ON",
+                "FEATURE_MCP_SERVER": "ON",
+                "FEATURE_MCP_CLIENT": "ON",
+                "FEATURE_CUSTOM_COMMANDS": "ON",
+                "FEATURE_DAEMON": "ON",
+                "FEATURE_ASSISTANT": "ON"                
+
+            }
+        },
+        {
+            "name": "dev",
+            "displayName": "Dev (Debug)",
+            "inherits": "base",
+            "binaryDir": "${sourceDir}/build/dev",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "FEATURE_TRIAL_CHECK":               "OFF",
+                "FEATURE_LICENSE_FILE":              "OFF"
+            }
+        },
+        {
+            "name": "release",
+            "displayName": "Release",
+            "description": "With the Visual Studio generator, build with: cmake --build --preset release --config Release (npm run build does this).",
+            "inherits": "base",
+            "binaryDir": "${sourceDir}/build/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "FEATURE_RAW_VIEW": "OFF",
+                "FEATURE_BROWSER": "ON",
+                "FEATURE_CONSOLE": "ON",
+                "FEATURE_HOME_PAGE": "ON",
+                "FEATURE_REGISTER_EXPLORER": "ON"
+            }
+        },
+        {
+            "name": "store-msi-release",
+            "displayName": "Store MSI/EXE Release",
+            "description": "Microsoft Store MSI/EXE submission track. Conservative defaults; override feature flags with -D... when invoking export-features/cmake.",
+            "inherits": "release",
+            "binaryDir": "${sourceDir}/build/store-msi-release",
+            "cacheVariables": {
+                "FEATURE_IPC": "OFF",
+                "FEATURE_COMMAND_IPC": "OFF",
+                "FEATURE_SERVE": "OFF",
+                "FEATURE_COMMAND_SERVE": "OFF",
+                "FEATURE_COMMAND_BATCH": "OFF",
+                "FEATURE_VIDEO": "OFF",
+                "FEATURE_COMMAND_VIDEO": "OFF",
+                "FEATURE_SESSION_VIDEO_RECORDER": "OFF",
+                "FEATURE_XBLOX": "ON",
+                "FEATURE_MODBUS": "OFF",
+                "FEATURE_MODBUS_XBLOX": "OFF",
+                "FEATURE_COMMAND_XBLOX": "OFF"
+            }
+        },
+        {
+            "name": "clang-tidy",
+            "displayName": "Debug + clang-tidy",
+            "inherits": "dev",
+            "description": "Runs clang-tidy on first-party targets (POLYMECH_CLANG_TIDY_BUILD). Requires llvm clang-tidy on PATH.",
+            "binaryDir": "${sourceDir}/build/clang-tidy",
+            "cacheVariables": {
+                "POLYMECH_CLANG_TIDY_BUILD": "ON"
+            }
+        },
+        {
+            "name": "msvc-asan",
+            "displayName": "MSVC + Address Sanitizer (Debug)",
+            "inherits": "dev",
+            "description": "MSVC /fsanitize=address for dev builds. Requires a Visual Studio 2022 (or later) toolset with ASan support.",
+            "binaryDir": "${sourceDir}/build/msvc-asan",
+            "cacheVariables": {
+                "POLYMECH_MSVC_ADDRESS_SANITIZER": "ON"
+            }
+        },
+        {
+            "name": "release-macos",
+            "displayName": "Release (macOS / guest)",
+            "inherits": "release",
+            "description": "Release for macOS: binaryDir and Ninja output live on the guest local disk ($HOME/.pm-media-build), not on a VMware shared folder, so git/FetchContent and the build tree do not hit HGFS limits. FetchContent populates ~/.pm-media-fetchcontent. Source stays on the share (or a clone). See osx/README.md.",
+            "binaryDir": "$penv{HOME}/.pm-media-build/macos-release",
+            "cacheVariables": {
+                "FETCHCONTENT_BASE_DIR":             "$penv{HOME}/.pm-media-fetchcontent",
+                "FEATURE_D2D_GALLERY":               "OFF",
+                "FEATURE_SESSION_VIDEO_RECORDER": "OFF",
+                "FEATURE_VIDEO":                     "ON",
+                "FEATURE_STT":                       "ON"
+            }
+        },
+        {
+            "name": "release-linux",
+            "displayName": "Release (Linux / guest)",
+            "inherits": "release",
+            "description": "Release for Linux: build tree lives on the guest local disk (~/.pm-media-build/linux-release) so FetchContent and Ninja do not hit HGFS/NFS latency. Source stays on the shared folder.",
+            "binaryDir": "$penv{HOME}/.pm-media-build/linux-release",
+            "cacheVariables": {
+                "FETCHCONTENT_BASE_DIR":             "$penv{HOME}/.pm-media-fetchcontent",
+                "CMAKE_INSTALL_PREFIX":              "${sourceDir}/dist/install",
+                "FEATURE_D2D_GALLERY":               "OFF",
+                "FEATURE_SESSION_VIDEO_RECORDER": "OFF"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "_build-parallel",
+            "hidden": true,
+            "description": "jobs=0 → cmake --build --parallel with no count (MSBuild/Ninja use all logical CPUs).",
+            "jobs": 0
+        },
+        {
+            "name": "dev",
+            "inherits": "_build-parallel",
+            "configurePreset": "dev"
+        },
+        {
+            "name": "release",
+            "inherits": "_build-parallel",
+            "configurePreset": "release"
+        },
+        {
+            "name": "store-msi-release",
+            "inherits": "_build-parallel",
+            "configurePreset": "store-msi-release"
+        },
+        {
+            "name": "clang-tidy",
+            "inherits": "_build-parallel",
+            "configurePreset": "clang-tidy"
+        },
+        {
+            "name": "msvc-asan",
+            "inherits": "_build-parallel",
+            "configurePreset": "msvc-asan"
+        },
+        {
+            "name": "release-macos",
+            "inherits": "_build-parallel",
+            "configurePreset": "release-macos"
+        },
+        {
+            "name": "release-linux",
+            "inherits": "_build-parallel",
+            "configurePreset": "release-linux"
+        }
+    ]
+}

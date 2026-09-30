@@ -1,0 +1,64 @@
+[2026-05-04 13:06:59.471] ----
+[2026-05-04 13:06:59.471] ui-log: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\ui-log.log
+[2026-05-04 13:06:59.471] 0 ms  session start (monotonic ms below)
+[2026-05-04 13:06:59.471] 0 ms  pre-session: 2 ms process entry to after CLI11 parse; 0 ms after parse to this session; 2 ms entry to session (before CoInit, …)
+[2026-05-04 13:06:59.471]     0 ms  launch: launch_ui_next (resize --ui-next, default seed, or caller)
+[2026-05-04 13:06:59.471]     0 ms  run_pm_image_ui: start (next: CoInitEx, vips, then frame Create)
+[2026-05-04 13:06:59.472]     1 ms  after CoInitializeEx
+[2026-05-04 13:06:59.472]     1 ms  load_settings miss #1 reason=appearance
+[2026-05-04 13:06:59.474]     3 ms  after apply_display_language_from_settings
+[2026-05-04 13:06:59.479]     9 ms  after vips_init
+[2026-05-04 13:06:59.481]    10 ms  after ui_font_init_from_settings (loads appearance)
+[2026-05-04 13:06:59.481]    11 ms  after theme_init_from_settings (loads appearance again)
+[2026-05-04 13:06:59.481]    11 ms  after enable_app_dark_mode
+[2026-05-04 13:06:59.579]   108 ms  splash: shown (layered, 790x467) — primary frame painted synchronously
+[2026-05-04 13:06:59.579]   108 ms  before CPmImageApp (frame Create + OnInitialUpdate)
+[2026-05-04 13:06:59.583]   112 ms  CMainFrame ctor after LoadPresets (parse settings for presets)
+[2026-05-04 13:06:59.641]   170 ms  OnInitialUpdate enter (win32_dock in settings.json or default layout)
+[2026-05-04 13:06:59.643]   172 ms  OnInitialUpdate: after load_window_layout prime (defer_dock flag; uses settings cache if warm)
+[2026-05-04 13:06:59.644]   173 ms  LoadDockFromSettings: read win32_dock JSON from settings 0 ms
+[2026-05-04 13:06:59.658]   188 ms  OnInitialUpdate: dock panel id=8 (findresults) undocked (NewDocker+AddUndockedChild) 14 ms
+[2026-05-04 13:06:59.674]   204 ms  OnInitialUpdate: dock panel id=10 (duplicateresults) undocked (NewDocker+AddUndockedChild) 15 ms
+[2026-05-04 13:06:59.987]   516 ms  OnInitialUpdate: dock panel id=3 (settings) undocked (NewDocker+AddUndockedChild) 312 ms
+[2026-05-04 13:07:00.026]   556 ms  OnInitialUpdate: dock panel id=9 (chat) undocked (NewDocker+AddUndockedChild) 39 ms
+[2026-05-04 13:07:00.042]   572 ms  OnInitialUpdate: dock panel id=7 (filetree (IExplorerBrowser)) docked (NewDocker+AddDockedChild) 16 ms
+[2026-05-04 13:07:00.068]   597 ms  OnInitialUpdate: dock panel id=1 (queue) docked (NewDocker+AddDockedChild) 25 ms
+[2026-05-04 13:07:00.098]   627 ms  OnInitialUpdate: dock panel id=2 (log) child (NewDocker+AddDockedChild) 30 ms
+[2026-05-04 13:07:00.098]   627 ms  OnInitialUpdate: apply_dock_tree_from_json total (all panels above) 453 ms
+[2026-05-04 13:07:00.098]   628 ms  LoadDockFromSettings: total wall time 455 ms (settings.json win32_dock only)
+[2026-05-04 13:07:00.098]   628 ms  OnInitialUpdate: after LoadDockLayout (win32_dock JSON, AddDockedChild/CreateWindow; tab order may defer)
+[2026-05-04 13:07:00.098]   628 ms  OnInitialUpdate phase: LoadDock + dock pointers (layout source: settings win32_dock)
+[2026-05-04 13:07:00.099]   629 ms  OnInitialUpdate phase: after lazy AddDockedChild (workbench-specific: main vs chat vs viewer)
+[2026-05-04 13:07:00.111]   641 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-04 13:07:00.112]   642 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-04 13:07:00.113]   643 ms  ApplyWindowLayoutData: Explorer SetInitialFolder from window layout filetree_folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\3dtest"
+[2026-05-04 13:07:00.114]   643 ms  OnInitialUpdate after LoadLayout
+[2026-05-04 13:07:00.114]   643 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-04 13:07:00.303]   833 ms  ApplyAppearance leave
+[2026-05-04 13:07:00.303]   833 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-04 13:07:00.306]   836 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-04 13:07:00.307]   836 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-04 13:07:00.432]   961 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-04 13:07:00.669]  1198 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-04 13:07:00.669]  1198 ms    phase 0: SplashDismiss
+[2026-05-04 13:07:00.669]  1199 ms    phase 2: StartupFlush (1 pending paths)
+[2026-05-04 13:07:00.670]  1199 ms  SelRouter: SetFromStartup filtered=1
+[2026-05-04 13:07:00.670]  1200 ms    phase 3: ScreenshotSize
+[2026-05-04 13:07:00.670]  1200 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-04 13:07:00.670]  1200 ms  ScheduleFileTreeBrowse seq=1 depth=1 paths=1
+[2026-05-04 13:07:00.670]  1200 ms  OnDeferredPostLayoutInit leave
+[2026-05-04 13:07:06.469]  6999 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-04 13:07:06.471]  7000 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\ExplorerSelectionRouter.cpp"
+[2026-05-04 13:07:06.475]  7004 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\ExplorerSelectionRouter.cpp"
+[2026-05-04 13:07:08.456]  8986 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-04 13:07:08.458]  8987 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\DuplicatePanel.h"
+[2026-05-04 13:07:08.465]  8995 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\DuplicatePanel.h"
+[2026-05-04 13:07:09.496] 10025 ms  SelRouter: SetFromExplorerPick raw=1 filtered=1
+[2026-05-04 13:07:09.498] 10027 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\DuplicatePanel.cpp"
+[2026-05-04 13:07:09.506] 10035 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\src\win\ui_next\DuplicatePanel.cpp"
+[2026-05-04 13:07:10.812] 11341 ms  WM_CLOSE: begin (timer kill, optional worker join, SaveDockLayout, SaveLayout, then destroy)
+[2026-05-04 13:07:10.815] 11344 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-04 13:07:10.815] 11345 ms  load_settings miss #2 reason=save_subtree
+[2026-05-04 13:07:10.819] 11348 ms  load_settings miss #3 reason=save_window_layout
+[2026-05-04 13:07:10.898] 11427 ms  after CWinApp::Run (message pump exit)
+[2026-05-04 13:07:10.902] 11431 ms  end session (load_settings cache-misses logged: 3)

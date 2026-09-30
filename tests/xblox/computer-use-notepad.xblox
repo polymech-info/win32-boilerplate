@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "comment": "Computer-use sample: opens Notepad, types via appBatch, uses window-relative mouse coordinates, captures a screenshot, then force-closes. Run: pm-image-cli xblox run --json --no-wait --src tests/xblox/computer-use-notepad.xblox",
+  "context": {
+    "outputPath": "tests/xblox/out/computer-use-notepad.jpg"
+  },
+  "roots": [
+    { "kind": "log", "level": "info", "message": "computer-use-notepad: starting" },
+    {
+      "kind": "appOpen",
+      "id": "open-notepad",
+      "exe": "notepad.exe",
+      "waitMs": 1500,
+      "storeAs": "notepad"
+    },
+    {
+      "kind": "appBatch",
+      "id": "type-lines",
+      "defaultDelayMs": 40,
+      "steps": [
+        { "action": "activate", "title": "Notepad" },
+        { "action": "type", "text": "XBlox computer-use sample\n" },
+        { "action": "key-press", "key": "enter", "hold_ms": 30 },
+        { "action": "type", "text": "window-relative coords + appBatch timing\n" },
+        { "action": "wait", "ms": 100 }
+      ],
+      "storeAs": "typingReport"
+    },
+    {
+      "kind": "appMouseMove",
+      "id": "move-inside-window",
+      "title": "Notepad",
+      "xw": 240,
+      "yw": 180,
+      "smooth": true,
+      "storeAs": "cursor"
+    },
+    {
+      "kind": "appInspectFind",
+      "id": "find-editor",
+      "title": "Notepad",
+      "name": "Text Editor",
+      "nth": 0,
+      "storeAs": "editor"
+    },
+    { "kind": "log", "level": "info", "message": "editor.rect" },
+    {
+      "kind": "appScreenshot",
+      "id": "capture-notepad",
+      "title": "Notepad",
+      "outputPath": "tests/xblox/out/computer-use-notepad.jpg",
+      "quality": 80,
+      "storeAs": "screenshot"
+    },
+    {
+      "kind": "appClose",
+      "id": "close-notepad",
+      "title": "Notepad",
+      "force": true
+    },
+    { "kind": "log", "level": "info", "message": "computer-use-notepad: done" }
+  ]
+}

@@ -1,0 +1,22 @@
+[2026-05-23 13:47:09.422] [pm-image] [info] [viewer-web] ctor @000002B0C135E3E0
+[2026-05-23 13:47:09.642] [pm-image] [info] [viewer-web] WebView2 controller ready @000002B0BC5F0BB0 hwnd=0000000000090D02
+[2026-05-23 13:47:09.788] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-23 13:47:09.810] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pages" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 13:47:09.810] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pages" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 13:47:10.222] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pages" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 13:47:17.380] [pm-image] [info] [chat-web] ctor @000002B0C1376788
+[2026-05-23 13:47:17.383] [pm-image] [info] [agent_scheduler] started
+[2026-05-23 13:47:17.383] [pm-image] [info] [scheduler] loop running
+[2026-05-23 13:47:17.437] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\pages" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-23 13:47:17.636] [pm-image] [info] [chat-web] writing virtual-host bundle: path=C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web\chat.html bytes=4485581
+[2026-05-23 13:47:17.638] [pm-image] [info] [chat-web] virtual-host mapping ok: https://pm-chat.invalid -> C:\Users\zx\AppData\Local\PolyMech\pm-image\chat-web
+[2026-05-23 13:47:17.638] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-23 13:47:17.638] [pm-image] [info] [chat-web] Navigate: https://pm-chat.invalid/chat.html bounds=414x706
+[2026-05-23 13:47:17.638] [pm-image] [info] [chat-web] WebView2 controller ready @000002B0C13767B0 hwnd=0000000000120CD8
+[2026-05-23 13:47:17.661] [pm-image] [info] [chat-web] NavigationStarting: https://pm-chat.invalid/chat.html
+[2026-05-23 13:47:17.669] [pm-image] [info] [chat-web] ContentLoading: navigationId=2
+[2026-05-23 13:47:17.774] [pm-image] [info] [chat-web] NavigationCompleted: success=1 status=0 navigationId=2 source=https://pm-chat.invalid/chat.html
+[2026-05-23 13:47:17.825] [pm-image] [info] [chat-web] DOM probe (NavigationCompleted): hr=0x0 result={"appFeatures":true,"bodyChildren":2,"bodyTextLen":281,"bootEvents":[{"detail":"","href":"https://pm-chat.invalid/chat.html","kind":"bootstrap-installed","readyState":"loading"},{"detail":"scripts=2","href":"https://pm-chat.invalid/chat.html","kind":"domcontentloaded","readyState":"interactive"}],"href":"https://pm-chat.invalid/chat.html","pmChat":false,"readyState":"complete","root":true,"rootChildren":1,"scripts":2,"title":"Chat"}
+[2026-05-23 13:47:17.862] [pm-image] [info] openrouter_models: cache cold read: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openrouter-models-cache.json fresh=1
+[2026-05-23 13:47:17.885] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426380
+[2026-05-23 13:47:18.432] [pm-image] [info] openrouter_models: list_models_openrouter_http: source=disk_cache n=358 bytes_out=426380

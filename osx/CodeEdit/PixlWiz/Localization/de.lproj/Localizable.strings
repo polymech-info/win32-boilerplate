@@ -1,0 +1,446 @@
+"Hello, world!"="Hallo, Welt!";
+
+// Settings - General Tab
+"General"="Allgemein";
+"App Language"="App-Sprache";
+"Follow System"="System";
+"Language change"="Sprache geändert";
+"Restart CodeEdit to use the new language for the whole interface."="Starten Sie CodeEdit neu, damit die neue Sprache überall in der Benutzeroberfläche gilt.";
+
+// Settings - File Icon Style
+"File Icon Style"="Datei-Symbolstil";
+"Color"="Farbe";
+"Monochrome"="Monochrom";
+
+// Settings - Appearance
+"Appearance"="Erscheinungsbild";
+"System"="System";
+"Light"="Hell";
+"Dark"="Dunkel";
+
+// Settings - Reopen Behavior
+"Reopen Behavior"="Verhalten beim erneuten Öffnen";
+"Welcome Screen"="Willkommensbildschirm";
+"Open Panel"="Dialog „Öffnen“";
+"New Document"="Neues Dokument";
+"Remove from Recent Projects"="Aus „Zuletzt benutzt“ entfernen";
+"Show in Finder"="Im Finder anzeigen";
+"Copy Path"="Pfad kopieren";
+
+// Settings - Editor Theme
+"Editor Theme"="Editor-Design";
+
+// Settings - Default Tab Width
+"Default Tab Width"="Standard-Einzug";
+
+// Settings - Terminal Tab
+"Terminal"="Terminal";
+
+// Settings - Terminal Shell Type
+"Terminal Shell"="Terminal-Shell";
+"System Default"="Systemstandard";
+
+// Settings - Terminal Font
+"Terminal Font"="Terminal-Schrift";
+"System Font"="System-Schrift";
+"Custom"="Benutzerdefiniert";
+
+//Editor Screen
+"Open file from sidebar"="Datei in der Seitenleiste öffnen";
+"CodeEdit cannot open this file because its file type is not supported." = "CodeEdit kann diese Datei nicht öffnen, da der Dateityp nicht unterstützt wird.";
+
+// Inspector Sidebar
+"File Inspector"="Datei-Informationen";
+"History Inspector"="Verlauf";
+"Quick Help Inspector"="Kurzhilfe";
+
+// Project Navigator Item
+"Add File"="Datei hinzufügen";
+"Not implemented yet"="Noch nicht implementiert";
+
+// Leading Sidebar Toolbar
+"Alphabetically"="Alphabetisch";
+"Folders on top"="Ordner oben";
+
+
+// Welcome Screen
+"Welcome to CodeEdit" = "Willkommen bei CodeEdit";
+"Version %@ (%@)" = "Version %@ (%@)";
+"No Recent Projects" = "Keine zuletzt verwendeten Projekte";
+
+// Welcome Screen - New File
+"Create a new file" = "Neue Datei anlegen";
+"Clone an existing project" = "Vorhandenes Projekt klonen";
+
+// Welcome Screen - Open File
+"Open a file or folder" = "Datei oder Ordner öffnen";
+"Open an existing file or folder on your Mac" = "Eine vorhandene Datei oder einen Ordner auf Ihrem Mac öffnen";
+
+// Welcome Screen - SCM
+"Start working on something from a Git repository" = "An einem Git-Repository arbeiten";
+
+"Remove from Recent Projects" = "Aus „Zuletzt benutzt“ entfernen";
+"Show in Finder" = "Im Finder anzeigen";
+"Copy Path" = "Pfad kopieren";
+
+"Polymech.command.resize" = "Größe ändern";
+"Polymech.command.meta" = "Meta";
+"Polymech.command.compress" = "Komprimieren";
+"Polymech.command.find" = "Suchen";
+"Polymech.command.transform" = "Transformieren";
+"Polymech.command.chat" = "Chat";
+"Polymech.inspector.chat.openButton" = "Chat öffnen";
+"Polymech.menu.viewChat.help" = "Agent-Panel anzeigen und Polymech-Chat in der Seitenleiste fokussieren.";
+"Polymech.menu.shareToPixlwiz" = "Share to Pixlwiz…";
+"Polymech.menu.shareToPixlwiz.help" = "Publish selected images to the Pixlwiz service (requires sign-in via pm-image login).";
+"Polymech.share.sheetTitle" = "Share to Pixlwiz";
+"Polymech.share.imageCount" = "%d image(s) will be attached.";
+"Polymech.share.titleField" = "Title";
+"Polymech.share.titlePlaceholder" = "Post title";
+"Polymech.share.descriptionField" = "Description";
+"Polymech.share.descriptionPlaceholder" = "Optional";
+"Polymech.share.visibilitySection" = "Visibility";
+"Polymech.share.private" = "Private (only you)";
+"Polymech.share.inPublicFeeds" = "Show in public feeds";
+"Polymech.share.cancel" = "Cancel";
+"Polymech.share.share" = "Share";
+"Polymech.share.uploading" = "Uploading…";
+"Polymech.share.successMessage" = "Your post was published.";
+"Polymech.share.postIdLabel" = "Post ID";
+"Polymech.share.picturesLabel" = "Pictures";
+"Polymech.share.picturesCount" = "%d picture(s)";
+"Polymech.share.openInBrowser" = "Open in Browser";
+"Polymech.share.done" = "Done";
+"Polymech.share.noImages.title" = "No images to share";
+"Polymech.share.noImages.message" = "Select image file(s) or folders in the navigator, or open an image tab — same inputs as Polymech Run.";
+"Polymech.menu.detachChatToEditor" = "Chat in den Editor ablösen";
+"Polymech.menu.detachChatToEditor.help" = "Denselben Chat im Haupt-Editor als Tab öffnen.";
+"Polymech.chat.detachToEditor" = "In Editor ablösen";
+"Polymech.agentChat.unavailable.title" = "Agent-Chat ist nicht verfügbar.";
+"Polymech.agentChat.unavailable.hint" = "packages/media/cpp/dist/chat.html bauen oder kopieren (npm run build:chat-next:embed in packages/media/cpp). Wenn Chat verfügbar ist: „Ansicht“ → „Chat“ für die Seitenleiste oder „Chat in den Editor ablösen“ für einen Tab.";
+"Polymech.brand" = "Polymech";
+"Polymech.run" = "Ausführen";
+"Polymech.a11y.imageTools" = "Polymech-Bildwerkzeuge";
+"Polymech.a11y.run" = "Polymech-Befehl ausführen";
+"Polymech.toolbar.help.default" = "Befehl wählen, Optionen im Polymech-Inspektor anpassen, dann Ausführen";
+"Polymech.toolbar.help.titleBar" = "%@\nBefehl wählen, JSON im Polymech-Inspektor einstellen (Sichern), dann Ausführen.";
+"Polymech.toolbar.chipHelp" = "%@ im Polymech-Inspektor, dann Ausführen";
+"Polymech.inline.withCommand" = "Polymech · %@";
+"Polymech.input.noImagesUnderSelection" = "Keine Bilder in der Navigationsauswahl – Bilddateien oder -ordner wählen oder Auswahl aufheben, um das Bild des aktiven Tabs zu nutzen.";
+"Polymech.input.noImageInput" = "Kein Bildeingang – Bild-Tab öffnen oder Dateien/Ordner im Navigator wählen.";
+"Polymech.input.runUsesOne" = "Verwendet 1 Datei: „%@“";
+"Polymech.input.runUsesMany" = "Verwendet %1$d Bilddateien (Mehrfachauswahl), z. B. „%2$@“ und %3$d weitere";
+"Polymech.kind.file" = "Datei";
+"Polymech.kind.folder" = "Ordner";
+"Polymech.selection.workspaceLine" = "Arbeitsbereich: %@";
+"Polymech.selection.workingFolderLine" = "Arbeitsordner: %@";
+"Polymech.selection.oneItem" = "Auswahl: %1$@ (%2$@)";
+"Polymech.selection.multi" = "Auswahl: %d Elemente (Mehrfachauswahl)";
+"Polymech.selection.activeTabNoNav" = "Keine Navigator-Auswahl – aktiver Tab: %@";
+"Polymech.selection.activeTabOnly" = "Aktiver Tab: %@";
+"Polymech.selection.noFile" = "Keine Datei – Datei öffnen oder Elemente im Navigator wählen";
+"Polymech.job.title.resizeInPlace" = "Größe ändern: %@ (in situ)";
+"Polymech.job.title.resizeTo" = "Größe ändern: %@ → %@";
+"Polymech.job.title.meta" = "Meta: %@";
+"Polymech.job.title.compressInPlace" = "Komprimieren: %@ (in situ)";
+"Polymech.job.title.compressTo" = "Komprimieren: %@ → %@";
+"Polymech.job.title.find" = "Suchen";
+"Polymech.job.title.transform" = "Transformieren: %@";
+"Polymech.queue.clear" = "Leeren";
+"Polymech.queue.stopSelected" = "Stopp";
+"Polymech.queue.stopSelectedHelp" = "Die ausgewählten laufenden Aufträge beenden.";
+"Polymech.queue.removeSelected" = "Entfernen";
+"Polymech.queue.removeSelectedHelp" = "Ausgewählte Aufträge aus der Liste entfernen.";
+"Polymech.queue.emptyTitle" = "Noch keine Aufträge";
+"Polymech.queue.emptyDescription" = "Bildaktionen über die Editor-Symbolleiste starten; Ausgabe und Fehler erscheinen hier.";
+"Polymech.queue.status.running" = "Läuft";
+"Polymech.queue.status.queued" = "Wartet";
+"Polymech.queue.status.succeeded" = "Fertig";
+"Polymech.queue.status.failed" = "Fehlgeschlagen";
+"Polymech.queue.column.name" = "Name";
+"Polymech.queue.column.status" = "Status";
+"Polymech.queue.column.path" = "Pfad";
+"Polymech.queue.column.source" = "Quelle";
+"Polymech.queue.column.result" = "Ergebnis";
+"Polymech.queue.revealInNavigator" = "Im Projektnavigator anzeigen";
+"Polymech.queue.column.detail" = "";
+"Polymech.queue.detail" = "Details";
+"Polymech.queue.detailHelp" = "Vollständige Ausgabe für „%@“ öffnen.";
+"Polymech.queue.pathNone" = "—";
+"Polymech.queue.detailTitle" = "Auftragsausgabe";
+"Polymech.queue.detail.pathLabel" = "Pfad";
+"Polymech.queue.detail.sourceLabel" = "Quelle";
+"Polymech.queue.detail.resultLabel" = "Ergebnis";
+"Polymech.queue.detail.revealButton" = "Einblenden";
+"Polymech.queue.detail.runningHint" = "Die Ausgabe erscheint, wenn der Auftrag beendet ist.";
+"Polymech.queue.detail.removed" = "Dieser Auftrag steht nicht mehr in der Liste.";
+"Polymech.queue.detail.noOutput" = "(Keine Ausgabe)";
+"Polymech.queue.detail.outputLabel" = "Ausgabe";
+"Polymech.queue.detailClose" = "Schließen";
+"Polymech.queue.cancelled" = "Abgebrochen (Stopp angefordert; die Engine kann kurz weiterlaufen).";
+"Polymech.queue.stop" = "Stopp";
+"Polymech.queue.stopHelp" = "Diesen Auftrag abbrechen.";
+"Polymech.queue.column.stop" = "";
+"Polymech.chat.jobTitle" = "Chat: %@";
+"Polymech.navigator.transform" = "Transformieren";
+"Polymech.navigator.transformWindow" = "Transformieren: %@";
+"Polymech.navigator.presetFor" = "Voreinstellung: %@";
+"Polymech.navigator.presetHint" = "Vorgaben stammen von „PolyMech Chat“ in den Einstellungen. Agent: speichert den „chat“-Block, danach nativer LLM-Durchlauf. Transform: dieselben Optionen wie der Bild-Transformationsbefehl, eine Warteschlangen-Datei hinter der anderen. Der Web-Chat-Tab öffnet sich nicht.";
+"Polymech.presetRun.tabAgent" = "Agent";
+"Polymech.presetRun.tabTransform" = "Transform";
+"Polymech.presetRun.noImageSelection" = "Wähle im Navigator ein oder mehrere Bilder (oder einen Bilderordner).";
+"Polymech.presetRun.transformHint" = "Gleiche Optionen wie der Bild-Transformationsbefehl. Jedes Bild ist ein Auftrag in der Warteschlange, streng nacheinander.";
+"Polymech.navigator.presetEmpty" = "Keine Stil-Voreinstellungen (im Chat-UI oder unter „chat_web.quick_actions“ anlegen).";
+"Polymech.menu.stylePresets" = "Stilvorgaben";
+"Polymech.menu.stylePresets.help" = "Wie Projekt-Navigator → Transform: nutzt die aktuelle Auswahl oder die aktive Datei; mit leerer Navigator-Auswahl dieselben Bildeingaben wie die Bildleiste.";
+"Polymech.navigator.presetJobTitle" = "Transform: %1$@ — %2$@";
+"Polymech.navigator.chatRun.provider" = "Text-Provider";
+"Polymech.navigator.chatRun.modelPreset" = "Modellvoreinstellung";
+"Polymech.navigator.chatRun.modelId" = "Modell-ID";
+"Polymech.navigator.chatRun.prompt" = "Eingabeaufforderung";
+"Polymech.navigator.chatRun.run" = "Ausführen";
+"Polymech.navigator.chatRun.cancel" = "Abbrechen";
+"Polymech.transform.textProviderSection" = "Text-Chat (llm::agent)";
+"Polymech.transform.apiKey" = "API-Schlüssel";
+"Polymech.transform.baseURL" = "Basis-URL (optional; leer = Router-Standard)";
+"Polymech.transform.timeout" = "Timeout (ms)";
+"Polymech.transform.maxIter" = "Max. Werkzeug-Iterationen";
+"Polymech.transform.imageProviderSection" = "Bildtools (Agent-Standard)";
+"Polymech.transform.imageProvider" = "Bild-Provider (Tool-Standard)";
+"Polymech.transform.imageModelPreset" = "Modellvoreinstellung";
+"Polymech.transform.imageModelId" = "Bild-Modell-ID";
+"Polymech.transform.run" = "Ausführen";
+
+"Navigator.menu.options" = "Aktionen";
+"Navigator.openAs.none" = "<Keins>";
+"Copy Relative Path" = "Relativen Pfad kopieren";
+"Open in Tab" = "In Tab öffnen";
+"Open in New Window" = "In neuem Fenster öffnen";
+"Open with External Editor" = "Mit externem Editor öffnen";
+"Open As" = "Öffnen als";
+"New File…" = "Neue Datei…";
+"New File from Clipboard" = "Neue Datei aus der Zwischenablage";
+"New Folder" = "Neuer Ordner";
+"Rename" = "Umbenennen";
+"Move to Trash" = "In den Papierkorb";
+"Delete Immediately…" = "Sofort löschen…";
+"Duplicate File" = "Datei duplizieren";
+"Duplicate Folder" = "Ordner duplizieren";
+"Sort by Name" = "Nach Name sortieren";
+"Sort by Type" = "Nach Typ sortieren";
+"New Folder from Selection" = "Neuer Ordner aus Auswahl";
+"Asset Catalog Document" = "Asset-Katalogdokument";
+"Interface Builder XIB Document" = "Interface-Builder-XIB-Dokument";
+"Xcode Project" = "Xcode-Projekt";
+"Source Code" = "Quellcode";
+"Property List" = "Property List";
+"ASCII Property List" = "ASCII-Property-List";
+"Hex" = "Hex";
+"Quick Look" = "Kurzübersicht";
+
+"AppLanguage.en" = "Englisch (English)";
+"AppLanguage.es" = "Spanisch (Español)";
+"AppLanguage.de" = "Deutsch";
+"AppLanguage.it" = "Italienisch (Italiano)";
+"AppLanguage.fr" = "Französisch (Français)";
+"AppLanguage.ptBR" = "Portugiesisch (Brasilien)";
+
+"Show Command Palette" = "Befehlspalette einblenden";
+"Open Search Navigator" = "Suchnavigator öffnen";
+"Open Polymech Chat in an editor tab (apps/chat, WebView)." = "Polymech-Chat in einem Editor-Tab öffnen (apps/chat, WebView).";
+"Font Size" = "Schriftgröße";
+"Increase" = "Größer";
+"Decrease" = "Kleiner";
+"Reset" = "Zurücksetzen";
+"Customize Toolbar…" = "Symbolleiste anpassen…";
+"Show Jump Bar" = "Sprungleiste anzeigen";
+"Hide Jump Bar" = "Sprungleiste ausblenden";
+"Show Navigator" = "Projektnavigation anzeigen";
+"Hide Navigator" = "Projektnavigation ausblenden";
+"Show Agent Panel" = "Agent-Panel anzeigen";
+"Hide Agent Panel" = "Agent-Panel ausblenden";
+"Show Utility Area" = "Dienstprogrammbereich anzeigen";
+"Hide Utility Area" = "Dienstprogrammbereich ausblenden";
+"Show Toolbar" = "Symbolleiste anzeigen";
+"Hide Toolbar" = "Symbolleiste ausblenden";
+"Show Interface" = "Oberfläche anzeigen";
+"Hide Interface" = "Oberfläche ausblenden";
+"Navigators" = "Navigatoren";
+"Text router" = "Text-Router";
+"Shared settings path" = "Gemeinsamer Einstellungspfad";
+"Reload from disk" = "Von der Festplatte laden";
+"Save to disk" = "Auf der Festplatte speichern";
+"Storage" = "Speicher";
+"Default image provider (Meta/Transform)" = "Standard-Bildanbieter (Meta/Transformieren)";
+"Default text provider (Chat)" = "Standard-Textanbieter (Chat)";
+"Defaults" = "Standardwerte";
+"Add image provider" = "Bildanbieter hinzufügen";
+"Add text provider" = "Textanbieter hinzufügen";
+"Import settings.json…" = "settings.json importieren…";
+"Export settings.json…" = "settings.json exportieren…";
+"Import / Export" = "Import / Export";
+"Replicate (image)" = "Replicate (Bild)";
+"Import settings" = "Einstellungen importieren";
+"Export settings" = "Einstellungen exportieren";
+"AI providers footer storage" = "Diese Seite schreibt Anbieterdaten im JSON-Format (Win32/CLI: providers, active_provider, chat) und Text-Metadaten.";
+"AI providers footer image" = "Replicate: API-Token von replicate.com (oder REPLICATE_API_TOKEN). Modell = owner/model. Nur app-weite Einstellungen in settings.json.";
+"Replicate API token help" = "Replicate: API-Token aus dem Dashboard. Oder REPLICATE_API_TOKEN / IMAGE_TRANSFORM_REPLICATE_API_KEY für CLI.";
+"Replicate base URL help" = "Nur API-Host — meist https://api.replicate.com/v1 (ohne /predictions).";
+"Replicate model id help" = "Modell = Versions-ID owner/model (z. B. black-forest-labs/flux-schnell).";
+"Unnamed provider" = "Unbenannter Anbieter";
+"Remove provider" = "Anbieter entfernen";
+"Model (manual)" = "Modell (manuell)";
+"AI status no file" = "Keine Einstellungsdatei unter %@. Voreinstellungen im Editor.";
+"AI status loaded" = "Anbieterdaten von der Festplatte geladen.";
+"AI status saved" = "Gespeichert nach %@.";
+"AI status save failed" = "Speichern fehlgeschlagen: %@";
+"AI import not object" = "Import: Wurzel muss ein JSON-Objekt sein.";
+"AI status imported" = "Importiert von %@.";
+"AI status import failed" = "Import fehlgeschlagen: %@";
+"AI status exported" = "Exportiert nach %@.";
+"AI status export failed" = "Export fehlgeschlagen: %@";
+"Polymech.resize.caption.multi" = "Erste von %1$d Dateien: %2$@ — %3$d × %4$d px";
+"Polymech.resize.caption.one" = "%1$d × %2$d px — %3$@";
+"Polymech.resize.caption.empty" = "Kein Bild — unten Pixelrahmen setzen (pro Datei).";
+"Polymech.resize.footer.pixels" = "Leer = unbegrenzt auf der Achse. Pfeile 1 px, Umschalt+10. Verknüpfungs-Icon koppelt Breite und Höhe. Fill, cover, outside brauchen W und H.";
+"Polymech.resize.help.inPlace" = "Ersetzt die Originaldatei. Vorschau aktualisiert sich bei geöffneter Datei.";
+"Polymech.resize.help.sibling" = "Speichert eine Kopie im selben Ordner. Feld unten für Namen.";
+
+"Polymech.form.writeResultTo" = "Ergebnis speichern unter";
+"Polymech.form.outputNewFileSibling" = "Neue Datei (Nebenversion)";
+"Polymech.form.outputInPlace" = "An Ort und Stelle (überschreiben)";
+"Polymech.form.nameInfix" = "Namen-Infix";
+"Polymech.form.infixPlaceholderResize" = "pm_resize";
+"Polymech.form.infixHelpResize" = "Muster: <name>_<infix>.<ext> — z. B. photo_pm_resize.jpg. Standard-Infix: pm_resize. Buchstaben, Ziffern, Unterstrich; in Kleinbuchstaben.";
+"Polymech.form.section.output" = "Ausgabe";
+"Polymech.form.presetOriginal" = "Original (erstes Bildmaß)";
+"Polymech.form.scale50" = "50%";
+"Polymech.form.scale75" = "75%";
+"Polymech.form.longEdge" = "Lange Kante %d";
+"Polymech.form.fitToPreset" = "Auf Voreinstellung anpassen";
+"Polymech.form.a11yConstrainProportions" = "Seitenverhältnis begrenzen";
+"Polymech.form.helpProportionsLinked" = "Verknüpft. Bearbeiten einer Seite passt die andere an, sobald beide gesetzt sind. Leer = in dieser Achse unbegrenzt (Stapel nur innerhalb/contain).";
+"Polymech.form.helpProportionsUnlinked" = "Nicht verknüpft. Feld leeren (0) für unbegrenzte Achse.";
+"Polymech.form.width" = "Breite";
+"Polymech.form.height" = "Höhe";
+"Polymech.form.px" = "px";
+"Polymech.form.placeholderDash" = "—";
+"Polymech.form.section.pixelDimensions" = "Pixelmaße (Kasten px)";
+"Polymech.form.fitToBox" = "In Kasten einpassen";
+"Polymech.form.fitInside" = "Darin halten (ohne Zuschnitt)";
+"Polymech.form.fitCover" = "Füllen & zuschneiden (cover)";
+"Polymech.form.fitContain" = "Mit Rändern (letterbox)";
+"Polymech.form.fitFill" = "Exakt (strecken)";
+"Polymech.form.fitOutside" = "Größer als Kasten (outside)";
+"Polymech.form.croppingCover" = "Zuschnitt (cover)";
+"Polymech.form.cropMode.centre" = "centre";
+"Polymech.form.cropMode.attention" = "attention";
+"Polymech.form.cropMode.entropy" = "entropy";
+"Polymech.form.cropMode.low" = "low";
+"Polymech.form.cropMode.high" = "high";
+"Polymech.form.interpolation" = "Interpolation";
+"Polymech.form.kernel.lanczos3" = "Lanczos (scharf, Standard)";
+"Polymech.form.kernel.lanczos2" = "Lanczos 2";
+"Polymech.form.kernel.cubic" = "Bikubisch";
+"Polymech.form.kernel.mitchell" = "Mitchell";
+"Polymech.form.kernel.nearest" = "Nächster Nachbar (Pixel)";
+"Polymech.form.helpVipsKernel" = "libvips-Kernel — vergleichbar mit Photoshop-Resample; Lanczos standard für Volltonbilder.";
+"Polymech.form.section.howPixelsMap" = "Wie Pixel dem Kasten zugeordnet werden";
+"Polymech.form.outputFormat" = "Ausgabeformat";
+"Polymech.form.fromPath" = "(aus Dateipfad)";
+"Polymech.form.quality" = "Qualität";
+"Polymech.form.rotate" = "Drehen";
+"Polymech.form.rotateNone" = "Keine";
+"Polymech.form.rotateDeg" = "%d°";
+"Polymech.form.stripMetadataOnSave" = "Metadaten beim Speichern entfernen";
+"Polymech.form.resultCache" = "Ergebnis-Cache (frühere Ausgaben wiederverwenden)";
+"Polymech.form.section.encoding" = "Kodierung & sonst.";
+"Polymech.form.noEnlargement" = "Kein Hochskalieren (Obergrenze)";
+"Polymech.form.autorotateExif" = "Auto-Drehung (EXIF)";
+"Polymech.form.provider" = "Anbieter";
+"Polymech.form.modelPresets" = "Modell-Voreinstellungen";
+"Polymech.form.modelId" = "Modell-ID";
+"Polymech.form.overridePrompt" = "Prompt überschreiben (leer = Standardkatalogisierung)";
+"Polymech.form.userQuestion" = "Nutzereingabe (ergänzen; optional)";
+"Polymech.form.apiBaseURLOptional" = "API-Basis-URL (optional)";
+"Polymech.form.section.providerPrompts" = "Anbieter & Prompts";
+"Polymech.form.resizeBeforeVision" = "Vor Vision-API skalieren";
+"Polymech.form.preResizeLongEdgePx" = "Lange Kante vorskal. (px)";
+"Polymech.form.section.preflight" = "Vorlauf (im Speicher)";
+"Polymech.form.writeStemMd" = "Schreibe <stem>.md";
+"Polymech.form.writeStemJson" = "Schreibe <stem>.json";
+"Polymech.form.updateExifInPlace" = "EXIF ImageDescription in situ aktualisieren";
+"Polymech.form.outputDir" = "Ausgabeordner (leer = neben der Datei)";
+"Polymech.form.dryRun" = "Trockenlauf (kein API, kein Schreiben)";
+"Polymech.form.section.outputsSafety" = "Ausgaben & Sicherheit";
+"Polymech.form.metaFooter" = "Entspricht `ReadMetaSettings` / Meta-Register unter Windows.";
+"Polymech.form.infixPlaceholderCompress" = "pm_compress";
+"Polymech.form.infixHelpCompress" = "Muster: <name>_<infix>.<ext> — z. B. photo_pm_compress.jpg. Standard: pm_compress. Buchstaben, Ziffern, Unterstrich; Kleinbuchstaben.";
+"Polymech.form.compressor" = "Kompressor";
+"Polymech.form.compressorAuto" = "Auto (n. Ausgabe-Erweiterung)";
+"Polymech.form.compressorMozjpeg" = "MozJPEG";
+"Polymech.form.compressorPng" = "PNG (DEFLATE + Optionen)";
+"Polymech.form.jpegQualityMoz" = "JPEG-Qualität (Moz)";
+"Polymech.form.stripMetadata" = "Metadaten entfernen";
+"Polymech.form.progressiveJpeg" = "Progressiv-JPEG";
+"Polymech.form.pngDeflate" = "PNG DEFLATE (1–9)";
+"Polymech.form.pngLibimagequant" = "PNG libimagequant (verlust, kleiner)";
+"Polymech.form.pngZopfli" = "PNG zopfli (langsam, kleiner)";
+"Polymech.form.mozTrellisQuant" = "Moz-JPEG-Trellis-Quantisierung";
+"Polymech.form.mozOvershootDeringing" = "Moz Overshoot-Entklingelung";
+"Polymech.form.section.compression" = "Kompression";
+"Polymech.form.compressFooter" = "Entspricht Windows-Komprimieren: MozJPEG / PNG und Strip.";
+"Polymech.form.model" = "Modell";
+"Polymech.form.baseURLOptional" = "Basis-URL (optional)";
+"Polymech.form.section.transformProvider" = "Anbieter";
+"Polymech.form.editGeneratePrompt" = "Prompt bearbeiten / erzeugen";
+"Polymech.form.section.transformPrompt" = "Prompt";
+"Polymech.form.aspectGemini" = "Seitenverhältnis (Gemini / leer = auto)";
+"Polymech.form.aspectAuto" = "auto";
+"Polymech.form.imageSizeTier" = "Bildgrößenstufe";
+"Polymech.form.sizeDefault" = "Standard";
+"Polymech.form.preResizeRaster" = "Vor-API Resampling";
+"Polymech.form.preResizeLongEdgeZero" = "Lange Kante vorskal. (0 = Modell-Standard)";
+"Polymech.form.preResizeRawOnly" = "Nur bei RAW/HEIC (wenn oben gesetzt)";
+"Polymech.form.section.sizeAndPreResize" = "Größe & Vorskalierung";
+"Polymech.form.transformFooter" = "Parallel zu Transform / KI in `CSettingsView` (Modell, Aspect, Vorskal.).";
+"Polymech.form.mode" = "Modus";
+"Polymech.form.findModeName" = "Name (Pfadteilstring)";
+"Polymech.form.findModeLlm" = "Llm (Katalog + Judge)";
+"Polymech.form.searchQuery" = "Suche / Prompt";
+"Polymech.form.judgeOverride" = "Judge-Override-Text (optional)";
+"Polymech.form.maxResults" = "Max. Treffer (0 = unbegrenzt)";
+"Polymech.form.section.find" = "Suchen";
+"Polymech.form.caseInsensitiveName" = "Groß/klein egal (Namensmodus)";
+"Polymech.form.matchFolderNames" = "Ordnernamen einbeziehen";
+"Polymech.form.recurse" = "In Unterordnern";
+"Polymech.form.dryRunShort" = "Trockenlauf";
+"Polymech.form.llmBypassCache" = "LLM: Sidecar-Cache umgehen";
+"Polymech.form.llmGenerateSidecars" = "LLM: .md/.json fehlend anlegen";
+"Polymech.form.useStemMd" = "<stem>.md im Korpus";
+"Polymech.form.useStemJson" = "<stem>.json im Korpus";
+"Polymech.form.useExifCorpus" = "EXIF im Korpus";
+"Polymech.form.semanticImageJudge" = "Semantischer Bild-Judge (Ref.bilder oder LLM-Pfad)";
+"Polymech.form.section.nameLlm" = "Namen- / LLM-Verhalten";
+"Polymech.form.catalogProvider" = "Katalog-Anbieter (versch. Meta)";
+"Polymech.form.modelPresetsNested" = "Modell-Vorlagen (versch. Meta)";
+"Polymech.form.catalogModel" = "Katalog-Modell";
+"Polymech.form.apiBaseUrlNested" = "API-Basis-URL (optional, versch. Meta)";
+"Polymech.form.catalogPreresize" = "Katalog-Vorskal.";
+"Polymech.form.catalogPreresizeWidth" = "Katalog Vorskal.-Breite";
+"Polymech.form.section.nestedMeta" = "Verschachtelte Meta (LLM-Materialisierung)";
+"Polymech.form.findFooter" = "Das `meta`-Objekt folgt dem gleichen Pfad wie Meta, wenn Suchen Sidecars erzeugt.";
+
+"Close Tab" = "Tab schließen";
+"Close Other Tabs" = "Andere Tabs schließen";
+"Close Tabs to the Right" = "Tabs rechts schließen";
+"Close All" = "Alles schließen";
+"Keep Open" = "Offen lassen";
+"Reveal in Project Navigator" = "Im Projektnavigator anzeigen";
+"Split Up" = "Oben teilen";
+"Split Down" = "Unten teilen";
+"Split Left" = "Links teilen";
+"Split Right" = "Rechts teilen";
+
+"StatusBar.imageFitToViewport" = "Einpassen";
+"StatusBar.imageFitToViewport.help" = "Zoom zurücksetzen, sodass das ganze Bild in die Ansicht passt. Die Prozentangabe bezieht sich auf diese Einpassung (100 % = eingepasst).";

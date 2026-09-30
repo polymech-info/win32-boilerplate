@@ -1,0 +1,1465 @@
+﻿@import "tailwindcss";
+@source "./**/*.{tsx,ts}";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color: var(--xblox-text, var(--pm-cweb-fg, #f2f2f3));
+  background: var(--xblox-page-bg, var(--pm-cweb-bg, #121212));
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  font-family: var(--pm-cweb-font-family, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif);
+  font-size: var(--pm-cweb-font-size, 14.6667px);
+}
+
+body {
+  min-width: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+code {
+  border-radius: 0.3rem;
+  background: var(--xblox-code-bg);
+  padding: 0.08rem 0.3rem;
+}
+
+.xblox-app {
+  --xblox-page-bg: var(--pm-cweb-bg, #121212);
+  --xblox-text: var(--pm-cweb-fg, hsl(0 0% 95%));
+  --xblox-muted: hsl(0 0% 65%);
+  --xblox-primary: hsl(193 76% 59%);
+  --xblox-accent: hsl(193 76% 59%);
+  --xblox-danger: hsl(0 70% 50%);
+  --xblox-success: hsl(142 70% 48%);
+  --xblox-warning: hsl(28 92% 58%);
+  --xblox-panel-bg: hsl(0 0% 12% / 0.4);
+  --xblox-card-bg: hsl(0 0% 12% / 0.5);
+  --xblox-border: hsl(0 0% 100% / 0.1);
+  --xblox-soft-border: hsl(0 0% 100% / 0.08);
+  --xblox-button-bg: hsl(0 0% 15% / 0.48);
+  --xblox-button-border: hsl(193 76% 59% / 0.14);
+  --xblox-button-text: var(--xblox-text);
+  --xblox-input-bg: hsl(0 0% 7% / 0.46);
+  --xblox-row-bg: hsl(0 0% 7% / 0.34);
+  --xblox-selected-row-bg: hsl(193 76% 59% / 0.11);
+  --xblox-selected-row-border: hsl(193 76% 59% / 0.34);
+  --xblox-drop-row-bg: hsl(193 76% 59% / 0.14);
+  --xblox-error-row-bg: hsl(0 70% 50% / 0.16);
+  --xblox-code-bg: hsl(0 0% 15% / 0.56);
+  --xblox-debug-pre-bg: hsl(0 0% 7% / 0.42);
+  --xblox-selection-accent: var(--xblox-primary);
+  --xblox-running-color: var(--xblox-warning);
+  --xblox-glass-shadow: 0 18px 56px hsl(0 0% 0% / 0.26), 0 0 24px hsl(193 76% 59% / 0.08);
+  --xblox-inner-highlight: inset 0 1px 0 hsl(0 0% 100% / 0.08);
+  --xblox-builder-columns: var(--xblox-palette-width, 190px) 2px minmax(0, 1fr) 2px var(--xblox-props-width, 270px);
+  --xblox-builder-gap: 5px;
+  --xblox-panel-pad: 7px;
+  --xblox-panel-radius: 10px;
+  --xblox-button-radius: 7px;
+  --xblox-palette-item-pad: 4px 6px;
+  min-height: 100vh;
+  padding: 0.875rem;
+  color: var(--xblox-text);
+  background:
+    radial-gradient(circle at 12% -14%, hsl(193 76% 59% / 0.13), transparent 28rem),
+    radial-gradient(circle at 92% 0%, hsl(260 45% 50% / 0.035), transparent 24rem),
+    linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(193 76% 59% / 0.045) 100%);
+}
+
+.xblox-app--host {
+  min-height: 100vh;
+  padding: 0.6rem;
+  font-size: var(--pm-cweb-font-size, 14px);
+  line-height: var(--pm-cweb-line-height, 1.5);
+}
+
+.xblox-app--standalone {
+  --xblox-builder-columns: var(--xblox-palette-width, 210px) 2px minmax(0, 1fr) 2px var(--xblox-props-width, 290px);
+  padding: 1.125rem;
+}
+
+.xblox-theme-light {
+  --xblox-page-bg: #ffffff;
+  --xblox-text: #0f172a;
+  --xblox-muted: #64748b;
+  --xblox-primary: #0284c7;
+  --xblox-accent: #0284c7;
+  --xblox-panel-bg: rgba(255, 255, 255, 0.82);
+  --xblox-card-bg: rgba(248, 250, 252, 0.8);
+  --xblox-border: rgba(15, 23, 42, 0.12);
+  --xblox-soft-border: rgba(15, 23, 42, 0.08);
+  --xblox-button-bg: rgba(241, 245, 249, 0.78);
+  --xblox-button-border: rgba(15, 23, 42, 0.13);
+  --xblox-input-bg: rgba(255, 255, 255, 0.78);
+  --xblox-row-bg: rgba(255, 255, 255, 0.7);
+  --xblox-selected-row-bg: color-mix(in srgb, #0284c7 8%, white);
+  --xblox-selected-row-border: color-mix(in srgb, #0284c7 24%, transparent);
+  --xblox-drop-row-bg: color-mix(in srgb, #0284c7 10%, white);
+  --xblox-error-row-bg: #ffe4e6;
+  --xblox-code-bg: rgba(226, 232, 240, 0.75);
+  --xblox-debug-pre-bg: rgba(226, 232, 240, 0.58);
+  --xblox-glass-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  --xblox-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  background: radial-gradient(circle at 16% -12%, rgba(2, 132, 199, 0.08), transparent 24rem), #ffffff;
+}
+
+.xblox-hero,
+.xblox-palette,
+.xblox-tree-panel,
+.xblox-property-panel,
+.xblox-props-dialog,
+.xblox-debug-panel,
+.xblox-context-menu {
+  border: 1px solid var(--xblox-border);
+  border-radius: var(--xblox-panel-radius);
+  background: var(--xblox-panel-bg);
+  box-shadow: var(--xblox-inner-highlight), var(--xblox-glass-shadow);
+  backdrop-filter: blur(18px) saturate(1.15);
+}
+
+.xblox-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+}
+
+.xblox-app--host .xblox-hero {
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.65rem;
+}
+
+.xblox-hero h1 {
+  margin: 0.1rem 0 0.3rem;
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.xblox-app--host .xblox-hero h1 {
+  margin: 0.05rem 0 0.2rem;
+  font-size: 1rem;
+}
+
+.xblox-hero p,
+.xblox-builder p {
+  margin: 0 0 0.45rem;
+  color: var(--xblox-muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.xblox-kicker {
+  color: var(--xblox-primary) !important;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.xblox-file-path,
+.xblox-host-status {
+  margin-top: 0.3rem !important;
+  font-family: "Cascadia Mono", "Consolas", monospace;
+  font-size: 0.78rem;
+  word-break: break-all;
+}
+
+.xblox-app--host .xblox-file-path,
+.xblox-app--host .xblox-host-status {
+  margin-top: 0.2rem !important;
+  font-size: 0.66rem;
+}
+
+.xblox-host-status {
+  color: var(--xblox-primary) !important;
+}
+
+.xblox-actions,
+.xblox-block-toolbar,
+.xblox-palette-head,
+.xblox-root-scope-head,
+.xblox-props-dialog-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.xblox-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+
+.xblox-actions button,
+.xblox-root-scope-head button,
+.xblox-props-dialog-head button {
+  border: 1px solid var(--xblox-button-border);
+  border-radius: var(--xblox-button-radius);
+  background: var(--xblox-button-bg);
+  color: var(--xblox-button-text);
+  padding: 0.4rem 0.64rem;
+}
+
+.xblox-actions button:disabled,
+.xblox-block-toolbar button:disabled,
+.xblox-context-menu button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.xblox-actions button:last-child {
+  border-color: hsl(193 76% 59% / 0.38);
+  background: hsl(193 76% 59% / 0.14);
+}
+
+.xblox-command-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.xblox-command-card {
+  display: grid;
+  gap: 0.18rem;
+  min-width: 0;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: var(--xblox-button-radius);
+  background: var(--xblox-card-bg);
+  padding: 0.55rem;
+}
+
+.xblox-command-card strong,
+.xblox-command-card span,
+.xblox-command-card small {
+  overflow: hidden;
+  color: var(--xblox-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xblox-builder {
+  display: grid;
+  grid-template-columns: var(--xblox-builder-columns);
+  gap: var(--xblox-builder-gap);
+  height: calc(100vh - 8rem);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.xblox-app--host .xblox-builder {
+  width: 100%;
+  height: calc(100vh - 1rem);
+}
+
+.xblox-builder h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.9rem;
+}
+
+.xblox-palette,
+.xblox-tree-panel,
+.xblox-property-panel {
+  min-width: 0;
+  min-height: 0;
+  padding: var(--xblox-panel-pad);
+}
+
+.xblox-palette,
+.xblox-tree-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.xblox-property-panel {
+  overflow: auto;
+  font-size: 1rem;
+}
+
+.xblox-palette-head,
+.xblox-root-scope-head {
+  justify-content: space-between;
+  margin-bottom: 0.32rem;
+}
+
+.xblox-palette-head h3,
+.xblox-root-scope-head h3,
+.xblox-props-dialog-head h3 {
+  margin: 0;
+  color: color-mix(in srgb, var(--xblox-text) 88%, transparent);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.xblox-palette-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.55rem;
+  border: 1px solid var(--xblox-button-border);
+  border-radius: 999px;
+  background: var(--xblox-button-bg);
+  color: var(--xblox-button-text);
+  padding: 0;
+}
+
+.xblox-palette-theme-toggle svg {
+  width: 0.82rem;
+  height: 0.82rem;
+}
+
+.xblox-palette-search {
+  display: grid;
+  margin-bottom: 0.28rem;
+  color: var(--xblox-muted);
+  font-size: 0.82rem;
+}
+
+.xblox-palette-search input,
+.xblox-property-panel input,
+.xblox-property-panel textarea,
+.xblox-property-panel select,
+.xblox-root-scope-panel textarea {
+  width: 100%;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: var(--xblox-button-radius);
+  background: var(--xblox-input-bg);
+  color: var(--xblox-text);
+  outline: none;
+}
+
+.xblox-palette-search input {
+  border-radius: 999px;
+  padding: 0.32rem 0.54rem;
+}
+
+.xblox-property-panel input,
+.xblox-property-panel textarea,
+.xblox-property-panel select {
+  padding: 0.42rem 0.5rem;
+  font-size: 0.95rem;
+}
+
+.xblox-palette-search input:focus,
+.xblox-property-panel input:focus,
+.xblox-property-panel textarea:focus,
+.xblox-property-panel select:focus,
+.xblox-inline-input:focus,
+.xblox-inline-select:focus {
+  border-color: var(--xblox-selected-row-border);
+  box-shadow: 0 0 0 1px hsl(193 76% 59% / 0.14);
+}
+
+.xblox-palette-scroll,
+.xblox-tree-scroll,
+.xblox-property-tabs-content,
+.xblox-props-dialog-body {
+  scrollbar-color: hsl(193 76% 59% / 0.3) transparent;
+  scrollbar-width: thin;
+}
+
+.xblox-palette-scroll::-webkit-scrollbar,
+.xblox-command-palette-list::-webkit-scrollbar,
+.xblox-tree-scroll::-webkit-scrollbar,
+.xblox-property-tabs-content::-webkit-scrollbar,
+.xblox-props-dialog-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.xblox-palette-scroll::-webkit-scrollbar-track,
+.xblox-command-palette-list::-webkit-scrollbar-track,
+.xblox-tree-scroll::-webkit-scrollbar-track,
+.xblox-property-tabs-content::-webkit-scrollbar-track,
+.xblox-props-dialog-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.xblox-palette-scroll::-webkit-scrollbar-thumb,
+.xblox-command-palette-list::-webkit-scrollbar-thumb,
+.xblox-tree-scroll::-webkit-scrollbar-thumb,
+.xblox-property-tabs-content::-webkit-scrollbar-thumb,
+.xblox-props-dialog-body::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: hsl(193 76% 59% / 0.24);
+}
+
+.xblox-palette-scroll {
+  display: grid;
+  gap: 0;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 0.1rem;
+}
+
+.xblox-palette-empty {
+  margin: 0;
+  border-top: 1px solid var(--xblox-soft-border);
+  padding: 0.3rem 0.15rem;
+  color: var(--xblox-muted);
+  font-size: 0.82rem;
+}
+
+.xblox-palette-group {
+  border-top: 1px solid var(--xblox-soft-border);
+}
+
+.xblox-command-palette-group {
+  margin-top: 0.25rem;
+}
+
+.xblox-palette-group summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.42rem;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.3rem 0.18rem;
+  color: color-mix(in srgb, var(--xblox-text) 78%, transparent);
+  font-size: 0.88rem;
+}
+
+.xblox-palette-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.xblox-palette-group summary::before {
+  content: "";
+  width: 0.28rem;
+  height: 0.28rem;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  color: var(--xblox-muted);
+  transform: rotate(45deg);
+  transition: transform 140ms ease, color 140ms ease;
+}
+
+.xblox-palette-group[open] summary::before {
+  color: var(--xblox-primary);
+  transform: rotate(135deg);
+}
+
+.xblox-palette-group summary span {
+  flex: 1;
+  min-width: 0;
+}
+
+.xblox-palette-group summary small {
+  color: var(--xblox-muted);
+  font-size: 0.62rem;
+  font-weight: 400;
+}
+
+.xblox-palette-group-list,
+.xblox-command-palette-list {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0 0 0.32rem 0.48rem;
+}
+
+.xblox-command-palette-list {
+  overflow: visible;
+}
+
+.xblox-command-palette-item,
+.xblox-native-palette-item {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.xblox-palette-item {
+  font-size: 0.86rem;
+  line-height: 1.15;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.xblox-palette-item:hover {
+  border-color: hsl(193 76% 59% / 0.28) !important;
+  background: hsl(193 76% 59% / 0.09) !important;
+}
+
+.xblox-palette-item-title,
+.xblox-command-palette-item small,
+.xblox-native-palette-item small {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xblox-palette-item-title {
+  color: var(--xblox-text);
+  font-size: 0.86rem;
+  font-weight: 400;
+}
+
+.xblox-command-palette-item small,
+.xblox-native-palette-item small {
+  color: var(--xblox-muted);
+  font-size: 0.82em;
+}
+
+.xblox-native-palette-item small {
+  display: -webkit-box;
+  white-space: normal;
+  line-height: 1.15;
+  font-size: 0.68rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.xblox-panel-resizer {
+  width: 2px;
+  min-height: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: col-resize;
+  justify-self: center;
+}
+
+.xblox-panel-resizer:hover,
+.xblox-resizing-panels .xblox-panel-resizer {
+  background: hsl(193 76% 59% / 0.34);
+}
+
+.xblox-resizing-panels {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+
+.xblox-folder-path {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--xblox-primary);
+  font-size: 0.82rem;
+}
+
+.xblox-tree-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 0.16rem;
+}
+
+.xblox-tree-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.16rem;
+  min-width: 0;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 2px 4px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.95;
+  transition: background 120ms ease, border-color 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+}
+
+.xblox-tree-row button {
+  display: inline-grid;
+  width: 1rem;
+  min-width: 1rem;
+  height: 1rem;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--xblox-muted);
+  padding: 0;
+  line-height: 1;
+}
+
+.xblox-tree-row button:hover {
+  background: hsl(193 76% 59% / 0.1);
+  color: var(--xblox-primary);
+}
+
+.xblox-tree-row[data-enabled="false"] {
+  color: var(--xblox-muted);
+  filter: grayscale(0.35);
+  opacity: 0.5;
+}
+
+.xblox-tree-row[data-enabled="false"] input,
+.xblox-tree-row[data-enabled="false"] select {
+  color: var(--xblox-muted);
+}
+
+.xblox-tree-row[aria-selected="true"] {
+  border-color: var(--xblox-selected-row-border);
+  box-shadow: inset 1px 0 0 var(--xblox-primary);
+}
+
+.xblox-tree-row[data-drop-placement="before"]::before,
+.xblox-tree-row[data-drop-placement="after"]::after,
+.xblox-tree-row[data-drop-placement="inside"]::after {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  right: 0.35rem;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--xblox-accent);
+  box-shadow: 0 0 12px hsl(193 76% 59% / 0.55);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.xblox-tree-row[data-drop-placement="before"]::before {
+  top: -3px;
+}
+
+.xblox-tree-row[data-drop-placement="after"]::after {
+  bottom: -3px;
+}
+
+.xblox-tree-row[data-drop-placement="inside"]::after {
+  inset: 3px 0.35rem;
+  height: auto;
+  border: 1px dashed var(--xblox-accent);
+  border-radius: 0.45rem;
+  background: hsl(193 76% 59% / 0.08);
+}
+
+.xblox-tree-row[data-drop-valid="false"]::before,
+.xblox-tree-row[data-drop-valid="false"]::after {
+  border-color: var(--xblox-warning);
+  background: var(--xblox-warning);
+  box-shadow: 0 0 12px hsl(28 92% 58% / 0.5);
+}
+
+.xblox-tree-row-kind,
+.xblox-tree-row-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xblox-tree-row-kind {
+  flex: 0 0 auto;
+  color: color-mix(in srgb, var(--xblox-text) 72%, transparent);
+  font-weight: 400;
+}
+
+.xblox-tree-row[aria-selected="true"] .xblox-tree-row-kind {
+  color: color-mix(in srgb, var(--xblox-primary) 62%, var(--xblox-text));
+}
+
+.xblox-tree-row-label,
+.xblox-inline-expr {
+  flex: 1;
+}
+
+.xblox-inline-expr {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.16rem;
+  min-width: 0;
+}
+
+.xblox-inline-expr span {
+  color: var(--xblox-muted);
+}
+
+.xblox-inline-input,
+.xblox-inline-select {
+  min-width: 0;
+  height: 1.42rem;
+  border: 0;
+  border-radius: 0.28rem;
+  background: hsl(193 76% 59% / 0.055);
+  color: var(--xblox-text);
+  padding: 0.04rem 0.24rem;
+  font-size: 1em;
+  line-height: 1.12;
+  outline: none;
+}
+
+.xblox-inline-input {
+  flex: 1;
+}
+
+.xblox-inline-input.small {
+  flex: 0 1 5.5rem;
+}
+
+.xblox-inline-input.tiny {
+  flex: 0 1 3rem;
+}
+
+.xblox-block-toolbar {
+  flex-wrap: wrap;
+  gap: 0.28rem;
+  margin: 0 0 0.5rem;
+}
+
+.xblox-toolbar-group {
+  --xblox-toolbar-accent: var(--xblox-primary);
+  display: inline-flex;
+  gap: 2px;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: 999px;
+  background: hsl(0 0% 100% / 0.035);
+  padding: 2px;
+}
+
+.xblox-toolbar-group--file {
+  --xblox-toolbar-accent: var(--xblox-success);
+}
+
+.xblox-toolbar-group--run {
+  --xblox-toolbar-accent: var(--xblox-warning);
+}
+
+.xblox-toolbar-group--clipboard {
+  --xblox-toolbar-accent: var(--xblox-accent);
+}
+
+.xblox-toolbar-group--edit {
+  --xblox-toolbar-accent: var(--xblox-danger);
+}
+
+.xblox-toolbar-group--nav {
+  --xblox-toolbar-accent: var(--xblox-primary);
+}
+
+.xblox-block-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.58rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--xblox-button-text);
+  padding: 0;
+}
+
+.xblox-block-toolbar button:not(:disabled):hover {
+  border-color: color-mix(in srgb, var(--xblox-toolbar-accent) 34%, transparent);
+  background: color-mix(in srgb, var(--xblox-toolbar-accent) 12%, transparent);
+  color: color-mix(in srgb, var(--xblox-toolbar-accent) 78%, var(--xblox-text));
+}
+
+.xblox-block-toolbar button svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  stroke-width: 2.2;
+}
+
+.xblox-block-toolbar button span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.xblox-context-menu {
+  position: fixed;
+  z-index: 80;
+  min-width: 11rem;
+  overflow: hidden;
+  padding: 0.3rem;
+}
+
+.xblox-context-menu button {
+  display: grid;
+  grid-template-columns: 1rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.45rem;
+  background: transparent;
+  color: var(--xblox-text);
+  padding: 0.42rem 0.5rem;
+  text-align: left;
+}
+
+.xblox-context-menu button:hover:not(:disabled) {
+  background: hsl(193 76% 59% / 0.1);
+}
+
+.xblox-context-menu svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.xblox-context-menu small {
+  color: var(--xblox-muted);
+  font-size: 0.68rem;
+}
+
+.xblox-context-menu hr {
+  border: 0;
+  border-top: 1px solid var(--xblox-soft-border);
+  margin: 0.25rem 0;
+}
+
+.xblox-root-drop {
+  margin-top: 0.38rem;
+  border: 1px dashed var(--xblox-soft-border);
+  border-radius: 0.48rem;
+  padding: 0.5rem;
+  color: var(--xblox-muted);
+  text-align: center;
+}
+
+.xblox-root-drop.is-over {
+  border-color: var(--xblox-accent);
+  background: hsl(193 76% 59% / 0.12);
+  color: color-mix(in srgb, var(--xblox-accent) 80%, white);
+}
+
+.xblox-status-pill {
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.xblox-status-pill--running {
+  background: hsl(28 92% 58% / 0.16);
+  color: var(--xblox-running-color);
+}
+
+.xblox-status-pill--ok {
+  background: hsl(142 70% 48% / 0.14);
+  color: #86efac;
+}
+
+.xblox-status-pill--error,
+.xblox-status-pill--skipped {
+  background: hsl(0 70% 50% / 0.18);
+  color: #fca5a5;
+}
+
+@keyframes xblox-running-pulse {
+  0%,
+  100% {
+    box-shadow: inset 2px 0 0 var(--xblox-running-color), 0 0 0 hsl(28 92% 58% / 0);
+  }
+  50% {
+    box-shadow: inset 2px 0 0 var(--xblox-running-color), 0 0 12px hsl(28 92% 58% / 0.42);
+  }
+}
+
+.xblox-tree-row[data-run-status="running"] {
+  animation: xblox-running-pulse 1.15s ease-in-out infinite;
+  border-color: var(--xblox-running-color);
+}
+
+.xblox-property-editor,
+.xblox-property-section,
+.xblox-variables-panel,
+.xblox-variables-list,
+.xblox-command-props {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.xblox-property-tabs {
+  display: flex;
+  min-height: 0;
+  height: 100%;
+  flex-direction: column;
+}
+
+.xblox-property-tabs-list {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto !important;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: 999px;
+  background: hsl(0 0% 100% / 0.035) !important;
+  padding: 0.14rem !important;
+  color: var(--xblox-muted) !important;
+}
+
+.xblox-property-tabs-trigger {
+  border-radius: 999px !important;
+  color: var(--xblox-muted) !important;
+  padding: 0.34rem 0.6rem !important;
+}
+
+.xblox-property-tabs-trigger[data-state="active"] {
+  background: hsl(193 76% 59% / 0.11) !important;
+  color: var(--xblox-text) !important;
+  box-shadow: var(--xblox-inner-highlight) !important;
+}
+
+.xblox-property-tabs-content {
+  min-height: 0;
+  overflow: auto;
+}
+
+.xblox-property-editor label {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--xblox-text);
+}
+
+.xblox-property-editor .xblox-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.xblox-property-editor .xblox-checkbox-label input {
+  width: auto;
+}
+
+.xblox-property-divider,
+.xblox-property-section + .xblox-property-section,
+.xblox-command-props {
+  border-top: 1px solid var(--xblox-soft-border);
+}
+
+.xblox-property-divider {
+  width: 100%;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  margin: 0.15rem 0;
+}
+
+.xblox-property-section + .xblox-property-section {
+  margin-top: 0.78rem;
+  padding-top: 0.78rem;
+}
+
+.xblox-command-props {
+  padding-top: 0.48rem;
+}
+
+.xblox-command-props h4 {
+  margin: 0;
+  color: var(--xblox-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.xblox-variables-row {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, 0.8fr) minmax(0, 1.4fr);
+  align-items: start;
+  gap: 0.5rem;
+  border-top: 1px solid var(--xblox-soft-border);
+  padding-top: 0.42rem;
+}
+
+.xblox-variables-row > span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--xblox-text);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xblox-variables-row--head {
+  border-top: 0;
+  padding-top: 0;
+  padding-bottom: 0.2rem;
+  color: var(--xblox-muted);
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.xblox-variables-row--head > span {
+  color: var(--xblox-muted);
+}
+
+.xblox-variables-row--json {
+  grid-template-columns: 1fr;
+}
+
+.xblox-variables-row:not(.xblox-variables-row--json) > :nth-child(2) {
+  border-left: 1px solid var(--xblox-soft-border);
+  padding-left: 0.35rem;
+}
+
+.xblox-variables-json {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: 0.45rem;
+  background: var(--xblox-input-bg);
+}
+
+.xblox-variables-json > div {
+  max-height: 14rem;
+  overflow: auto;
+}
+
+.xblox-root-scope-panel textarea {
+  min-height: 1.75rem;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  line-height: 1.35;
+}
+
+.xblox-root-scope-error {
+  color: #fca5a5 !important;
+}
+
+.xblox-property-editor textarea,
+.xblox-property-panel textarea {
+  resize: vertical;
+}
+
+.xblox-property-panel .pm-variable-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 2rem;
+  gap: 0.35rem;
+  align-items: stretch;
+}
+
+.xblox-property-panel .pm-variable-control > input,
+.xblox-property-panel .pm-variable-control > textarea {
+  min-width: 0;
+}
+
+.xblox-property-panel .pm-variable-builder-trigger {
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  align-self: start;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: 0.45rem;
+  background: var(--xblox-input-bg);
+  color: var(--xblox-text);
+  padding: 0;
+  cursor: pointer;
+}
+
+.xblox-property-panel .pm-variable-builder-trigger:hover {
+  border-color: var(--xblox-selected-row-border);
+  background: hsl(193 76% 59% / 0.1);
+}
+
+.pm-variable-builder-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  color: var(--xblox-text, #e5e7eb);
+  background: rgba(2, 6, 23, 0.62);
+}
+
+.pm-variable-builder-popover {
+  width: min(820px, calc(100vw - 40px));
+  max-height: min(620px, calc(100vh - 40px));
+  overflow: hidden;
+  border: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.8rem;
+  background: var(--xblox-panel-bg, #111827);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+
+.pm-variable-builder {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  max-height: inherit;
+  min-height: 0;
+}
+
+.pm-variable-list,
+.pm-variable-compose {
+  min-width: 0;
+  min-height: 0;
+  padding: 0.8rem;
+}
+
+.pm-variable-list {
+  overflow: auto;
+  border-right: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.12));
+  background: var(--xblox-panel-bg, #111827);
+}
+
+.pm-variable-list-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.pm-variable-search,
+.pm-variable-compose textarea {
+  width: 100%;
+  border: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.5rem;
+  background: var(--xblox-input-bg, #020617);
+  color: var(--xblox-text, #e5e7eb);
+  padding: 0.45rem 0.55rem;
+}
+
+.pm-variable-group + .pm-variable-group {
+  margin-top: 0.7rem;
+}
+
+.pm-variable-group h4 {
+  margin: 0 0 0.35rem;
+  color: var(--xblox-muted, #9ca3af);
+  font-size: 0.78rem;
+}
+
+.pm-variable-choice,
+.pm-variable-suggestions button {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.45rem;
+  background: var(--xblox-input-bg, #020617);
+  color: var(--xblox-text, #e5e7eb);
+  padding: 0.45rem;
+  text-align: left;
+}
+
+.pm-variable-choice + .pm-variable-choice,
+.pm-variable-suggestions button + button {
+  margin-top: 0.3rem;
+}
+
+.pm-variable-choice:hover,
+.pm-variable-choice.active,
+.pm-variable-suggestions button:hover {
+  border-color: var(--xblox-selected-row-border, rgba(56, 189, 248, 0.45));
+  background: hsl(193 76% 59% / 0.1);
+}
+
+.pm-variable-choice code,
+.pm-variable-suggestions code {
+  display: block;
+  color: hsl(193 76% 70%);
+}
+
+.pm-variable-choice span,
+.pm-variable-suggestions span {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--xblox-muted, #9ca3af);
+  font-size: 0.78rem;
+}
+
+.pm-variable-compose {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.pm-variable-suggestions {
+  max-height: 8rem;
+  overflow: auto;
+}
+
+.pm-variable-builder-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.45rem;
+}
+
+.pm-variable-empty {
+  border: 1px dashed var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.5rem;
+  color: var(--xblox-muted, #9ca3af);
+  padding: 0.8rem;
+}
+
+.pm-variable-inline {
+  position: relative;
+  display: inline-flex;
+}
+
+.pm-variable-inline-menu {
+  position: fixed;
+  right: 1.5rem;
+  top: 5rem;
+  z-index: 121;
+  display: grid;
+  gap: 0.45rem;
+  width: min(420px, calc(100vw - 3rem));
+  max-height: min(520px, calc(100vh - 7rem));
+  overflow: hidden;
+  border: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.65rem;
+  background: var(--xblox-panel-bg, #111827);
+  color: var(--xblox-text, #e5e7eb);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  padding: 0.6rem;
+}
+
+.pm-variable-inline-menu input {
+  width: 100%;
+  border: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.45rem;
+  background: var(--xblox-input-bg, #020617);
+  color: var(--xblox-text, #e5e7eb);
+  padding: 0.45rem 0.55rem;
+}
+
+.pm-variable-inline-list {
+  display: grid;
+  gap: 0.3rem;
+  overflow: auto;
+}
+
+.pm-variable-inline-list button {
+  border: 1px solid var(--xblox-soft-border, rgba(255, 255, 255, 0.14));
+  border-radius: 0.45rem;
+  background: var(--xblox-input-bg, #020617);
+  color: var(--xblox-text, #e5e7eb);
+  padding: 0.4rem;
+  text-align: left;
+}
+
+.pm-variable-inline-list button:hover {
+  border-color: var(--xblox-selected-row-border, rgba(56, 189, 248, 0.45));
+  background: hsl(193 76% 59% / 0.1);
+}
+
+.pm-variable-inline-list code {
+  display: block;
+  color: hsl(193 76% 70%);
+}
+
+.pm-variable-inline-list small {
+  color: var(--xblox-muted, #9ca3af);
+}
+
+.json-tree-compact {
+  min-width: 0;
+  padding: 0.35rem;
+  color: var(--xblox-text);
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9rem;
+  line-height: 1.42;
+  outline: none;
+}
+
+.json-tree-compact-row {
+  display: grid;
+  grid-template-columns: 0.9rem minmax(4.5rem, 0.9fr) auto minmax(0, 1.4fr);
+  align-items: center;
+  gap: 0.42rem;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--xblox-soft-border);
+  border-radius: 0.25rem;
+  background: transparent;
+  color: inherit;
+  padding: 0.18rem 0.35rem;
+  text-align: left;
+}
+
+.json-tree-compact-node:first-child > .json-tree-compact-row {
+  border-top-color: transparent;
+}
+
+.json-tree-compact-row:hover,
+.json-tree-compact-row:focus-visible,
+.json-tree-compact-row.is-selected {
+  background: hsl(193 76% 59% / 0.08);
+  outline: none;
+}
+
+.json-tree-compact-row.is-selected {
+  box-shadow: inset 2px 0 0 var(--xblox-primary);
+}
+
+.json-tree-compact-caret,
+.json-tree-compact-key,
+.json-tree-compact-value {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.json-tree-compact-caret {
+  color: var(--xblox-muted);
+  text-align: center;
+}
+
+.json-tree-compact-key {
+  font-weight: 400;
+}
+
+.json-tree-compact-type {
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: 0.25rem;
+  color: var(--xblox-muted);
+  padding: 0.02rem 0.25rem;
+  font-size: 0.76rem;
+}
+
+.json-tree-compact-type.is-number {
+  color: #facc15;
+}
+
+.json-tree-compact-type.is-boolean {
+  color: #60a5fa;
+}
+
+.json-tree-compact-type.is-object,
+.json-tree-compact-type.is-array {
+  color: var(--xblox-primary);
+}
+
+.json-tree-compact-value {
+  color: var(--xblox-muted);
+}
+
+.json-tree-compact-jq {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+  border-top: 1px solid var(--xblox-soft-border);
+  padding: 0.35rem 0.2rem 0;
+  color: var(--xblox-muted);
+  font-size: 0.82rem;
+}
+
+.json-tree-compact-jq span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.json-tree-compact-jq button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.45rem;
+  height: 1.35rem;
+  border: 1px solid var(--xblox-button-border);
+  border-radius: 0.25rem;
+  background: var(--xblox-button-bg);
+  color: var(--xblox-button-text);
+  padding: 0;
+}
+
+.json-tree-compact-jq svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.xblox-props-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  background: hsl(0 0% 7% / 0.64);
+  padding: 1rem;
+}
+
+.xblox-props-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(44rem, 94vw);
+  max-height: min(42rem, 88vh);
+  color: var(--xblox-text);
+}
+
+.xblox-props-dialog-head {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--xblox-soft-border);
+  padding: 0.75rem 0.9rem;
+}
+
+.xblox-props-dialog-body {
+  min-height: 0;
+  overflow: auto;
+  padding: 0.9rem;
+}
+
+.xblox-debug-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4px minmax(14rem, var(--xblox-debug-detail-width, 30%));
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.xblox-debug-resizer {
+  min-width: 4px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--xblox-border) 65%, transparent);
+  cursor: col-resize;
+}
+
+.xblox-debug-resizer:hover {
+  background: color-mix(in srgb, var(--xblox-primary) 45%, var(--xblox-border));
+}
+
+.xblox-debug-panel {
+  min-width: 0;
+  padding: 1rem;
+}
+
+.xblox-debug-panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.xblox-debug-panel pre {
+  max-height: 18rem;
+  overflow: auto;
+  margin: 0;
+  border: 1px solid var(--xblox-soft-border);
+  border-radius: 0.65rem;
+  background: var(--xblox-debug-pre-bg);
+  padding: 0.75rem;
+  color: var(--xblox-text);
+  font-family: var(--pm-cweb-mono-font-family, "Cascadia Mono", Consolas, "Courier New", monospace);
+  font-size: 0.86em;
+  line-height: 1.38;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1180px) {
+  .xblox-command-strip,
+  .xblox-debug-grid {
+    grid-template-columns: minmax(0, 1fr) 4px minmax(12rem, var(--xblox-debug-detail-width, 30%));
+  }
+}

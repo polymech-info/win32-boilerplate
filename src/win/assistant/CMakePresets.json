@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "win32-mini",
+            "displayName": "Win32 mini sandbox",
+            "description": "Tiny Win32 GUI — no pm-image / libvips. Binary: ../../dist/pm-win32-mini.exe",
+            "binaryDir": "../../build/win32-mini",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "win32-mini",
+            "configurePreset": "win32-mini"
+        }
+    ]
+}

@@ -1,0 +1,515 @@
+// Localized fallback menu + About dialog (same resource IDs as Resource.rc).
+// One LANGUAGE block per locale — redundant LANGUAGE before DIALOG can duplicate MENU in some RC/link paths.
+#include <windows.h>
+#include "../Resource.h"
+
+// ── Spanish ─────────────────────────────────────────────────────────────────
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+
+IDW_MAIN MENU
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Añadir archivos…",       IDM_ADD_FILES
+        MENUITEM "Añadir &carpeta…",      IDM_ADD_FOLDER
+        POPUP "Archivos &recientes"
+        BEGIN
+            MENUITEM "(ninguno)", IDM_RECENT_MENU_DUMMY_FILE, GRAYED INACTIVE
+        END
+        POPUP "&Carpetas recientes"
+        BEGIN
+            MENUITEM "(ninguno)", IDM_RECENT_MENU_DUMMY_FOLDER, GRAYED INACTIVE
+        END
+        MENUITEM "&Guardar recorte\tCtrl+S",       IDM_FILE_SAVE
+        MENUITEM "Guardar recorte &como…",       IDM_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Guardar diseño…",       IDM_FILE_SAVE_LAYOUT
+        MENUITEM "Cargar diseño…",        IDM_FILE_LOAD_LAYOUT
+        MENUITEM "Restablecer diseño",    IDC_CMD_RESET_LAYOUT
+#if defined(FEATURE_BROWSER)
+        MENUITEM SEPARATOR
+        MENUITEM "&Configuración…",       IDC_CMD_FILE_SETTINGS
+#endif
+#if FEATURE_REGISTER_EXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "Actualizar integración del Explorador…", IDC_CMD_UPDATE_EXPLORER
+        MENUITEM "Quitar integración del Explorador…", IDC_CMD_UNREGISTER_EXPLORER
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "&Salir\tAlt+F4",       IDM_EXIT
+    END
+    POPUP "&Ver"
+    BEGIN
+#if defined(FEATURE_HOME_PAGE) && defined(FEATURE_BROWSER)
+        MENUITEM "&Inicio",              IDC_CMD_VIEW_HOME
+        MENUITEM SEPARATOR
+#endif
+#if FEATURE_COMMAND_QUEUE_VIEW
+        MENUITEM "&Cola",                 IDC_CMD_VIEW_QUEUE
+#endif
+#if FEATURE_COMMAND_LOG_VIEW
+        MENUITEM "&Registro",             IDC_CMD_VIEW_LOG
+#endif
+        MENUITEM "Ajustes de &tamaño",   IDC_CMD_VIEW_SETTINGS
+#if FEATURE_COMMAND_FIND
+        MENUITEM "Resultados de bú&squeda", IDC_CMD_VIEW_FINDRESULTS
+#endif
+#if FEATURE_COMMAND_DUPLICATES
+        MENUITEM "Grupos &duplicados",     IDC_CMD_VIEW_DUPLICATERESULTS
+#endif
+#if defined(FEATURE_CHAT_WEB)
+        MENUITEM "&Chat",                 IDC_CMD_VIEW_CHAT
+#endif
+        MENUITEM "E&xplorador",          IDC_CMD_VIEW_FILETREE
+        MENUITEM "&Visor",               IDC_CMD_VIEW_VIEWER_PANEL
+#if defined(FEATURE_CONSOLE)
+        MENUITEM "&Consola",             IDC_CMD_VIEW_CONSOLE
+#endif
+#if defined(FEATURE_BROWSER)
+        MENUITEM "Navegador &web",       IDC_CMD_VIEW_BROWSER
+        MENUITEM "Navegador de &visor",  IDC_CMD_VIEW_VIEWER_BROWSER
+#endif
+#if defined(FEATURE_NODES)
+        MENUITEM "&Nodos",                IDC_CMD_VIEW_NODES
+#endif
+    END
+#if FEATURE_PIXLWIZ_AUTH || FEATURE_PIXLWIZ_SHARE
+    POPUP "&Pixlwiz"
+    BEGIN
+#if FEATURE_PIXLWIZ_AUTH
+        MENUITEM "&Iniciar sesión…",            IDM_PIXLWIZ_LOGIN
+        MENUITEM "C&errar sesión",            IDM_PIXLWIZ_LOGOUT
+#endif
+#if FEATURE_PIXLWIZ_SHARE
+        MENUITEM "&Compartir…",            IDM_PIXLWIZ_SHARE
+#endif
+    END
+#endif
+    POPUP "A&yuda"
+    BEGIN
+        MENUITEM "&Acerca de\tF1",           IDM_ABOUT
+    END
+END
+
+IDW_ABOUT DIALOGEX 0, 0, 200, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de pm-image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar", IDOK, 75, 56, 50, 14
+    CTEXT           "pm-image: redimensionar y transformar", -1, 10, 12, 180, 10
+    CTEXT           "Interfaz Win32++", -1, 10, 26, 180, 10
+END
+
+#if FEATURE_PIXLWIZ_SHARE
+IDD_PIXLWIZ_SHARE_POST DIALOGEX 0, 0, 320, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compartir en Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Título de la publicación:", -1, 8, 8, 200, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_TITLE, 8, 20, 304, 14, ES_AUTOHSCROLL
+    LTEXT           "Breve descripción (opcional):", -1, 8, 40, 240, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_DESC, 8, 52, 304, 60, ES_MULTILINE | ES_WANTRETURN | ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "Quién puede verlo", -1, 8, 118, 240, 10
+    CONTROL         "Privado — solo tú", IDC_PIXLWIZ_SHARE_PRIVATE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP | WS_GROUP, 8, 130, 304, 12
+    CONTROL         "Visible en feeds — inicio y descubrimiento", IDC_PIXLWIZ_SHARE_IN_FEEDS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 146, 304, 12
+    DEFPUSHBUTTON   "Compartir", IDOK, 164, 192, 72, 16
+    PUSHBUTTON      "Cancelar", IDCANCEL, 242, 192, 72, 16
+END
+
+IDD_PIXLWIZ_SHARE_SUCCESS DIALOGEX 0, 0, 300, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compartir en Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Publicación creada", -1, 8, 8, 280, 12
+    LTEXT           "", IDC_PIXLWIZ_SUCCESS_STATUS, 8, 26, 280, 36
+    DEFPUSHBUTTON   "Abrir en el navegador", IDC_PIXLWIZ_SUCCESS_OPEN, 8, 96, 130, 18
+    PUSHBUTTON      "Cerrar", IDCANCEL, 190, 96, 102, 18
+END
+#endif
+
+
+// ── German ──────────────────────────────────────────────────────────────────
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+
+IDW_MAIN MENU
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Dateien hinzufügen…",       IDM_ADD_FILES
+        MENUITEM "&Ordner hinzufügen…",      IDM_ADD_FOLDER
+        POPUP "&Zuletzt verwendete Dateien"
+        BEGIN
+            MENUITEM "(keine)", IDM_RECENT_MENU_DUMMY_FILE, GRAYED INACTIVE
+        END
+        POPUP "&Zuletzt verwendete Ordner"
+        BEGIN
+            MENUITEM "(keine)", IDM_RECENT_MENU_DUMMY_FOLDER, GRAYED INACTIVE
+        END
+        MENUITEM "&Zuschneiden speichern\tCtrl+S",       IDM_FILE_SAVE
+        MENUITEM "Zuschneiden speichern &unter…",       IDM_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Layout &speichern…",    IDM_FILE_SAVE_LAYOUT
+        MENUITEM "Layout &laden…",        IDM_FILE_LOAD_LAYOUT
+        MENUITEM "Layout zurücksetzen",   IDC_CMD_RESET_LAYOUT
+#if defined(FEATURE_BROWSER)
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen…",       IDC_CMD_FILE_SETTINGS
+#endif
+#if FEATURE_REGISTER_EXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "Explorer-&Shell aktualisieren…", IDC_CMD_UPDATE_EXPLORER
+        MENUITEM "Explorer-&Shell entfernen…", IDC_CMD_UNREGISTER_EXPLORER
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden\tAlt+F4",       IDM_EXIT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+#if defined(FEATURE_HOME_PAGE) && defined(FEATURE_BROWSER)
+        MENUITEM "&Start",             IDC_CMD_VIEW_HOME
+        MENUITEM SEPARATOR
+#endif
+#if FEATURE_COMMAND_QUEUE_VIEW
+        MENUITEM "&Warteschlange",     IDC_CMD_VIEW_QUEUE
+#endif
+#if FEATURE_COMMAND_LOG_VIEW
+        MENUITEM "&Protokoll",         IDC_CMD_VIEW_LOG
+#endif
+        MENUITEM "&Größeneinstellungen", IDC_CMD_VIEW_SETTINGS
+#if FEATURE_COMMAND_FIND
+        MENUITEM "Such&ergebnisse",    IDC_CMD_VIEW_FINDRESULTS
+#endif
+#if FEATURE_COMMAND_DUPLICATES
+        MENUITEM "&Duplikatgruppen",   IDC_CMD_VIEW_DUPLICATERESULTS
+#endif
+#if defined(FEATURE_CHAT_WEB)
+        MENUITEM "&Chat",              IDC_CMD_VIEW_CHAT
+#endif
+        MENUITEM "E&xplorer",         IDC_CMD_VIEW_FILETREE
+        MENUITEM "&Vorschau",          IDC_CMD_VIEW_VIEWER_PANEL
+#if defined(FEATURE_CONSOLE)
+        MENUITEM "&Konsole",           IDC_CMD_VIEW_CONSOLE
+#endif
+#if defined(FEATURE_BROWSER)
+        MENUITEM "Web&browser",        IDC_CMD_VIEW_BROWSER
+        MENUITEM "Vorschau-B&rowser",  IDC_CMD_VIEW_VIEWER_BROWSER
+#endif
+#if defined(FEATURE_NODES)
+        MENUITEM "&Knoten",            IDC_CMD_VIEW_NODES
+#endif
+    END
+#if FEATURE_PIXLWIZ_AUTH || FEATURE_PIXLWIZ_SHARE
+    POPUP "&Pixlwiz"
+    BEGIN
+#if FEATURE_PIXLWIZ_AUTH
+        MENUITEM "&Anmelden…",            IDM_PIXLWIZ_LOGIN
+        MENUITEM "&Abmelden",            IDM_PIXLWIZ_LOGOUT
+#endif
+#if FEATURE_PIXLWIZ_SHARE
+        MENUITEM "&Teilen…",            IDM_PIXLWIZ_SHARE
+#endif
+    END
+#endif
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Info\tF1",           IDM_ABOUT
+    END
+END
+
+IDW_ABOUT DIALOGEX 0, 0, 200, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Über pm-image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 75, 56, 50, 14
+    CTEXT           "pm-image — Größe ändern und transformieren", -1, 10, 12, 180, 10
+    CTEXT           "Win32++-Oberfläche", -1, 10, 26, 180, 10
+END
+
+#if FEATURE_PIXLWIZ_SHARE
+IDD_PIXLWIZ_SHARE_POST DIALOGEX 0, 0, 320, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "In Pixlwiz teilen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Titel des Beitrags:", -1, 8, 8, 200, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_TITLE, 8, 20, 304, 14, ES_AUTOHSCROLL
+    LTEXT           "Kurzbeschreibung (optional):", -1, 8, 40, 240, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_DESC, 8, 52, 304, 60, ES_MULTILINE | ES_WANTRETURN | ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "Wer kann dies sehen", -1, 8, 118, 240, 10
+    CONTROL         "Privat — nur Sie", IDC_PIXLWIZ_SHARE_PRIVATE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP | WS_GROUP, 8, 130, 304, 12
+    CONTROL         "In Feeds sichtbar — Startseite und Entdecken", IDC_PIXLWIZ_SHARE_IN_FEEDS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 146, 304, 12
+    DEFPUSHBUTTON   "Teilen", IDOK, 164, 192, 72, 16
+    PUSHBUTTON      "Abbrechen", IDCANCEL, 242, 192, 72, 16
+END
+
+IDD_PIXLWIZ_SHARE_SUCCESS DIALOGEX 0, 0, 300, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "In Pixlwiz teilen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Beitrag erstellt", -1, 8, 8, 280, 12
+    LTEXT           "", IDC_PIXLWIZ_SUCCESS_STATUS, 8, 26, 280, 36
+    DEFPUSHBUTTON   "Im Browser öffnen", IDC_PIXLWIZ_SUCCESS_OPEN, 8, 96, 130, 18
+    PUSHBUTTON      "Schließen", IDCANCEL, 190, 96, 102, 18
+END
+#endif
+
+
+// ── Italian ─────────────────────────────────────────────────────────────────
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+
+IDW_MAIN MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Aggiungi file…",       IDM_ADD_FILES
+        MENUITEM "Aggiungi &cartella…",      IDM_ADD_FOLDER
+        POPUP "File &recenti"
+        BEGIN
+            MENUITEM "(nessuno)", IDM_RECENT_MENU_DUMMY_FILE, GRAYED INACTIVE
+        END
+        POPUP "&Cartelle recenti"
+        BEGIN
+            MENUITEM "(nessuno)", IDM_RECENT_MENU_DUMMY_FOLDER, GRAYED INACTIVE
+        END
+        MENUITEM "&Salva ritaglio\tCtrl+S",       IDM_FILE_SAVE
+        MENUITEM "Salva ritaglio &con nome…",       IDM_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Salva &layout…",        IDM_FILE_SAVE_LAYOUT
+        MENUITEM "Carica la&yout…",       IDM_FILE_LOAD_LAYOUT
+        MENUITEM "Reimposta layout",      IDC_CMD_RESET_LAYOUT
+#if defined(FEATURE_BROWSER)
+        MENUITEM SEPARATOR
+        MENUITEM "&Impostazioni…",        IDC_CMD_FILE_SETTINGS
+#endif
+#if FEATURE_REGISTER_EXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "Aggiorna integrazione &Esplora risorse…", IDC_CMD_UPDATE_EXPLORER
+        MENUITEM "Rimuovi integrazione E&splora risorse…", IDC_CMD_UNREGISTER_EXPLORER
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "&Esci\tAlt+F4",       IDM_EXIT
+    END
+    POPUP "&Visualizza"
+    BEGIN
+#if defined(FEATURE_HOME_PAGE) && defined(FEATURE_BROWSER)
+        MENUITEM "&Home",                IDC_CMD_VIEW_HOME
+        MENUITEM SEPARATOR
+#endif
+#if FEATURE_COMMAND_QUEUE_VIEW
+        MENUITEM "&Coda",                IDC_CMD_VIEW_QUEUE
+#endif
+#if FEATURE_COMMAND_LOG_VIEW
+        MENUITEM "&Log",                 IDC_CMD_VIEW_LOG
+#endif
+        MENUITEM "Impostazioni &ridimensionamento", IDC_CMD_VIEW_SETTINGS
+#if FEATURE_COMMAND_FIND
+        MENUITEM "Risultati &ricerca",  IDC_CMD_VIEW_FINDRESULTS
+#endif
+#if FEATURE_COMMAND_DUPLICATES
+        MENUITEM "Gruppi &duplicati",   IDC_CMD_VIEW_DUPLICATERESULTS
+#endif
+#if defined(FEATURE_CHAT_WEB)
+        MENUITEM "&Chat",                IDC_CMD_VIEW_CHAT
+#endif
+        MENUITEM "E&splora risorse",     IDC_CMD_VIEW_FILETREE
+        MENUITEM "Ante&prima",           IDC_CMD_VIEW_VIEWER_PANEL
+#if defined(FEATURE_CONSOLE)
+        MENUITEM "&Console",             IDC_CMD_VIEW_CONSOLE
+#endif
+#if defined(FEATURE_BROWSER)
+        MENUITEM "&Browser web",         IDC_CMD_VIEW_BROWSER
+        MENUITEM "Browser &visore",      IDC_CMD_VIEW_VIEWER_BROWSER
+#endif
+#if defined(FEATURE_NODES)
+        MENUITEM "N&odi",                IDC_CMD_VIEW_NODES
+#endif
+    END
+#if FEATURE_PIXLWIZ_AUTH || FEATURE_PIXLWIZ_SHARE
+    POPUP "&Pixlwiz"
+    BEGIN
+#if FEATURE_PIXLWIZ_AUTH
+        MENUITEM "&Accedi…",            IDM_PIXLWIZ_LOGIN
+        MENUITEM "&Disconnetti",            IDM_PIXLWIZ_LOGOUT
+#endif
+#if FEATURE_PIXLWIZ_SHARE
+        MENUITEM "&Condividi…",            IDM_PIXLWIZ_SHARE
+#endif
+    END
+#endif
+    POPUP "A&iuto"
+    BEGIN
+        MENUITEM "&Informazioni\tF1",           IDM_ABOUT
+    END
+END
+
+IDW_ABOUT DIALOGEX 0, 0, 200, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni su pm-image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 75, 56, 50, 14
+    CTEXT           "pm-image: ridimensiona e trasforma", -1, 10, 12, 180, 10
+    CTEXT           "Interfaccia Win32++", -1, 10, 26, 180, 10
+END
+
+#if FEATURE_PIXLWIZ_SHARE
+IDD_PIXLWIZ_SHARE_POST DIALOGEX 0, 0, 320, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Condividi su Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Titolo del post:", -1, 8, 8, 200, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_TITLE, 8, 20, 304, 14, ES_AUTOHSCROLL
+    LTEXT           "Breve descrizione (facoltativa):", -1, 8, 40, 240, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_DESC, 8, 52, 304, 60, ES_MULTILINE | ES_WANTRETURN | ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "Chi può vederlo", -1, 8, 118, 240, 10
+    CONTROL         "Privato — solo tu", IDC_PIXLWIZ_SHARE_PRIVATE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP | WS_GROUP, 8, 130, 304, 12
+    CONTROL         "Visibile nei feed — homepage e scoperta", IDC_PIXLWIZ_SHARE_IN_FEEDS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 146, 304, 12
+    DEFPUSHBUTTON   "Condividi", IDOK, 164, 192, 72, 16
+    PUSHBUTTON      "Annulla", IDCANCEL, 242, 192, 72, 16
+END
+
+IDD_PIXLWIZ_SHARE_SUCCESS DIALOGEX 0, 0, 300, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Condividi su Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Post creato", -1, 8, 8, 280, 12
+    LTEXT           "", IDC_PIXLWIZ_SUCCESS_STATUS, 8, 26, 280, 36
+    DEFPUSHBUTTON   "Apri nel browser", IDC_PIXLWIZ_SUCCESS_OPEN, 8, 96, 130, 18
+    PUSHBUTTON      "Chiudi", IDCANCEL, 190, 96, 102, 18
+END
+#endif
+
+
+// ── French ────────────────────────────────────────────────────────────────────
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+
+IDW_MAIN MENU
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Ajouter des fichiers…",       IDM_ADD_FILES
+        MENUITEM "Ajouter un &dossier…",      IDM_ADD_FOLDER
+        POPUP "Fichiers &récents"
+        BEGIN
+            MENUITEM "(aucun)", IDM_RECENT_MENU_DUMMY_FILE, GRAYED INACTIVE
+        END
+        POPUP "&Dossiers récents"
+        BEGIN
+            MENUITEM "(aucun)", IDM_RECENT_MENU_DUMMY_FOLDER, GRAYED INACTIVE
+        END
+        MENUITEM "&Enregistrer le recadrage\tCtrl+S",       IDM_FILE_SAVE
+        MENUITEM "Enregistrer le recadrage &sous…",       IDM_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Enregistrer la mise en &page…", IDM_FILE_SAVE_LAYOUT
+        MENUITEM "Charger la mise en page…",     IDM_FILE_LOAD_LAYOUT
+        MENUITEM "Réinitialiser la disposition", IDC_CMD_RESET_LAYOUT
+#if defined(FEATURE_BROWSER)
+        MENUITEM SEPARATOR
+        MENUITEM "&Paramètres…",         IDC_CMD_FILE_SETTINGS
+#endif
+#if FEATURE_REGISTER_EXPLORER
+        MENUITEM SEPARATOR
+        MENUITEM "Mettre à jour l’&Explorateur (menus contextuels)…", IDC_CMD_UPDATE_EXPLORER
+        MENUITEM "&Retirer l’intégration Explorateur…", IDC_CMD_UNREGISTER_EXPLORER
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter\tAlt+F4",       IDM_EXIT
+    END
+    POPUP "&Affichage"
+    BEGIN
+#if defined(FEATURE_HOME_PAGE) && defined(FEATURE_BROWSER)
+        MENUITEM "&Accueil",            IDC_CMD_VIEW_HOME
+        MENUITEM SEPARATOR
+#endif
+#if FEATURE_COMMAND_QUEUE_VIEW
+        MENUITEM "File d'&attente",     IDC_CMD_VIEW_QUEUE
+#endif
+#if FEATURE_COMMAND_LOG_VIEW
+        MENUITEM "&Journal",            IDC_CMD_VIEW_LOG
+#endif
+        MENUITEM "Param. &redimensionnement", IDC_CMD_VIEW_SETTINGS
+#if FEATURE_COMMAND_FIND
+        MENUITEM "Résultats de &recherche", IDC_CMD_VIEW_FINDRESULTS
+#endif
+#if FEATURE_COMMAND_DUPLICATES
+        MENUITEM "Groupes de &doublons",   IDC_CMD_VIEW_DUPLICATERESULTS
+#endif
+#if defined(FEATURE_CHAT_WEB)
+        MENUITEM "&Chat",               IDC_CMD_VIEW_CHAT
+#endif
+        MENUITEM "E&xplorateur de fichiers", IDC_CMD_VIEW_FILETREE
+        MENUITEM "Aper&çu",             IDC_CMD_VIEW_VIEWER_PANEL
+#if defined(FEATURE_CONSOLE)
+        MENUITEM "&Console",            IDC_CMD_VIEW_CONSOLE
+#endif
+#if defined(FEATURE_BROWSER)
+        MENUITEM "&Navigateur web",     IDC_CMD_VIEW_BROWSER
+        MENUITEM "Navigateur &aperçu",  IDC_CMD_VIEW_VIEWER_BROWSER
+#endif
+#if defined(FEATURE_NODES)
+        MENUITEM "&Nœuds",              IDC_CMD_VIEW_NODES
+#endif
+    END
+#if FEATURE_PIXLWIZ_AUTH || FEATURE_PIXLWIZ_SHARE
+    POPUP "&Pixlwiz"
+    BEGIN
+#if FEATURE_PIXLWIZ_AUTH
+        MENUITEM "&Connexion…",            IDM_PIXLWIZ_LOGIN
+        MENUITEM "&Déconnexion",            IDM_PIXLWIZ_LOGOUT
+#endif
+#if FEATURE_PIXLWIZ_SHARE
+        MENUITEM "&Partager…",            IDM_PIXLWIZ_SHARE
+#endif
+    END
+#endif
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "&À propos\tF1",           IDM_ABOUT
+    END
+END
+
+IDW_ABOUT DIALOGEX 0, 0, 200, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "À propos de pm-image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 75, 56, 50, 14
+    CTEXT           "pm-image — redimensionner et transformer", -1, 10, 12, 180, 10
+    CTEXT           "Interface Win32++", -1, 10, 26, 180, 10
+END
+
+#if FEATURE_PIXLWIZ_SHARE
+IDD_PIXLWIZ_SHARE_POST DIALOGEX 0, 0, 320, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Partager sur Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Titre du post :", -1, 8, 8, 200, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_TITLE, 8, 20, 304, 14, ES_AUTOHSCROLL
+    LTEXT           "Brève description (facultatif) :", -1, 8, 40, 240, 10
+    EDITTEXT        IDC_PIXLWIZ_SHARE_DESC, 8, 52, 304, 60, ES_MULTILINE | ES_WANTRETURN | ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "Qui peut voir ce post", -1, 8, 118, 240, 10
+    CONTROL         "Privé — vous seul", IDC_PIXLWIZ_SHARE_PRIVATE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP | WS_GROUP, 8, 130, 304, 12
+    CONTROL         "Visible dans les fils — accueil et découverte", IDC_PIXLWIZ_SHARE_IN_FEEDS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 146, 304, 12
+    DEFPUSHBUTTON   "Partager", IDOK, 164, 192, 72, 16
+    PUSHBUTTON      "Annuler", IDCANCEL, 242, 192, 72, 16
+END
+
+IDD_PIXLWIZ_SHARE_SUCCESS DIALOGEX 0, 0, 300, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Partager sur Pixlwiz"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Publication créée", -1, 8, 8, 280, 12
+    LTEXT           "", IDC_PIXLWIZ_SUCCESS_STATUS, 8, 26, 280, 36
+    DEFPUSHBUTTON   "Ouvrir dans le navigateur", IDC_PIXLWIZ_SUCCESS_OPEN, 8, 96, 130, 18
+    PUSHBUTTON      "Fermer", IDCANCEL, 190, 96, 102, 18
+END
+#endif

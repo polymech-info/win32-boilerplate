@@ -1,0 +1,173 @@
+{
+  "data": [
+    {
+      "created": 1677610602,
+      "id": "text-fast",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "text-deep",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "image-vision-fast",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "image-vision-deep",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "image-generation-fast",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "image-generation-deep",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "video-fast",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "video-deep",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "pixlwiz-realtime",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "pixlwiz-speech-to-text",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "pixlwiz-speech",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "pixlwiz-speech-turbo",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "text-free",
+      "metadata": {
+        "fallbacks": [
+          "text-fast"
+        ]
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "text-free-deep",
+      "metadata": {
+        "fallbacks": [
+          "text-deep"
+        ]
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "image-vision-free",
+      "metadata": {
+        "fallbacks": [
+          "image-vision-fast"
+        ]
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "multimodal-free",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "audio-free",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    },
+    {
+      "created": 1677610602,
+      "id": "image-generation-free",
+      "metadata": {
+        "fallbacks": []
+      },
+      "object": "model",
+      "owned_by": "openai"
+    }
+  ],
+  "fetched_at": 1779375301
+}

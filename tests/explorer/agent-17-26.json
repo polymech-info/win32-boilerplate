@@ -1,0 +1,358 @@
+{
+  "events": [
+    {
+      "detail": {
+        "folder": "C:\\Users\\zx\\Desktop",
+        "selection": [
+          "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg"
+        ]
+      },
+      "kind": "turn_started"
+    },
+    {
+      "detail": {
+        "duration_ms": 2874,
+        "model": "anthropic/claude-4.5-haiku-20251001",
+        "response_id": "gen-1779290791-FClh9IbKcgeqqAf3pZ5d",
+        "round": 1,
+        "stateful": false,
+        "tokens": {
+          "input": 13288,
+          "output": 141,
+          "reasoning": 0
+        }
+      },
+      "kind": "llm_round"
+    },
+    {
+      "detail": {
+        "arguments": {
+          "options": {
+            "prompt": "add a caption at the bottom of the image that reads 'The impact is all what matters'"
+          },
+          "paths": "[\"C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg\"]"
+        },
+        "id": "toolu_bdrk_01M4Qov9eNH8Krimp9Ct5wuo"
+      },
+      "kind": "tool_call",
+      "tool": "image_transform"
+    },
+    {
+      "detail": {
+        "duration_ms": 0,
+        "envelope": {
+          "error": "image_transform: 'paths' (string array) is required and non-empty",
+          "ok": false
+        },
+        "id": "toolu_bdrk_01M4Qov9eNH8Krimp9Ct5wuo"
+      },
+      "kind": "tool_result",
+      "tool": "image_transform"
+    },
+    {
+      "detail": {
+        "duration_ms": 2454,
+        "model": "anthropic/claude-4.5-haiku-20251001",
+        "response_id": "gen-1779290794-EcadWStHtk9XHzKthMCC",
+        "round": 2,
+        "stateful": true,
+        "tokens": {
+          "input": 13466,
+          "output": 152,
+          "reasoning": 0
+        }
+      },
+      "kind": "llm_round"
+    },
+    {
+      "detail": {
+        "arguments": {
+          "options": {
+            "prompt": "add a caption at the bottom of the image that reads 'The impact is all what matters'"
+          },
+          "paths": [
+            "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg"
+          ]
+        },
+        "id": "toolu_bdrk_01UqAXfEbyQ2ZCLe3eL2SCf3"
+      },
+      "kind": "tool_call",
+      "tool": "image_transform"
+    },
+    {
+      "detail": {
+        "envelope": {
+          "ok": true,
+          "results": [
+            {
+              "ok": true,
+              "output_path": "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe_add_a_caption_at_the_bottom_of_the_image.jpg",
+              "path": "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg",
+              "result": {
+                "ai_text": "Scaled input image from 1120x928 to 1235x1024 for 2K size\nGenerating...\nGenerated in 18.3sec\n"
+              }
+            }
+          ],
+          "summary": {
+            "failed": 0,
+            "succeeded": 1,
+            "total": 1
+          },
+          "tool": "image_transform"
+        },
+        "id": "toolu_bdrk_01UqAXfEbyQ2ZCLe3eL2SCf3"
+      },
+      "kind": "tool_file_progress",
+      "tool": "image_transform"
+    },
+    {
+      "detail": {
+        "duration_ms": 20708,
+        "envelope": {
+          "ok": true,
+          "results": [
+            {
+              "ok": true,
+              "output_path": "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe_add_a_caption_at_the_bottom_of_the_image.jpg",
+              "path": "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg",
+              "result": {
+                "ai_text": "Scaled input image from 1120x928 to 1235x1024 for 2K size\nGenerating...\nGenerated in 18.3sec\n"
+              }
+            }
+          ],
+          "summary": {
+            "failed": 0,
+            "succeeded": 1,
+            "total": 1
+          },
+          "tool": "image_transform"
+        },
+        "id": "toolu_bdrk_01UqAXfEbyQ2ZCLe3eL2SCf3"
+      },
+      "kind": "tool_result",
+      "tool": "image_transform"
+    },
+    {
+      "detail": {
+        "duration_ms": 2240,
+        "model": "anthropic/claude-4.5-haiku-20251001",
+        "response_id": "gen-1779290817-vmxyywIxrfkFSBH7ILyM",
+        "round": 3,
+        "stateful": true,
+        "tokens": {
+          "input": 13823,
+          "output": 36,
+          "reasoning": 0
+        }
+      },
+      "kind": "llm_round"
+    },
+    {
+      "kind": "assistant_text",
+      "text": "Done! I've added the caption \"The impact is all what matters\" at the bottom of the image. The edited version is saved next to your original file."
+    },
+    {
+      "kind": "done",
+      "text": "Done! I've added the caption \"The impact is all what matters\" at the bottom of the image. The edited version is saved next to your original file."
+    }
+  ],
+  "generated_at": "2026-05-20T15:26:58Z",
+  "provider": {
+    "api_key_configured": true,
+    "base_url": "https://openrouter.ai/api/v1",
+    "max_iterations": 60,
+    "model": "~anthropic/claude-haiku-latest",
+    "router": "openrouter",
+    "timeout_ms": 180000
+  },
+  "result": {
+    "final_text": "Done! I've added the caption \"The impact is all what matters\" at the bottom of the image. The edited version is saved next to your original file.",
+    "iterations": 3,
+    "llm_usage": {
+      "completion_tokens": 329,
+      "cost": 0.042222,
+      "llm_rounds": [
+        {
+          "duration_ms": 2874,
+          "id": "gen-1779290791-FClh9IbKcgeqqAf3pZ5d",
+          "model": "anthropic/claude-4.5-haiku-20251001",
+          "provider": "openrouter",
+          "usage": {
+            "cost": 0.013993,
+            "cost_details": {
+              "upstream_inference_cost": 0.013993,
+              "upstream_inference_input_cost": 0.013288,
+              "upstream_inference_output_cost": 0.000705
+            },
+            "input_tokens": 13288,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "is_byok": false,
+            "output_tokens": 141,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 13429
+          }
+        },
+        {
+          "duration_ms": 2454,
+          "id": "gen-1779290794-EcadWStHtk9XHzKthMCC",
+          "model": "anthropic/claude-4.5-haiku-20251001",
+          "provider": "openrouter",
+          "usage": {
+            "cost": 0.014226,
+            "cost_details": {
+              "upstream_inference_cost": 0.014226,
+              "upstream_inference_input_cost": 0.013466,
+              "upstream_inference_output_cost": 0.00076
+            },
+            "input_tokens": 13466,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "is_byok": false,
+            "output_tokens": 152,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 13618
+          }
+        },
+        {
+          "duration_ms": 2240,
+          "id": "gen-1779290817-vmxyywIxrfkFSBH7ILyM",
+          "model": "anthropic/claude-4.5-haiku-20251001",
+          "provider": "openrouter",
+          "usage": {
+            "cost": 0.014003,
+            "cost_details": {
+              "upstream_inference_cost": 0.014003,
+              "upstream_inference_input_cost": 0.013823,
+              "upstream_inference_output_cost": 0.00018
+            },
+            "input_tokens": 13823,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "is_byok": false,
+            "output_tokens": 36,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 13859
+          }
+        }
+      ],
+      "prompt_tokens": 40577,
+      "total_tokens": 40906
+    },
+    "ok": true,
+    "transcript": {
+      "messages": [
+        {
+          "content": "Runtime context (built in, always true for this session):\n  - Host OS: Microsoft Windows (desktop). User paths often use drive letters and backslashes; the app normalises paths for tools.\n  - Application: **PM-Image** (technical id `pm-image`) — includes Windows Explorer / shell integration.\n  - Current local date/time: **2026-05-20T17:26:30+02:00 (W. Europe Daylight Time)** — use this when the user says 'now', 'today', 'tonight', or a clock time without a timezone.\n  - Chat interface: the user reads your replies in an **in-app chat panel** with **rich Markdown** (headings, lists, emphasis, fenced code blocks, links when allowed by the renderer). It is not a plain-text terminal; use Markdown when it clarifies structure or code.\n\nYou are pm-image's chat agent. Active tool families this session:\n  • **Image / raster** — image_transform, image_create\n  • **Text / file** — write_file; (logs, configs, .md, .json, CSV, .dxf, .svg, …) — image_* tools are for bitmaps; use file tools for text/vector paths.\n  • **Speech** — speak (TTS)\n  • **MCP (remote)** — see tool list below\n\n## Available tools:\n  - image_transform — AI image edit over one or more images on disk. Use this for ANY action verb that changes the image content: 'enhance', 'edit', 'fix', 'improve', 'clean up', 'remove X', 'add Y', 'restyle', 'colourise', 'beautify', 'make brighter', 'sharpen', 'denoise'. The user's wording (or your light clarification) goes in options.prompt. Do NOT call image_meta first to 'see' the image — Gemini reads the bytes itself and a recon meta call is pure overhead. Writes the edited raster next to each source (typically PNG/JPEG from Gemini or Replicate **image** models). **Do not** use this tool for Replicate **image-to-video** (MP4 from a selected photo): it always sends `image_input` + `output_format` in the shape of an **image** edit API, which fails validation on Wan, MiniMax, Kling-style i2v slugs (“image is required” / wrong fields). For video-from-selection, call **create_video** with `frame_indices` [0] or [0,1]. Provider/key resolution falls back to app settings when omitted.\n  - image_create — AI media generation on disk from a **text prompt** (and optional reference images). Use for 'generate', 'create an image', 'draw', 'imagine' when there is no full raster file to edit as the main target. **Provider, model, and API keys come from app Settings** (Chat → Image provider / model), not from tool arguments — same as **create_video**. Replicate can output video from prompt-only flows; for **image-to-video from selected files**, use **create_video** with `frame_indices`. There is no `paths` input file; output is written from the prompt alone, or pass **reference image paths** (options.reference_images, or `references` / `reference`) for style / layout / logo. output is optional; if omitted, a default filename is chosen from the prompt. Use options.out_dir for the output folder. To edit an existing file in place, use image_transform instead.\n  - write_file — Create, overwrite, or append a UTF-8 text file on disk (reports, notes, .md, CSV snippets). Use whenever the user asks to save, write, or export text to a file. Parent directories are created as needed. Relative paths resolve to the current Explorer folder in-app (same as other path tools; if no folder, the first selected file's directory; only then the process cwd). Do not claim a file was written without calling this tool first.\n  - speak — Synthesise text to speech and play it on the default speaker Use when the user asks to say, announce, read aloud, narrate, or speak text. Playback is synchronous — the tool returns after the audio finishes playing.\n  - mcp_tavily-remote-mcp__tavily_search — [MCP tavily-remote-mcp] Search the web for current information on any topic. Use for news, facts, or data beyond your knowledge cutoff. Returns snippets and source URLs.\n  - mcp_tavily-remote-mcp__tavily_extract — [MCP tavily-remote-mcp] Extract content from URLs. Returns raw page content in markdown or text format.\n  - mcp_tavily-remote-mcp__tavily_crawl — [MCP tavily-remote-mcp] Crawl a website starting from a URL. Extracts content from pages with configurable depth and breadth.\n  - mcp_tavily-remote-mcp__tavily_map — [MCP tavily-remote-mcp] Map a website's structure. Returns a list of URLs found starting from the base URL.\n  - mcp_tavily-remote-mcp__tavily_research — [MCP tavily-remote-mcp] Perform comprehensive research on a given topic or question. Use this tool when you need to gather information from multiple sources, including web pages, documents, and other resources, to answer a question or complete a task. Returns a detailed response based on the research findings. Rate limit: 20 requests per minute.\n\nThe user currently has 1 file(s) selected:\n  [0] C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg\n\nUse these paths when a tool needs actual file locations: copy the full path from **[0]**, **[1]**, … in order. Unless the user names a different path, operate on these selected files.\nIf a selection is **not** a raster image (e.g. `.dxf`, `.svg`, `.csv`, `.txt`, `.md`, `.json`, `.log`), treat it as a **text / structured-text** path: use **write_file** to save notes or exports beside it;\n\n## Guidelines:\n  - For **all** path tools, relative path strings are resolved against the current Explorer folder (or the parent of the first selected file). Invented paths will fail.\n  - Always call the tool that matches the user's intent — do not narrate what you would do.\n  - **Lean replies:** No \"Here are…\" intros, no **Summary:** blocks, no closing remarks. Do not restate what a table or list already shows.\n  - If a tool reports per-file failures, state them briefly once.\n  - When the user asks to save a report, note, or any text file, call **write_file** with the full content — do not claim the file exists without calling the tool.\n  - For **image_create**: provider/model and API keys come only from **app Settings** — do not put model/provider/api_key in tool arguments.\n\nChoosing a tool from the user’s intent:\n  • 'enhance' / 'edit' / 'fix' / 'clean up' / 'remove X' / 'restyle' → **image_transform**\n  • 'generate' / 'create an image' / 'draw' → **image_create**\n\nTools whose names start with `mcp_` are **remote MCP tools** (from your profile `mcp.json`); call them like any other function — arguments follow each tool’s schema.\n\n## Conversation History\nPast turns in this session (oldest first):\n[2026-05-20T15:21:42Z] User: “As technical illustration, black & white - no labels or legend”\n  → tools: file_read\n  → Assistant: “I can see you have a 1200×1200 JPG image selected. To view and work with it as a technical illustration, I'd need to see the image directly in the app's image viewer rather than read it as text.\n\n**What would you like me to do?**\n\n1. **Describe** the current image → I can analyze its content in the app viewer\n2. **Convert to technical drawing style** → I'd need to edit it (e.g., convert to black & white, remove labels) — this requires external tools or your image editor\n3. **Create a technical illustration** → If you describe what should be shown, I can guide you or search for techniques\n\nAre you looking to:\n- **Modify** the existing JPG to remove labels/legend and convert to black & white?\n- **Create** a new technical illustration from scratch?\n- **Understand** how to style this image as technical documentation?\n\nLet me know the goal and I can help!”\n[2026-05-20T15:23:01Z] User: “zoom out a bit - a bit more realistic”\n  → tools: file_read\n  → Assistant: “I see the image is selected. To help you zoom out and make it more realistic, I need more context about what you're working with. \n\n**Are you asking me to:**\n\n1. **Edit the existing image** — take the JPG and create a zoomed-out/more distant view of it?\n2. **Create a new image** — generate a fresh technical illustration with better perspective/scale?\n3. **Adjust the display** — change how it appears in the app?\n\n**Also helpful to know:**\n- What's currently shown in the image? (What subject/object?)\n- What do you mean by \"more realistic\"? (Better depth, different angle, different materials, different context?)\n- Should I keep the \"PLASTIK MACHT\" text, or remove/modify it?\n\nLet me know and I'll recreate or adjust it for you.”\n[2026-05-20T15:23:44Z] User: “zoom out a bit - a bit more realistic”\n  → tools: image_transform\n  → media: plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg\n  → Assistant: “Done! I've zoomed out the image to show more context and added better perspective to make it more realistic. The edited version is saved next to your original file. The composition now has more breathing room and a more natural viewing distance.”\n[2026-05-20T15:24:55Z] User: “add another caption in the bottom 'The impact is all what matters'”\n  → tools: image_transform\n  → Assistant: “The image is being flagged as sensitive and can't be edited through the API. This might be due to content policies around the material shown.\n\n**Alternative options:**\n1. **Try with a different image** — if you have a different version without sensitive content\n2. **Use a desktop tool** — open the JPG in Photoshop, GIMP, or even Paint to add the text manually\n3. **Describe the image** — tell me what it shows and I can create a new version from scratch with both captions\n\nWould any of these work for you?”\n[2026-05-20T15:25:49Z] User: “add another caption in the bottom 'The impact is all what matters'”\n  → tools: image_transform\n  → media: plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe_add_a_caption_at_the_bottom_of_the_image.jpg\n  → Assistant: “Done! I've added the caption \"The impact is all what matters\" at the bottom of the image. The edited version is saved next to your original file.”\n\nUse `memory_write` to persist facts across turns (user name, preferences, secrets, notes). Use `memory_read` to retrieve them. Memory persists for the lifetime of this chat session.\n\n## Skills context\n- skills_enabled: true\n- roaming_root: C:\\Users\\zx\\AppData\\Roaming\\PolyMech\\pm-image\\skills\n- workspace_root: C:\\Users\\zx\\Desktop\\skills\n- discovered:\n  - self-improving-agent [roaming] available=true active=true\n  - system-runtime-summary [roaming] available=true active=false\n- active_skill_count: 1\n\n## Active skill bodies (injected)\n\n### skill `self-improving-agent` (roaming)\npath: C:\\Users\\zx\\AppData\\Roaming\\PolyMech\\pm-image\\skills\\self-improving-agent\\SKILL.md\n```markdown\n---\nname: self-improvement\ndescription: \"Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.\"\nmetadata:\n---\n\n# Self-Improvement Skill\n\nLog learnings and errors to markdown files for continuous improvement. Coding agents can later process these into fixes, and important learnings get promoted to project memory.\n\n## First-Use Initialisation\n\nBefore logging anything, ensure the `.learnings/` directory and files exist in the project or workspace root. If any are missing, create them:\n\n```bash\nmkdir -p .learnings\n[ -f .learnings/LEARNINGS.md ] || printf \"# Learnings\\n\\nCorrections, insights, and knowledge gaps captured during development.\\n\\n**Categories**: correction | insight | knowledge_gap | best_practice\\n\\n---\\n\" > .learnings/LEARNINGS.md\n[ -f .learnings/ERRORS.md ] || printf \"# Errors\\n\\nCommand failures and integration errors.\\n\\n---\\n\" > .learnings/ERRORS.md\n[ -f .learnings/FEATURE_REQUESTS.md ] || printf \"# Feature Requests\\n\\nCapabilities requested by the user.\\n\\n---\\n\" > .learnings/FEATURE_REQUESTS.md\n```\n\nNever overwrite existing files. This is a no-op if `.learnings/` is already initialised.\n\nDo not log secrets, tokens, private keys, environment variables, or full source/config files unless the user explicitly asks for that level of detail. Prefer short summaries or redacted excerpts over raw command output or full transcripts.\n\nIf you want automatic reminders or setup assistance, use the opt-in hook workflow described in [Hook Integration](#hook-integration).\n\n## Quick Reference\n\n| Situation | Action |\n|-----------|--------|\n| Command/operation fails | Log to `.learnings/ERRORS.md` |\n| User corrects you | Log to `.learnings/LEARNINGS.md` with category `correction` |\n| User wants missing feature | Log to `.learnings/FEATURE_REQUESTS.md` |\n| API/external tool fails | Log to `.learnings/ERRORS.md` with integration details |\n| Knowledge was outdated | Log to `.learnings/LEARNINGS.md` with category `knowledge_gap` |\n| Found better approach | Log to `.learnings/LEARNINGS.md` with category `best_practice` |\n| Simplify/Harden recurring patterns | Log/update `.learnings/LEARNINGS.md` with `Source: simplify-and-harden` and a stable `Pattern-Key` |\n| Similar to existing entry | Link with `**See Also**`, consider priority bump |\n| Broadly applicable learning | Promote to `CLAUDE.md`, `AGENTS.md`, and/or `.github/copilot-instructions.md` |\n| Workflow improvements | Promote to `AGENTS.md` (OpenClaw workspace) |\n| Tool gotchas | Promote to `TOOLS.md` (OpenClaw workspace) |\n| Behavioral patterns | Promote to `SOUL.md` (OpenClaw workspace) |\n\n## OpenClaw Setup (Recommended)\n\nOpenClaw is the primary platform for this skill. It uses workspace-based prompt injection with automatic skill loading.\n\n### Installation\n\n**Via ClawdHub (recommended):**\n```bash\nclawdhub install self-improving-agent\n```\n\n**Manual:**\n```bash\ngit clone https://github.com/peterskoett/self-improving-agent.git ~/.openclaw/skills/self-improving-agent\n```\n\nRemade for openclaw from original repo : https://github.com/pskoett/pskoett-ai-skills - https://github.com/pskoett/pskoett-ai-skills/tree/main/skills/self-improvement\n\n### Workspace Structure\n\nOpenClaw injects these files into every session:\n\n```\n~/.openclaw/workspace/\n├── AGENTS.md          # Multi-agent workflows, delegation patterns\n├── SOUL.md            # Behavioral guidelines, personality, principles\n├── TOOLS.md           # Tool capabilities, integration gotchas\n├── MEMORY.md          # Long-term memory (main session only)\n├── memory/            # Daily memory files\n│   └── YYYY-MM-DD.md\n└── .learnings/        # This skill's log files\n    ├── LEARNINGS.md\n    ├── ERRORS.md\n    └── FEATURE_REQUESTS.md\n```\n\n### Create Learning Files\n\n```bash\nmkdir -p ~/.openclaw/workspace/.learnings\n```\n\nThen create the log files (or copy from `assets/`):\n- `LEARNINGS.md` — corrections, knowledge gaps, best practices\n- `ERRORS.md` — command failures, exceptions\n- `FEATURE_REQUESTS.md` — user-requested capabilities\n\n### Promotion Targets\n\nWhen learnings prove broadly applicable, promote them to workspace files:\n\n| Learning Type | Promote To | Example |\n|---------------|------------|---------|\n| Behavioral patterns | `SOUL.md` | \"Be concise, avoid disclaimers\" |\n| Workflow improvements | `AGENTS.md` | \"Spawn sub-agents for long tasks\" |\n| Tool gotchas | `TOOLS.md` | \"Git push needs auth configured first\" |\n\n### Inter-Session Communication\n\nOpenClaw provides tools to share learnings across sessions:\n\n- **sessions_list** — View active/recent sessions\n- **sessions_history** — Read another session's transcript  \n- **sessions_send** — Send a learning to another session\n- **sessions_spawn** — Spawn a sub-agent for background work\n\nUse these only in trusted environments and only when the user explicitly wants cross-session sharing. Prefer sending a short sanitized summary and relevant file paths, not raw transcripts, secrets, or full command output.\n\n### Optional: Enable Hook\n\nFor automatic reminders at session start:\n\n```bash\n# Copy hook to OpenClaw hooks directory\ncp -r hooks/openclaw ~/.openclaw/hooks/self-improvement\n\n# Enable it\nopenclaw hooks enable self-improvement\n```\n\nSee `references/openclaw-integration.md` for complete details.\n\n---\n\n## Generic Setup (Other Agents)\n\nFor Claude Code, Codex, Copilot, or other agents, create `.learnings/` in the project or workspace root:\n\n```bash\nmkdir -p .learnings\n```\n\nCreate the files inline using the headers shown above. Avoid reading templates from the current repo or workspace unless you explicitly trust that path.\n\n### Add reference to agent files AGENTS.md, CLAUDE.md, or .github/copilot-instructions.md to remind yourself to log learnings. (this is an alternative to hook-based reminders)\n\n#### Self-Improvement Workflow\n\nWhen errors or corrections occur:\n1. Log to `.learnings/ERRORS.md`, `LEARNINGS.md`, or `FEATURE_REQUESTS.md`\n2. Review and promote broadly applicable learnings to:\n   - `CLAUDE.md` - project facts and conventions\n   - `AGENTS.md` - workflows and automation\n   - `.github/copilot-instructions.md` - Copilot context\n\n## Logging Format\n\n### Learning Entry\n\nAppend to `.learnings/LEARNINGS.md`:\n\n```markdown\n## [LRN-YYYYMMDD-XXX] category\n\n**Logged**: ISO-8601 timestamp\n**Priority**: low | medium | high | critical\n**Status**: pending\n**Area**: frontend | backend | infra | tests | docs | config\n\n### Summary\nOne-line description of what was learned\n\n### Details\nFull context: what happened, what was wrong, what's correct\n\n### Suggested Action\nSpecific fix or improvement to make\n\n### Metadata\n- Source: conversation | error | user_feedback\n- Related Files: path/to/file.ext\n- Tags: tag1, tag2\n- See Also: LRN-20250110-001 (if related to existing entry)\n- Pattern-Key: simplify.dead_code | harden.input_validation (optional, for recurring-pattern tracking)\n- Recurrence-Count: 1 (optional)\n- First-Seen: 2025-01-15 (optional)\n- Last-Seen: 2025-01-15 (optional)\n\n---\n```\n\n### Error Entry\n\nAppend to `.learnings/ERRORS.md`:\n\n```markdown\n## [ERR-YYYYMMDD-XXX] skill_or_command_name\n\n**Logged**: ISO-8601 timestamp\n**Priority**: high\n**Status**: pending\n**Area**: frontend | backend | infra | tests | docs | config\n\n### Summary\nBrief description of what failed\n\n### Error\n```\nActual error message or output\n```\n\n### Context\n- Command/operation attempted\n- Input or parameters used\n- Environment details if relevant\n- Summary or redacted excerpt of relevant output (avoid full transcripts and secret-bearing data by default)\n\n### Suggested Fix\nIf identifiable, what might resolve this\n\n### Metadata\n- Reproducible: yes | no | unknown\n- Related Files: path/to/file.ext\n- See Also: ERR-20250110-001 (if recurring)\n\n---\n```\n\n### Feature Request Entry\n\nAppend to `.learnings/FEATURE_REQUESTS.md`:\n\n```markdown\n## [FEAT-YYYYMMDD-XXX] capability_name\n\n**Logged**: ISO-8601 timestamp\n**Priority**: medium\n**Status**: pending\n**Area**: frontend | backend | infra | tests | docs | config\n\n### Requested Capability\nWhat the user wanted to do\n\n### User Context\nWhy they needed it, what problem they're solving\n\n### Complexity Estimate\nsimple | medium | complex\n\n### Suggested Implementation\nHow this could be built, what it might extend\n\n### Metadata\n- Frequency: first_time | recurring\n- Related Features: existing_feature_name\n\n---\n```\n\n## ID Generation\n\nFormat: `TYPE-YYYYMMDD-XXX`\n- TYPE: `LRN` (learning), `ERR` (error), `FEAT` (feature)\n- YYYYMMDD: Current date\n- XXX: Sequential number or random 3 chars (e.g., `001`, `A7B`)\n\nExamples: `LRN-20250115-001`, `ERR-20250115-A3F`, `FEAT-20250115-002`\n\n## Resolving Entries\n\nWhen an issue is fixed, update the entry:\n\n1. Change `**Status**: pending` → `**Status**: resolved`\n2. Add resolution block after Metadata:\n\n```markdown\n### Resolution\n- **Resolved**: 2025-01-16T09:00:00Z\n- **Commit/PR**: abc123 or #42\n- **Notes**: Brief description of what was done\n```\n\nOther status values:\n- `in_progress` - Actively being worked on\n- `wont_fix` - Decided not to address (add reason in Resolution notes)\n- `promoted` - Elevated to CLAUDE.md, AGENTS.md, or .github/copilot-instructions.md\n\n## Promoting to Project Memory\n\nWhen a learning is broadly applicable (not a one-off fix), promote it to permanent project memory.\n\n### When to Promote\n\n- Learning applies across multiple files/features\n- Knowledge any contributor (human or AI) should know\n- Prevents recurring mistakes\n- Documents project-specific conventions\n\n### Promotion Targets\n\n| Target | What Belongs There |\n|--------|-------------------|\n| `CLAUDE.md` | Project facts, conventions, gotchas for all Claude interactions |\n| `AGENTS.md` | Agent-specific workflows, tool usage patterns, automation rules |\n| `.github/copilot-instructions.md` | Project context and conventions for GitHub Copilot |\n| `SOUL.md` | Behavioral guidelines, communication style, principles (OpenClaw workspace) |\n| `TOOLS.md` | Tool capabilities, usage patterns, integration gotchas (OpenClaw workspace) |\n\n### How to Promote\n\n1. **Distill** the learning into a concise rule or fact\n2. **Add** to appropriate section in target file (create file if needed)\n3. **Update** original entry:\n   - Change `**Status**: pending` → `**Status**: promoted`\n   - Add `**Promoted**: CLAUDE.md`, `AGENTS.md`, or `.github/copilot-instructions.md`\n\n### Promotion Examples\n\n**Learning** (verbose):\n> Project uses pnpm workspaces. Attempted `npm install` but failed. \n> Lock file is `pnpm-lock.yaml`. Must use `pnpm install`.\n\n**In CLAUDE.md** (concise):\n```markdown\n## Build & Dependencies\n- Package manager: pnpm (not npm) - use `pnpm install`\n```\n\n**Learning** (verbose):\n> When modifying API endpoints, must regenerate TypeScript client.\n> Forgetting this causes type mismatches at runtime.\n\n**In AGENTS.md** (actionable):\n```markdown\n## After API Changes\n1. Regenerate client: `pnpm run generate:api`\n2. Check for type errors: `pnpm tsc --noEmit`\n```\n\n## Recurring Pattern Detection\n\nIf logging something similar to an existing entry:\n\n1. **Search first**: `grep -r \"keyword\" .learnings/`\n2. **Link entries**: Add `**See Also**: ERR-20250110-001` in Metadata\n3. **Bump priority** if issue keeps recurring\n4. **Consider systemic fix**: Recurring issues often indicate:\n   - Missing documentation (→ promote to CLAUDE.md or .github/copilot-instructions.md)\n   - Missing automation (→ add to AGENTS.md)\n   - Architectural problem (→ create tech debt ticket)\n\n## Simplify & Harden Feed\n\nUse this workflow to ingest recurring patterns from the `simplify-and-harden`\nskill and turn them into durable prompt guidance.\n\n### Ingestion Workflow\n\n1. Read `simplify_and_harden.learning_loop.candidates` from the task summary.\n2. For each candidate, use `pattern_key` as the stable dedupe key.\n3. Search `.learnings/LEARNINGS.md` for an existing entry with that key:\n   - `grep -n \"Pattern-Key: <pattern_key>\" .learnings/LEARNINGS.md`\n4. If found:\n   - Increment `Recurrence-Count`\n   - Update `Last-Seen`\n   - Add `See Also` links to related entries/tasks\n5. If not found:\n   - Create a new `LRN-...` entry\n   - Set `Source: simplify-and-harden`\n   - Set `Pattern-Key`, `Recurrence-Count: 1`, and `First-Seen`/`Last-Seen`\n\n### Promotion Rule (System Prompt Feedback)\n\nPromote recurring patterns into agent context/system prompt files when all are true:\n\n- `Recurrence-Count >= 3`\n- Seen across at least 2 distinct tasks\n- Occurred within a 30-day window\n\nPromotion targets:\n- `CLAUDE.md`\n- `AGENTS.md`\n- `.github/copilot-instructions.md`\n- `SOUL.md` / `TOOLS.md` for OpenClaw workspace-level guidance when applicable\n\nWrite promoted rules as short prevention rules (what to do before/while coding),\nnot long incident write-ups.\n\n## Periodic Review\n\nReview `.learnings/` at natural breakpoints:\n\n### When to Review\n- Before starting a new major task\n- After completing a feature\n- When working in an area with past learnings\n- Weekly during active development\n\n### Quick Status Check\n```bash\n# Count pending items\ngrep -h \"Status\\*\\*: pending\" .learnings/*.md | wc -l\n\n# List pending high-priority items\ngrep -B5 \"Priority\\*\\*: high\" .learnings/*.md | grep \"^## \\[\"\n\n# Find learnings for a specific area\ngrep -l \"Area\\*\\*: backend\" .learnings/*.md\n```\n\n### Review Actions\n- Resolve fixed items\n- Promote applicable learnings\n- Link related entries\n- Escalate recurring issues\n\n## Detection Triggers\n\nAutomatically log when you notice:\n\n**Corrections** (→ learning with `correction` category):\n- \"No, that's not right...\"\n- \"Actually, it should be...\"\n- \"You're wrong about...\"\n- \"That's outdated...\"\n\n**Feature Requests** (→ feature request):\n- \"Can you also...\"\n- \"I wish you could...\"\n- \"Is there a way to...\"\n- \"Why can't you...\"\n\n**Knowledge Gaps** (→ learning with `knowledge_gap` category):\n- User provides information you didn't know\n- Documentation you referenced is outdated\n- API behavior differs from your understanding\n\n**Errors** (→ error entry):\n- Command returns non-zero exit code\n- Exception or stack trace\n- Unexpected output or behavior\n- Timeout or connection failure\n\n## Priority Guidelines\n\n| Priority | When to Use |\n|----------|-------------|\n| `critical` | Blocks core functionality, data loss risk, security issue |\n| `high` | Significant impact, affects common workflows, recurring issue |\n| `medium` | Moderate impact, workaround exists |\n| `low` | Minor inconvenience, edge case, nice-to-have |\n\n## Area Tags\n\nUse to filter learnings by codebase region:\n\n| Area | Scope |\n|------|-------|\n| `frontend` | UI, components, client-side code |\n| `backend` | API, services, server-side code |\n| `infra` | CI/CD, deployment, Docker, cloud |\n| `tests` | Test files, testing utilities, coverage |\n| `docs` | Documentation, comments, READMEs |\n| `config` | Configuration files, environment, settings |\n\n## Best Practices\n\n1. **Log immediately** - context is freshest right after the issue\n2. **Be specific** - future agents need to understand quickly\n3. **Include reproduction steps** - especially for errors\n4. **Link related files** - makes fixes easier\n5. **Suggest concrete fixes** - not just \"investigate\"\n6. **Use consistent categories** - enables filtering\n7. **Promote aggressively** - if in doubt, add to CLAUDE.md or .github/copilot-instructions.md\n8. **Review regularly** - stale learnings lose value\n\n## Gitignore Options\n\n**Keep learnings local** (per-developer):\n```gitignore\n.learnings/\n```\n\nThis repo uses that default to avoid committing sensitive or noisy local logs by accident.\n\n**Track learnings in repo** (team-wide):\nDon't add to .gitignore - learnings become shared knowledge.\n\n**Hybrid** (track templates, ignore entries):\n```gitignore\n.learnings/*.md\n!.learnings/.gitkeep\n```\n\n## Hook Integration\n\nEnable automatic reminders through agent hooks. This is **opt-in** - you must explicitly configure hooks.\n\n### Quick Setup (Claude Code / Codex)\n\nCreate `.claude/settings.json` in your project:\n\n```json\n{\n  \"hooks\": {\n    \"UserPromptSubmit\": [{\n      \"matcher\": \"\",\n      \"hooks\": [{\n        \"type\": \"command\",\n        \"command\": \"./skills/self-improvement/scripts/activator.sh\"\n      }]\n    }]\n  }\n}\n```\n\nThis injects a learning evaluation reminder after each prompt (~50-100 tokens overhead).\n\n### Advanced Setup (With Error Detection)\n\n```json\n{\n  \"hooks\": {\n    \"UserPromptSubmit\": [{\n      \"matcher\": \"\",\n      \"hooks\": [{\n        \"type\": \"command\",\n        \"command\": \"./skills/self-improvement/scripts/activator.sh\"\n      }]\n    }],\n    \"PostToolUse\": [{\n      \"matcher\": \"Bash\",\n      \"hooks\": [{\n        \"type\": \"command\",\n        \"command\": \"./skills/self-improvement/scripts/error-detector.sh\"\n      }]\n    }]\n  }\n}\n```\n\nThis is optional. The recommended default is activator-only setup; enable `PostToolUse` only if you are comfortable with hook scripts inspecting command output for error patterns.\n\n### Available Hook Scripts\n\n| Script | Hook Type | Purpose |\n|--------|-----------|---------|\n| `scripts/activator.sh` | UserPromptSubmit | Reminds to evaluate learnings after tasks |\n| `scripts/error-detector.sh` | PostToolUse (Bash) | Triggers on command errors |\n\nSee `references/hooks-setup.md` for detailed configuration and troubleshooting.\n\n## Automatic Skill Extraction\n\nWhen a learning is valuable enough to become a reusable skill, extract it using the provided helper.\n\n### Skill Extraction Criteria\n\nA learning qualifies for skill extraction when ANY of these apply:\n\n| Criterion | Description |\n|-----------|-------------|\n| **Recurring** | Has `See Also` links to 2+ similar issues |\n| **Verified** | Status is `resolved` with working fix |\n| **Non-obvious** | Required actual debugging/investigation to discover |\n| **Broadly applicable** | Not project-specific; useful across codebases |\n| **User-flagged** | User says \"save this as a skill\" or similar |\n\n### Extraction Workflow\n\n1. **Identify candidate**: Learning meets extraction criteria\n2. **Run helper** (or create manually):\n   ```bash\n   ./skills/self-improvement/scripts/extract-skill.sh skill-name --dry-run\n   ./skills/self-improvement/scripts/extract-skill.sh skill-name\n   ```\n3. **Customize SKILL.md**: Fill in template with learning content\n4. **Update learning**: Set status to `promoted_to_skill`, add `Skill-Path`\n5. **Verify**: Read skill in fresh session to ensure it's self-contained\n\n### Manual Extraction\n\nIf you prefer manual creation:\n\n1. Create `skills/<skill-name>/SKILL.md`\n2. Use template from `assets/SKILL-TEMPLATE.md`\n3. Follow [Agent Skills spec](https://agentskills.io/specification):\n   - YAML frontmatter with `name` and `description`\n   - Name must match folder name\n   - No README.md inside skill folder\n\n### Extraction Detection Triggers\n\nWatch for these signals that a learning should become a skill:\n\n**In conversation:**\n- \"Save this as a skill\"\n- \"I keep running into this\"\n- \"This would be useful for other projects\"\n- \"Remember this pattern\"\n\n**In learning entries:**\n- Multiple `See Also` links (recurring issue)\n- High priority + resolved status\n- Category: `best_practice` with broad applicability\n- User feedback praising the solution\n\n### Skill Quality Gates\n\nBefore extraction, verify:\n\n- [ ] Solution is tested and working\n- [ ] Description is clear without original context\n- [ ] Code examples are self-contained\n- [ ] No project-specific hardcoded values\n- [ ] Follows skill naming conventions (lowercase, hyphens)\n\n## Multi-Agent Support\n\nThis skill works across different AI coding agents with agent-specific activation.\n\n### Claude Code\n\n**Activation**: Hooks (UserPromptSubmit, PostToolUse)\n**Setup**: `.claude/settings.json` with hook configuration\n**Detection**: Automatic via hook scripts\n\n### Codex CLI\n\n**Activation**: Hooks (same pattern as Claude Code)\n**Setup**: `.codex/settings.json` with hook configuration\n**Detection**: Automatic via hook scripts\n\n### GitHub Copilot\n\n**Activation**: Manual (no hook support)\n**Setup**: Add to `.github/copilot-instructions.md`:\n\n```markdown\n## Self-Improvement\n\nAfter solving non-obvious issues, consider logging to `.learnings/`:\n1. Use format from self-improvement skill\n2. Link related entries with See Also\n3. Promote high-value learnings to skills\n\nAsk in chat: \"Should I log this as a learning?\"\n```\n\n**Detection**: Manual review at session end\n```\n\n",
+          "role": "system"
+        },
+        {
+          "content": "add another caption in the bottom 'The impact is all what matters'",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"options\":{\"prompt\":\"add a caption at the bottom of the image that reads 'The impact is all what matters'\"},\"paths\":\"[\\\"C:\\\\Users\\\\zx\\\\Desktop\\\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg\\\"]\"}",
+                "name": "image_transform"
+              },
+              "id": "toolu_bdrk_01M4Qov9eNH8Krimp9Ct5wuo",
+              "item_id": "fc_tmp_69h7wldrhv6",
+              "type": "function"
+            }
+          ]
+        },
+        {
+          "content": {
+            "error": "image_transform: 'paths' (string array) is required and non-empty",
+            "ok": false
+          },
+          "role": "tool",
+          "tool_call_id": "toolu_bdrk_01M4Qov9eNH8Krimp9Ct5wuo"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"options\":{\"prompt\":\"add a caption at the bottom of the image that reads 'The impact is all what matters'\"},\"paths\":[\"C:\\\\Users\\\\zx\\\\Desktop\\\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg\"]}",
+                "name": "image_transform"
+              },
+              "id": "toolu_bdrk_01UqAXfEbyQ2ZCLe3eL2SCf3",
+              "item_id": "fc_tmp_qqbvrdo6ma",
+              "type": "function"
+            }
+          ]
+        },
+        {
+          "content": {
+            "ok": true,
+            "results": [
+              {
+                "ok": true,
+                "output_path": "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe_add_a_caption_at_the_bottom_of_the_image.jpg",
+                "path": "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg",
+                "result": {
+                  "ai_text": "Scaled input image from 1120x928 to 1235x1024 for 2K size\nGenerating...\nGenerated in 18.3sec\n"
+                }
+              }
+            ],
+            "summary": {
+              "failed": 0,
+              "succeeded": 1,
+              "total": 1
+            },
+            "tool": "image_transform"
+          },
+          "role": "tool",
+          "tool_call_id": "toolu_bdrk_01UqAXfEbyQ2ZCLe3eL2SCf3"
+        },
+        {
+          "content": "Done! I've added the caption \"The impact is all what matters\" at the bottom of the image. The edited version is saved next to your original file.",
+          "role": "assistant"
+        }
+      ]
+    }
+  },
+  "schema_version": "1",
+  "source": "chat_workbench",
+  "turn": {
+    "disabled_path_tools": [
+      "list_images",
+      "file_glob",
+      "file_read",
+      "file_search",
+      "image_resize",
+      "create_video",
+      "image_understand",
+      "image_from_camera",
+      "schedule_at",
+      "schedule_in",
+      "schedule_every",
+      "schedule_cancel",
+      "schedule_list",
+      "memory_read",
+      "memory_write",
+      "memory_append_event",
+      "run"
+    ],
+    "folder_hint": "C:\\Users\\zx\\Desktop",
+    "selection": [
+      "C:\\Users\\zx\\Desktop\\plastic_change_the_text_to_read_plastik_macht_fr_zoom_out_to_show_more_context_and_perspe.jpg"
+    ],
+    "user_prompt": "add another caption in the bottom 'The impact is all what matters'"
+  }
+}

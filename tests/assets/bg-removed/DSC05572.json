@@ -1,0 +1,40 @@
+{
+  "alt": "Rear view of an EZ-MAKER boat stern with a multi-stage retractable ladder attached, against a solid black background.",
+  "characters": [],
+  "confidence": 0.95,
+  "description": "The image shows a boat's stern equipped with an attached retractable ladder. The boat appears to be in motion or recently used in water, suggested by the streaks along its metallic surface. The background is completely black, isolating the boat and its accessory in what resembles a studio environment. The ladder itself is a multi-stage, folding design made of a light-colored metal.",
+  "estimated_location": "unknown",
+  "exif": {
+    "bands": 4,
+    "height": 1115,
+    "width": 1742
+  },
+  "model": "gemini-2.5-flash",
+  "objects": [
+    {
+      "count": 1,
+      "type": "boat"
+    },
+    {
+      "count": 1,
+      "type": "retractable ladder"
+    }
+  ],
+  "provider": "google",
+  "scene": "studio shot, marine equipment",
+  "source": ".\\tests\\assets\\bg-removed\\DSC05572.JPG",
+  "tags": [
+    "boat",
+    "ladder",
+    "marine",
+    "watercraft",
+    "stern",
+    "ez-maker",
+    "boating equipment",
+    "accessory",
+    "retractable",
+    "studio shot",
+    "metal"
+  ],
+  "title": "EZ-MAKER Boat Stern with Retractable Ladder"
+}

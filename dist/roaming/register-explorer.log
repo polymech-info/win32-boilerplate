@@ -1,0 +1,245 @@
+2026-05-20 13:19:25  run begin group=PM-Media (register)
+2026-05-20 13:19:25  settings path: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+2026-05-20 13:19:25  settings.json top-level keys: appearance, chat, chat_web, command_provider_overrides, custom, providers, transform, ui, workbench
+2026-05-20 13:19:25  explorer_presets: 0 item(s) in store
+2026-05-20 13:19:25  chat_web.quick_actions: 3 element(s)
+2026-05-20 13:19:25    + chat --preset-id chat-1 name=Enhance
+2026-05-20 13:19:25    + chat --preset-id chat-qa-1776945868277-lczvdrf name=Illustration
+2026-05-20 13:19:25    + chat --preset-id chat-qa-1776952741939-tqv0reb name=Technical Illustration
+2026-05-20 13:19:25  transform.prompt_presets: 0 item(s)
+2026-05-20 13:19:25  transform shell entries total: 3 (in "Presets" submenu when >0; main "Chat…" is separate, on PM-Media root)
+2026-05-20 13:19:25  custom commands: scanning groups=2 path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\commands.json
+2026-05-20 13:19:25  custom commands: skip id=custom.capture.screenshot label=Take screenshot (registerInExplorer=false)
+2026-05-20 13:19:25  custom commands: skip id=custom.capture label=Capture (registerInExplorer=false)
+2026-05-20 13:19:25  custom commands: skip id=custom.tools.theme label=Toggle theme (registerInExplorer=false)
+2026-05-20 13:19:25  custom commands: skip id=custom.tools.resetLayout label=Reset layout (registerInExplorer=false)
+2026-05-20 13:19:25  custom commands: skip id=custom.tools label=Tools (registerInExplorer=false)
+2026-05-20 13:19:25  custom commands: + id=custom.command-mpcmqepq-ee6f3 label=AI:Images List action=cliCommand:llm
+2026-05-20 13:19:25  custom commands: skip id=custom.command-mpduqkaw-b621b label=cat (registerInExplorer=false)
+2026-05-20 13:19:25  custom commands: + id=custom.command-mpch9gdx-44982 label=AI:Illustration action=cliCommand:transform
+2026-05-20 13:19:25  custom commands: + group submenu label=Files entries=2 submenus=0
+2026-05-20 13:19:25  custom commands: registered menu groups=1 command delegates=2
+2026-05-20 13:19:25  mode: IExecuteCommand (COM) via pm-image-execute.dll: dll present
+2026-05-20 13:19:25  media binary: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe
+2026-05-20 13:19:25  pm-viewer.exe (Open-with duplicate, same bytes as pm-image.exe): C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-viewer.exe — present
+2026-05-20 13:19:25  Verbs: DelegateExecute → pm-image-execute.dll.
+2026-05-20 13:19:25  Chat… on PM-Media root; "Presets" nested menu for transform + quick-action — registered first so Explorer static-verb limit does not drop the cascade on image types
+2026-05-20 13:19:25  custom command Explorer menus: groups=1 delegates=2 (only registerInExplorer=true cli/external commands; Win11 shows these via classic/Show more options)
+2026-05-20 13:19:25  IExecute: cleared old map/Inproc, registering fresh DelegateExecute for all verbs
+2026-05-20 13:19:25  Open with: PM Viewer ProgId also on Directory + 18 extra file types (pdf, md, 3d, …)
+2026-05-20 13:19:25  Open with: ProgIds PolyMech.pm-image + PolyMech.pm-image.viewer (viewer=direct via pm-viewer.exe; pmview=DelegateExecute) + Applications\pm-image.exe + pm-viewer.exe + OpenWithProgids per extension
+2026-05-20 13:19:25  register targets: 38 total (image assoc=36 Directory=1 Background=1) - Presets on image assocs and Directory (folder), not Background
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:19:25  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={C0DC3035-8A82-4831-879C-2FA0279BA9E3}
+2026-05-20 13:19:25  Context menu (IExecute) runtime log: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\pm-image-iexecute.log — lines appear when Explorer loads the shell DLL and runs a verb.
+2026-05-20 13:19:25  run end: success (refresh_shell=yes). Chat on root + Presets (if any): image assocs and Directory; not Directory\Background.
+2026-05-20 17:15:01  run begin group=PM-Media (unregister)
+2026-05-20 17:15:01  settings path: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+2026-05-20 17:15:01  explorer_presets: 0 item(s) in store
+2026-05-20 17:15:01  chat_web.quick_actions: 3 element(s)
+2026-05-20 17:15:01    + chat --preset-id chat-1 name=Enhance
+2026-05-20 17:15:01    + chat --preset-id chat-qa-1776945868277-lczvdrf name=Illustration
+2026-05-20 17:15:01    + chat --preset-id chat-qa-1776952741939-tqv0reb name=Technical Illustration
+2026-05-20 17:15:01  transform.prompt_presets: 0 item(s)
+2026-05-20 17:15:01  transform shell entries total: 3 (in "Presets" submenu when >0; main "Chat…" is separate, on PM-Media root)
+2026-05-20 17:15:01  custom commands: scanning groups=2 path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\commands.json
+2026-05-20 17:15:01  custom commands: skip id=custom.capture.screenshot label=Take screenshot (registerInExplorer=false)
+2026-05-20 17:15:01  custom commands: skip id=custom.capture label=Capture (registerInExplorer=false)
+2026-05-20 17:15:01  custom commands: skip id=custom.tools.theme label=Toggle theme (registerInExplorer=false)
+2026-05-20 17:15:01  custom commands: skip id=custom.tools.resetLayout label=Reset layout (registerInExplorer=false)
+2026-05-20 17:15:01  custom commands: skip id=custom.tools label=Tools (registerInExplorer=false)
+2026-05-20 17:15:01  custom commands: + id=custom.command-mpcmqepq-ee6f3 label=AI:Images List action=cliCommand:llm
+2026-05-20 17:15:01  custom commands: skip id=custom.command-mpduqkaw-b621b label=cat (registerInExplorer=false)
+2026-05-20 17:15:01  custom commands: + id=custom.command-mpch9gdx-44982 label=AI:Illustration action=cliCommand:transform
+2026-05-20 17:15:01  custom commands: + group submenu label=Files entries=2 submenus=0
+2026-05-20 17:15:01  custom commands: registered menu groups=1 command delegates=2
+2026-05-20 17:15:01  mode: IExecuteCommand (COM) via pm-image-execute.dll: dll present
+2026-05-20 17:15:01  media binary: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe
+2026-05-20 17:15:01  pm-viewer.exe (Open-with duplicate, same bytes as pm-image.exe): C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-viewer.exe — present
+2026-05-20 17:15:01  Verbs: DelegateExecute → pm-image-execute.dll.
+2026-05-20 17:15:01  Chat… on PM-Media root; "Presets" nested menu for transform + quick-action — registered first so Explorer static-verb limit does not drop the cascade on image types
+2026-05-20 17:15:01  custom command Explorer menus: groups=1 delegates=2 (only registerInExplorer=true cli/external commands; Win11 shows these via classic/Show more options)
+2026-05-20 17:15:02  IExecute: cleared HKCU DelegateExecute / Inproc map for pm-image-execute.dll
+2026-05-20 17:15:04  run begin group=PM-Media (register)
+2026-05-20 17:15:04  settings path: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\settings.json
+2026-05-20 17:15:04  settings.json top-level keys: appearance, chat, chat_web, command_provider_overrides, custom, providers, transform, ui, workbench
+2026-05-20 17:15:04  explorer_presets: 0 item(s) in store
+2026-05-20 17:15:04  chat_web.quick_actions: 3 element(s)
+2026-05-20 17:15:04    + chat --preset-id chat-1 name=Enhance
+2026-05-20 17:15:04    + chat --preset-id chat-qa-1776945868277-lczvdrf name=Illustration
+2026-05-20 17:15:04    + chat --preset-id chat-qa-1776952741939-tqv0reb name=Technical Illustration
+2026-05-20 17:15:04  transform.prompt_presets: 0 item(s)
+2026-05-20 17:15:04  transform shell entries total: 3 (in "Presets" submenu when >0; main "Chat…" is separate, on PM-Media root)
+2026-05-20 17:15:04  custom commands: scanning groups=2 path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\commands.json
+2026-05-20 17:15:04  custom commands: skip id=custom.capture.screenshot label=Take screenshot (registerInExplorer=false)
+2026-05-20 17:15:04  custom commands: skip id=custom.capture label=Capture (registerInExplorer=false)
+2026-05-20 17:15:04  custom commands: skip id=custom.tools.theme label=Toggle theme (registerInExplorer=false)
+2026-05-20 17:15:04  custom commands: skip id=custom.tools.resetLayout label=Reset layout (registerInExplorer=false)
+2026-05-20 17:15:04  custom commands: skip id=custom.tools label=Tools (registerInExplorer=false)
+2026-05-20 17:15:04  custom commands: + id=custom.command-mpcmqepq-ee6f3 label=AI:Images List action=cliCommand:llm
+2026-05-20 17:15:04  custom commands: skip id=custom.command-mpduqkaw-b621b label=cat (registerInExplorer=false)
+2026-05-20 17:15:04  custom commands: + id=custom.command-mpch9gdx-44982 label=AI:Illustration action=cliCommand:transform
+2026-05-20 17:15:04  custom commands: + group submenu label=Files entries=2 submenus=0
+2026-05-20 17:15:04  custom commands: registered menu groups=1 command delegates=2
+2026-05-20 17:15:04  mode: IExecuteCommand (COM) via pm-image-execute.dll: dll present
+2026-05-20 17:15:04  media binary: C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe
+2026-05-20 17:15:04  pm-viewer.exe (Open-with duplicate, same bytes as pm-image.exe): C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-viewer.exe — present
+2026-05-20 17:15:04  Verbs: DelegateExecute → pm-image-execute.dll.
+2026-05-20 17:15:04  Chat… on PM-Media root; "Presets" nested menu for transform + quick-action — registered first so Explorer static-verb limit does not drop the cascade on image types
+2026-05-20 17:15:04  custom command Explorer menus: groups=1 delegates=2 (only registerInExplorer=true cli/external commands; Win11 shows these via classic/Show more options)
+2026-05-20 17:15:04  IExecute: cleared old map/Inproc, registering fresh DelegateExecute for all verbs
+2026-05-20 17:15:04  Open with: PM Viewer ProgId also on Directory + 18 extra file types (pdf, md, 3d, …)
+2026-05-20 17:15:04  Open with: ProgIds PolyMech.pm-image + PolyMech.pm-image.viewer (viewer=direct via pm-viewer.exe; pmview=DelegateExecute) + Applications\pm-image.exe + pm-viewer.exe + OpenWithProgids per extension
+2026-05-20 17:15:04  register targets: 38 total (image assoc=36 Directory=1 Background=1) - Presets on image assocs and Directory (folder), not Background
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Images List id=custom.command-mpcmqepq-ee6f3 clsid={C3E3F8AA-8BF3-4A71-A078-3B4200267A24}
+2026-05-20 17:15:04  custom commands: write verb label=AI:Illustration id=custom.command-mpch9gdx-44982 clsid={3CF47D44-F8F7-4B05-9765-AD06DBF6D707}
+2026-05-20 17:15:04  Context menu (IExecute) runtime log: C:\Users\zx\AppData\Roaming\PolyMech\pm-image\pm-image-iexecute.log — lines appear when Explorer loads the shell DLL and runs a verb.
+2026-05-20 17:15:04  run end: success (refresh_shell=yes). Chat on root + Presets (if any): image assocs and Directory; not Directory\Background.

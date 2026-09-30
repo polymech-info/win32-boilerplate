@@ -1,0 +1,13 @@
+[
+  {
+    "events": [
+      {
+        "assistant": "Done. Created `images.md` with directory listing of 1 image (PNG screenshot, 112 KB).",
+        "ts": "2026-05-21T22:01:54Z",
+        "user": "create directory listing, for images, in images.md"
+      }
+    ],
+    "id": "session-1",
+    "memory_state": {}
+  }
+]

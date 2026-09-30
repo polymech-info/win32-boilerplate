@@ -1,0 +1,108 @@
+{
+    "app_links": null,
+    "app_nodes":
+    [
+        {
+            "block_display_mode": 1,
+            "block_type": "Math.Add",
+            "inputs":
+            [
+                {
+                    "pin_id": 3,
+                    "type": 2,
+                    "value": ""
+                },
+                {
+                    "pin_id": 4,
+                    "type": 2,
+                    "value": "2"
+                }
+            ],
+            "name": "Add",
+            "node_type": "block",
+            "outputs":
+            [
+                {
+                    "pin_id": 6,
+                    "type": 2,
+                    "value": ""
+                }
+            ],
+            "position":
+            {
+                "x": 208,
+                "y": 96
+            },
+            "size":
+            {
+                "x": 96,
+                "y": 62
+            },
+            "uuid_high": 16777216,
+            "uuid_low": 2
+        },
+        {
+            "block_display_mode": 1,
+            "block_type": "Log",
+            "inputs":
+            [
+                {
+                    "pin_id": 11,
+                    "type": 4,
+                    "value": ""
+                },
+                {
+                    "pin_id": 13,
+                    "type": 2,
+                    "value": ""
+                }
+            ],
+            "log_append_to_file": true,
+            "log_level": 2,
+            "log_output_to_console": true,
+            "log_variable_params":
+            [
+                {
+                    "name": "Param1",
+                    "pin_id": 13,
+                    "type": 2
+                }
+            ],
+            "name": "Log",
+            "node_type": "block",
+            "outputs": null,
+            "position":
+            {
+                "x": 352,
+                "y": 99
+            },
+            "size":
+            {
+                "x": 96,
+                "y": 58
+            },
+            "uuid_high": 16777216,
+            "uuid_low": 8
+        },
+        {
+            "block_display_mode": 1,
+            "block_type": "Start",
+            "inputs": null,
+            "name": "Start",
+            "node_type": "block",
+            "outputs": null,
+            "position":
+            {
+                "x": 64,
+                "y": 105
+            },
+            "size":
+            {
+                "x": 96,
+                "y": 46
+            },
+            "uuid_high": 16777216,
+            "uuid_low": 16
+        }
+    ]
+}

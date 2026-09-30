@@ -1,0 +1,38 @@
+# Build output
+/build/
+**/x64
+**/debug/**
+# Compiled objects
+*.o
+*.obj
+*.exe
+*.out
+*.app
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.env*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+cache/
+config/postgres.toml
+dist
+
+# Orchestrator reports (cwd/tests/*)
+tests/*.json
+tests/*.md
+src/cmd_grid*.cpp

@@ -1,0 +1,342 @@
+// String + bitmap resources for the own-ribbon toolbar (`COwnRibbonToolStrip`).
+// Command ids live in `RibbonUI.h` (edit when adding tools; we no longer run uicc / Ribbon.xml).
+
+#include ".\RibbonUI.h"
+
+STRINGTABLE 
+BEGIN
+    cmdTabHome_LabelTitle_RESID L"Home" /* LabelTitle cmdTabHome_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupQueue_LabelTitle_RESID L"Queue" /* LabelTitle cmdGroupQueue_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupActions_LabelTitle_RESID L"Actions" /* LabelTitle cmdGroupActions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupSave_LabelTitle_RESID L"File" /* LabelTitle cmdGroupSave_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupRun_LabelTitle_RESID L"Run" /* LabelTitle cmdGroupRun_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupBatch_LabelTitle_RESID L"Batch" /* LabelTitle cmdGroupBatch_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupSession_LabelTitle_RESID L"Session" /* LabelTitle cmdGroupSession_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SAVE_AS_LabelTitle_RESID L"Save As\x2026" /* LabelTitle IDC_CMD_SAVE_AS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SAVE_AS_TooltipDescription_RESID L"Save the selected output file to a chosen location" /* TooltipDescription IDC_CMD_SAVE_AS_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_SAVE_AS_SmallImages_RESID    BITMAP    "res\\RibbonSaveAsS.bmp" /* SmallImages IDC_CMD_SAVE_AS_SmallImages_RESID: (null) */
+IDC_CMD_SAVE_AS_LargeImages_RESID    BITMAP    "res\\RibbonSaveAsL.bmp" /* LargeImages IDC_CMD_SAVE_AS_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_ADD_FILES_LabelTitle_RESID L"Add Files" /* LabelTitle IDC_CMD_ADD_FILES_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_ADD_FILES_SmallImages_RESID    BITMAP    "res\\RibbonAddFilesS.bmp" /* SmallImages IDC_CMD_ADD_FILES_SmallImages_RESID: (null) */
+IDC_CMD_ADD_FILES_LargeImages_RESID    BITMAP    "res\\RibbonAddFilesL.bmp" /* LargeImages IDC_CMD_ADD_FILES_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_ADD_FOLDER_LabelTitle_RESID L"Add Folder" /* LabelTitle IDC_CMD_ADD_FOLDER_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_ADD_FOLDER_SmallImages_RESID    BITMAP    "res\\RibbonAddFolderS.bmp" /* SmallImages IDC_CMD_ADD_FOLDER_SmallImages_RESID: (null) */
+IDC_CMD_ADD_FOLDER_LargeImages_RESID    BITMAP    "res\\RibbonAddFolderL.bmp" /* LargeImages IDC_CMD_ADD_FOLDER_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_CLEAR_LabelTitle_RESID L"Clear" /* LabelTitle IDC_CMD_CLEAR_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_CLEAR_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_CLEAR_SmallImages_RESID: (null) */
+IDC_CMD_CLEAR_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_CLEAR_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_RESIZE_LabelTitle_RESID L"Resize" /* LabelTitle IDC_CMD_RESIZE_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_RESIZE_SmallImages_RESID    BITMAP    "res\\RibbonResizeS.bmp" /* SmallImages IDC_CMD_RESIZE_SmallImages_RESID: (null) */
+IDC_CMD_RESIZE_LargeImages_RESID    BITMAP    "res\\RibbonResizeL.bmp" /* LargeImages IDC_CMD_RESIZE_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_COMPRESS_LabelTitle_RESID L"Compress" /* LabelTitle IDC_CMD_COMPRESS_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_COMPRESS_SmallImages_RESID    BITMAP    "res\\RibbonCompressS.bmp" /* SmallImages IDC_CMD_COMPRESS_SmallImages_RESID: (null) */
+IDC_CMD_COMPRESS_LargeImages_RESID    BITMAP    "res\\RibbonCompressL.bmp" /* LargeImages IDC_CMD_COMPRESS_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_META_LabelTitle_RESID L"Meta" /* LabelTitle IDC_CMD_META_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_META_SmallImages_RESID    BITMAP    "res\\RibbonMetaS.bmp" /* SmallImages IDC_CMD_META_SmallImages_RESID: (null) */
+IDC_CMD_META_LargeImages_RESID    BITMAP    "res\\RibbonMetaL.bmp" /* LargeImages IDC_CMD_META_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_TRANSFORM_LabelTitle_RESID L"Transform" /* LabelTitle IDC_CMD_TRANSFORM_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_TRANSFORM_SmallImages_RESID    BITMAP    "res\\RibbonTransformS.bmp" /* SmallImages IDC_CMD_TRANSFORM_SmallImages_RESID: (null) */
+IDC_CMD_TRANSFORM_LargeImages_RESID    BITMAP    "res\\RibbonTransformL.bmp" /* LargeImages IDC_CMD_TRANSFORM_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_FIND_LabelTitle_RESID L"Find" /* LabelTitle IDC_CMD_FIND_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_FIND_SmallImages_RESID    BITMAP    "res\\RibbonFindS.bmp" /* SmallImages IDC_CMD_FIND_SmallImages_RESID: (null) */
+IDC_CMD_FIND_LargeImages_RESID    BITMAP    "res\\RibbonFindL.bmp" /* LargeImages IDC_CMD_FIND_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_DUPLICATES_LabelTitle_RESID L"Duplicates" /* LabelTitle IDC_CMD_DUPLICATES_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_DUPLICATES_SmallImages_RESID    BITMAP    "res\\RibbonFindS.bmp" /* SmallImages IDC_CMD_DUPLICATES_SmallImages_RESID: (null) */
+IDC_CMD_DUPLICATES_LargeImages_RESID    BITMAP    "res\\RibbonFindL.bmp" /* LargeImages IDC_CMD_DUPLICATES_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_CHAT_LabelTitle_RESID L"Chat" /* LabelTitle IDC_CMD_CHAT_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_CHAT_TooltipDescription_RESID L"Talk to your photos \x2014 the LLM picks tools (compress / transform / meta / find / resize) over your selection or current folder." /* TooltipDescription IDC_CMD_CHAT_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_CHAT_SmallImages_RESID    BITMAP    "res\\RibbonChatS.bmp" /* SmallImages IDC_CMD_CHAT_SmallImages_RESID: (null) */
+IDC_CMD_CHAT_LargeImages_RESID    BITMAP    "res\\RibbonChatL.bmp" /* LargeImages IDC_CMD_CHAT_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_RUN_LabelTitle_RESID L"Run" /* LabelTitle IDC_CMD_RUN_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_RUN_SmallImages_RESID    BITMAP    "res\\RibbonRunS.bmp" /* SmallImages IDC_CMD_RUN_SmallImages_RESID: (null) */
+IDC_CMD_RUN_LargeImages_RESID    BITMAP    "res\\RibbonRunL.bmp" /* LargeImages IDC_CMD_RUN_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_PAUSE_LabelTitle_RESID L"Pause" /* LabelTitle IDC_CMD_PAUSE_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_PAUSE_TooltipDescription_RESID L"Pause the running batch after the current file" /* TooltipDescription IDC_CMD_PAUSE_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_PAUSE_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_PAUSE_SmallImages_RESID: (null) */
+IDC_CMD_PAUSE_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_PAUSE_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_RESUME_LabelTitle_RESID L"Resume" /* LabelTitle IDC_CMD_RESUME_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_RESUME_TooltipDescription_RESID L"Resume a paused batch" /* TooltipDescription IDC_CMD_RESUME_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_RESUME_SmallImages_RESID    BITMAP    "res\\RibbonRunS.bmp" /* SmallImages IDC_CMD_RESUME_SmallImages_RESID: (null) */
+IDC_CMD_RESUME_LargeImages_RESID    BITMAP    "res\\RibbonRunL.bmp" /* LargeImages IDC_CMD_RESUME_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_CANCEL_LabelTitle_RESID L"Cancel" /* LabelTitle IDC_CMD_CANCEL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_CANCEL_TooltipDescription_RESID L"Cancel the running batch (session can be saved and resumed later)" /* TooltipDescription IDC_CMD_CANCEL_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_CANCEL_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_CANCEL_SmallImages_RESID: (null) */
+IDC_CMD_CANCEL_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_CANCEL_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SAVE_SESSION_LabelTitle_RESID L"Save Session" /* LabelTitle IDC_CMD_SAVE_SESSION_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SAVE_SESSION_TooltipDescription_RESID L"Save the current batch state to sessions.json so it can be resumed later" /* TooltipDescription IDC_CMD_SAVE_SESSION_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_SAVE_SESSION_SmallImages_RESID    BITMAP    "res\\RibbonSaveAsS.bmp" /* SmallImages IDC_CMD_SAVE_SESSION_SmallImages_RESID: (null) */
+IDC_CMD_SAVE_SESSION_LargeImages_RESID    BITMAP    "res\\RibbonSaveAsL.bmp" /* LargeImages IDC_CMD_SAVE_SESSION_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_LOAD_SESSION_LabelTitle_RESID L"Load Session" /* LabelTitle IDC_CMD_LOAD_SESSION_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_LOAD_SESSION_TooltipDescription_RESID L"Load a previously saved session \x2014 done items are skipped, errored items are retried" /* TooltipDescription IDC_CMD_LOAD_SESSION_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_LOAD_SESSION_SmallImages_RESID    BITMAP    "res\\RibbonAddFilesS.bmp" /* SmallImages IDC_CMD_LOAD_SESSION_SmallImages_RESID: (null) */
+IDC_CMD_LOAD_SESSION_LargeImages_RESID    BITMAP    "res\\RibbonAddFilesL.bmp" /* LargeImages IDC_CMD_LOAD_SESSION_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Exit" /* LabelTitle IDC_CMD_EXIT_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_UPDATE_EXPLORER_LabelTitle_RESID L"Update Explorer" /* LabelTitle IDC_CMD_UPDATE_EXPLORER_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_UPDATE_EXPLORER_TooltipDescription_RESID L"Re-register Windows Explorer context menu entries (pm-image shell integration)" /* TooltipDescription IDC_CMD_UPDATE_EXPLORER_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_UPDATE_EXPLORER_SmallImages_RESID    BITMAP    "res\\RibbonAddFolderS.bmp" /* SmallImages IDC_CMD_UPDATE_EXPLORER_SmallImages_RESID: (null) */
+IDC_CMD_UPDATE_EXPLORER_LargeImages_RESID    BITMAP    "res\\RibbonAddFolderL.bmp" /* LargeImages IDC_CMD_UPDATE_EXPLORER_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_LabelTitle_RESID L"Remove Explorer shell" /* LabelTitle IDC_CMD_UNREGISTER_EXPLORER_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_TooltipDescription_RESID L"Remove PM-Media items from the Windows Explorer context menu (register again from File menu to restore)" /* TooltipDescription IDC_CMD_UNREGISTER_EXPLORER_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_UNREGISTER_EXPLORER_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_UNREGISTER_EXPLORER_SmallImages_RESID: (null) */
+IDC_CMD_UNREGISTER_EXPLORER_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_UNREGISTER_EXPLORER_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_ABOUT_LabelTitle_RESID L"About" /* LabelTitle IDC_CMD_ABOUT_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdTabView_LabelTitle_RESID L"View" /* LabelTitle cmdTabView_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupPanels_LabelTitle_RESID L"Panels" /* LabelTitle cmdGroupPanels_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupReset_LabelTitle_RESID L"App" /* LabelTitle cmdGroupReset_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_QUEUE_LabelTitle_RESID L"Queue" /* LabelTitle IDC_CMD_VIEW_QUEUE_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_QUEUE_SmallImages_RESID    BITMAP    "res\\RibbonAddFilesS.bmp" /* SmallImages IDC_CMD_VIEW_QUEUE_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_QUEUE_LargeImages_RESID    BITMAP    "res\\RibbonAddFilesL.bmp" /* LargeImages IDC_CMD_VIEW_QUEUE_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_LOG_LabelTitle_RESID L"Log" /* LabelTitle IDC_CMD_VIEW_LOG_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_LOG_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_VIEW_LOG_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_LOG_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_VIEW_LOG_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_SETTINGS_LabelTitle_RESID L"Settings" /* LabelTitle IDC_CMD_VIEW_SETTINGS_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_SETTINGS_SmallImages_RESID    BITMAP    "res\\PresetsS.bmp" /* SmallImages IDC_CMD_VIEW_SETTINGS_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_SETTINGS_LargeImages_RESID    BITMAP    "res\\PresetsL.bmp" /* LargeImages IDC_CMD_VIEW_SETTINGS_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_FILETREE_LabelTitle_RESID L"Explorer" /* LabelTitle IDC_CMD_VIEW_FILETREE_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_FILETREE_SmallImages_RESID    BITMAP    "res\\RibbonAddFolderS.bmp" /* SmallImages IDC_CMD_VIEW_FILETREE_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_FILETREE_LargeImages_RESID    BITMAP    "res\\RibbonAddFolderL.bmp" /* LargeImages IDC_CMD_VIEW_FILETREE_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_FINDRESULTS_LabelTitle_RESID L"Find Results" /* LabelTitle IDC_CMD_VIEW_FINDRESULTS_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_FINDRESULTS_SmallImages_RESID    BITMAP    "res\\RibbonFindS.bmp" /* SmallImages IDC_CMD_VIEW_FINDRESULTS_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_FINDRESULTS_LargeImages_RESID    BITMAP    "res\\RibbonFindL.bmp" /* LargeImages IDC_CMD_VIEW_FINDRESULTS_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_DUPLICATERESULTS_LabelTitle_RESID L"Duplicate groups" /* LabelTitle IDC_CMD_VIEW_DUPLICATERESULTS_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_DUPLICATERESULTS_SmallImages_RESID    BITMAP    "res\\RibbonFindS.bmp" /* SmallImages IDC_CMD_VIEW_DUPLICATERESULTS_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_DUPLICATERESULTS_LargeImages_RESID    BITMAP    "res\\RibbonFindL.bmp" /* LargeImages IDC_CMD_VIEW_DUPLICATERESULTS_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_VIEW_CHAT_LabelTitle_RESID L"Chat" /* LabelTitle IDC_CMD_VIEW_CHAT_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_VIEW_CHAT_SmallImages_RESID    BITMAP    "res\\RibbonChatS.bmp" /* SmallImages IDC_CMD_VIEW_CHAT_SmallImages_RESID: (null) */
+IDC_CMD_VIEW_CHAT_LargeImages_RESID    BITMAP    "res\\RibbonChatL.bmp" /* LargeImages IDC_CMD_VIEW_CHAT_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_RESET_LAYOUT_LabelTitle_RESID L"Reset Layout" /* LabelTitle IDC_CMD_RESET_LAYOUT_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_RESET_LAYOUT_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_RESET_LAYOUT_SmallImages_RESID: (null) */
+IDC_CMD_RESET_LAYOUT_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_RESET_LAYOUT_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_DEBUG_STATE_LabelTitle_RESID L"Debug" /* LabelTitle IDC_CMD_DEBUG_STATE_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_DEBUG_STATE_SmallImages_RESID    BITMAP    "res\\RibbonClearS.bmp" /* SmallImages IDC_CMD_DEBUG_STATE_SmallImages_RESID: (null) */
+IDC_CMD_DEBUG_STATE_LargeImages_RESID    BITMAP    "res\\RibbonClearL.bmp" /* LargeImages IDC_CMD_DEBUG_STATE_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_APP_SETTINGS_LabelTitle_RESID L"App Settings" /* LabelTitle IDC_CMD_APP_SETTINGS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipTitle_RESID L"App Settings" /* TooltipTitle IDC_CMD_APP_SETTINGS_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipDescription_RESID L"Theme (light / dark / system) and font size" /* TooltipDescription IDC_CMD_APP_SETTINGS_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_APP_SETTINGS_SmallImages_RESID    BITMAP    "res\\PresetsS.bmp" /* SmallImages IDC_CMD_APP_SETTINGS_SmallImages_RESID: (null) */
+IDC_CMD_APP_SETTINGS_LargeImages_RESID    BITMAP    "res\\PresetsL.bmp" /* LargeImages IDC_CMD_APP_SETTINGS_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_FILE_OPTIONS_LabelTitle_RESID L"Options\x2026" /* LabelTitle IDC_CMD_FILE_OPTIONS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipTitle_RESID L"Options" /* TooltipTitle IDC_CMD_FILE_OPTIONS_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipDescription_RESID L"Theme (light / dark / system) and font size" /* TooltipDescription IDC_CMD_FILE_OPTIONS_TooltipDescription_RESID: (null) */
+END
+
+IDC_CMD_FILE_OPTIONS_SmallImages_RESID    BITMAP    "res\\PresetsS.bmp" /* SmallImages IDC_CMD_FILE_OPTIONS_SmallImages_RESID: (null) */
+IDC_CMD_FILE_OPTIONS_LargeImages_RESID    BITMAP    "res\\PresetsL.bmp" /* LargeImages IDC_CMD_FILE_OPTIONS_LargeImages_RESID: (null) */
+
+IDC_LOG_PANEL_COPY_SmallImages_RESID    BITMAP    "res\\RibbonMetaS.bmp" /* SmallImages IDC_LOG_PANEL_COPY_SmallImages_RESID: log copy (glyph placeholder) */

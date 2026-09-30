@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "comment": "Smoke-tests the xblox `app*` block family. Opens Notepad, drives it, captures a screenshot, dumps UIA, and force-closes. Run: dist/win-x64/pm-image-cli.exe xblox --log-level off run --json --no-wait --src tests/xblox/app-smoke.json",
+  "context": {
+    "outDir": "tests/xblox/out"
+  },
+  "roots": [
+    { "kind": "log", "level": "info", "message": "app-smoke: starting" },
+
+    {
+      "kind": "appOpen",
+      "id": "open-np",
+      "exe": "notepad.exe",
+      "waitMs": 1500
+    },
+
+    {
+      "kind": "appActivate",
+      "id": "activate-np",
+      "title": "Notepad"
+    },
+
+    {
+      "kind": "appType",
+      "id": "type-1",
+      "title": "Notepad",
+      "text": "hello from xblox app blocks"
+    },
+
+    {
+      "kind": "appHotkey",
+      "id": "select-all",
+      "title": "Notepad",
+      "keys": "ctrl+a"
+    },
+
+    {
+      "kind": "appKey",
+      "id": "delete-selection",
+      "title": "Notepad",
+      "key": "delete",
+      "holdMs": 30
+    },
+
+    {
+      "kind": "appBatch",
+      "id": "batch-typing",
+      "defaultDelayMs": 30,
+      "steps": [
+        { "action": "activate", "title": "Notepad" },
+        { "action": "type", "text": "line one\nline two\n" },
+        { "action": "wait", "ms": 100 },
+        { "action": "type", "text": "line three" }
+      ]
+    },
+
+    {
+      "kind": "appMouseMove",
+      "id": "mouse-into-window",
+      "title": "Notepad",
+      "xw": 200,
+      "yw": 150,
+      "smooth": true
+    },
+
+    {
+      "kind": "appInspectDump",
+      "id": "uia-dump",
+      "title": "Notepad",
+      "format": "md",
+      "controls": "editable",
+      "textMaxChars": 200
+    },
+
+    {
+      "kind": "appScreenshot",
+      "id": "shot",
+      "title": "Notepad",
+      "outputPath": "tests/xblox/out/notepad.jpg",
+      "quality": 80
+    },
+
+    {
+      "kind": "appClose",
+      "id": "close-np",
+      "title": "Notepad",
+      "force": true
+    },
+
+    { "kind": "log", "level": "info", "message": "app-smoke: done" }
+  ]
+}

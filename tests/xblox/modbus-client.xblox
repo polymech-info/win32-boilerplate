@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "comment": "Modbus TCP client sample for tests/xblox/modbus-server.xblox. Reads [11,22,33], writes register 1 = 77, then reads [11,77,33]. Run after starting modbus-server.xblox.",
+  "roots": [
+    {
+      "kind": "modbusReadHoldingRegisters",
+      "id": "read-initial",
+      "url": "tcp:127.0.0.1:15020",
+      "address": 0,
+      "count": 3,
+      "storeAs": "initial"
+    },
+    { "kind": "log", "level": "info", "message": "initial" },
+    {
+      "kind": "modbusWriteRegister",
+      "id": "write-register-1",
+      "url": "tcp:127.0.0.1:15020",
+      "address": 1,
+      "value": 77,
+      "storeAs": "writeOne"
+    },
+    {
+      "kind": "modbusReadHoldingRegisters",
+      "id": "read-final",
+      "url": "tcp:127.0.0.1:15020",
+      "address": 0,
+      "count": 3,
+      "storeAs": "final"
+    },
+    { "kind": "log", "level": "info", "message": "final" }
+  ]
+}

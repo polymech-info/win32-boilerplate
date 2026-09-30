@@ -1,0 +1,8 @@
+{
+  "users": [
+    {
+      "email": "seed@example.com",
+      "max_machines": 3
+    }
+  ]
+}

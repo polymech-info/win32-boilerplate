@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "folder": "PolyMech",
+  "shortcuts": [
+    {
+      "name": "PM-Image",
+      "target": "${exe}",
+      "args": "--ui-preset=main",
+      "workingDir": "${exeDir}",
+      "icon": "${exe}"
+    },
+    {
+      "name": "PM-Image Chat",
+      "target": "${exe}",
+      "args": "--ui-preset=chat",
+      "workingDir": "${exeDir}",
+      "icon": "${exe}"
+    },
+    {
+      "name": "PM Viewer",
+      "target": "${exe}",
+      "args": "--ui-preset=viewer",
+      "workingDir": "${exeDir}",
+      "icon": "${exe}"
+    },
+    {
+      "name": "PM-Image Resize",
+      "target": "${exe}",
+      "args": "resize --ui-next",
+      "workingDir": "${exeDir}",
+      "icon": "${exe}"
+    },
+    {
+      "name": "PM-Image Daemon",
+      "target": "${exe}",
+      "args": "daemon run --tray",
+      "workingDir": "${exeDir}",
+      "icon": "${exe}"
+    },
+    {
+      "name": "Overview",
+      "target": "${docs}\\product.html",
+      "workingDir": "${docs}",
+      "icon": "${exe}",
+      "optional": true
+    },
+    {
+      "name": "Help",
+      "target": "${docs}\\readme.html",
+      "workingDir": "${docs}",
+      "icon": "${exe}",
+      "optional": true
+    },
+    {
+      "name": "Help Integration",
+      "target": "${docs}\\integration.html",
+      "workingDir": "${docs}",
+      "icon": "${exe}",
+      "optional": true
+    },
+    {
+      "name": "Documentation",
+      "kind": "url",
+      "target": "https://pixlwiz.com/user/cgo/pages/pixlwiz-documentation"
+    },
+    {
+      "name": "Uninstall",
+      "target": "${root}\\Uninstall.exe",
+      "workingDir": "${root}",
+      "icon": "${root}\\Uninstall.exe",
+      "optional": true
+    }
+  ]
+}

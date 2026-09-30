@@ -1,0 +1,2 @@
+#include "Alpha.xcconfig"
+#include? "../../../dist-osx/polymech-cmake-libs/polymech_codeedit_link.xcconfig"

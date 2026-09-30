@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light dark;
+  --pm-cweb-font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  --pm-cweb-font-size: 14px;
+  --pm-cweb-line-height: 1.5;
+  --pm-cweb-bg: #f8fafc;
+  --pm-cweb-fg: #0f172a;
+}
+
+:root.dark,
+:root[data-theme="dark"] {
+  --pm-cweb-bg: #1e1e1e;
+  --pm-cweb-fg: #e4e4e7;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--pm-cweb-bg);
+  color: var(--pm-cweb-fg);
+  font-family: var(--pm-cweb-font-family);
+  font-size: var(--pm-cweb-font-size);
+  line-height: var(--pm-cweb-line-height);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}

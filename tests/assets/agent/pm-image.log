@@ -1,0 +1,30 @@
+[2026-05-13 11:14:15.095] [pm-image] [info] [startup] 297490 ms  load_settings miss #27 reason=appearance
+[2026-05-13 11:14:15.248] [pm-image] [info] [startup] 297644 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-13 11:14:15.389] [pm-image] [info] [startup] 297785 ms  ApplyAppearance leave
+[2026-05-13 11:14:25.857] [pm-image] [info] [startup] 308253 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-13 11:14:25.858] [pm-image] [info] [startup] 308253 ms  load_settings miss #28 reason=save_subtree
+[2026-05-13 11:14:25.865] [pm-image] [info] [startup] 308261 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=1,L=0,S=0,FT=0,C=0]
+[2026-05-13 11:14:25.866] [pm-image] [info] [startup] 308261 ms  load_settings miss #29 reason=save_window_layout
+[2026-05-13 11:14:25.872] [pm-image] [info] [startup] 308268 ms  [layout] SaveWindowLayout: OK
+[2026-05-13 11:14:29.179] [pm-image] [info] [startup] 311575 ms  load_settings miss #30 reason=appearance
+[2026-05-13 11:14:29.569] [pm-image] [info] [startup] 311965 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-13 11:14:29.658] [pm-image] [info] [startup] 312053 ms  ApplyAppearance leave
+[2026-05-13 11:14:31.051] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-13 11:14:31.052] [pm-image] [info] [chat-web] WebView2 ready
+[2026-05-13 11:14:31.870] [pm-image] [info] replicate_models: fetch_collections: source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections
+[2026-05-13 11:14:31.889] [pm-image] [info] replicate_models: fetch_collection_models: collection=image-editing source=disk_cache_fresh count=39 force_refresh=0 use_cache=1 has_key=1 url=https://api.replicate.com/v1/collections/image-editing
+[2026-05-13 11:14:31.900] [pm-image] [info] pixlwiz_models: list_models: source=disk_cache url=https://llm.polymech.info/models?return_wildcard_routes=true&include_model_access_groups=false&only_model_access_groups=false&include_metadata=true n=18
+[2026-05-13 11:14:38.445] [pm-image] [info] [startup] 320840 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-13 11:14:38.445] [pm-image] [info] [startup] 320841 ms  load_settings miss #31 reason=save_subtree
+[2026-05-13 11:14:38.451] [pm-image] [info] [startup] 320846 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=0,L=0,S=0,FT=0,C=1]
+[2026-05-13 11:14:38.451] [pm-image] [info] [startup] 320847 ms  load_settings miss #32 reason=save_window_layout
+[2026-05-13 11:14:38.458] [pm-image] [info] [startup] 320853 ms  [layout] SaveWindowLayout: OK
+[2026-05-13 11:14:46.595] [pm-image] [info] [startup] 328990 ms  load_settings miss #33 reason=load_chat_provider
+[2026-05-13 11:14:55.408] [pm-image] [info] [startup] 337803 ms  SaveLayout: save_window_layout (merge read + write settings.json)
+[2026-05-13 11:14:55.409] [pm-image] [info] [startup] 337804 ms  load_settings miss #34 reason=save_subtree
+[2026-05-13 11:14:55.421] [pm-image] [info] [startup] 337816 ms  [layout] SaveWindowLayout: enter slot='main' placement=1 visibility=1 panels[Q=0,L=0,S=0,FT=0,C=1]
+[2026-05-13 11:14:55.421] [pm-image] [info] [startup] 337817 ms  load_settings miss #35 reason=save_window_layout
+[2026-05-13 11:14:55.427] [pm-image] [info] [startup] 337823 ms  [layout] SaveWindowLayout: OK
+[2026-05-13 11:15:00.311] [pm-image] [info] [startup] 342707 ms  load_settings miss #36 reason=appearance
+[2026-05-13 11:15:38.646] [pm-image] [info] [startup] 381041 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-13 11:15:38.735] [pm-image] [info] [startup] 381131 ms  ApplyAppearance leave

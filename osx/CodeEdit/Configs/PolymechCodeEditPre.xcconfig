@@ -1,0 +1,3 @@
+// Pre — dev / prerelease (AppIconPre, -pre postfix); debug-style flags come from the project Pre configuration.
+#include "Pre.xcconfig"
+#include? "../../../dist-osx/polymech-cmake-libs/polymech_codeedit_link.xcconfig"

@@ -1,0 +1,28 @@
+{
+  "extends": "../chat-next/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "composite": false,
+    "importHelpers": false,
+    "inlineSourceMap": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@pm/shared/*": ["../shared/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/vite-env.d.ts", "src/shell/**/*.ts", "src/shell/**/*.tsx", "src/main.tsx", "../shared/**/*.ts", "../shared/**/*.tsx", "vite.config.ts"],
+  "exclude": ["src/pm-chat/**/*", "src/chat/**/*", "src/settings/**/*", "src/theme/**/*"]
+}

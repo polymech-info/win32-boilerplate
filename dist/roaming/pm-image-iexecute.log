@@ -1,0 +1,170 @@
+2026-05-20 13:22:02  DllMain: pm-image-execute loaded (verify IExecute path — Win11 sparse menu uses explorer11 DLL, no iexecute log)
+2026-05-20 13:22:02  IExecute: first DllGetClassObject in this process (hostU8=C:\Program Files\Altap Salamander\salamand.exe)
+2026-05-20 13:22:02  DllGetClassObject rclsidU8={7DA6FB67-64CF-4051-9A94-EF8DD6D011B4}
+2026-05-20 13:22:02  DllGetClassObject map ok kind=9 payloadU8=custom.command-mpcmqepq-ee6f3
+2026-05-20 13:22:02  Execute: entry kind=9 selection=set
+2026-05-20 13:22:02  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-20 13:22:02  Execute: collecting raw paths for Custom (files/folders as selected, no recursive shell enum)
+2026-05-20 13:22:02  Execute: custom raw item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\explorer\misc
+2026-05-20 13:22:02  Execute: paths count=1 (browse_verb)
+2026-05-20 13:22:02  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\explorer\misc
+2026-05-20 13:22:02  Execute: custom idU8=custom.command-mpcmqepq-ee6f3 input_count=1 (dispatcher infers --cwd from first --src when needed)
+2026-05-20 13:22:02  Execute: custom CreateProcess cmdlineU8="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe" "custom.command-mpcmqepq-ee6f3" --src "C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\explorer\misc"
+2026-05-20 13:22:02  CreateProcessW ok (process started)
+2026-05-20 13:22:02  Execute: custom CreateProcess ok
+2026-05-20 17:23:28  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="google/nano-banana" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:24:34  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="google/nano-banana" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:24:45  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="google/nano-banana" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:25:42  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="black-forest-labs/flux-pro" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:26:35  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:30:38  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:32:46  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:34:05  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:35:33  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:37:08  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:37:37  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:38:08  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:38:32  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:38:59  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:40:08  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:41:28  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-20 17:42:42  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-21 11:17:13  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-21 11:29:14  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-21 11:53:25  DllMain: pm-image-execute loaded (verify IExecute path — Win11 sparse menu uses explorer11 DLL, no iexecute log)
+2026-05-21 11:53:25  IExecute: first DllGetClassObject in this process (hostU8=C:\Program Files\Altap Salamander\salamand.exe)
+2026-05-21 11:53:25  DllGetClassObject rclsidU8={CF04B867-131E-41AD-A4BC-187FB5AEB21D}
+2026-05-21 11:53:25  DllGetClassObject map ok kind=8
+2026-05-21 11:53:25  Execute: entry kind=8 selection=set
+2026-05-21 11:53:25  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 11:53:25  Execute: collecting paths for PM Viewer (dirs + viewer-previewable files)
+2026-05-21 11:53:25  Execute: Viewer item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\assets\vision\b1.png
+2026-05-21 11:53:25  Execute: paths count=1 (browse_verb)
+2026-05-21 11:53:25  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\assets\vision\b1.png
+2026-05-21 11:53:25  Execute: viewer --ui-preset=viewer --src joinLenWchars=88
+2026-05-21 11:53:25  CreateProcessW ok (process started)
+2026-05-21 11:53:25  Execute: viewer done hr=S_OK
+2026-05-21 17:05:41  [pm-image] transform_image: after merge_image_provider_credentials provider="replicate" model="bytedance/seedream-4" api_key=set base_url=set (Win: same `providers` store as path tools + chat; then call_gemini if provider==google)
+2026-05-21 17:07:00  DllGetClassObject rclsidU8={8AFE6C71-CA35-45CC-9DCF-0C8FB86B58E2}
+2026-05-21 17:07:00  DllGetClassObject map ok kind=3
+2026-05-21 17:07:00  Execute: entry kind=3 selection=set
+2026-05-21 17:07:00  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 17:07:00  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 17:07:00  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\apps\xblox\src\ref\styles
+2026-05-21 17:07:00  Execute: paths count=1 (browse_verb)
+2026-05-21 17:07:00  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\apps\xblox\src\ref\styles
+2026-05-21 17:07:00  Execute: openUi --src joinLenWchars=87 (8191=typical CreateProcess cap)
+2026-05-21 17:07:00  CreateProcessW ok (process started)
+2026-05-21 17:07:00  Execute: openUi done hr=S_OK
+2026-05-21 18:22:31  DllMain: pm-image-execute loaded (verify IExecute path — Win11 sparse menu uses explorer11 DLL, no iexecute log)
+2026-05-21 18:22:31  IExecute: first DllGetClassObject in this process (hostU8=C:\Program Files\Altap Salamander\salamand.exe)
+2026-05-21 18:22:31  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:22:31  DllGetClassObject map ok kind=5
+2026-05-21 18:22:31  Execute: entry kind=5 selection=set
+2026-05-21 18:22:31  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:22:31  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:22:31  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_fancy_render.png
+2026-05-21 18:22:31  Execute: paths count=1 (browse_verb)
+2026-05-21 18:22:31  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_fancy_render.png
+2026-05-21 18:22:31  Execute: chat --ui-preset=chat --src joinLenWchars=100
+2026-05-21 18:22:31  CreateProcessW ok (process started)
+2026-05-21 18:22:31  Execute: chat done hr=S_OK
+2026-05-21 18:23:14  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:23:14  DllGetClassObject map ok kind=5
+2026-05-21 18:23:14  Execute: entry kind=5 selection=set
+2026-05-21 18:23:14  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:23:14  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:23:14  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_workflow_infograph.png
+2026-05-21 18:23:14  Execute: paths count=1 (browse_verb)
+2026-05-21 18:23:14  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_workflow_infograph.png
+2026-05-21 18:23:14  Execute: chat --ui-preset=chat --src joinLenWchars=106
+2026-05-21 18:23:14  CreateProcessW ok (process started)
+2026-05-21 18:23:14  Execute: chat done hr=S_OK
+2026-05-21 18:23:22  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:23:22  DllGetClassObject map ok kind=5
+2026-05-21 18:23:22  Execute: entry kind=5 selection=set
+2026-05-21 18:23:22  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:23:22  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:23:22  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_workflow_infograph.png
+2026-05-21 18:23:22  Execute: paths count=1 (browse_verb)
+2026-05-21 18:23:22  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_workflow_infograph.png
+2026-05-21 18:23:22  Execute: chat --ui-preset=chat --src joinLenWchars=106
+2026-05-21 18:23:22  CreateProcessW ok (process started)
+2026-05-21 18:23:22  Execute: chat done hr=S_OK
+2026-05-21 18:35:56  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:35:56  DllGetClassObject map ok kind=5
+2026-05-21 18:35:56  Execute: entry kind=5 selection=set
+2026-05-21 18:35:56  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:35:56  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:35:56  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_workflow_infograph.png
+2026-05-21 18:35:56  Execute: paths count=1 (browse_verb)
+2026-05-21 18:35:56  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_workflow_infograph.png
+2026-05-21 18:35:56  Execute: chat --ui-preset=chat --src joinLenWchars=106
+2026-05-21 18:35:56  CreateProcessW ok (process started)
+2026-05-21 18:35:56  Execute: chat done hr=S_OK
+2026-05-21 18:36:18  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:36:18  DllGetClassObject map ok kind=5
+2026-05-21 18:36:18  Execute: entry kind=5 selection=set
+2026-05-21 18:36:18  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:36:18  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:36:18  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps\flux-5_resized.jpg
+2026-05-21 18:36:18  Execute: paths count=1 (browse_verb)
+2026-05-21 18:36:18  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps\flux-5_resized.jpg
+2026-05-21 18:36:18  Execute: chat --ui-preset=chat --src joinLenWchars=91
+2026-05-21 18:36:18  CreateProcessW ok (process started)
+2026-05-21 18:36:18  Execute: chat done hr=S_OK
+2026-05-21 18:36:37  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:36:37  DllGetClassObject map ok kind=5
+2026-05-21 18:36:37  Execute: entry kind=5 selection=set
+2026-05-21 18:36:37  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:36:37  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:36:37  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps\flux-5_resized.jpg
+2026-05-21 18:36:37  Execute: paths count=1 (browse_verb)
+2026-05-21 18:36:37  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\apps\flux-5_resized.jpg
+2026-05-21 18:36:37  Execute: chat --ui-preset=chat --src joinLenWchars=91
+2026-05-21 18:36:37  CreateProcessW ok (process started)
+2026-05-21 18:36:37  Execute: chat done hr=S_OK
+2026-05-21 18:36:51  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:36:51  DllGetClassObject map ok kind=5
+2026-05-21 18:36:51  Execute: entry kind=5 selection=set
+2026-05-21 18:36:51  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:36:51  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:36:51  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_fancy_render.png
+2026-05-21 18:36:51  Execute: paths count=1 (browse_verb)
+2026-05-21 18:36:51  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_fancy_render.png
+2026-05-21 18:36:51  Execute: chat --ui-preset=chat --src joinLenWchars=100
+2026-05-21 18:36:51  CreateProcessW ok (process started)
+2026-05-21 18:36:51  Execute: chat done hr=S_OK
+2026-05-21 18:41:05  DllGetClassObject rclsidU8={CF04B867-131E-41AD-A4BC-187FB5AEB21D}
+2026-05-21 18:41:05  DllGetClassObject map ok kind=8
+2026-05-21 18:41:05  Execute: entry kind=8 selection=set
+2026-05-21 18:41:05  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:41:05  Execute: collecting paths for PM Viewer (dirs + viewer-previewable files)
+2026-05-21 18:41:05  Execute: Viewer item[0] pathU8=C:\Users\zx\Desktop\anne-p.jpeg
+2026-05-21 18:41:05  Execute: paths count=1 (browse_verb)
+2026-05-21 18:41:05  Execute: first pathU8=C:\Users\zx\Desktop\anne-p.jpeg
+2026-05-21 18:41:05  Execute: viewer --ui-preset=viewer --src joinLenWchars=31
+2026-05-21 18:41:05  CreateProcessW ok (process started)
+2026-05-21 18:41:05  Execute: viewer done hr=S_OK
+2026-05-21 18:41:17  DllGetClassObject rclsidU8={3825D6B4-8594-4D7E-A618-28F599A9730A}
+2026-05-21 18:41:17  DllGetClassObject map ok kind=5
+2026-05-21 18:41:17  Execute: entry kind=5 selection=set
+2026-05-21 18:41:17  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:41:17  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:41:17  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\flux-5_resized.jpg
+2026-05-21 18:41:17  Execute: paths count=1 (browse_verb)
+2026-05-21 18:41:17  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\flux-5_resized.jpg
+2026-05-21 18:41:17  Execute: chat --ui-preset=chat --src joinLenWchars=89
+2026-05-21 18:41:17  CreateProcessW ok (process started)
+2026-05-21 18:41:17  Execute: chat done hr=S_OK
+2026-05-21 18:43:36  DllGetClassObject rclsidU8={8AFE6C71-CA35-45CC-9DCF-0C8FB86B58E2}
+2026-05-21 18:43:36  DllGetClassObject map ok kind=3
+2026-05-21 18:43:36  Execute: entry kind=3 selection=set
+2026-05-21 18:43:36  Execute: exepU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\dist\win-x64\pm-image.exe exists=yes
+2026-05-21 18:43:36  Execute: collecting paths for OpenUi/Chat (folder = one path, no recursive shell enum)
+2026-05-21 18:43:36  Execute: openUi/Chat item[0] pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_fancy_render.png
+2026-05-21 18:43:36  Execute: paths count=1 (browse_verb)
+2026-05-21 18:43:36  Execute: first pathU8=C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\3d\AR4_SG1_gear_fancy_render.png
+2026-05-21 18:43:36  Execute: openUi --src joinLenWchars=100 (8191=typical CreateProcess cap)
+2026-05-21 18:43:36  CreateProcessW ok (process started)
+2026-05-21 18:43:36  Execute: openUi done hr=S_OK

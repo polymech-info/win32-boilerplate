@@ -1,0 +1,18 @@
+[
+  {
+    "consecutive_failures": 0,
+    "created_at": "2026-05-14T08:57:54Z",
+    "enabled": true,
+    "id": "time-every-10s-1",
+    "memory_state": {},
+    "next_run_at": "2026-05-14T08:58:04Z",
+    "prompt": "Report the current local time in the format HH:MM:SS and note the date if it changes.",
+    "run_count": 0,
+    "schedule": {
+      "interval_seconds": 10,
+      "kind": "every"
+    },
+    "title": "time-every-10s",
+    "updated_at": "2026-05-14T08:57:54Z"
+  }
+]

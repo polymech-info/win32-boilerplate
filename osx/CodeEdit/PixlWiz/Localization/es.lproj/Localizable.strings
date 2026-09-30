@@ -1,0 +1,444 @@
+"Hello, world!"="¡Hola, mundo!";
+
+// Settings - General Tab
+"General"="General";
+"App Language"="Idioma de la app";
+"Follow System"="Seguir el sistema";
+"Language change"="Cambio de idioma";
+"Restart CodeEdit to use the new language for the whole interface."="Reinicia CodeEdit para aplicar el nuevo idioma en toda la interfaz.";
+
+// Settings - File Icon Style
+"File Icon Style"="Estilo de icono de archivo";
+"Color"="Color";
+"Monochrome"="Monocromo";
+
+// Settings - Appearance
+"Appearance"="Apariencia";
+"System"="Sistema";
+"Light"="Claro";
+"Dark"="Oscuro";
+
+// Settings - Reopen Behavior
+"Reopen Behavior"="Comportamiento al reabrir";
+"Welcome Screen"="Pantalla de bienvenida";
+"Open Panel"="Abrir panel";
+"New Document"="Documento nuevo";
+"Remove from Recent Projects"="Quitar de proyectos recientes";
+"Show in Finder"="Mostrar en el Finder";
+"Copy Path"="Copiar ruta";
+
+// Settings - Editor Theme
+"Editor Theme"="Tema del editor";
+
+// Settings - Default Tab Width
+"Default Tab Width"="Anchura de tabulación predeterminada";
+
+// Settings - Terminal Tab
+"Terminal"="Terminal";
+
+// Settings - Terminal Shell Type
+"Terminal Shell"="Intérprete de la terminal";
+"System Default"="Predeterminado del sistema";
+
+// Settings - Terminal Font
+"Terminal Font"="Fuente de la terminal";
+"System Font"="Fuente del sistema";
+"Custom"="Personalizado";
+
+//Editor Screen
+"Open file from sidebar"="Abrir archivo desde la barra lateral";
+"CodeEdit cannot open this file because its file type is not supported." = "CodeEdit no puede abrir este archivo porque su tipo no es compatible.";
+
+// Inspector Sidebar
+"File Inspector"="Inspector de archivo";
+"History Inspector"="Inspector de historial";
+"Quick Help Inspector"="Inspector de ayuda rápida";
+
+// Project Navigator Item
+"Add File"="Añadir archivo";
+"Not implemented yet"="Aún no implementado";
+
+// Leading Sidebar Toolbar
+"Alphabetically"="Alfabéticamente";
+"Folders on top"="Carpetas arriba";
+
+
+// Welcome Screen
+"Welcome to CodeEdit" = "Bienvenido a CodeEdit";
+"Version %@ (%@)" = "Versión %@ (%@)";
+"No Recent Projects" = "Sin proyectos recientes";
+
+// Welcome Screen - New File
+"Create a new file" = "Crear un archivo nuevo";
+"Clone an existing project" = "Clonar un proyecto existente";
+
+// Welcome Screen - Open File
+"Open a file or folder" = "Abrir un archivo o carpeta";
+"Open an existing file or folder on your Mac" = "Abrir un archivo o carpeta existente en tu Mac";
+
+// Welcome Screen - SCM
+"Start working on something from a Git repository" = "Empezar a trabajar con un repositorio Git";
+
+"Remove from Recent Projects" = "Quitar de proyectos recientes";
+"Show in Finder" = "Mostrar en el Finder";
+"Copy Path" = "Copiar ruta";
+
+// Polymech toolbar & workflow
+"Polymech.command.resize" = "Redimensionar";
+"Polymech.command.meta" = "Meta";
+"Polymech.command.compress" = "Comprimir";
+"Polymech.command.find" = "Buscar";
+"Polymech.command.transform" = "Transformar";
+"Polymech.command.chat" = "Chat";
+"Polymech.inspector.chat.openButton" = "Abrir chat";
+"Polymech.menu.viewChat.help" = "Muestra el panel Agente y enfoca el chat Polymech en la barra lateral.";
+"Polymech.menu.shareToPixlwiz" = "Share to Pixlwiz…";
+"Polymech.menu.shareToPixlwiz.help" = "Publish selected images to the Pixlwiz service (requires sign-in via pm-image login).";
+"Polymech.share.sheetTitle" = "Share to Pixlwiz";
+"Polymech.share.imageCount" = "%d image(s) will be attached.";
+"Polymech.share.titleField" = "Title";
+"Polymech.share.titlePlaceholder" = "Post title";
+"Polymech.share.descriptionField" = "Description";
+"Polymech.share.descriptionPlaceholder" = "Optional";
+"Polymech.share.visibilitySection" = "Visibility";
+"Polymech.share.private" = "Private (only you)";
+"Polymech.share.inPublicFeeds" = "Show in public feeds";
+"Polymech.share.cancel" = "Cancel";
+"Polymech.share.share" = "Share";
+"Polymech.share.uploading" = "Uploading…";
+"Polymech.share.successMessage" = "Your post was published.";
+"Polymech.share.postIdLabel" = "Post ID";
+"Polymech.share.picturesLabel" = "Pictures";
+"Polymech.share.picturesCount" = "%d picture(s)";
+"Polymech.share.openInBrowser" = "Open in Browser";
+"Polymech.share.done" = "Done";
+"Polymech.share.noImages.title" = "No images to share";
+"Polymech.share.noImages.message" = "Select image file(s) or folders in the navigator, or open an image tab — same inputs as Polymech Run.";
+"Polymech.menu.detachChatToEditor" = "Desacoplar chat al editor";
+"Polymech.menu.detachChatToEditor.help" = "Abre el mismo chat como pestaña en el editor principal.";
+"Polymech.chat.detachToEditor" = "Desacoplar al editor";
+"Polymech.agentChat.unavailable.title" = "El chat del agente no está disponible.";
+"Polymech.agentChat.unavailable.hint" = "Crea o copia packages/media/cpp/dist/chat.html (npm run build:chat-next:embed en packages/media/cpp). Si hay chat: Ver → Chat (barra lateral) o Desacoplar al editor (pestaña).";
+"Polymech.brand" = "Polymech";
+"Polymech.run" = "Ejecutar";
+"Polymech.a11y.imageTools" = "Herramientas de imagen de Polymech";
+"Polymech.a11y.run" = "Ejecutar comando de Polymech";
+"Polymech.toolbar.help.default" = "Elige un comando, ajusta las opciones en el inspector de Polymech y pulsa Ejecutar";
+"Polymech.toolbar.help.titleBar" = "%@\nElige un comando, configura el JSON en el inspector de Polymech (Guardar) y Ejecutar.";
+"Polymech.toolbar.chipHelp" = "Usa las opciones de %@ en el inspector de Polymech, luego Ejecutar";
+"Polymech.inline.withCommand" = "Polymech · %@";
+"Polymech.input.noImagesUnderSelection" = "No hay imágenes bajo la selección del navegador: elige archivos o carpetas con imágenes, o anula la selección para usar la imagen de la pestaña activa.";
+"Polymech.input.noImageInput" = "No hay imagen: abre una pestaña con imagen o selecciona archivos o carpetas en el navegador.";
+"Polymech.input.runUsesOne" = "Se usará 1 archivo: “%@”";
+"Polymech.input.runUsesMany" = "Se usan %1$d imágenes (selección múltiple), p. ej. “%2$@” y %3$d más";
+"Polymech.kind.file" = "archivo";
+"Polymech.kind.folder" = "carpeta";
+"Polymech.selection.workspaceLine" = "Espacio de trabajo: %@";
+"Polymech.selection.workingFolderLine" = "Carpeta de trabajo: %@";
+"Polymech.selection.oneItem" = "Selección: %1$@ (%2$@)";
+"Polymech.selection.multi" = "Selección: %d elementos (selección múltiple)";
+"Polymech.selection.activeTabNoNav" = "Sin selección en el navegador — pestaña activa: %@";
+"Polymech.selection.activeTabOnly" = "Pestaña activa: %@";
+"Polymech.selection.noFile" = "Ningún archivo: abre un archivo o selecciona ítems en el navegador";
+"Polymech.job.title.resizeInPlace" = "Redimensionar: %@ (in situ)";
+"Polymech.job.title.resizeTo" = "Redimensionar: %@ → %@";
+"Polymech.job.title.meta" = "Meta: %@";
+"Polymech.job.title.compressInPlace" = "Comprimir: %@ (in situ)";
+"Polymech.job.title.compressTo" = "Comprimir: %@ → %@";
+"Polymech.job.title.find" = "Buscar";
+"Polymech.job.title.transform" = "Transformar: %@";
+"Polymech.queue.clear" = "Limpiar";
+"Polymech.queue.stopSelected" = "Detener";
+"Polymech.queue.stopSelectedHelp" = "Detener los trabajos en ejecución seleccionados.";
+"Polymech.queue.removeSelected" = "Quitar";
+"Polymech.queue.removeSelectedHelp" = "Quitar los trabajos seleccionados de la lista.";
+"Polymech.queue.emptyTitle" = "Sin trabajos aún";
+"Polymech.queue.emptyDescription" = "Ejecuta acciones de imagen en la barra de herramientas; la salida y los errores aparecen aquí.";
+"Polymech.queue.status.running" = "En curso";
+"Polymech.queue.status.queued" = "En cola";
+"Polymech.queue.status.succeeded" = "Listo";
+"Polymech.queue.status.failed" = "Falló";
+"Polymech.queue.column.name" = "Nombre";
+"Polymech.queue.column.status" = "Estado";
+"Polymech.queue.column.path" = "Ruta";
+"Polymech.queue.column.source" = "Origen";
+"Polymech.queue.column.result" = "Resultado";
+"Polymech.queue.revealInNavigator" = "Mostrar en el navegador de proyecto";
+"Polymech.queue.column.detail" = "";
+"Polymech.queue.detail" = "Detalle";
+"Polymech.queue.detailHelp" = "Abrir la salida completa de “%@”.";
+"Polymech.queue.pathNone" = "—";
+"Polymech.queue.detailTitle" = "Salida del trabajo";
+"Polymech.queue.detail.pathLabel" = "Ruta";
+"Polymech.queue.detail.sourceLabel" = "Origen";
+"Polymech.queue.detail.resultLabel" = "Resultado";
+"Polymech.queue.detail.revealButton" = "Mostrar";
+"Polymech.queue.detail.runningHint" = "La salida aparece al terminar el trabajo.";
+"Polymech.queue.detail.removed" = "Este trabajo ya no está en la lista.";
+"Polymech.queue.detail.noOutput" = "(Sin salida)";
+"Polymech.queue.detail.outputLabel" = "Salida";
+"Polymech.queue.detailClose" = "Cerrar";
+"Polymech.queue.cancelled" = "Cancelado (se solicitó detener; el motor puede completar aún un momento en segundo plano).";
+"Polymech.queue.stop" = "Detener";
+"Polymech.queue.stopHelp" = "Solicitar la cancelación de este trabajo.";
+"Polymech.queue.column.stop" = "";
+"Polymech.chat.jobTitle" = "Chat: %@";
+"Polymech.navigator.transform" = "Transformar";
+"Polymech.navigator.transformWindow" = "Transformar: %@";
+"Polymech.navigator.presetFor" = "Predefinido: %@";
+"Polymech.navigator.presetHint" = "Los valores predeterminados provienen de “PolyMech Chat” en Ajustes. Agente: guarda el bloque “chat” y luego un turno LLM nativo. Transform: mismas opciones que el transform de imagen, un trabajo de cola por archivo en orden. No se abre la pestaña de chat web.";
+"Polymech.presetRun.tabAgent" = "Agente";
+"Polymech.presetRun.tabTransform" = "Transformar";
+"Polymech.presetRun.noImageSelection" = "Selecciona una o más imágenes (o una carpeta) en el navegador.";
+"Polymech.presetRun.transformHint" = "Mismas opciones que el transform de imagen. Cada imagen es un trabajo en la cola, uno detrás de otro.";
+"Polymech.navigator.presetEmpty" = "No hay predefinidos de estilo (créalos en el chat o en “chat_web.quick_actions”).";
+"Polymech.menu.stylePresets" = "Predefinidos de estilo";
+"Polymech.menu.stylePresets.help" = "Igual que Navegador de proyecto → Transformar: usa la selección o el archivo activo, y con el navegador vacío las imágenes como la barra de imagen.";
+"Polymech.navigator.presetJobTitle" = "Transform: %1$@ — %2$@";
+"Polymech.navigator.chatRun.provider" = "Proveedor de texto";
+"Polymech.navigator.chatRun.modelPreset" = "Ajuste de modelo";
+"Polymech.navigator.chatRun.modelId" = "Id. de modelo";
+"Polymech.navigator.chatRun.prompt" = "Indicación";
+"Polymech.navigator.chatRun.run" = "Ejecutar";
+"Polymech.navigator.chatRun.cancel" = "Cancelar";
+"Polymech.transform.textProviderSection" = "Chat de texto (llm::agent)";
+"Polymech.transform.apiKey" = "Clave API";
+"Polymech.transform.baseURL" = "URL base (opcional; vacío = del router)";
+"Polymech.transform.timeout" = "Tiempo límite (ms)";
+"Polymech.transform.maxIter" = "Máx. iteraciones de herramienta";
+"Polymech.transform.imageProviderSection" = "Herramientas de imagen (valores del agente)";
+"Polymech.transform.imageProvider" = "Proveedor de imagen (valores de herramienta)";
+"Polymech.transform.imageModelPreset" = "Ajuste de modelo";
+"Polymech.transform.imageModelId" = "Id. de modelo de imagen";
+"Polymech.transform.run" = "Ejecutar";
+
+"Navigator.menu.options" = "Opciones";
+"Navigator.openAs.none" = "<Ninguno>";
+"Copy Relative Path" = "Copiar ruta relativa";
+"Open in Tab" = "Abrir en pestaña";
+"Open in New Window" = "Abrir en ventana nueva";
+"Open with External Editor" = "Abrir con editor externo";
+"Open As" = "Abrir como";
+"New File…" = "Archivo nuevo…";
+"New File from Clipboard" = "Archivo nuevo desde el portapapeles";
+"New Folder" = "Carpeta nueva";
+"Rename" = "Cambiar nombre";
+"Move to Trash" = "Mover a la papelera";
+"Delete Immediately…" = "Eliminar de inmediato…";
+"Duplicate File" = "Duplicar archivo";
+"Duplicate Folder" = "Duplicar carpeta";
+"Sort by Name" = "Ordenar por nombre";
+"Sort by Type" = "Ordenar por tipo";
+"New Folder from Selection" = "Carpeta nueva a partir de la selección";
+"Asset Catalog Document" = "Documento de catálogo de recursos";
+"Interface Builder XIB Document" = "Documento XIB de Interface Builder";
+"Xcode Project" = "Proyecto de Xcode";
+"Source Code" = "Código fuente";
+"Property List" = "Property List";
+"ASCII Property List" = "Property List ASCII";
+"Hex" = "Hexadecimal";
+"Quick Look" = "Vista rápida";
+
+"AppLanguage.en" = "Inglés (English)";
+"AppLanguage.es" = "Español";
+"AppLanguage.de" = "Alemán (Deutsch)";
+"AppLanguage.it" = "Italiano (Italiano)";
+"AppLanguage.fr" = "Francés (Français)";
+"AppLanguage.ptBR" = "Portugués (Brasil)";
+
+"Show Command Palette" = "Mostrar la paleta de comandos";
+"Open Search Navigator" = "Abrir el buscador";
+"Open Polymech Chat in an editor tab (apps/chat, WebView)." = "Abrir el chat de Polymech en una pestaña del editor (apps/chat, WebView).";
+"Font Size" = "Tamaño de fuente";
+"Increase" = "Aumentar";
+"Decrease" = "Disminuir";
+"Reset" = "Restablecer";
+"Customize Toolbar…" = "Personalizar la barra de herramientas…";
+"Show Jump Bar" = "Mostrar la barra de salto";
+"Hide Jump Bar" = "Ocultar la barra de salto";
+"Show Navigator" = "Mostrar el navegador";
+"Hide Navigator" = "Ocultar el navegador";
+"Show Agent Panel" = "Mostrar el panel del agente";
+"Hide Agent Panel" = "Ocultar el panel del agente";
+"Show Utility Area" = "Mostrar el área de utilidades";
+"Hide Utility Area" = "Ocultar el área de utilidades";
+"Show Toolbar" = "Mostrar la barra de herramientas";
+"Hide Toolbar" = "Ocultar la barra de herramientas";
+"Show Interface" = "Mostrar la interfaz";
+"Hide Interface" = "Ocultar la interfaz";
+"Navigators" = "Navegadores";
+"Text router" = "Enrutador de texto";
+"Shared settings path" = "Ruta de ajustes compartidos";
+"Reload from disk" = "Recargar del disco";
+"Save to disk" = "Guardar en disco";
+"Storage" = "Almacenamiento";
+"Default image provider (Meta/Transform)" = "Proveedor de imagen predeterminado (Meta/Transformar)";
+"Default text provider (Chat)" = "Proveedor de texto predeterminado (Chat)";
+"Defaults" = "Valores predeterminados";
+"Add image provider" = "Añadir proveedor de imágenes";
+"Add text provider" = "Añadir proveedor de texto";
+"Import settings.json…" = "Importar settings.json…";
+"Export settings.json…" = "Exportar settings.json…";
+"Import / Export" = "Importar / Exportar";
+"Replicate (image)" = "Replicate (imagen)";
+"Import settings" = "Importar ajustes";
+"Export settings" = "Exportar ajustes";
+"AI providers footer storage" = "Esta página escribe ajustes de proveedores en JSON compatible con claves Win32/CLI (providers, active_provider, chat) y metadatos extra de proveedores de texto.";
+"AI providers footer image" = "Incluye Replicate: token en replicate.com (o REPLICATE_API_TOKEN en el entorno). El modelo de imagen predeterminado es un slug owner/model. Esta página solo edita los valores generales en settings.json.";
+"Replicate API token help" = "Replicate usa un token de la API en el panel. También REPLICATE_API_TOKEN (o IMAGE_TRANSFORM_REPLICATE_API_KEY) para CLI/herramientas.";
+"Replicate base URL help" = "Solo el host de la API — normalmente https://api.replicate.com/v1 (sin /predictions).";
+"Replicate model id help" = "El modelo es un id de versión owner/model (p. ej. black-forest-labs/flux-schnell). Mismo flujo que Win32: API del panel + caché en disco.";
+"Unnamed provider" = "Proveedor sin nombre";
+"Remove provider" = "Quitar proveedor";
+"Model (manual)" = "Modelo (manual)";
+"AI status no file" = "No hay archivo de ajustes en %@. Se usan valores predeterminados en el editor.";
+"AI status loaded" = "Ajustes de proveedores cargados del disco.";
+"AI status saved" = "Ajustes guardados en %@.";
+"AI status save failed" = "Error al guardar: %@";
+"AI import not object" = "Error de importación: la raíz debe ser un objeto JSON.";
+"AI status imported" = "Ajustes importados desde %@.";
+"AI status import failed" = "Error de importación: %@";
+"AI status exported" = "Ajustes exportados a %@.";
+"AI status export failed" = "Error de exportación: %@";
+"Polymech.resize.caption.multi" = "Primero de %1$d archivos: %2$@ — %3$d × %4$d px";
+"Polymech.resize.caption.one" = "%1$d × %2$d px — %3$@";
+"Polymech.resize.caption.empty" = "Ninguna imagen en la ejecución actual: define abajo el tamaño en píxeles (por archivo).";
+"Polymech.resize.footer.pixels" = "Vacío = ilimitado en ese eje. Con foco, ↑/↓ 1 px, Mayús+flecha 10. El icono de enlace ajusta ancho y alto. Fill, cover y outside requieren W y H.";
+"Polymech.resize.help.inPlace" = "Sustituye el archivo original. Si la imagen está abierta, la vista previa se actualiza al terminar.";
+"Polymech.resize.help.sibling" = "Guarda una copia en la misma carpeta. Pasa el cursor por el nombre para ver el patrón.";
+
+"Polymech.form.writeResultTo" = "Escribir resultado en";
+"Polymech.form.outputNewFileSibling" = "Archivo nuevo (hermano)";
+"Polymech.form.outputInPlace" = "In situ (sobrescribir)";
+"Polymech.form.nameInfix" = "Infijo de nombre";
+"Polymech.form.infixPlaceholderResize" = "pm_resize";
+"Polymech.form.infixHelpResize" = "Patrón: <name>_<infix>.<ext> — p. ej. photo_pm_resize.jpg. Infijo predeterminado: pm_resize. Use letras, números, guiones bajos; se guarda en minúsculas.";
+"Polymech.form.section.output" = "Salida";
+"Polymech.form.presetOriginal" = "Original (usa el tamaño de la primera imagen)";
+"Polymech.form.scale50" = "50%";
+"Polymech.form.scale75" = "75%";
+"Polymech.form.longEdge" = "Lado largo %d";
+"Polymech.form.fitToPreset" = "Ajustar a ajuste predefinido";
+"Polymech.form.a11yConstrainProportions" = "Restringir proporciones de ancho y alto";
+"Polymech.form.helpProportionsLinked" = "Proporciones enlazadas. Al editar un lado se actualiza el otro si ambos están definidos. Vacío = ilimitado en ese eje (lote “ajustar a ancho/alto” solo con inside/contain).";
+"Polymech.form.helpProportionsUnlinked" = "Proporciones no enlazadas. Borre un campo (0) para dejar ese eje ilimitado.";
+"Polymech.form.width" = "Ancho";
+"Polymech.form.height" = "Alto";
+"Polymech.form.px" = "px";
+"Polymech.form.placeholderDash" = "—";
+"Polymech.form.section.pixelDimensions" = "Dimensiones en píxeles (caja px)";
+"Polymech.form.fitToBox" = "Ajustar a caja";
+"Polymech.form.fitInside" = "Mantener dentro (sin recortar)";
+"Polymech.form.fitCover" = "Rellenar y recortar (cover)";
+"Polymech.form.fitContain" = "Ajustar con bandas (letterbox)";
+"Polymech.form.fitFill" = "Tamaño exacto (estirar)";
+"Polymech.form.fitOutside" = "Mayor que la caja (outside)";
+"Polymech.form.croppingCover" = "Recorte (cover)";
+"Polymech.form.cropMode.centre" = "centre";
+"Polymech.form.cropMode.attention" = "attention";
+"Polymech.form.cropMode.entropy" = "entropy";
+"Polymech.form.cropMode.low" = "low";
+"Polymech.form.cropMode.high" = "high";
+"Polymech.form.interpolation" = "Interpolación";
+"Polymech.form.kernel.lanczos3" = "Lanczos (nítido, predeterminado)";
+"Polymech.form.kernel.lanczos2" = "Lanczos 2";
+"Polymech.form.kernel.cubic" = "Bicúbico";
+"Polymech.form.kernel.mitchell" = "Mitchell";
+"Polymech.form.kernel.nearest" = "Vecino más próximo (píxel)";
+"Polymech.form.helpVipsKernel" = "Núcleo de libvips (como modos de remuestreo de Photoshop; Lanczos es un buen predeterminado para tono continuo).";
+"Polymech.form.section.howPixelsMap" = "Cómo se asignan los píxeles a la caja";
+"Polymech.form.outputFormat" = "Formato de salida";
+"Polymech.form.fromPath" = "(desde la ruta)";
+"Polymech.form.quality" = "Calidad";
+"Polymech.form.rotate" = "Rotar";
+"Polymech.form.rotateNone" = "Ninguno";
+"Polymech.form.rotateDeg" = "%d°";
+"Polymech.form.stripMetadataOnSave" = "Quitar metadatos al guardar";
+"Polymech.form.resultCache" = "Caché de resultados (reutilizar salidas anteriores)";
+"Polymech.form.section.encoding" = "Codificación y otros";
+"Polymech.form.noEnlargement" = "Sin ampliación (límite de tamaño máx.)";
+"Polymech.form.autorotateExif" = "Autorotación (EXIF)";
+"Polymech.form.provider" = "Proveedor";
+"Polymech.form.modelPresets" = "Ajustes preestablecidos del modelo";
+"Polymech.form.modelId" = "Id. del modelo";
+"Polymech.form.overridePrompt" = "Indicación de reemplazo (vacío = catalogador predeterminado)";
+"Polymech.form.userQuestion" = "Pregunta de usuario (ampliar; opcional)";
+"Polymech.form.apiBaseURLOptional" = "URL base de la API (opcional)";
+"Polymech.form.section.providerPrompts" = "Proveedor e indicaciones";
+"Polymech.form.resizeBeforeVision" = "Redimensionar antes de la visión";
+"Polymech.form.preResizeLongEdgePx" = "Lado largo previo a redimensionar (px)";
+"Polymech.form.section.preflight" = "Comprobación (en memoria)";
+"Polymech.form.writeStemMd" = "Escribir <stem>.md";
+"Polymech.form.writeStemJson" = "Escribir <stem>.json";
+"Polymech.form.updateExifInPlace" = "Actualizar ImageDescription de EXIF in situ";
+"Polymech.form.outputDir" = "Carpeta de salida (vacía = junto al archivo)";
+"Polymech.form.dryRun" = "Prueba en seco (sin API ni escrituras)";
+"Polymech.form.section.outputsSafety" = "Salidas y seguridad";
+"Polymech.form.metaFooter" = "Equivale a `ReadMetaSettings` / pestaña Meta en Windows.";
+"Polymech.form.infixPlaceholderCompress" = "pm_compress";
+"Polymech.form.infixHelpCompress" = "Patrón: <name>_<infix>.<ext> — p. ej. photo_pm_compress.jpg. Predeterminado: pm_compress. Letras, números, guiones bajos; en minúsculas.";
+"Polymech.form.compressor" = "Compresor";
+"Polymech.form.compressorAuto" = "Automático (según extensión de salida)";
+"Polymech.form.compressorMozjpeg" = "MozJPEG";
+"Polymech.form.compressorPng" = "PNG (DEFLATE y opciones)";
+"Polymech.form.jpegQualityMoz" = "Calidad JPEG (Moz)";
+"Polymech.form.stripMetadata" = "Quitar metadatos";
+"Polymech.form.progressiveJpeg" = "JPEG progresivo";
+"Polymech.form.pngDeflate" = "PNG DEFLATE (1–9)";
+"Polymech.form.pngLibimagequant" = "PNG libimagequant (con pérdida, más pequeño)";
+"Polymech.form.pngZopfli" = "PNG zopfli (lento, más pequeño)";
+"Polymech.form.mozTrellisQuant" = "Cuantización treillis Moz JPEG";
+"Polymech.form.mozOvershootDeringing" = "Moz antialias overshoot";
+"Polymech.form.section.compression" = "Compresión";
+"Polymech.form.compressFooter" = "Alineado con el modo comprimir de Windows: MozJPEG / PNG y quitar metadatos.";
+"Polymech.form.model" = "Modelo";
+"Polymech.form.baseURLOptional" = "URL base (opcional)";
+"Polymech.form.section.transformProvider" = "Proveedor";
+"Polymech.form.editGeneratePrompt" = "Editar / generar indicación";
+"Polymech.form.section.transformPrompt" = "Indicación";
+"Polymech.form.aspectGemini" = "Proporción (Gemini / vacío = auto)";
+"Polymech.form.aspectAuto" = "auto";
+"Polymech.form.imageSizeTier" = "Nivel de tamaño de imagen";
+"Polymech.form.sizeDefault" = "predeterminado";
+"Polymech.form.preResizeRaster" = "Preredimensionar matriz antes de la API";
+"Polymech.form.preResizeLongEdgeZero" = "Lado largo previo (0 = predeterminado del modelo)";
+"Polymech.form.preResizeRawOnly" = "Preredimensionar: solo RAW/HEIC (si lo de arriba está definido)";
+"Polymech.form.section.sizeAndPreResize" = "Tamaño y preredimensionar";
+"Polymech.form.transformFooter" = "Paralelo al bloque Transform / IA de `CSettingsView` (modelo, aspecto, preredimensionar).";
+"Polymech.form.mode" = "Modo";
+"Polymech.form.findModeName" = "Nombre (subcadena de ruta)";
+"Polymech.form.findModeLlm" = "Llm (catálogo + juez)";
+"Polymech.form.searchQuery" = "Búsqueda / indicación";
+"Polymech.form.judgeOverride" = "Texto de reemplazo del juez (opcional)";
+"Polymech.form.maxResults" = "Máx. resultados (0 = ilimitado)";
+"Polymech.form.section.find" = "Buscar";
+"Polymech.form.caseInsensitiveName" = "Ignorar mayúsculas (modo nombre)";
+"Polymech.form.matchFolderNames" = "Coincidir nombres de carpetas";
+"Polymech.form.recurse" = "Entrar en subcarpetas";
+"Polymech.form.dryRunShort" = "Prueba en seco";
+"Polymech.form.llmBypassCache" = "LLM: omitir caché de sidecars";
+"Polymech.form.llmGenerateSidecars" = "LLM: generar .md/.json si faltan";
+"Polymech.form.useStemMd" = "Usar <stem>.md en el corpus";
+"Polymech.form.useStemJson" = "Usar <stem>.json en el corpus";
+"Polymech.form.useExifCorpus" = "Usar EXIF en el corpus";
+"Polymech.form.semanticImageJudge" = "Juez semántico (imágenes de ref. o vía LLM)";
+"Polymech.form.section.nameLlm" = "Comportamiento nombre / LLM";
+"Polymech.form.catalogProvider" = "Proveedor de catálogo (meta anidada)";
+"Polymech.form.modelPresetsNested" = "Ajustes de modelo (meta anidada)";
+"Polymech.form.catalogModel" = "Modelo de catálogo";
+"Polymech.form.apiBaseUrlNested" = "URL base de la API (opcional, meta anidada)";
+"Polymech.form.catalogPreresize" = "Preredimensionar catálogo";
+"Polymech.form.catalogPreresizeWidth" = "Ancho de preredimensionar catálogo";
+"Polymech.form.section.nestedMeta" = "Meta anidada (materialización LLM)";
+"Polymech.form.findFooter" = "El objeto `meta` se envía por la misma ruta que el comando Meta cuando búsqueda genera sidecars.";
+
+"Close Tab" = "Cerrar pestaña";
+"Close Other Tabs" = "Cerrar otras pestañas";
+"Close Tabs to the Right" = "Cerrar pestañas a la derecha";
+"Close All" = "Cerrar todo";
+"Keep Open" = "Mantener abierto";
+"Reveal in Project Navigator" = "Mostrar en el explorador de proyecto";
+"Split Up" = "Dividir arriba";
+"Split Down" = "Dividir abajo";
+"Split Left" = "Dividir a la izquierda";
+"Split Right" = "Dividir a la derecha";

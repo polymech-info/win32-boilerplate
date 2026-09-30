@@ -1,0 +1,499 @@
+    app.add_option(
+            "--log-level", s.log_level,
+            "Global stderr log level for this process (spdlog): trace, debug, info, warn, error, critical, off. "
+            "Applies to all subcommands. Default: info.")
+        ->default_val("info")
+        ->check(CLI::IsMember(
+            {"trace", "debug", "info", "warn", "warning", "error", "err", "critical", "off", "none"},
+            CLI::ignore_case));
+    app.add_flag(
+        "--no-gui", s.g_no_gui,
+        "Windows: do not open the list-style job window for batch (use console; for scripts, tests, CI). "
+        "Place before the subcommand (e.g. `pm-image --no-gui meta a.jpg b.jpg`).");
+#if defined(_WIN32)
+    app.add_flag(
+        "--console", s.win_console,
+        "Windows: attach or allocate a console for stdout/stderr (default: off for Explorer / Open with / shell).");
+    app.add_option(
+            "--src", s.ui_chat_src_list,
+            "With --ui-chat: input path(s), repeat for multiple; use `;` inside a quoted value for several paths")
+        ->expected(-1);
+#endif
+
+    s.resize_cmd = app.add_subcommand("resize", "Resize / transform an image (libvips, Sharp-like options)");
+    s.resize_cmd->add_option("input", s.in_path, "Input path, glob (*, ?, **), or http(s):// URL")->required(false);
+    s.resize_cmd->add_option(
+        "output", s.out_path,
+        "Output file/dir, or omit when there is exactly one input → write under cwd (sanitized name)");
+    s.resize_cmd->add_option("--src", s.src_list, "Input (repeat for multiple); use with --dst; Explorer passes several files")
+        ->expected(-1);
+    s.resize_cmd->add_option("--dst", s.dst_flag, "Same as positional output; directory if multiple inputs");
+    s.resize_cmd->add_option("--max-width", s.max_w, "Target / max width (0 = no limit)");
+    s.resize_cmd->add_option("--max-height", s.max_h, "Target / max height (0 = no limit)");
+    s.resize_cmd->add_option("--format", s.format, "Output format (default: from extension)");
+    s.resize_cmd
+        ->add_option("--fit", s.fit,
+                     "inside|cover|contain|fill|outside — see Sharp resize.fit")
+        ->default_val("inside");
+    s.resize_cmd->add_option("--position", s.position, "For cover: centre|attention|entropy|…")->default_val("centre");
+    s.resize_cmd->add_option("--kernel", s.kernel, "nearest|cubic|mitchell|lanczos2|lanczos3")->default_val("lanczos3");
+    s.resize_cmd->add_option("-q,--quality", s.quality, "JPEG/WebP/AVIF quality 1–100")->default_val(85);
+    s.resize_cmd->add_option("--png-compression", s.png_compression, "PNG DEFLATE 0–9")->default_val(6);
+    s.resize_cmd->add_option("--background", s.background, "Letterbox colour #rrggbb (contain)");
+    s.resize_cmd->add_option("--rotate", s.rotate, "Rotate 0|90|180|270 after EXIF autorotate")->default_val(0);
+    s.resize_cmd->add_flag("--flip", s.flip, "Vertical flip");
+    s.resize_cmd->add_flag("--flop", s.flop, "Horizontal flop");
+    s.resize_cmd->add_flag("--no-autorotate", s.no_autorotate, "Disable EXIF orientation");
+    s.resize_cmd->add_flag("--no-strip", s.no_strip, "Keep metadata on output");
+    s.resize_cmd->add_flag("--allow-enlargement", s.allow_enlargement, "Allow upscaling (inside/contain/outside)");
+    s.resize_cmd->add_flag("--no-cache", s.resize_no_cache, "Disable output cache (default: cache on)");
+    s.resize_cmd->add_option("--cache-dir", s.resize_cache_dir, "Cache root (default: <cwd>/cache/images)");
+    s.resize_cmd->add_option("--url-timeout", s.url_timeout_sec, "HTTP(S) fetch timeout (seconds, 0 = libcurl default)")
+        ->default_val(5);
+    s.resize_cmd
+        ->add_option("--url-max-redirects", s.url_max_redirects, "Max redirects when fetching URL inputs")
+        ->default_val(20);
+
+#if defined(_WIN32)
+    s.resize_cmd->add_flag("--ui", s.resize_ui,
+                         "Windows: native dialog for paths/options; optional --src/--dst seed the dialog");
+    s.resize_cmd->add_flag("--ui-next", s.resize_ui_next,
+                         "Windows: new Win32++ ribbon UI with drag-drop queue and settings panel");
+    s.resize_cmd->add_flag("--chat", s.resize_open_chat,
+                         "With --ui-next: open Chat and use --src (or positional input) as agent context");
+    s.resize_cmd->add_flag("--job-ui", s.resize_job_ui,
+                         "List-style job window (pause / cancel) — Windows");
+#endif
+
+    // ── compress ─────────────────────────────────────────────────────────────
+
+    s.compress_cmd = app.add_subcommand("compress",
+        "Compress images: MozJPEG re-encode or optimised PNG (+ libimagequant / zopfli)");
+    s.compress_cmd->add_option("input",  s.cmp_input,  "Input file / glob")->required(false);
+    s.compress_cmd->add_option("output", s.cmp_output, "Output file or directory");
+    s.compress_cmd->add_option("--src", s.cmp_src_list, "Input(s) for batch; pair with --dst")->expected(-1);
+    s.compress_cmd->add_option("--dst", s.cmp_dst_flag, "Output directory for batch --src");
+    s.compress_cmd
+        ->add_option("--compressor", s.cmp_compressor,
+                     "mozjpeg | png  (default: inferred from output extension; falls back to mozjpeg)")
+        ->check(CLI::IsMember({"mozjpeg", "png"}, CLI::ignore_case));
+    // MozJPEG
+    s.compress_cmd->add_option("-q,--quality", s.cmp_quality, "MozJPEG quality 1–100")->default_val(85);
+    s.compress_cmd->add_flag("--no-progressive",  s.cmp_no_progressive,
+                           "Disable progressive (interlaced) JPEG");
+    s.compress_cmd->add_flag("--optimize-scans",  s.cmp_optimize_scans,
+                           "MozJPEG: split DCT coefficient spectrum into separate scans");
+    s.compress_cmd->add_flag("--trellis-quant",   s.cmp_trellis,
+                           "MozJPEG: trellis quantisation (slower, smaller)");
+    // PNG
+    s.compress_cmd->add_option("--level", s.cmp_png_level,
+                             "PNG DEFLATE level 1–9")->default_val(9);
+    s.compress_cmd->add_flag("--quantize", s.cmp_quantize,
+                           "PNG: libimagequant palette reduction — lossy, up to ~60 % smaller"
+                           " (requires FEATURE_PNG_COMPRESSOR)");
+    s.compress_cmd->add_option("--colors",        s.cmp_colors,        "Palette size 8–256")->default_val(256);
+    s.compress_cmd->add_option("--quant-quality", s.cmp_quant_quality, "Quantise quality 60–100")->default_val(85);
+    s.compress_cmd->add_flag("--zopfli", s.cmp_zopfli,
+                           "PNG: ultra-compress DEFLATE with zopfli — lossless, slow"
+                           " (requires FEATURE_PNG_ZOPFLI)");
+    s.compress_cmd->add_option("--zopfli-iter", s.cmp_zopfli_iter,
+                             "Zopfli iteration count")->default_val(15);
+    // Common
+    s.compress_cmd->add_flag("--no-strip", s.cmp_no_strip, "Keep metadata on output");
+    s.compress_cmd->add_option("--suffix", s.cmp_suffix,
+                             "Stem suffix for auto-generated output names "
+                             "(default: _compressed when format unchanged)");
+#if defined(_WIN32)
+    s.compress_cmd->add_flag("--job-ui", s.cmp_job_ui, "List-style job window (pause / cancel) — Windows");
+#endif
+
+    // ── transform (AI image editing) ──────────────────────────────────
+
+    s.transform_cmd = app.add_subcommand("transform", "AI image editing (Gemini / Google)");
+    s.transform_cmd
+        ->add_option("input", s.tf_input, "Input image, or use --src for a batch (Explorer multi-select uses --src)")
+        ->required(false);
+    s.transform_cmd
+        ->add_option(
+            "--src", s.tf_src_list,
+            "Input path (repeat for multiple files; one job queue / one window with --job-ui on Windows)")
+        ->expected(-1);
+    s.transform_cmd->add_option("output", s.tf_output, "Output path (omit = auto from input + prompt)");
+    s.transform_cmd->add_option(
+        "-p,--prompt", s.tf_prompt,
+        "Editing prompt (required if --preset-id is not set, unless preset supplies prompt)");
+    s.transform_cmd->add_option(
+        "--preset-id", s.tf_preset_id,
+        "Preset id from settings: explorer_presets (op=transform), or chat_web quick action as chat-<id>");
+    s.tf_provider_opt = s.transform_cmd->add_option(
+        "--provider", s.tf_provider,
+        "AI provider (google, replicate, pixlwiz); omit = from app Chat image_provider (aborts if unset)");
+    s.tf_model_opt = s.transform_cmd->add_option(
+        "--model", s.tf_model,
+        "Model id; omit = from app Chat image_model (aborts if unset)");
+    s.transform_cmd->add_option("--api-key", s.tf_api_key, "API key");
+    s.transform_cmd->add_option("--aspect-ratio", s.tf_aspect, "Output aspect ratio (1:1,16:9,4:3,...)");
+    s.transform_cmd->add_option("--image-size", s.tf_size, "Output size (512,1K,2K,4K)");
+    s.transform_cmd->add_option("-r,--reference", s.tf_refs,
+                              "Reference image path (logo / brand sheet / style swatch). "
+                              "Repeatable: -r logo.png -r palette.jpg")
+                  ->expected(-1);
+#if defined(_WIN32)
+    s.transform_cmd->add_flag("--job-ui", s.tf_job_ui,
+                            "List-style job window (pause / cancel) — Windows");
+#endif
+
+    // ── create (AI text-to-image; no input file) ───────────────────────
+
+    s.create_cmd = app.add_subcommand("create", "AI text-to-image");
+    s.create_cmd->add_option("output", s.cr_output, "Output path (omit = create_<slug>.png in cwd)");
+    s.create_cmd->add_option("-p,--prompt", s.cr_prompt, "Generation prompt")->required(true);
+    s.cr_provider_opt = s.create_cmd->add_option(
+        "--provider", s.cr_provider,
+        "AI provider (google, replicate, pixlwiz); omit = from app Chat image_provider (aborts if unset)");
+    s.cr_model_opt = s.create_cmd->add_option(
+        "--model", s.cr_model,
+        "Model id; omit = from app Chat image_model (aborts if unset)");
+    s.create_cmd->add_option("--api-key", s.cr_api_key, "API key");
+    s.create_cmd->add_option("--aspect-ratio", s.cr_aspect, "Output aspect ratio (1:1,16:9,4:3,...)");
+    s.create_cmd->add_option("--image-size", s.cr_size, "Output size (512,1K,2K,4K)");
+    s.create_cmd->add_option("-r,--reference", s.cr_refs,
+                           "Reference image path (style / brand). Repeat as needed.")
+        ->expected(-1);
+
+    // ── meta (AI image description / EXIF / JSON / Markdown) ────────────────
+
+    s.meta_cmd = app.add_subcommand("meta",
+        "Generate description / JSON / EXIF for images (LLM, Google Gemini)");
+    s.meta_cmd->add_option("input", s.mt_inputs,
+                         "Input image path(s); repeatable")->required(true)->expected(-1);
+    s.meta_cmd->add_option("--out-dir", s.mt_out_dir,
+                         "Output folder for .md / .json (default: next to source)");
+    s.mt_provider_opt = s.meta_cmd->add_option(
+        "--provider", s.mt_provider,
+        "AI provider (google, replicate, pixlwiz); omit = from app Chat image_recognition_provider (aborts if unset)");
+    s.mt_model_opt = s.meta_cmd->add_option(
+        "--model", s.mt_model,
+        "Model id; omit = from app Chat image_recognition_model (aborts if unset)");
+    s.meta_cmd->add_option("--api-key", s.mt_api_key,
+                         "API key");
+    s.meta_cmd->add_option("-p,--prompt", s.mt_prompt,
+                         "Override default prompt; empty = built-in cataloguer prompt");
+    s.meta_cmd->add_flag("--no-resize", s.mt_no_resize,
+                       "Do NOT pre-resize in memory before sending to the model");
+    s.meta_cmd->add_option("--resize-width", s.mt_resize_w,
+                         "In-memory resize target longest edge (default 512)")->default_val(512);
+    s.meta_cmd->add_flag("--no-md",   s.mt_no_md,   "Skip <stem>.md output");
+    s.meta_cmd->add_flag("--no-json", s.mt_no_json, "Skip <stem>.json output");
+    s.meta_cmd->add_flag("--update-exif", s.mt_update_exif,
+                       "Rewrite source: set EXIF ImageDescription tag (in place)");
+    s.meta_cmd->add_flag("--dry-run", s.mt_dry_run,
+                       "Validate args, run in-memory resize, print plan; no API call, no writes");
+#if defined(_WIN32)
+    s.meta_cmd->add_flag("--job-ui", s.mt_job_ui, "List-style job window (pause / cancel) — Windows");
+#endif
+
+    // ── find ────────────────────────────────────────────────────────────
+
+    s.find_cmd = app.add_subcommand("find",
+        "Find images by name/folder (free) or by semantic prompt via LLM (uses meta cache or generates it)");
+    s.find_cmd->add_option("input", s.fd_inputs,
+                         "Input file(s), folder(s) or glob(s); repeatable")->required(true)->expected(-1);
+    s.find_cmd->add_option("-p,--prompt", s.fd_prompt, "Search query (required)")->required(true);
+    s.find_cmd->add_flag  ("--llm", s.fd_llm,
+                         "Query mode: match prompt vs filename + .md/.json/EXIF (or generate them); default = LLM judge per file, or --local-text");
+    s.find_cmd->add_flag  ("--local-text", s.fd_local_text,
+                         "With --llm: no find:judge Gemini; case-insensitive substring/word match on text only");
+    s.find_cmd->add_flag  ("--case-sensitive", s.fd_case_sensitive, "Name mode: case-sensitive match");
+    s.find_cmd->add_flag  ("--no-folders",     s.fd_no_folders,     "Name mode: don't match parent folder names");
+    s.find_cmd->add_flag  ("--no-recursive",   s.fd_no_recursive,   "Don't recurse into directory inputs");
+    s.find_cmd->add_flag  ("--bypass-cache",   s.fd_bypass_cache,   "LLM: ignore existing .md/.json/EXIF, force re-generate");
+    s.find_cmd->add_flag  ("--no-generate",    s.fd_no_generate,    "LLM: skip images without cached meta (don't call meta_extract)");
+    s.find_cmd->add_flag  ("--no-md",          s.fd_no_md,          "LLM: don't read sidecar .md");
+    s.find_cmd->add_flag  ("--no-json",        s.fd_no_json,        "LLM: don't read sidecar .json");
+    s.find_cmd->add_flag  ("--no-exif",        s.fd_no_exif,        "LLM: don't read libvips EXIF tags");
+    s.find_cmd->add_option("--max",            s.fd_max_results,    "Max results (0 = unlimited)")->default_val(0);
+    s.find_cmd->add_flag  ("--dry-run",        s.fd_dry_run,        "Resolve candidates + cache, no LLM calls / no writes");
+    s.find_cmd->add_flag  ("--json",           s.fd_print_json,     "Print JSON array {path,score,source,reason} on stdout");
+    s.fd_provider_opt = s.find_cmd->add_option(
+        "--provider", s.fd_provider,
+        "AI provider for --llm meta/judge; omit = app Chat image_recognition_provider (aborts if unset when --llm)");
+    s.fd_model_opt = s.find_cmd->add_option(
+        "--model", s.fd_model,
+        "Model for --llm; omit = app image_recognition_model (aborts if unset when --llm)");
+    s.find_cmd->add_option("--api-key",        s.fd_api_key,        "API key");
+    s.find_cmd->add_option("--judge-prompt",   s.fd_judge_prompt,   "Override the LLM judge prompt");
+    s.find_cmd->add_option("--meta-prompt",    s.fd_meta_prompt,    "Override the cataloguer prompt used when generating cache");
+    s.find_cmd->add_flag  ("--no-resize",      s.fd_no_resize,      "Generation: skip in-memory resize before sending to model");
+    s.find_cmd->add_option("--resize-width",   s.fd_resize_w,       "Generation: resize-width for the model input")->default_val(512);
+    s.find_cmd->add_option("-r,--reference",   s.fd_refs,
+        "LLM: reference image(s) — examples of what you're looking for; sent "
+        "as multimodal parts in every judge call. Repeatable: -r logo.png -r palette.jpg");
+
+    // ── duplicates ──────────────────────────────────────────────────────
+
+    s.dup_cmd = app.add_subcommand("duplicates",
+        "Group duplicate images: by file size, perceptual dHash, or sidecar+EXIF hash (see docs/duplicates.md)");
+    s.dup_cmd->add_option("input", s.dup_inputs,
+                        "Input file(s), folder(s) or glob(s); repeatable (omit with --load-session)")->expected(-1);
+    s.dup_cmd->add_option("--by", s.dup_by, "size | fingerprint | meta")
+        ->check(CLI::IsMember({"size", "fingerprint", "meta"}))
+        ->default_str("fingerprint");
+    s.dup_cmd->add_flag("--no-recursive", s.dup_no_recursive, "Do not recurse into directory inputs");
+    s.dup_cmd->add_option("--min-group", s.dup_min_group, "Only show groups with at least this many files (≥2)")->default_val(2)
+        ->check(CLI::Range(2, 1000000));
+    s.dup_cmd->add_option("--max-hamming", s.dup_max_hamming, "fingerprint: max Hamming distance 0..64 (0 = exact hash)")->default_val(0)
+        ->check(CLI::Range(0, 64));
+    s.dup_cmd->add_flag("--fingerprint-same-size-only", s.dup_fp_same_size,
+                      "fingerprint: only compare files with equal byte size (faster for --max-hamming > 0)");
+    s.dup_cmd->add_flag("--no-md", s.dup_no_md, "meta: ignore <stem>.md");
+    s.dup_cmd->add_flag("--no-json", s.dup_no_json, "meta: ignore <stem>.json");
+    s.dup_cmd->add_flag("--no-exif", s.dup_no_exif, "meta: do not include libvips EXIF in the hash");
+    s.dup_cmd->add_option("--meta-prompt", s.dup_meta_prompt,
+                        "meta: when set, prepended to the sidecar+EXIF corpus before hashing (same prompt ⇒ same bucket)");
+    s.dup_cmd->add_flag(
+        "--meta-compare-json-llm", s.dup_meta_json_llm,
+        "meta: compare <stem>.json fields (alt, description, …) with the chat LLM (OpenRouter from settings) "
+        "and group by similarity (see --meta-json-min-sim); not byte hash");
+    s.dup_cmd->add_flag(
+        "--meta-json-implicit-generate", s.dup_meta_json_implicit,
+        "with --meta-compare-json-llm: for images without usable .json, run the Meta cataloguer first ");
+    s.dup_cmd->add_option("--meta-json-min-sim", s.dup_meta_json_min_sim,
+                        "meta+LLM: min pairwise similarity 0..10 to link images (default 7)")
+        ->check(CLI::Range(0, 10))
+        ->default_val(7);
+    s.dup_cmd->add_option(
+        "--meta-json-compare-prompt", s.dup_meta_json_cmp_prompt,
+        "meta+LLM: optional extra instruction text (preamble) for the compare call");
+    s.dup_cmd->add_option(
+        "--llm-router", s.dup_llm_router,
+        "meta+LLM: router (default: chat provider in app settings)");
+    s.dup_cmd->add_option("--llm-model", s.dup_llm_model,
+                        "meta+LLM: model id (default: chat provider in app settings)");
+    s.dup_cmd->add_option("--llm-api-key", s.dup_llm_api_key,
+                        "meta+LLM: API key (or OPENROUTER_KEY / router-specific env, or settings.json chat)");
+    s.dup_cmd->add_option("--llm-base-url", s.dup_llm_base_url,
+                        "meta+LLM: override OpenAI-compatible base URL (default: from app API Providers settings)");
+    s.dup_cmd->add_option("--llm-timeout-ms", s.dup_llm_timeout_ms,
+                        "meta+LLM: HTTP timeout per compare (ms, 0 = from settings or 60000)")
+        ->default_val(0);
+    s.dup_cmd->add_flag("--json", s.dup_print_json, "Print JSON (groups, paths, keys) on stdout");
+    s.dup_cmd->add_option("--report-md", s.dup_report_md,
+                        "Write a detailed per-category report (markdown) to this file; turns on full internal diagnostics");
+    s.dup_cmd->add_option("--report-json", s.dup_report_json,
+                        "Write the same full diagnostic payload as JSON to this file (see also --report-md)");
+    s.dup_cmd->add_option(
+        "--save-session", s.dup_save_session,
+        "Write a reopenable session file (full report JSON, v2). Implies full diagnostics. Same as --report-json to this path for tooling.");
+    s.dup_cmd->add_option("--load-session", s.dup_load_session,
+                        "Load a session JSON from a prior --save-session / --report-json (validate + summary; no scan)");
+
+    // ── serve ───────────────────────────────────────────────────────────
+    s.serve_cmd = app.add_subcommand("serve", "Run HTTP REST server");
+    s.serve_cmd->add_option("--host", s.host, "Bind address")->default_val("127.0.0.1");
+    s.serve_cmd->add_option("-p,--port", s.port, "TCP port")->default_val(8080);
+    s.serve_cmd->add_flag("--no-cache", s.serve_no_cache,
+                         "Server default: cache off when JSON omits \"cache\" (JSON may still enable per request)");
+    s.serve_cmd->add_option("--cache-dir", s.serve_cache_dir, "Server default cache dir when JSON omits \"cache_dir\"");
+
+    s.ipc_cmd = app.add_subcommand("ipc", "Run JSON-line IPC server (TCP; Unix socket on non-Windows)");
+    s.ipc_cmd->add_option("--host", s.ipc_host, "Bind address")->default_val("127.0.0.1");
+    s.ipc_cmd->add_option("-p,--port", s.ipc_port, "TCP port")->default_val(9333);
+    s.ipc_cmd->add_option("--unix", s.ipc_unix, "Unix domain socket path (not Windows)");
+    s.ipc_cmd->add_flag("--no-cache", s.ipc_no_cache,
+                      "Server default: cache off when JSON omits \"cache\" (JSON may still enable per request)");
+    s.ipc_cmd->add_option("--cache-dir", s.ipc_cache_dir, "Server default cache dir when JSON omits \"cache_dir\"");
+
+    // ── provider models list (for UI model picker bootstrap) ───────────────
+    s.provider_cmd = app.add_subcommand("provider", "Provider utilities (model catalog, etc.)");
+    s.provider_cmd->require_subcommand(1);
+    s.provider_models_cmd = s.provider_cmd->add_subcommand("models", "Provider model catalog operations");
+    s.provider_models_cmd->require_subcommand(1);
+    s.provider_models_list_cmd = s.provider_models_cmd->add_subcommand("list",
+        "List provider models and return full JSON payload");
+    s.provider_models_list_cmd->add_option("--provider", s.pm_provider, "Provider id (replicate|openrouter)")->default_val("replicate");
+    s.provider_models_list_cmd->add_option("--api-key", s.pm_api_key,
+        "API key (Replicate: required. OpenRouter: optional for public /v1/models; from app if set for openrouter)");
+    s.provider_models_list_cmd->add_option(
+        "--base-url", s.pm_base_url,
+        "Replicate: catalog URL (default official collection). OpenRouter: API root (default https://openrouter.ai/api/v1)");
+    s.provider_models_list_cmd->add_option("--limit", s.pm_limit, "Replicate /v1/models: optional page size (ignored for openrouter)");
+    s.provider_models_list_cmd->add_option("--cursor", s.pm_cursor, "Replicate: optional pagination cursor (ignored for openrouter)");
+    s.provider_models_list_cmd->add_option("--sort-by", s.pm_sort_by, "Replicate: optional sort field (ignored for openrouter)");
+    s.provider_models_list_cmd->add_option(
+        "--sort-direction", s.pm_sort_direction, "Replicate: optional sort direction (asc|desc) (ignored for openrouter)");
+
+    // ── llm  (tool catalog / executor; see docs/llm-tools.md) ─────────────
+    s.llm_cmd = app.add_subcommand("llm",
+        "LLM tool surface: tools-list / tools-call (JSON envelope per docs/llm-tools.md)");
+    s.llm_cmd->require_subcommand(1);
+
+    const std::string llm_tools_list_desc = std::string("Print the JSON-Schema tool catalog (one entry per ") + pm::brand::k_app_id_u8 + " op)";
+    s.llm_list_cmd = s.llm_cmd->add_subcommand("tools-list", llm_tools_list_desc.c_str());
+
+    s.llm_call_cmd = s.llm_cmd->add_subcommand("tools-call",
+        "Invoke a tool by name with a JSON arguments envelope");
+    s.llm_call_cmd->add_option("--name", s.llm_call_name,
+        "Tool name (image_resize|image_compress|image_transform|image_create|image_meta|image_find)")->required(true);
+    s.llm_call_cmd->add_option("--args", s.llm_call_args_path,
+        "Path to JSON arguments file ('-' or '@-' for stdin; omit = empty {}).");
+    s.llm_call_cmd->add_option("--image-file", s.llm_call_image_file,
+        "Convenience: read this file, base64-encode it, and inject as arguments.image.b64.");
+
+    // ── llm agent — synchronous chat loop with path-mode tools ──────────
+
+    s.llm_agent_cmd = s.llm_cmd->add_subcommand("agent",
+        "Run a single chat-agent turn: LLM picks tools (image_resize / compress / "
+        "transform / meta / find), runs them on the supplied paths, and writes "
+        "outputs to disk. Use --no-tools for a plain one-shot text reply (no path tools). "
+        "Use --disable-tools=a,b to omit specific path tools from the catalog. "
+        "Provider is router-aware (OpenAI-compatible client).");
+    s.llm_agent_cmd->add_option("-p,--prompt", s.ag_prompt,
+        "User prompt (required, e.g. 'compress these as MozJPEG quality 70')")->required(true);
+    s.llm_agent_cmd->add_option("--include", s.ag_paths,
+        "One or more file paths to put in the agent's selection context. "
+        "Repeatable. When omitted, --folder is used.")->expected(-1);
+    s.llm_agent_cmd->add_option("--folder", s.ag_folder,
+        "Folder context when no --include files are supplied (the agent will operate "
+        "on whatever the model picks under it).");
+    s.llm_agent_cmd->add_option("--router", s.ag_router,
+        "LLM router (openrouter|openai|deepseek|gemini|ollama|fireworks|xai|huggingface). "
+        "Default: from Chat Provider Settings in app.");
+    s.llm_agent_cmd->add_option("--model", s.ag_model,
+        "Model id (router-specific, e.g. openai/gpt-4o-mini). "
+        "Default: from Chat Provider Settings in app.");
+    s.llm_agent_cmd->add_option("--api-key", s.ag_api_key,
+        "API key (or set OPENROUTER_KEY / OPENAI_API_KEY / etc. in env / config)");
+    s.llm_agent_cmd->add_option("--base-url", s.ag_base_url,
+        "Override the router's default base URL (OpenAI-compatible endpoints). "
+        "Default: from app API Providers settings.");
+    s.llm_agent_cmd->add_option("--timeout-ms", s.ag_timeout_ms,
+        "HTTP timeout per LLM round (ms). Default: from Chat Provider Settings (or 60000).");
+    s.llm_agent_cmd->add_option("--max-iter", s.ag_max_iter,
+        "Maximum tool-call iterations before forcing a final response. "
+        "Default: from Chat Provider Settings (or 8).");
+    s.llm_agent_cmd->add_flag("--no-tools", s.ag_no_tools,
+        "Do not register path tools (no list_images, image_resize, image_compress, …) — one LLM text turn only");
+    s.llm_agent_cmd->add_option("--disable-tools", s.ag_disable_tools,
+        "Comma- or semicolon-separated path tools to omit: list_images, file_glob, file_read, image_resize, "
+        "image_compress, image_transform, image_create, image_meta, image_find, write_file. Ineffective with --no-tools");
+    s.llm_agent_cmd->add_flag("--json", s.ag_json,
+        "Emit the full transcript as JSON on stdout (instead of plain-text events)");
+    s.llm_agent_cmd->add_flag("--dry-run", s.ag_dry,
+        "Resolve provider + tools + selection; print the system prompt; no LLM call.");
+    s.llm_agent_cmd->add_option("--log", s.ag_log_path,
+        "Write a JSON run log (provider, per-event tool calls with full envelopes, transcript) to this file (truncates).");
+
+    const std::string reg_explorer_subcmd_desc =
+        "Register Windows Explorer menus: resize / convert / meta + Open in " + std::string(pm::brand::k_app_display_u8) + " + Chat + Presets";
+    s.reg_cmd = app.add_subcommand("register-explorer", reg_explorer_subcmd_desc.c_str());
+    s.reg_cmd->add_option("--group", s.reg_group)->default_val("PM-Media");
+    s.reg_cmd->add_flag("--unregister", s.reg_unregister);
+    s.reg_cmd->add_flag("--dry", s.reg_dry);
+    s.reg_cmd->add_flag("--no-refresh-shell", s.reg_no_refresh);
+    const std::string reg_media_bin_help = std::string("Path to ") + pm::brand::k_exe_basename_u8 + " (default: this executable)";
+    s.reg_cmd->add_option("--media-bin", s.reg_media_bin, reg_media_bin_help.c_str());
+    s.reg_cmd->add_option("--widths", s.reg_widths)->default_val("1980,1200");
+
+    // ── app — send a command to the running UI ───────────────────
+    const std::string app_subcmd_desc = std::string("Send a command to the running ") + pm::brand::k_app_id_u8 + " UI (Windows only).";
+    s.app_cmd_grp = app.add_subcommand("app", app_subcmd_desc.c_str());
+    s.app_cmd_grp->require_subcommand(1);
+    s.app_screenshot_cmd = s.app_cmd_grp->add_subcommand(
+        "takescreenshot",
+        "Tell the running UI to capture its window to <cwd>/screenshots/.");
+    s.app_pause_cmd = s.app_cmd_grp->add_subcommand(
+        "pausebatch",
+        "Tell the running UI to pause the current batch after the current file.");
+    s.app_resume_cmd = s.app_cmd_grp->add_subcommand(
+        "resumebatch",
+        "Tell the running UI to resume a paused batch.");
+    s.app_cancel_cmd = s.app_cmd_grp->add_subcommand(
+        "cancelbatch",
+        "Tell the running UI to cancel the current batch.");
+    s.app_browse_cmd = s.app_cmd_grp->add_subcommand(
+        "browse",
+        "Open path(s) in the running UI File tree and selection (semicolon-separated; Windows).");
+    s.app_browse_cmd->add_option("paths", s.app_browse_paths, "Semicolon-separated absolute paths")->required();
+    s.app_recordstart_cmd = s.app_cmd_grp->add_subcommand(
+        "recordstart",
+        "Begin session JSON capture (Ctrl+R in the UI; see docs/session-replay.md).");
+    s.app_recordstop_cmd = s.app_cmd_grp->add_subcommand(
+        "recordstop",
+        "Write session JSON and stop (Ctrl+H in the UI).");
+    const std::string app_replay_desc = std::string("Apply session layout in the running UI (same as `") + pm::brand::k_app_id_u8 + " replay --path=…` for a new process).";
+    s.app_replay_cmd = s.app_cmd_grp->add_subcommand("replay", app_replay_desc.c_str());
+    s.app_replay_cmd->add_option(
+        "--path", s.app_replay_path,
+        "Session .json file (if missing as given: resolved under app profile dir, then profile/sessions/)")
+        ->required();
+
+#if defined(_WIN32)
+    // ── test — developer harness (UI smoke / screenshots; not WM_COPYDATA app commands) ──
+    s.test_cmd = app.add_subcommand(
+        "test",
+        "Developer harness: UI probes (see also `app` for live-instance commands).");
+    s.test_cmd->require_subcommand(1);
+    s.test_screenshot_cmd = s.test_cmd->add_subcommand(
+        "screenshot",
+        "Start the main window, wait, capture it to a PNG, then exit.");
+    s.test_screenshot_cmd->add_option("-o,--output", s.test_screenshot_out, "PNG output path")->required();
+    s.test_screenshot_cmd
+        ->add_option("--wait-ms", s.test_screenshot_wait_ms,
+                     "Milliseconds to wait after UI init before capture (default: 2000)")
+        ->default_val(2000);
+    const std::string replay_subcmd_desc = std::string("Start the UI and apply snapshot.window_layout from a session JSON. "
+        "For a running instance use: ") + pm::brand::k_app_id_u8 + " app replay --path=… (see docs/session-replay.md).";
+    s.replay_cmd = app.add_subcommand("replay", replay_subcmd_desc.c_str());
+    s.replay_cmd->add_option(
+        "--path", s.replay_session_path,
+        "Session .json file (if missing as given: resolved under app profile dir, then profile/sessions/)")
+        ->required();
+#endif
+
+    // ── batch — session management (save / load / resume / list / discard) ──
+    s.batch_cmd = app.add_subcommand(
+        "batch",
+        "Manage batch sessions (save / load / resume / list / discard).");
+    s.batch_cmd->require_subcommand(1);
+    s.batch_list_cmd = s.batch_cmd->add_subcommand(
+        "list",
+        "List saved sessions from sessions.json.");
+    s.batch_discard_cmd = s.batch_cmd->add_subcommand(
+        "discard",
+        "Remove a saved session by id.");
+    s.batch_discard_cmd->add_option("session-id", s.batch_discard_id,
+                                   "Session id to remove")->required(true);
+    s.batch_resume_cmd = s.batch_cmd->add_subcommand(
+        "resume",
+        "Resume a saved session by id (auto-detects op and re-runs pending items).");
+    s.batch_resume_cmd->add_option("session-id", s.batch_resume_id,
+                                  "Session id to resume")->required(true);
+
+#if defined(_WIN32) && defined(FEATURE_LICENSE_FILE)
+    s.license_cmd = app.add_subcommand(
+        "license",
+        "Offline activation (license.dat or license.json; see docs/license-server.md)");
+    s.license_cmd->require_subcommand(1);
+    s.lic_fingerprint_cmd =
+        s.license_cmd->add_subcommand("fingerprint",
+                                    "Print this machine's fingerprint (hex) for the issuer portal");
+    const std::string lic_import_subcmd_desc = std::string("Copy license.dat (issuer) or license.json into %APPDATA%\\")
+                                                + pm::brand::k_config_subpath_u8 + "\\";
+    s.lic_import_cmd = s.license_cmd->add_subcommand("import", lic_import_subcmd_desc.c_str());
+    s.lic_import_cmd->add_option("path", s.lic_import_path)->required(true);
+    s.lic_verify_cmd = s.license_cmd->add_subcommand(
+        "verify", "Check that the installed license verifies on this machine (exit 0/1)");
+#endif
+
+#if defined(_WIN32) && defined(FEATURE_TRIAL_CHECK)
+    s.status_cmd = app.add_subcommand(
+        "status",
+        "Show trial period remaining and related status (read-only; for testing and support)");
+    s.status_cmd->add_flag("--json", s.status_json, "Print machine-readable JSON on stdout");
+    s.godmod_cmd = app.add_subcommand("godmod", "");
+    s.godmod_cmd->silent();
+    s.purgetrial_cmd = app.add_subcommand("purgetrial", "");
+    s.purgetrial_cmd->silent();
+#endif
+

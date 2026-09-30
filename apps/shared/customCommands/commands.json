@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "ribbon": {
+    "groups": [
+      {
+        "id": "dev.commands",
+        "label": "Dev Commands",
+        "items": [
+          {
+            "type": "button",
+            "id": "custom.chat",
+            "label": "Chat",
+            "tooltip": "Open the chat panel",
+            "icon": "message-circle",
+            "tint": "#7F33F0",
+            "appCommand": "chat",
+            "enabled": true,
+            "visible": true,
+            "source": {
+              "kind": "selection"
+            },
+            "userData": {
+              "example": "button",
+              "source": "commands.json"
+            }
+          },
+          {
+            "type": "dropdown",
+            "id": "custom.capture",
+            "label": "Capture",
+            "tooltip": "Capture commands",
+            "icon": "camera",
+            "tint": "#06B6D4",
+            "enabled": true,
+            "visible": true,
+            "items": [
+              {
+                "type": "button",
+                "id": "custom.capture.screenshot",
+                "label": "Take Screenshot",
+                "icon": "camera",
+                "appCommand": "takescreenshot",
+                "enabled": true,
+                "visible": true,
+                "userData": {
+                  "example": "dropdown-child",
+                  "source": "commands.json"
+                }
+              },
+              {
+                "type": "button",
+                "id": "custom.capture.folder",
+                "label": "Open Output",
+                "icon": "folder-open",
+                "path": ".",
+                "enabled": true,
+                "visible": true
+              }
+            ],
+            "userData": {
+              "example": "dropdown",
+              "source": "commands.json"
+            }
+          },
+          {
+            "type": "button",
+            "id": "custom.resize.cli",
+            "label": "Resize CLI",
+            "tooltip": "Registered CLI command example",
+            "icon": "photo",
+            "tint": "#22C55E",
+            "cliCommand": "resize",
+            "enabled": true,
+            "visible": true,
+            "source": {
+              "kind": "files",
+              "files": []
+            },
+            "output": {
+              "directory": "",
+              "filenamePattern": "{name}-resized.{ext}",
+              "overwrite": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

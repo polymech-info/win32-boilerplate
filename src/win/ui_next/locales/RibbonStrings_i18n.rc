@@ -1,0 +1,869 @@
+// Multilingual STRINGTABLE overlays (same numeric IDs as RibbonUI.h / RibbonUI.rc).
+// English strings ship in RibbonUI.rc; these blocks add es / de / it / fr for Windows resource
+// fallbacks (thread UI language). Requires windows.h for LANG_* / SUBLANG_* macros.
+
+#include <windows.h>
+#include "../RibbonUI.h"
+
+// ── Spanish (es) ───────────────────────────────────────────────────────────
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+
+STRINGTABLE BEGIN
+    cmdTabHome_LabelTitle_RESID L"Inicio"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupQueue_LabelTitle_RESID L"Cola"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupActions_LabelTitle_RESID L"Acciones"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSave_LabelTitle_RESID L"Archivo"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupRun_LabelTitle_RESID L"Ejecutar"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupBatch_LabelTitle_RESID L"Lote"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSession_LabelTitle_RESID L"Sesión"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_LabelTitle_RESID L"Guardar como…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_TooltipDescription_RESID L"Guardar el archivo de salida seleccionado en la ubicación elegida"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FILES_LabelTitle_RESID L"Añadir archivos"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FOLDER_LabelTitle_RESID L"Añadir carpeta"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CLEAR_LabelTitle_RESID L"Vaciar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESIZE_LabelTitle_RESID L"Redimensionar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_COMPRESS_LabelTitle_RESID L"Comprimir"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_META_LabelTitle_RESID L"Meta"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_TRANSFORM_LabelTitle_RESID L"Transformar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FIND_LabelTitle_RESID L"Buscar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_LabelTitle_RESID L"Chat"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_TooltipDescription_RESID L"Habla con tus fotos: el LLM elige herramientas (comprimir / transformar / meta / buscar / redimensionar) sobre la selección o la carpeta actual."
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RUN_LabelTitle_RESID L"Ejecutar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_LabelTitle_RESID L"Pausar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_TooltipDescription_RESID L"Pausar el lote en curso tras el archivo actual"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_LabelTitle_RESID L"Reanudar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_TooltipDescription_RESID L"Reanudar un lote pausado"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_LabelTitle_RESID L"Cancelar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_TooltipDescription_RESID L"Cancelar el lote en curso (la sesión puede guardarse y reanudarse después)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_LabelTitle_RESID L"Guardar sesión"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_TooltipDescription_RESID L"Guardar el estado del lote en sessions.json para reanudarlo después"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_LabelTitle_RESID L"Cargar sesión"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_TooltipDescription_RESID L"Cargar una sesión guardada: los terminados se omiten, los erróneos se reintentan"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Salir"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ABOUT_LabelTitle_RESID L"Acerca de"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_LabelTitle_RESID L"Actualizar el Explorador"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_TooltipDescription_RESID L"Vuelve a registrar las entradas del menú contextual del Explorador de Windows (integración con pm-image)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_LabelTitle_RESID L"Quitar integración del Explorador"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_TooltipDescription_RESID L"Quita las entradas PM-Media del menú contextual de Windows (vuelve a registrar desde Archivo para restaurarlas)"
+END
+
+STRINGTABLE BEGIN
+    cmdTabView_LabelTitle_RESID L"Vista"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupPanels_LabelTitle_RESID L"Paneles"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupReset_LabelTitle_RESID L"Aplicación"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_QUEUE_LabelTitle_RESID L"Cola"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_LOG_LabelTitle_RESID L"Registro"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_SETTINGS_LabelTitle_RESID L"Ajustes"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FILETREE_LabelTitle_RESID L"Explorador"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FINDRESULTS_LabelTitle_RESID L"Resultados de búsqueda"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_CHAT_LabelTitle_RESID L"Chat"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESET_LAYOUT_LabelTitle_RESID L"Restablecer diseño"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_DEBUG_STATE_LabelTitle_RESID L"Depurar"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_LabelTitle_RESID L"Ajustes de la aplicación"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipTitle_RESID L"Ajustes de la aplicación"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipDescription_RESID L"Tema (claro / oscuro / sistema) y tamaño de fuente"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_LabelTitle_RESID L"Opciones…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipTitle_RESID L"Opciones"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipDescription_RESID L"Tema (claro / oscuro / sistema) y tamaño de fuente"
+END
+
+
+// ── German (de) ─────────────────────────────────────────────────────────────
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+
+STRINGTABLE BEGIN
+    cmdTabHome_LabelTitle_RESID L"Start"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupQueue_LabelTitle_RESID L"Warteschlange"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupActions_LabelTitle_RESID L"Aktionen"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSave_LabelTitle_RESID L"Datei"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupRun_LabelTitle_RESID L"Ausführen"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupBatch_LabelTitle_RESID L"Stapel"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSession_LabelTitle_RESID L"Sitzung"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_LabelTitle_RESID L"Speichern unter…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_TooltipDescription_RESID L"Die gewählte Ausgabedatei an einem frei wählbaren Ort speichern"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FILES_LabelTitle_RESID L"Dateien hinzufügen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FOLDER_LabelTitle_RESID L"Ordner hinzufügen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CLEAR_LabelTitle_RESID L"Leeren"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESIZE_LabelTitle_RESID L"Größe ändern"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_COMPRESS_LabelTitle_RESID L"Komprimieren"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_META_LabelTitle_RESID L"Meta"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_TRANSFORM_LabelTitle_RESID L"Transformieren"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FIND_LabelTitle_RESID L"Suchen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_LabelTitle_RESID L"Chat"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_TooltipDescription_RESID L"Mit Fotos sprechen — das LLM wählt Werkzeuge (Komprimieren / Transformieren / Meta / Suchen / Größe) für Auswahl oder aktuellen Ordner."
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RUN_LabelTitle_RESID L"Ausführen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_LabelTitle_RESID L"Pause"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_TooltipDescription_RESID L"Laufenden Stapel nach der aktuellen Datei anhalten"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_LabelTitle_RESID L"Fortsetzen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_TooltipDescription_RESID L"Pausierten Stapel fortsetzen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_LabelTitle_RESID L"Abbrechen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_TooltipDescription_RESID L"Laufenden Stapel abbrechen (Sitzung kann später gespeichert und fortgesetzt werden)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_LabelTitle_RESID L"Sitzung speichern"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_TooltipDescription_RESID L"Aktuellen Stapelstatus in sessions.json speichern, um später fortzusetzen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_LabelTitle_RESID L"Sitzung laden"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_TooltipDescription_RESID L"Gespeicherte Sitzung laden — erledigte Einträge überspringen, fehlerhafte wiederholen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Beenden"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ABOUT_LabelTitle_RESID L"Über"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_LabelTitle_RESID L"Explorer aktualisieren"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_TooltipDescription_RESID L"Kontextmenüeinträge im Windows-Explorer erneut registrieren (pm-image-Integration)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_LabelTitle_RESID L"Explorer-Shell entfernen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_TooltipDescription_RESID L"Entfernt die PM-Media-Einträge aus dem Windows-Kontextmenü (unter Datei erneut registrieren, um sie wiederherzustellen)"
+END
+
+STRINGTABLE BEGIN
+    cmdTabView_LabelTitle_RESID L"Ansicht"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupPanels_LabelTitle_RESID L"Bereiche"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupReset_LabelTitle_RESID L"App"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_QUEUE_LabelTitle_RESID L"Warteschlange"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_LOG_LabelTitle_RESID L"Protokoll"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_SETTINGS_LabelTitle_RESID L"Einstellungen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FILETREE_LabelTitle_RESID L"Explorer"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FINDRESULTS_LabelTitle_RESID L"Suchtreffer"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_CHAT_LabelTitle_RESID L"Chat"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESET_LAYOUT_LabelTitle_RESID L"Layout zurücksetzen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_DEBUG_STATE_LabelTitle_RESID L"Debug"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_LabelTitle_RESID L"App-Einstellungen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipTitle_RESID L"App-Einstellungen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipDescription_RESID L"Thema (hell / dunkel / System) und Schriftgröße"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_LabelTitle_RESID L"Optionen…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipTitle_RESID L"Optionen"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipDescription_RESID L"Thema (hell / dunkel / System) und Schriftgröße"
+END
+
+
+// ── Italian (it) ────────────────────────────────────────────────────────────
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+
+STRINGTABLE BEGIN
+    cmdTabHome_LabelTitle_RESID L"Home"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupQueue_LabelTitle_RESID L"Coda"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupActions_LabelTitle_RESID L"Azioni"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSave_LabelTitle_RESID L"File"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupRun_LabelTitle_RESID L"Esegui"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupBatch_LabelTitle_RESID L"Elaborazione"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSession_LabelTitle_RESID L"Sessione"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_LabelTitle_RESID L"Salva con nome…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_TooltipDescription_RESID L"Salva il file di output selezionato nella posizione scelta"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FILES_LabelTitle_RESID L"Aggiungi file"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FOLDER_LabelTitle_RESID L"Aggiungi cartella"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CLEAR_LabelTitle_RESID L"Svuota"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESIZE_LabelTitle_RESID L"Ridimensiona"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_COMPRESS_LabelTitle_RESID L"Comprimi"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_META_LabelTitle_RESID L"Meta"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_TRANSFORM_LabelTitle_RESID L"Trasforma"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FIND_LabelTitle_RESID L"Trova"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_LabelTitle_RESID L"Chat"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_TooltipDescription_RESID L"Parla con le foto: l'LLM sceglie gli strumenti (comprimi / trasforma / meta / trova / ridimensiona) sulla selezione o sulla cartella corrente."
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RUN_LabelTitle_RESID L"Esegui"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_LabelTitle_RESID L"Pausa"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_TooltipDescription_RESID L"Sospendi l'elaborazione dopo il file corrente"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_LabelTitle_RESID L"Riprendi"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_TooltipDescription_RESID L"Riprendi un'elaborazione in pausa"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_LabelTitle_RESID L"Annulla"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_TooltipDescription_RESID L"Interrompi l'elaborazione (la sessione può essere salvata e ripresa dopo)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_LabelTitle_RESID L"Salva sessione"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_TooltipDescription_RESID L"Salva lo stato in sessions.json per riprendere più tardi"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_LabelTitle_RESID L"Carica sessione"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_TooltipDescription_RESID L"Carica una sessione salvata: i completati vengono saltati, gli errori riprovati"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Esci"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ABOUT_LabelTitle_RESID L"Informazioni"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_LabelTitle_RESID L"Aggiorna Esplora risorse"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_TooltipDescription_RESID L"Riregistra le voci del menu contestuale in Esplora file (integrazione pm-image)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_LabelTitle_RESID L"Rimuovi integrazione Esplora risorse"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_TooltipDescription_RESID L"Rimuove le voci PM-Media dal menu contestuale (usa File → Aggiorna per ripristinarle)"
+END
+
+STRINGTABLE BEGIN
+    cmdTabView_LabelTitle_RESID L"Visualizza"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupPanels_LabelTitle_RESID L"Pannelli"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupReset_LabelTitle_RESID L"App"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_QUEUE_LabelTitle_RESID L"Coda"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_LOG_LabelTitle_RESID L"Registro"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_SETTINGS_LabelTitle_RESID L"Impostazioni"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FILETREE_LabelTitle_RESID L"Esplora risorse"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FINDRESULTS_LabelTitle_RESID L"Risultati ricerca"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_CHAT_LabelTitle_RESID L"Chat"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESET_LAYOUT_LabelTitle_RESID L"Reimposta layout"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_DEBUG_STATE_LabelTitle_RESID L"Debug"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_LabelTitle_RESID L"Impostazioni app"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipTitle_RESID L"Impostazioni app"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipDescription_RESID L"Tema (chiaro / scuro / sistema) e dimensione carattere"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_LabelTitle_RESID L"Opzioni…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipTitle_RESID L"Opzioni"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipDescription_RESID L"Tema (chiaro / scuro / sistema) e dimensione carattere"
+END
+
+
+// ── French (fr) ───────────────────────────────────────────────────────────────
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+
+STRINGTABLE BEGIN
+    cmdTabHome_LabelTitle_RESID L"Accueil"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupQueue_LabelTitle_RESID L"File d'attente"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupActions_LabelTitle_RESID L"Actions"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSave_LabelTitle_RESID L"Fichier"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupRun_LabelTitle_RESID L"Exécuter"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupBatch_LabelTitle_RESID L"Lot"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupSession_LabelTitle_RESID L"Session"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_LabelTitle_RESID L"Enregistrer sous…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_AS_TooltipDescription_RESID L"Enregistrer le fichier de sortie sélectionné à l'emplacement choisi"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FILES_LabelTitle_RESID L"Ajouter des fichiers"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ADD_FOLDER_LabelTitle_RESID L"Ajouter un dossier"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CLEAR_LabelTitle_RESID L"Vider"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESIZE_LabelTitle_RESID L"Redimensionner"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_COMPRESS_LabelTitle_RESID L"Compresser"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_META_LabelTitle_RESID L"Méta"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_TRANSFORM_LabelTitle_RESID L"Transformer"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FIND_LabelTitle_RESID L"Rechercher"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_LabelTitle_RESID L"Discussion"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CHAT_TooltipDescription_RESID L"Dialogue avec vos photos — le LLM choisit les outils (compresser / transformer / méta / rechercher / redimensionner) sur la sélection ou le dossier actuel."
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RUN_LabelTitle_RESID L"Exécuter"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_LabelTitle_RESID L"Pause"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_PAUSE_TooltipDescription_RESID L"Mettre en pause le lot en cours après le fichier en cours"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_LabelTitle_RESID L"Reprendre"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESUME_TooltipDescription_RESID L"Reprendre un lot en pause"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_LabelTitle_RESID L"Annuler"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_CANCEL_TooltipDescription_RESID L"Annuler le lot en cours (la session peut être enregistrée et reprise plus tard)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_LabelTitle_RESID L"Enregistrer la session"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_SAVE_SESSION_TooltipDescription_RESID L"Enregistrer l'état du lot dans sessions.json pour le reprendre plus tard"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_LabelTitle_RESID L"Charger une session"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_LOAD_SESSION_TooltipDescription_RESID L"Charger une session enregistrée — les éléments terminés sont ignorés, les erreurs sont réessayées"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Quitter"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_ABOUT_LabelTitle_RESID L"À propos"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_LabelTitle_RESID L"Mettre à jour l'Explorateur"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UPDATE_EXPLORER_TooltipDescription_RESID L"Enregistre de nouveau les entrées du menu contextuel de l'Explorateur Windows (intégration pm-image)"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_LabelTitle_RESID L"Retirer l'intégration Explorateur"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_UNREGISTER_EXPLORER_TooltipDescription_RESID L"Retire les entrées PM-Media du menu contextuel (Fichier → Mettre à jour pour restaurer)"
+END
+
+STRINGTABLE BEGIN
+    cmdTabView_LabelTitle_RESID L"Affichage"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupPanels_LabelTitle_RESID L"Panneaux"
+END
+
+STRINGTABLE BEGIN
+    cmdGroupReset_LabelTitle_RESID L"Application"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_QUEUE_LabelTitle_RESID L"File"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_LOG_LabelTitle_RESID L"Journal"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_SETTINGS_LabelTitle_RESID L"Paramètres"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FILETREE_LabelTitle_RESID L"Explorateur"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_FINDRESULTS_LabelTitle_RESID L"Résultats de recherche"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_VIEW_CHAT_LabelTitle_RESID L"Discussion"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_RESET_LAYOUT_LabelTitle_RESID L"Réinitialiser la disposition"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_DEBUG_STATE_LabelTitle_RESID L"Déboguer"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_LabelTitle_RESID L"Paramètres de l'application"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipTitle_RESID L"Paramètres de l'application"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_APP_SETTINGS_TooltipDescription_RESID L"Thème (clair / sombre / système) et taille de police"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_LabelTitle_RESID L"Options…"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipTitle_RESID L"Options"
+END
+
+STRINGTABLE BEGIN
+    IDC_CMD_FILE_OPTIONS_TooltipDescription_RESID L"Thème (clair / sombre / système) et taille de police"
+END

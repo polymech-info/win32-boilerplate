@@ -1,0 +1,125 @@
+[Layout] Saved dock layout rejected by workbench policy: viewer workbench saved dock layout contains main-workbench tool panels — using default layout.
+[Layout] Saved dock layout rejected by workbench policy: viewer workbench saved dock layout contains main-workbench tool panels — using default layout.
+[Layout] Saved dock layout rejected by workbench policy: viewer workbench saved dock layout contains main-workbench tool panels — using default layout.
+[Layout] Saved dock layout rejected by workbench policy: viewer workbench saved dock layout contains main-workbench tool panels — using default layout.
+[Pixlwiz] Login: same ZITADEL PKCE flow as pm-image login (hidden child). Issuer and OAuth client id default from built-in constants when .env is absent — optional. The system browser opens; [zitadel-login] lines appear in this log when the run finishes.
+[Pixlwiz login] [zitadel-login] command: login (verbose logging; stderr lines use the prefix above)
+[Pixlwiz login] [zitadel-login] interactive: GET discovery https://auth.polymech.info/.well-known/openid-configuration
+[Pixlwiz login] [zitadel-login] interactive: authorization_endpoint = https://auth.polymech.info/oauth/v2/authorize
+[Pixlwiz login] [zitadel-login] interactive: token_endpoint         = https://auth.polymech.info/oauth/v2/token
+[Pixlwiz login] [zitadel-login] interactive: PKCE code_verifier length = 64 (keep secret until exchange completes)
+[Pixlwiz login] [zitadel-login] interactive: PKCE code_challenge method = S256 (length 43)
+[Pixlwiz login] [zitadel-login] interactive: ----------------------------------------------------------------------
+[Pixlwiz login] [zitadel-login] interactive: redirect_uri used on this run (must match ZITADEL app config byte-for-byte):
+[Pixlwiz login] [zitadel-login] interactive:   http://127.0.0.1:8844/callback
+[Pixlwiz login] [zitadel-login] interactive: ZITADEL Console -> your Project -> Applications -> <this client> -> Redirect settings
+[Pixlwiz login] [zitadel-login] interactive: Add Native / User Agent redirect URI exactly as above (use 127.0.0.1, not localhost).
+[Pixlwiz login] [zitadel-login] interactive: If the authorize page shows invalid_request / redirect_uri missing, the URI above is not in that list.
+[Pixlwiz login] [zitadel-login] interactive: ----------------------------------------------------------------------
+[Pixlwiz login] [zitadel-login] listen: httplib thread starting (127.0.0.1 callback)
+[Pixlwiz login] [zitadel-login] listen: server wait_until_ready() returned (callback listener up)
+[Pixlwiz login] [zitadel-login] interactive: full authorize URL length = 320
+[Pixlwiz login] [zitadel-login] interactive: launching system browser ...
+[Pixlwiz login] [zitadel-login] interactive: waiting for browser redirect (timeout 300s) ...
+[Pixlwiz login] [zitadel-login] callback: request target = /callback?code=eYscsei5cxil_eHgzf5uOv3bFlORzsRZMepgaaHMS8V19Q&state=1e517690c6c0e6ee77bf4ea9d529257d
+[Pixlwiz login] [zitadel-login] callback: received authorization code, len=46
+[Pixlwiz login] [zitadel-login] interactive: exchanging code at token_endpoint ...
+[Pixlwiz login] [zitadel-login] interactive: token response HTTP 200, bytes=2823
+[Pixlwiz login] [zitadel-login] interactive: received access_token, len=1140
+[Pixlwiz login] [zitadel-login] interactive: received refresh_token, len=104
+[Pixlwiz login] [zitadel-login] --- JWT payload (unverified; for diagnostics only) ---
+[Pixlwiz login] [zitadel-login]   iss: https://auth.polymech.info
+[Pixlwiz login] [zitadel-login]   sub: 367439252033634305
+[Pixlwiz login] [zitadel-login]   aud (array):
+[Pixlwiz login] [zitadel-login]     - 367440527605432321
+[Pixlwiz login] [zitadel-login]     - 368160284600238081
+[Pixlwiz login] [zitadel-login]     - 368188142244593665
+[Pixlwiz login] [zitadel-login]     - 372468061954899969
+[Pixlwiz login] [zitadel-login]     - 367439956911587329
+[Pixlwiz login] [zitadel-login]   exp: 1778890771 (unix seconds)
+[Pixlwiz login] [zitadel-login]   client_id: 367440527605432321
+[Pixlwiz login] [zitadel-login] --- `sub` vs app user id (server `ref/pm-pics/zitadel.ts`) ---
+[Pixlwiz login] [zitadel-login]   Access-token JWT `sub` is what ZITADEL issues (often a numeric string for human users).
+[Pixlwiz login] [zitadel-login]   After verifyZitadelAccessToken(), the service calls resolveAppUserId(zitadelUser.id, email).
+[Pixlwiz login] [zitadel-login]   When that returns an app UUID, the in-memory User.id becomes the UUID and user_metadata.zitadel_sub keeps the original JWT sub.
+[Pixlwiz login] [zitadel-login]   So: API / DB "user id" may NOT equal raw JWT `sub` - compare logs to AuthZ / browser `profile.sub` accordingly.
+[Pixlwiz login] [zitadel-login]   This token's `sub` looks like a ZITADEL numeric subject - expect resolveAppUserId() to map it to profiles.user_id (UUID) when configured.
+[Pixlwiz login] [zitadel-login] interactive: SERVER_URL / VITE_SERVER_IMAGE_API_URL / CLIENT_URL unset — skip GET /api/me/identity (app_user_id not saved). Set SERVER_URL to persist resolved UUID.
+[Pixlwiz login] [zitadel-login] interactive: wrote token bundle to C:\Users\zx\AppData\Roaming\PolyMech\pm-image\zitadel-oauth.json
+[Pixlwiz login] Signed in. Tokens saved to C:\Users\zx\AppData\Roaming\PolyMech\pm-image\zitadel-oauth.json
+[Pixlwiz] Login: signed in (tokens saved).
+[Pixlwiz] Share: started (background) to https://pixlwiz.com …
+[Pixlwiz] Share: post created, post_id=f887c095-8823-4f0f-ac10-6cf7be63f9a2, pictures=1, url=https://pixlwiz.com/post/f887c095-8823-4f0f-ac10-6cf7be63f9a2?view=compact&pic=e9ce44c8-3f6b-486a-b609-97cb5820d253
+[2026-05-16 13:31:29.773] [pm-image] [info] [startup]    80 ms  OnInitialUpdate phase: after visible dock graph creation (hidden optional panels are lazy)
+[2026-05-16 13:31:29.779] [pm-image] [info] [startup]    87 ms  OnInitialUpdate phase: after SetupDockContainers + caption height
+[2026-05-16 13:31:29.780] [pm-image] [info] [startup]    87 ms  OnInitialUpdate before LoadLayout (window placement + panel visibility JSON)
+[2026-05-16 13:31:29.780] [pm-image] [info] [startup]    87 ms  [layout] LoadWindowLayout: enter slot='viewer'
+[2026-05-16 13:31:29.781] [pm-image] [info] [startup]    89 ms  [layout] ParseWindowLayout: enter
+[2026-05-16 13:31:29.781] [pm-image] [info] [startup]    89 ms  [layout] ParseWindowLayout: OK - placement=1 visibility=1 defer=1 panels[Q=1,L=1,S=0,FT=0,C=0,FR=0,DR=0]
+[2026-05-16 13:31:29.781] [pm-image] [info] [startup]    89 ms  [layout] LoadWindowLayout: OK
+[2026-05-16 13:31:29.782] [pm-image] [info] [startup]    89 ms  OnInitialUpdate after LoadLayout
+[2026-05-16 13:31:29.782] [pm-image] [info] [startup]    89 ms  ApplyAppearance enter (cached font+theme, full panel refresh)
+[2026-05-16 13:31:29.784] [pm-image] [info] [startup]    92 ms  ApplyAppearance leave
+[2026-05-16 13:31:29.784] [pm-image] [info] [startup]    92 ms  OnInitialUpdate after ApplyAppearance
+[2026-05-16 13:31:29.785] [pm-image] [info] [startup]    93 ms  OnInitialUpdate leave; posted 150ms kPostLayoutInitTimerId
+[2026-05-16 13:31:29.785] [pm-image] [info] [startup]    93 ms  OnInitialUpdate: posted UWM_PM_LOAD_DOCK_CONTAINERS (tab order after first show)
+[2026-05-16 13:31:29.816] [pm-image] [info] [startup]   123 ms  UWM_PM_LOAD_DOCK_CONTAINERS: LoadDockContainers (deferred tab order)
+[2026-05-16 13:31:29.835] [pm-image] [info] [startup]   143 ms  PreviewCoord: Request src=Explorer paths=1 first="C:\Users\zx\Desktop\1001.h"
+[2026-05-16 13:31:29.835] [pm-image] [info] [viewer-web] ctor @0000023E405E0050
+[2026-05-16 13:31:29.844] [pm-image] [info] [startup]   151 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\1001.h"
+[2026-05-16 13:31:30.048] [pm-image] [info] [chat-web] chat UI: https://pm-chat.invalid/chat.html (localStorage persists)
+[2026-05-16 13:31:30.049] [pm-image] [info] [chat-web] WebView2 controller ready @0000023E3ABEA1C0 hwnd=00000000008B07CE
+[2026-05-16 13:31:30.355] [pm-image] [info] [viewer-web] WebView2 controller ready @0000023E404DA530 hwnd=00000000006D063A
+[2026-05-16 13:31:30.382] [pm-image] [info] [startup]   689 ms  OnDeferredPostLayoutInit enter (150ms timer)
+[2026-05-16 13:31:30.382] [pm-image] [info] [startup]   689 ms    phase 0: SplashDismiss
+[2026-05-16 13:31:30.382] [pm-image] [info] [startup]   690 ms    phase 2: StartupFlush (1 pending paths)
+[2026-05-16 13:31:30.382] [pm-image] [info] [startup]   690 ms  PreviewCoord: Request src=CliStartup paths=1 first="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\2.mp4"
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms  PreviewCoord: result=Ok active="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer\2.mp4"
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms  ScheduleFileTreeBrowse seq=1 depth=1 paths=1
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms  SelRouter: SetFromStartup filtered=1
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms    phase 3: ScreenshotSize
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms    phase 4: ShellAndBrowse (workbench deferred init)
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms  ScheduleFileTreeBrowse seq=2 depth=2 paths=1
+[2026-05-16 13:31:30.391] [pm-image] [info] [startup]   698 ms  OnDeferredPostLayoutInit leave
+[2026-05-16 13:31:30.511] [pm-image] [info] [startup]   819 ms  OnDeferredFileTreeNavTimer: drained 1 superseded browse requests
+[2026-05-16 13:31:30.534] [pm-image] [info] openai_models: cache cold: ok path=C:\Users\zx\AppData\Roaming\PolyMech\pm-image\openai-models-cache.json
+[2026-05-16 13:31:30.534] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-16 13:31:31.049] [pm-image] [info] openai_models: source=disk_cache n=130
+[2026-05-16 13:31:31.173] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-16 13:31:31.202] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-16 13:31:31.202] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/2.mp4 hostedErr=(none)
+[2026-05-16 13:31:31.606] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/2.mp4 hostedErr=(none)
+[2026-05-16 13:31:35.623] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-16 13:31:35.650] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-16 13:31:36.333] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-16 13:31:38.423] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-16 13:31:40.543] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="" sel=0 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:06:27.157] [pm-image] [info] [viewer-web] ctor @00000294BF9603B0
+[2026-05-21 18:06:27.790] [pm-image] [info] [viewer-web] WebView2 controller ready @00000294C1835FE0 hwnd=000000000022095A
+[2026-05-21 18:06:29.504] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:06:29.534] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/2.mp4 hostedErr=(none)
+[2026-05-21 18:06:29.540] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/2.mp4 hostedErr=(none)
+[2026-05-21 18:06:29.959] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/2.mp4 hostedErr=(none)
+[2026-05-21 18:07:38.033] [pm-image] [info] [viewer-web] ctor @0000014FC6F943E0
+[2026-05-21 18:07:38.657] [pm-image] [info] [viewer-web] WebView2 controller ready @0000014FC705E630 hwnd=00000000004A0750
+[2026-05-21 18:07:40.374] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:07:40.404] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:07:40.404] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:07:40.815] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:07:50.271] [pm-image] [info] [ribbon-custom] custom.command-mpejo01t-98bf0 userData={"externalCommand":{"args":[],"command":"dir","cwd":""},"output":{},"source":{"kind":"selection"}}
+[2026-05-21 18:07:56.139] [pm-image] [info] [console-open] RunViewPanelCommand enter visible=0 dockPtr=0
+[2026-05-21 18:07:56.203] [pm-image] [info] [console-open] RunViewPanelCommand leave visible=1 elapsed=62 ms
+[2026-05-21 18:07:56.204] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=markdown folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:07:57.331] [pm-image] [info] [ribbon-custom] custom.command-mpejo01t-98bf0 userData={"externalCommand":{"args":[],"command":"dir","cwd":""},"output":{},"source":{"kind":"selection"}}
+[2026-05-21 18:11:25.144] [pm-image] [info] [viewer-web] ctor @000001BDB6A68830
+[2026-05-21 18:11:25.389] [pm-image] [info] [viewer-web] WebView2 controller ready @000001BDB9A0B5D0 hwnd=0000000000020398
+[2026-05-21 18:11:25.548] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:11:25.561] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:11:25.562] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:11:25.968] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=text folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=(none) hostedErr=(none)
+[2026-05-21 18:11:29.327] [pm-image] [info] [viewer-web] ctor @00000207D12A9F30
+[2026-05-21 18:11:29.468] [pm-image] [info] [viewer-web] WebView2 controller ready @00000207D3177D60 hwnd=0000000000050354
+[2026-05-21 18:11:29.604] [pm-image] [warning] [viewer-web] js warn [bridge] installPmViewerHost — engine=webview2
+[2026-05-21 18:11:29.626] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/video_cinematic_product_showcase_video_with_sl.mp4 hostedErr=(none)
+[2026-05-21 18:11:29.627] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/video_cinematic_product_showcase_video_with_sl.mp4 hostedErr=(none)
+[2026-05-21 18:11:30.039] [pm-image] [warning] [viewer-web] js warn [bridge] setStatus kind=video folder="C:\Users\zx\Desktop\polymech\polymech-mono\packages\media\cpp\tests\viewer" sel=1 hostedUrl=https://pm-md.invalid/video_cinematic_product_showcase_video_with_sl.mp4 hostedErr=(none)

@@ -1,0 +1,36 @@
+# Deno
+.deno
+deno.lock
+deno.json._decorators
+
+# Dependencies
+node_modules/
+# Build output
+build/
+dist/
+dist-embed/
+out/
+
+# Environment files
+.env*
+!src/.env/
+!src/.env/*md
+
+# Generated files
+.dts
+types/
+.D_Store
+.vscode/!settings.json
+
+# Logs
+*.Log
+*.Log.* 
+docs-internal
+systems/code-server-defaults
+systems/workspace/kbot-docs
+systems/.code-server/code-server-ipc.sock
+systems/.code-server/User/workspaceStorage/
+systems/code-server-defaults
+systems/.code-server
+tests/assets/
+packages/kbot/systems/gptr/gpt-researcher

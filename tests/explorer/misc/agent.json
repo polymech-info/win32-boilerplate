@@ -1,0 +1,357 @@
+{
+  "cli": {
+    "disable_tools": null,
+    "folder": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc",
+    "godmode": false,
+    "json_stdout": false,
+    "multi_turn": true,
+    "no_tools": false,
+    "paths": [],
+    "prompt": "create directory listing, for images, in images.md",
+    "session_id": "session-1"
+  },
+  "command": "llm agent",
+  "events": [
+    {
+      "detail": {
+        "folder": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc",
+        "selection": []
+      },
+      "kind": "turn_started"
+    },
+    {
+      "detail": {
+        "duration_ms": 4804,
+        "model": "gpt-5.5-2026-04-23",
+        "response_id": "resp_0a023f71c3c1d2f6006a0d9964568c819584a86dc34bc1e299",
+        "round": 1,
+        "stateful": false,
+        "tokens": {
+          "input": 15435,
+          "output": 107,
+          "reasoning": 41
+        }
+      },
+      "kind": "llm_round"
+    },
+    {
+      "detail": {
+        "arguments": {
+          "inputs": [
+            "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc"
+          ],
+          "options": {
+            "include_raw": true,
+            "max_results": 0,
+            "recursive": true
+          }
+        },
+        "id": "call_QWfhwRVzs5wAPzA4J2zAWDAI"
+      },
+      "kind": "tool_call",
+      "tool": "list_images"
+    },
+    {
+      "detail": {
+        "duration_ms": 1,
+        "envelope": {
+          "ok": true,
+          "results": [
+            {
+              "ok": true,
+              "path": "<aggregate>",
+              "result": {
+                "count": 1,
+                "files": [
+                  {
+                    "ext": ".jpg",
+                    "path": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\2_1200_1200.jpg",
+                    "size": 228950
+                  }
+                ],
+                "include_raw": true,
+                "max_results": 0,
+                "recursive": true,
+                "scanned_inputs": 1
+              }
+            }
+          ],
+          "summary": {
+            "failed": 0,
+            "succeeded": 1,
+            "total": 1
+          },
+          "tool": "list_images"
+        },
+        "id": "call_QWfhwRVzs5wAPzA4J2zAWDAI"
+      },
+      "kind": "tool_result",
+      "tool": "list_images"
+    },
+    {
+      "detail": {
+        "duration_ms": 4709,
+        "model": "gpt-5.5-2026-04-23",
+        "response_id": "resp_0a023f71c3c1d2f6006a0d9968d3a08195ac6819a3587d0b48",
+        "round": 2,
+        "stateful": true,
+        "tokens": {
+          "input": 6712,
+          "output": 117,
+          "reasoning": 26
+        }
+      },
+      "kind": "llm_round"
+    },
+    {
+      "detail": {
+        "arguments": {
+          "content": "# Image Directory Listing\n\nFound 1 image.\n\n| # | File | Extension | Size |\n|---:|---|---|---:|\n| 1 | `2_1200_1200.jpg` | `.jpg` | 228,950 bytes |\n",
+          "options": {
+            "append": false
+          },
+          "path": "images.md"
+        },
+        "id": "call_QPuVEQMeUEKVYuFvbteMAdwH"
+      },
+      "kind": "tool_call",
+      "tool": "write_file"
+    },
+    {
+      "detail": {
+        "duration_ms": 3,
+        "envelope": {
+          "ok": true,
+          "results": [
+            {
+              "ok": true,
+              "output_path": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md",
+              "path": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md",
+              "result": {
+                "append": false,
+                "bytes_written": 146
+              }
+            }
+          ],
+          "summary": {
+            "failed": 0,
+            "succeeded": 1,
+            "total": 1
+          },
+          "tool": "write_file"
+        },
+        "id": "call_QPuVEQMeUEKVYuFvbteMAdwH"
+      },
+      "kind": "tool_result",
+      "tool": "write_file"
+    },
+    {
+      "detail": {
+        "duration_ms": 2777,
+        "model": "gpt-5.5-2026-04-23",
+        "response_id": "resp_0a023f71c3c1d2f6006a0d996d5ef08195a6cacd2375fe7497",
+        "round": 3,
+        "stateful": true,
+        "tokens": {
+          "input": 6957,
+          "output": 52,
+          "reasoning": 0
+        }
+      },
+      "kind": "llm_round"
+    },
+    {
+      "kind": "assistant_text",
+      "text": "Created `images.md` with a listing of 1 image:\n\n`C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md`"
+    },
+    {
+      "kind": "done",
+      "text": "Created `images.md` with a listing of 1 image:\n\n`C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md`"
+    }
+  ],
+  "generated_at": "2026-05-20T11:22:23Z",
+  "provider": {
+    "api_key_configured": true,
+    "api_mode": "responses",
+    "base_url": "https://api.openai.com/v1",
+    "max_iterations": 60,
+    "model": "gpt-5.5",
+    "router": "openai",
+    "streaming": "auto",
+    "timeout_ms": 180000
+  },
+  "result": {
+    "final_text": "Created `images.md` with a listing of 1 image:\n\n`C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md`",
+    "iterations": 3,
+    "llm_usage": {
+      "completion_tokens": 276,
+      "llm_rounds": [
+        {
+          "duration_ms": 4804,
+          "id": "resp_0a023f71c3c1d2f6006a0d9964568c819584a86dc34bc1e299",
+          "model": "gpt-5.5-2026-04-23",
+          "provider": "openai",
+          "usage": {
+            "input_tokens": 15435,
+            "input_tokens_details": {
+              "cached_tokens": 6144
+            },
+            "output_tokens": 107,
+            "output_tokens_details": {
+              "reasoning_tokens": 41
+            },
+            "total_tokens": 15542
+          }
+        },
+        {
+          "duration_ms": 4709,
+          "id": "resp_0a023f71c3c1d2f6006a0d9968d3a08195ac6819a3587d0b48",
+          "model": "gpt-5.5-2026-04-23",
+          "provider": "openai",
+          "usage": {
+            "input_tokens": 6712,
+            "input_tokens_details": {
+              "cached_tokens": 6144
+            },
+            "output_tokens": 117,
+            "output_tokens_details": {
+              "reasoning_tokens": 26
+            },
+            "total_tokens": 6829
+          }
+        },
+        {
+          "duration_ms": 2777,
+          "id": "resp_0a023f71c3c1d2f6006a0d996d5ef08195a6cacd2375fe7497",
+          "model": "gpt-5.5-2026-04-23",
+          "provider": "openai",
+          "usage": {
+            "input_tokens": 6957,
+            "input_tokens_details": {
+              "cached_tokens": 6144
+            },
+            "output_tokens": 52,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 7009
+          }
+        }
+      ],
+      "prompt_tokens": 29104,
+      "total_tokens": 29380
+    },
+    "ok": true,
+    "transcript": {
+      "messages": [
+        {
+          "content": "Runtime context (built in, always true for this session):\n  - Host OS: Microsoft Windows (desktop). User paths often use drive letters and backslashes; the app normalises paths for tools.\n  - Application: **PM-Image** (technical id `pm-image`) — includes Windows Explorer / shell integration.\n  - Current local date/time: **2026-05-20T13:22:10+02:00 (W. Europe Daylight Time)** — use this when the user says 'now', 'today', 'tonight', or a clock time without a timezone.\n  - Chat interface: the user reads your replies in an **in-app chat panel** with **rich Markdown** (headings, lists, emphasis, fenced code blocks, links when allowed by the renderer). It is not a plain-text terminal; use Markdown when it clarifies structure or code.\n\nYou are pm-image's chat agent. Active tool families this session:\n  • **Image / raster** — list_images, image_resize, image_transform, image_create, create_video, image_understand\n  • **Text / file** — file_read; file_glob; write_file; (logs, configs, .md, .json, CSV, .dxf, .svg, …) — image_* tools are for bitmaps; use file tools for text/vector paths.\n  • **Speech** — speak (TTS)\n  • **Camera** — image_from_camera\n  • **Memory** — memory_read / memory_write\n  • **MCP (remote)** — see tool list below\n\n## Available tools:\n  - list_images — Enumerate image files inside one or more folders / globs. Use this BEFORE any other tool when the user asks 'what's in this folder' / 'show me the photos here' / 'how many images do I have'. Filters by standard image extensions by default (jpg, jpeg, png, webp, tif, tiff, bmp, gif, avif, heic; plus arw, cr2, cr3, nef, dng, orf, rw2, raf, pef, nrw, srw, x3f, 3fr, mef, mrw when options.include_raw is true). Read-only — never writes to disk.\n  - file_glob — List non-sensitive text-friendly files matching a glob or directory (e.g. *.md, *.dxf, *.svg, *.csv). Patterns are resolved like other path tools: relative to the current Explorer folder in-app (or the first selected file's parent when there is no folder hint), otherwise the process cwd. Skips dev/build/cache directory names (node_modules, .git, target, CMakeFiles, … — same idea as pm-pics exclude-default), applies the same read policy as file_read, and drops raster image/binary/archive extensions so results are suitable for follow-up with file_read. Read-only; caps output with options.max_results (default 500, max 5000).\n  - file_read — Read a UTF-8 text file from disk (logs, sidecars, configs, **ASCII** CAD/vector exchange such as .dxf or .svg). Same policy as the buffer `file_read` tool: skips binary-looking content, raster **image** extensions (use image_* for photos), over-size files, hidden paths, and sensitive locations. Relative `path` resolves to the current Explorer folder in-app (same as `write_file` and `file_glob`); absolute paths are accepted.\n  - file_search — Search file contents (grep) or file names with a regex or literal pattern. Use for 'find all usages of X', 'which files contain Y', 'grep for Z'. output_mode controls what comes back:   \"content\" (default) — matching lines with path:line: prefix (like rg);   \"files_with_matches\" — file paths only;   \"count\" — file:N lines (match counts per file). Defaults: grep=true (content search), recursive=true, case-insensitive, head_limit=250. Set grep=false for filename-only search (matches against the filename, not the content). Use the `type` parameter for quick file-type filters (js, ts, cpp, py, go, rust, …) instead of writing out glob patterns. The `glob` parameter accepts patterns like *.cpp or *.{ts,tsx}. Read-only — never writes to disk.\n  - image_resize — Resize / re-encode one or more images on disk (libvips). Writes the result next to each source file with a '_resized' suffix (or to options.out_dir when set). Returns one entry per input.\n  - image_transform — AI image edit over one or more images on disk. Use this for ANY action verb that changes the image content: 'enhance', 'edit', 'fix', 'improve', 'clean up', 'remove X', 'add Y', 'restyle', 'colourise', 'beautify', 'make brighter', 'sharpen', 'denoise'. The user's wording (or your light clarification) goes in options.prompt. Do NOT call image_meta first to 'see' the image — Gemini reads the bytes itself and a recon meta call is pure overhead. Writes the edited raster next to each source (typically PNG/JPEG from Gemini or Replicate **image** models). **Do not** use this tool for Replicate **image-to-video** (MP4 from a selected photo): it always sends `image_input` + `output_format` in the shape of an **image** edit API, which fails validation on Wan, MiniMax, Kling-style i2v slugs (“image is required” / wrong fields). For video-from-selection, call **create_video** with `frame_indices` [0] or [0,1]. Provider/key resolution falls back to app settings when omitted.\n  - image_create — AI media generation on disk from a **text prompt** (and optional reference images). Use for 'generate', 'create an image', 'draw', 'imagine' when there is no full raster file to edit as the main target. **Provider, model, and API keys come from app Settings** (Chat → Image provider / model), not from tool arguments — same as **create_video**. Replicate can output video from prompt-only flows; for **image-to-video from selected files**, use **create_video** with `frame_indices`. There is no `paths` input file; output is written from the prompt alone, or pass **reference image paths** (options.reference_images, or `references` / `reference`) for style / layout / logo. output is optional; if omitted, a default filename is chosen from the prompt. Use options.out_dir for the output folder. To edit an existing file in place, use image_transform instead.\n  - create_video — Replicate video: **infer** arguments once from the user prompt, the runtime folder/selection block, and this tool’s parameter schema. With two image fields, **[0]** ≈ start still, **[1]** ≈ end (use full paths). **Single-call rule:** issue **at most one** `create_video` per user request. **Never** call it again immediately after a failure to “retry”—that spams Replicate and causes HTTP **429** throttling. If the result mentions throttling, 429, or rate limit, **stop** and answer in plain text: ask the user to wait several minutes before trying again; do **not** emit another `create_video` unless they explicitly request a new attempt. The tool reply includes `results[0].result.intended_output_path` (and `output_path` when `ok`) so you can tell the user where the clip was written or would have been written even when Replicate fails; when present, `replicate_web_url` is Replicate’s `urls.web` dashboard link for that run.\n\n**Same single-call rule as above:** one `create_video` per user intent; no auto-retry after errors or 429.\n  - image_understand — Ask the vision model a question about one or more images on disk. You MUST compose `prompt` as the exact question or instruction for the model — translate the user's intent into direct, specific language (e.g. 'Describe the scene and any people visible', 'Compare these two images and list the key differences', 'What text is readable in this photo?', 'Is there a cat in this image?'). Use for ALL content questions: 'what is this', 'describe', 'caption', 'compare A and B', 'is there a person', 'read the text'. Pass ALL relevant images in one call — the model sees them together, which is essential for comparisons. Provider and model are taken from Chat settings (image_recognition_provider / image_recognition_model); do NOT pass them as options. Does NOT write sidecars or update metadata — pure query, no side-effects.\n  - image_from_camera — Capture a still image from a connected webcam / camera and save it to disk.\n\nWorkflow:\n  1. Call with action=\"list\" to discover available devices and their supported resolutions — do this first if you are unsure which camera or mode to use.\n  2. Call with action=\"capture\" (the default) to take the photo. The image is saved as a JPEG (or the format implied by output_path's extension). Without an explicit output_path the file lands in the current context folder named cam_YYYYMMDD_HHMMSS_mmm.jpg; if no folder is active it goes to the system temp directory.\n\nOn Linux, if capture looks wrong, verify the camera with the native CLI: `pm-image video info` then `pm-image video image --dst /tmp/test.jpg` (same capture stack as this tool).\n\nAlways report the saved path and captured_at timestamp to the user so they can track which photo was taken when.\n  - write_file — Create, overwrite, or append a UTF-8 text file on disk (reports, notes, .md, CSV snippets). Use whenever the user asks to save, write, or export text to a file. Parent directories are created as needed. Relative paths resolve to the current Explorer folder in-app (same as other path tools; if no folder, the first selected file's directory; only then the process cwd). Do not claim a file was written without calling this tool first.\n  - speak — Synthesise text to speech and play it on the default speaker Use when the user asks to say, announce, read aloud, narrate, or speak text. Playback is synchronous — the tool returns after the audio finishes playing.\n  - schedule_at — Schedule a one-shot agent task to run at an exact UTC time. Use when the user says 'at 18:00', 'tomorrow morning', or gives an explicit time.\n  - schedule_in — Schedule a one-shot agent task to run after a delay. Use when the user says 'in 30 seconds', 'after 5 minutes', etc.\n  - schedule_every — Schedule a recurring agent task on a fixed interval. Use when the user says 'every 30 seconds', 'once per hour', 'monitor', or 'keep watching'.\n  - schedule_cancel — Cancel (disable) a scheduled task by its id. The task is kept in memory but will not fire again.\n  - schedule_list — List all scheduled tasks (id, title, schedule, enabled, next_run_at, run_count).\n  - memory_read — Read the persistent JSON memory you have stored for this session (or scheduled task). Returns the state object last written with memory_write. Omit task_id to read the current session's memory.\n  - memory_write — Persist a compact JSON object as your long-term memory for this session. Use this whenever the user asks you to remember something, or when you want to store facts, preferences, names, or context that should survive across multiple turns. The stored object is injected into your system prompt on every future turn. Keep values small — store strings and numbers, not base64 or full file contents.\n  - memory_append_event — Append a structured event record to the current session or task event log. Useful for logging milestones, decisions, or structured state transitions.\n  - run — Execute a shell command in the user's environment and return combined stdout / stderr. Use for build commands, file operations, git, package managers, or any task not covered by a dedicated tool. The process inherits the current Explorer folder as cwd. Commands are validated against a security policy before execution; dangerous patterns (privilege escalation, download cradles, obfuscated commands) are blocked. Maximum execution time is 120 seconds.\n  - mcp_tavily-remote-mcp__tavily_search — [MCP tavily-remote-mcp] Search the web for current information on any topic. Use for news, facts, or data beyond your knowledge cutoff. Returns snippets and source URLs.\n  - mcp_tavily-remote-mcp__tavily_extract — [MCP tavily-remote-mcp] Extract content from URLs. Returns raw page content in markdown or text format.\n  - mcp_tavily-remote-mcp__tavily_crawl — [MCP tavily-remote-mcp] Crawl a website starting from a URL. Extracts content from pages with configurable depth and breadth.\n  - mcp_tavily-remote-mcp__tavily_map — [MCP tavily-remote-mcp] Map a website's structure. Returns a list of URLs found starting from the base URL.\n  - mcp_tavily-remote-mcp__tavily_research — [MCP tavily-remote-mcp] Perform comprehensive research on a given topic or question. Use this tool when you need to gather information from multiple sources, including web pages, documents, and other resources, to answer a question or complete a task. Returns a detailed response based on the research findings. Rate limit: 20 requests per minute.\n\nThe user is browsing folder: C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\nThere is NO active file selection. When the user refers to 'this folder' / 'these files' without naming paths, use:\n  - **list_images** with inputs=[\"C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\"] to enumerate photos;\n  - **file_glob** (pattern relative to this folder) then **file_read** for non-image files (logs, .md, configs, .dxf, .svg, .csv);\n  - **list_images** then **image_understand** to search photo contents.\nUse the exact folder path above in tool calls; invented paths will fail.\n\n## Guidelines:\n  - For **all** path tools, relative path strings are resolved against the current Explorer folder (or the parent of the first selected file). Invented paths will fail.\n  - Always call the tool that matches the user's intent — do not narrate what you would do.\n  - **Lean replies:** No \"Here are…\" intros, no **Summary:** blocks, no closing remarks. Do not restate what a table or list already shows.\n  - If a tool reports per-file failures, state them briefly once.\n  - When the user asks ‘what’s in this folder’ / ‘show me’ / ‘how many images’: call **list_images** for photos; call **file_glob** for other files;\n  - When the user asks to save a report, note, or any text file, call **write_file** with the full content — do not claim the file exists without calling the tool.\n  - For **image_create**, **create_video** and **image_understand**: provider/model and API keys come only from **app Settings** — do not put model/provider/api_key in tool arguments.\n  - **create_video** hard rule: one call per user video request. If it fails (HTTP 429 / throttled), do not retry — explain and tell the user to wait.\n\nChoosing a tool from the user’s intent:\n  • 'read this file' / 'open' / 'summarise' (non-raster) → **file_read** (use **file_glob** to discover paths first)\n  • 'enhance' / 'edit' / 'fix' / 'clean up' / 'remove X' / 'restyle' → **image_transform**\n  • 'generate' / 'create an image' / 'draw' → **image_create**\n  • 'video' / 'animate' / 'image-to-video' → **create_video** (once per request; never chain a second call after failure)\n  • 'resize' / 'shrink' / 'fit in NxM' / 'downscale' → **image_resize**\n  • 'list' / 'what’s here' / 'how many photos' → **list_images**\n  • Visual questions ('what is this' / 'describe' / 'compare') → **image_understand** (never call it before an action verb — action tools read bytes themselves). Compose the `prompt` field as a direct, specific instruction. Pass ALL relevant images in one call.\n\n## Scheduled tasks:\n  - You are called for one turn only — do not say you will wait.\n  - For repeated / delayed work, use scheduler tools.\n  • exact time → **schedule_at**\n  • delay → **schedule_in**\n  • interval / monitor → **schedule_every**\n  - Store durable state through memory tools, not through chat wording.\n\nTools whose names start with `mcp_` are **remote MCP tools** (from your profile `mcp.json`); call them like any other function — arguments follow each tool’s schema.\n\nUse `memory_write` to persist facts across turns (user name, preferences, secrets, notes). Use `memory_read` to retrieve them. Memory persists for the lifetime of this chat session.\n\n## Skills context\n- skills_enabled: true\n- roaming_root: C:\\Users\\zx\\AppData\\Roaming\\PolyMech\\pm-image\\skills\n- workspace_root: C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\skills\n- discovered:\n  - self-improving-agent [roaming] available=true active=true\n  - system-runtime-summary [roaming] available=true active=false\n- active_skill_count: 1\n\n## Active skill bodies (injected)\n\n### skill `self-improving-agent` (roaming)\npath: C:\\Users\\zx\\AppData\\Roaming\\PolyMech\\pm-image\\skills\\self-improving-agent\\SKILL.md\n```markdown\n---\nname: self-improvement\ndescription: \"Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.\"\nmetadata:\n---\n\n# Self-Improvement Skill\n\nLog learnings and errors to markdown files for continuous improvement. Coding agents can later process these into fixes, and important learnings get promoted to project memory.\n\n## First-Use Initialisation\n\nBefore logging anything, ensure the `.learnings/` directory and files exist in the project or workspace root. If any are missing, create them:\n\n```bash\nmkdir -p .learnings\n[ -f .learnings/LEARNINGS.md ] || printf \"# Learnings\\n\\nCorrections, insights, and knowledge gaps captured during development.\\n\\n**Categories**: correction | insight | knowledge_gap | best_practice\\n\\n---\\n\" > .learnings/LEARNINGS.md\n[ -f .learnings/ERRORS.md ] || printf \"# Errors\\n\\nCommand failures and integration errors.\\n\\n---\\n\" > .learnings/ERRORS.md\n[ -f .learnings/FEATURE_REQUESTS.md ] || printf \"# Feature Requests\\n\\nCapabilities requested by the user.\\n\\n---\\n\" > .learnings/FEATURE_REQUESTS.md\n```\n\nNever overwrite existing files. This is a no-op if `.learnings/` is already initialised.\n\nDo not log secrets, tokens, private keys, environment variables, or full source/config files unless the user explicitly asks for that level of detail. Prefer short summaries or redacted excerpts over raw command output or full transcripts.\n\nIf you want automatic reminders or setup assistance, use the opt-in hook workflow described in [Hook Integration](#hook-integration).\n\n## Quick Reference\n\n| Situation | Action |\n|-----------|--------|\n| Command/operation fails | Log to `.learnings/ERRORS.md` |\n| User corrects you | Log to `.learnings/LEARNINGS.md` with category `correction` |\n| User wants missing feature | Log to `.learnings/FEATURE_REQUESTS.md` |\n| API/external tool fails | Log to `.learnings/ERRORS.md` with integration details |\n| Knowledge was outdated | Log to `.learnings/LEARNINGS.md` with category `knowledge_gap` |\n| Found better approach | Log to `.learnings/LEARNINGS.md` with category `best_practice` |\n| Simplify/Harden recurring patterns | Log/update `.learnings/LEARNINGS.md` with `Source: simplify-and-harden` and a stable `Pattern-Key` |\n| Similar to existing entry | Link with `**See Also**`, consider priority bump |\n| Broadly applicable learning | Promote to `CLAUDE.md`, `AGENTS.md`, and/or `.github/copilot-instructions.md` |\n| Workflow improvements | Promote to `AGENTS.md` (OpenClaw workspace) |\n| Tool gotchas | Promote to `TOOLS.md` (OpenClaw workspace) |\n| Behavioral patterns | Promote to `SOUL.md` (OpenClaw workspace) |\n\n## OpenClaw Setup (Recommended)\n\nOpenClaw is the primary platform for this skill. It uses workspace-based prompt injection with automatic skill loading.\n\n### Installation\n\n**Via ClawdHub (recommended):**\n```bash\nclawdhub install self-improving-agent\n```\n\n**Manual:**\n```bash\ngit clone https://github.com/peterskoett/self-improving-agent.git ~/.openclaw/skills/self-improving-agent\n```\n\nRemade for openclaw from original repo : https://github.com/pskoett/pskoett-ai-skills - https://github.com/pskoett/pskoett-ai-skills/tree/main/skills/self-improvement\n\n### Workspace Structure\n\nOpenClaw injects these files into every session:\n\n```\n~/.openclaw/workspace/\n├── AGENTS.md          # Multi-agent workflows, delegation patterns\n├── SOUL.md            # Behavioral guidelines, personality, principles\n├── TOOLS.md           # Tool capabilities, integration gotchas\n├── MEMORY.md          # Long-term memory (main session only)\n├── memory/            # Daily memory files\n│   └── YYYY-MM-DD.md\n└── .learnings/        # This skill's log files\n    ├── LEARNINGS.md\n    ├── ERRORS.md\n    └── FEATURE_REQUESTS.md\n```\n\n### Create Learning Files\n\n```bash\nmkdir -p ~/.openclaw/workspace/.learnings\n```\n\nThen create the log files (or copy from `assets/`):\n- `LEARNINGS.md` — corrections, knowledge gaps, best practices\n- `ERRORS.md` — command failures, exceptions\n- `FEATURE_REQUESTS.md` — user-requested capabilities\n\n### Promotion Targets\n\nWhen learnings prove broadly applicable, promote them to workspace files:\n\n| Learning Type | Promote To | Example |\n|---------------|------------|---------|\n| Behavioral patterns | `SOUL.md` | \"Be concise, avoid disclaimers\" |\n| Workflow improvements | `AGENTS.md` | \"Spawn sub-agents for long tasks\" |\n| Tool gotchas | `TOOLS.md` | \"Git push needs auth configured first\" |\n\n### Inter-Session Communication\n\nOpenClaw provides tools to share learnings across sessions:\n\n- **sessions_list** — View active/recent sessions\n- **sessions_history** — Read another session's transcript  \n- **sessions_send** — Send a learning to another session\n- **sessions_spawn** — Spawn a sub-agent for background work\n\nUse these only in trusted environments and only when the user explicitly wants cross-session sharing. Prefer sending a short sanitized summary and relevant file paths, not raw transcripts, secrets, or full command output.\n\n### Optional: Enable Hook\n\nFor automatic reminders at session start:\n\n```bash\n# Copy hook to OpenClaw hooks directory\ncp -r hooks/openclaw ~/.openclaw/hooks/self-improvement\n\n# Enable it\nopenclaw hooks enable self-improvement\n```\n\nSee `references/openclaw-integration.md` for complete details.\n\n---\n\n## Generic Setup (Other Agents)\n\nFor Claude Code, Codex, Copilot, or other agents, create `.learnings/` in the project or workspace root:\n\n```bash\nmkdir -p .learnings\n```\n\nCreate the files inline using the headers shown above. Avoid reading templates from the current repo or workspace unless you explicitly trust that path.\n\n### Add reference to agent files AGENTS.md, CLAUDE.md, or .github/copilot-instructions.md to remind yourself to log learnings. (this is an alternative to hook-based reminders)\n\n#### Self-Improvement Workflow\n\nWhen errors or corrections occur:\n1. Log to `.learnings/ERRORS.md`, `LEARNINGS.md`, or `FEATURE_REQUESTS.md`\n2. Review and promote broadly applicable learnings to:\n   - `CLAUDE.md` - project facts and conventions\n   - `AGENTS.md` - workflows and automation\n   - `.github/copilot-instructions.md` - Copilot context\n\n## Logging Format\n\n### Learning Entry\n\nAppend to `.learnings/LEARNINGS.md`:\n\n```markdown\n## [LRN-YYYYMMDD-XXX] category\n\n**Logged**: ISO-8601 timestamp\n**Priority**: low | medium | high | critical\n**Status**: pending\n**Area**: frontend | backend | infra | tests | docs | config\n\n### Summary\nOne-line description of what was learned\n\n### Details\nFull context: what happened, what was wrong, what's correct\n\n### Suggested Action\nSpecific fix or improvement to make\n\n### Metadata\n- Source: conversation | error | user_feedback\n- Related Files: path/to/file.ext\n- Tags: tag1, tag2\n- See Also: LRN-20250110-001 (if related to existing entry)\n- Pattern-Key: simplify.dead_code | harden.input_validation (optional, for recurring-pattern tracking)\n- Recurrence-Count: 1 (optional)\n- First-Seen: 2025-01-15 (optional)\n- Last-Seen: 2025-01-15 (optional)\n\n---\n```\n\n### Error Entry\n\nAppend to `.learnings/ERRORS.md`:\n\n```markdown\n## [ERR-YYYYMMDD-XXX] skill_or_command_name\n\n**Logged**: ISO-8601 timestamp\n**Priority**: high\n**Status**: pending\n**Area**: frontend | backend | infra | tests | docs | config\n\n### Summary\nBrief description of what failed\n\n### Error\n```\nActual error message or output\n```\n\n### Context\n- Command/operation attempted\n- Input or parameters used\n- Environment details if relevant\n- Summary or redacted excerpt of relevant output (avoid full transcripts and secret-bearing data by default)\n\n### Suggested Fix\nIf identifiable, what might resolve this\n\n### Metadata\n- Reproducible: yes | no | unknown\n- Related Files: path/to/file.ext\n- See Also: ERR-20250110-001 (if recurring)\n\n---\n```\n\n### Feature Request Entry\n\nAppend to `.learnings/FEATURE_REQUESTS.md`:\n\n```markdown\n## [FEAT-YYYYMMDD-XXX] capability_name\n\n**Logged**: ISO-8601 timestamp\n**Priority**: medium\n**Status**: pending\n**Area**: frontend | backend | infra | tests | docs | config\n\n### Requested Capability\nWhat the user wanted to do\n\n### User Context\nWhy they needed it, what problem they're solving\n\n### Complexity Estimate\nsimple | medium | complex\n\n### Suggested Implementation\nHow this could be built, what it might extend\n\n### Metadata\n- Frequency: first_time | recurring\n- Related Features: existing_feature_name\n\n---\n```\n\n## ID Generation\n\nFormat: `TYPE-YYYYMMDD-XXX`\n- TYPE: `LRN` (learning), `ERR` (error), `FEAT` (feature)\n- YYYYMMDD: Current date\n- XXX: Sequential number or random 3 chars (e.g., `001`, `A7B`)\n\nExamples: `LRN-20250115-001`, `ERR-20250115-A3F`, `FEAT-20250115-002`\n\n## Resolving Entries\n\nWhen an issue is fixed, update the entry:\n\n1. Change `**Status**: pending` → `**Status**: resolved`\n2. Add resolution block after Metadata:\n\n```markdown\n### Resolution\n- **Resolved**: 2025-01-16T09:00:00Z\n- **Commit/PR**: abc123 or #42\n- **Notes**: Brief description of what was done\n```\n\nOther status values:\n- `in_progress` - Actively being worked on\n- `wont_fix` - Decided not to address (add reason in Resolution notes)\n- `promoted` - Elevated to CLAUDE.md, AGENTS.md, or .github/copilot-instructions.md\n\n## Promoting to Project Memory\n\nWhen a learning is broadly applicable (not a one-off fix), promote it to permanent project memory.\n\n### When to Promote\n\n- Learning applies across multiple files/features\n- Knowledge any contributor (human or AI) should know\n- Prevents recurring mistakes\n- Documents project-specific conventions\n\n### Promotion Targets\n\n| Target | What Belongs There |\n|--------|-------------------|\n| `CLAUDE.md` | Project facts, conventions, gotchas for all Claude interactions |\n| `AGENTS.md` | Agent-specific workflows, tool usage patterns, automation rules |\n| `.github/copilot-instructions.md` | Project context and conventions for GitHub Copilot |\n| `SOUL.md` | Behavioral guidelines, communication style, principles (OpenClaw workspace) |\n| `TOOLS.md` | Tool capabilities, usage patterns, integration gotchas (OpenClaw workspace) |\n\n### How to Promote\n\n1. **Distill** the learning into a concise rule or fact\n2. **Add** to appropriate section in target file (create file if needed)\n3. **Update** original entry:\n   - Change `**Status**: pending` → `**Status**: promoted`\n   - Add `**Promoted**: CLAUDE.md`, `AGENTS.md`, or `.github/copilot-instructions.md`\n\n### Promotion Examples\n\n**Learning** (verbose):\n> Project uses pnpm workspaces. Attempted `npm install` but failed. \n> Lock file is `pnpm-lock.yaml`. Must use `pnpm install`.\n\n**In CLAUDE.md** (concise):\n```markdown\n## Build & Dependencies\n- Package manager: pnpm (not npm) - use `pnpm install`\n```\n\n**Learning** (verbose):\n> When modifying API endpoints, must regenerate TypeScript client.\n> Forgetting this causes type mismatches at runtime.\n\n**In AGENTS.md** (actionable):\n```markdown\n## After API Changes\n1. Regenerate client: `pnpm run generate:api`\n2. Check for type errors: `pnpm tsc --noEmit`\n```\n\n## Recurring Pattern Detection\n\nIf logging something similar to an existing entry:\n\n1. **Search first**: `grep -r \"keyword\" .learnings/`\n2. **Link entries**: Add `**See Also**: ERR-20250110-001` in Metadata\n3. **Bump priority** if issue keeps recurring\n4. **Consider systemic fix**: Recurring issues often indicate:\n   - Missing documentation (→ promote to CLAUDE.md or .github/copilot-instructions.md)\n   - Missing automation (→ add to AGENTS.md)\n   - Architectural problem (→ create tech debt ticket)\n\n## Simplify & Harden Feed\n\nUse this workflow to ingest recurring patterns from the `simplify-and-harden`\nskill and turn them into durable prompt guidance.\n\n### Ingestion Workflow\n\n1. Read `simplify_and_harden.learning_loop.candidates` from the task summary.\n2. For each candidate, use `pattern_key` as the stable dedupe key.\n3. Search `.learnings/LEARNINGS.md` for an existing entry with that key:\n   - `grep -n \"Pattern-Key: <pattern_key>\" .learnings/LEARNINGS.md`\n4. If found:\n   - Increment `Recurrence-Count`\n   - Update `Last-Seen`\n   - Add `See Also` links to related entries/tasks\n5. If not found:\n   - Create a new `LRN-...` entry\n   - Set `Source: simplify-and-harden`\n   - Set `Pattern-Key`, `Recurrence-Count: 1`, and `First-Seen`/`Last-Seen`\n\n### Promotion Rule (System Prompt Feedback)\n\nPromote recurring patterns into agent context/system prompt files when all are true:\n\n- `Recurrence-Count >= 3`\n- Seen across at least 2 distinct tasks\n- Occurred within a 30-day window\n\nPromotion targets:\n- `CLAUDE.md`\n- `AGENTS.md`\n- `.github/copilot-instructions.md`\n- `SOUL.md` / `TOOLS.md` for OpenClaw workspace-level guidance when applicable\n\nWrite promoted rules as short prevention rules (what to do before/while coding),\nnot long incident write-ups.\n\n## Periodic Review\n\nReview `.learnings/` at natural breakpoints:\n\n### When to Review\n- Before starting a new major task\n- After completing a feature\n- When working in an area with past learnings\n- Weekly during active development\n\n### Quick Status Check\n```bash\n# Count pending items\ngrep -h \"Status\\*\\*: pending\" .learnings/*.md | wc -l\n\n# List pending high-priority items\ngrep -B5 \"Priority\\*\\*: high\" .learnings/*.md | grep \"^## \\[\"\n\n# Find learnings for a specific area\ngrep -l \"Area\\*\\*: backend\" .learnings/*.md\n```\n\n### Review Actions\n- Resolve fixed items\n- Promote applicable learnings\n- Link related entries\n- Escalate recurring issues\n\n## Detection Triggers\n\nAutomatically log when you notice:\n\n**Corrections** (→ learning with `correction` category):\n- \"No, that's not right...\"\n- \"Actually, it should be...\"\n- \"You're wrong about...\"\n- \"That's outdated...\"\n\n**Feature Requests** (→ feature request):\n- \"Can you also...\"\n- \"I wish you could...\"\n- \"Is there a way to...\"\n- \"Why can't you...\"\n\n**Knowledge Gaps** (→ learning with `knowledge_gap` category):\n- User provides information you didn't know\n- Documentation you referenced is outdated\n- API behavior differs from your understanding\n\n**Errors** (→ error entry):\n- Command returns non-zero exit code\n- Exception or stack trace\n- Unexpected output or behavior\n- Timeout or connection failure\n\n## Priority Guidelines\n\n| Priority | When to Use |\n|----------|-------------|\n| `critical` | Blocks core functionality, data loss risk, security issue |\n| `high` | Significant impact, affects common workflows, recurring issue |\n| `medium` | Moderate impact, workaround exists |\n| `low` | Minor inconvenience, edge case, nice-to-have |\n\n## Area Tags\n\nUse to filter learnings by codebase region:\n\n| Area | Scope |\n|------|-------|\n| `frontend` | UI, components, client-side code |\n| `backend` | API, services, server-side code |\n| `infra` | CI/CD, deployment, Docker, cloud |\n| `tests` | Test files, testing utilities, coverage |\n| `docs` | Documentation, comments, READMEs |\n| `config` | Configuration files, environment, settings |\n\n## Best Practices\n\n1. **Log immediately** - context is freshest right after the issue\n2. **Be specific** - future agents need to understand quickly\n3. **Include reproduction steps** - especially for errors\n4. **Link related files** - makes fixes easier\n5. **Suggest concrete fixes** - not just \"investigate\"\n6. **Use consistent categories** - enables filtering\n7. **Promote aggressively** - if in doubt, add to CLAUDE.md or .github/copilot-instructions.md\n8. **Review regularly** - stale learnings lose value\n\n## Gitignore Options\n\n**Keep learnings local** (per-developer):\n```gitignore\n.learnings/\n```\n\nThis repo uses that default to avoid committing sensitive or noisy local logs by accident.\n\n**Track learnings in repo** (team-wide):\nDon't add to .gitignore - learnings become shared knowledge.\n\n**Hybrid** (track templates, ignore entries):\n```gitignore\n.learnings/*.md\n!.learnings/.gitkeep\n```\n\n## Hook Integration\n\nEnable automatic reminders through agent hooks. This is **opt-in** - you must explicitly configure hooks.\n\n### Quick Setup (Claude Code / Codex)\n\nCreate `.claude/settings.json` in your project:\n\n```json\n{\n  \"hooks\": {\n    \"UserPromptSubmit\": [{\n      \"matcher\": \"\",\n      \"hooks\": [{\n        \"type\": \"command\",\n        \"command\": \"./skills/self-improvement/scripts/activator.sh\"\n      }]\n    }]\n  }\n}\n```\n\nThis injects a learning evaluation reminder after each prompt (~50-100 tokens overhead).\n\n### Advanced Setup (With Error Detection)\n\n```json\n{\n  \"hooks\": {\n    \"UserPromptSubmit\": [{\n      \"matcher\": \"\",\n      \"hooks\": [{\n        \"type\": \"command\",\n        \"command\": \"./skills/self-improvement/scripts/activator.sh\"\n      }]\n    }],\n    \"PostToolUse\": [{\n      \"matcher\": \"Bash\",\n      \"hooks\": [{\n        \"type\": \"command\",\n        \"command\": \"./skills/self-improvement/scripts/error-detector.sh\"\n      }]\n    }]\n  }\n}\n```\n\nThis is optional. The recommended default is activator-only setup; enable `PostToolUse` only if you are comfortable with hook scripts inspecting command output for error patterns.\n\n### Available Hook Scripts\n\n| Script | Hook Type | Purpose |\n|--------|-----------|---------|\n| `scripts/activator.sh` | UserPromptSubmit | Reminds to evaluate learnings after tasks |\n| `scripts/error-detector.sh` | PostToolUse (Bash) | Triggers on command errors |\n\nSee `references/hooks-setup.md` for detailed configuration and troubleshooting.\n\n## Automatic Skill Extraction\n\nWhen a learning is valuable enough to become a reusable skill, extract it using the provided helper.\n\n### Skill Extraction Criteria\n\nA learning qualifies for skill extraction when ANY of these apply:\n\n| Criterion | Description |\n|-----------|-------------|\n| **Recurring** | Has `See Also` links to 2+ similar issues |\n| **Verified** | Status is `resolved` with working fix |\n| **Non-obvious** | Required actual debugging/investigation to discover |\n| **Broadly applicable** | Not project-specific; useful across codebases |\n| **User-flagged** | User says \"save this as a skill\" or similar |\n\n### Extraction Workflow\n\n1. **Identify candidate**: Learning meets extraction criteria\n2. **Run helper** (or create manually):\n   ```bash\n   ./skills/self-improvement/scripts/extract-skill.sh skill-name --dry-run\n   ./skills/self-improvement/scripts/extract-skill.sh skill-name\n   ```\n3. **Customize SKILL.md**: Fill in template with learning content\n4. **Update learning**: Set status to `promoted_to_skill`, add `Skill-Path`\n5. **Verify**: Read skill in fresh session to ensure it's self-contained\n\n### Manual Extraction\n\nIf you prefer manual creation:\n\n1. Create `skills/<skill-name>/SKILL.md`\n2. Use template from `assets/SKILL-TEMPLATE.md`\n3. Follow [Agent Skills spec](https://agentskills.io/specification):\n   - YAML frontmatter with `name` and `description`\n   - Name must match folder name\n   - No README.md inside skill folder\n\n### Extraction Detection Triggers\n\nWatch for these signals that a learning should become a skill:\n\n**In conversation:**\n- \"Save this as a skill\"\n- \"I keep running into this\"\n- \"This would be useful for other projects\"\n- \"Remember this pattern\"\n\n**In learning entries:**\n- Multiple `See Also` links (recurring issue)\n- High priority + resolved status\n- Category: `best_practice` with broad applicability\n- User feedback praising the solution\n\n### Skill Quality Gates\n\nBefore extraction, verify:\n\n- [ ] Solution is tested and working\n- [ ] Description is clear without original context\n- [ ] Code examples are self-contained\n- [ ] No project-specific hardcoded values\n- [ ] Follows skill naming conventions (lowercase, hyphens)\n\n## Multi-Agent Support\n\nThis skill works across different AI coding agents with agent-specific activation.\n\n### Claude Code\n\n**Activation**: Hooks (UserPromptSubmit, PostToolUse)\n**Setup**: `.claude/settings.json` with hook configuration\n**Detection**: Automatic via hook scripts\n\n### Codex CLI\n\n**Activation**: Hooks (same pattern as Claude Code)\n**Setup**: `.codex/settings.json` with hook configuration\n**Detection**: Automatic via hook scripts\n\n### GitHub Copilot\n\n**Activation**: Manual (no hook support)\n**Setup**: Add to `.github/copilot-instructions.md`:\n\n```markdown\n## Self-Improvement\n\nAfter solving non-obvious issues, consider logging to `.learnings/`:\n1. Use format from self-improvement skill\n2. Link related entries with See Also\n3. Promote high-value learnings to skills\n\nAsk in chat: \"Should I log this as a learning?\"\n```\n\n**Detection**: Manual review at session end\n```\n\n",
+          "role": "system"
+        },
+        {
+          "content": "create directory listing, for images, in images.md",
+          "role": "user"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"inputs\":[\"C:\\\\Users\\\\zx\\\\Desktop\\\\polymech\\\\polymech-mono\\\\packages\\\\media\\\\cpp\\\\tests\\\\explorer\\\\misc\"],\"options\":{\"include_raw\":true,\"max_results\":0,\"recursive\":true}}",
+                "name": "list_images"
+              },
+              "id": "call_QWfhwRVzs5wAPzA4J2zAWDAI",
+              "item_id": "fc_0a023f71c3c1d2f6006a0d996744b88195ab912eea54886c75",
+              "type": "function"
+            }
+          ]
+        },
+        {
+          "content": {
+            "ok": true,
+            "results": [
+              {
+                "ok": true,
+                "path": "<aggregate>",
+                "result": {
+                  "count": 1,
+                  "files": [
+                    {
+                      "ext": ".jpg",
+                      "path": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\2_1200_1200.jpg",
+                      "size": 228950
+                    }
+                  ],
+                  "include_raw": true,
+                  "max_results": 0,
+                  "recursive": true,
+                  "scanned_inputs": 1
+                }
+              }
+            ],
+            "summary": {
+              "failed": 0,
+              "succeeded": 1,
+              "total": 1
+            },
+            "tool": "list_images"
+          },
+          "role": "tool",
+          "tool_call_id": "call_QWfhwRVzs5wAPzA4J2zAWDAI"
+        },
+        {
+          "content": null,
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"content\":\"# Image Directory Listing\\n\\nFound 1 image.\\n\\n| # | File | Extension | Size |\\n|---:|---|---|---:|\\n| 1 | `2_1200_1200.jpg` | `.jpg` | 228,950 bytes |\\n\",\"options\":{\"append\":false},\"path\":\"images.md\"}",
+                "name": "write_file"
+              },
+              "id": "call_QPuVEQMeUEKVYuFvbteMAdwH",
+              "item_id": "fc_0a023f71c3c1d2f6006a0d996be8a081959892623f585a7560",
+              "type": "function"
+            }
+          ]
+        },
+        {
+          "content": {
+            "ok": true,
+            "results": [
+              {
+                "ok": true,
+                "output_path": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md",
+                "path": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md",
+                "result": {
+                  "append": false,
+                  "bytes_written": 146
+                }
+              }
+            ],
+            "summary": {
+              "failed": 0,
+              "succeeded": 1,
+              "total": 1
+            },
+            "tool": "write_file"
+          },
+          "role": "tool",
+          "tool_call_id": "call_QPuVEQMeUEKVYuFvbteMAdwH"
+        },
+        {
+          "content": "Created `images.md` with a listing of 1 image:\n\n`C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc\\images.md`",
+          "role": "assistant"
+        }
+      ]
+    }
+  },
+  "schema_version": "1",
+  "turn": {
+    "disabled_path_tools": [],
+    "folder_hint": "C:\\Users\\zx\\Desktop\\polymech\\polymech-mono\\packages\\media\\cpp\\tests\\explorer\\misc",
+    "godmode": false,
+    "selection": [],
+    "user_prompt": "create directory listing, for images, in images.md"
+  }
+}

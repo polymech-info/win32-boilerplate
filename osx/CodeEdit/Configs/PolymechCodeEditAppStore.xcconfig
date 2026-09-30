@@ -1,0 +1,40 @@
+//
+//  PolymechCodeEditAppStore.xcconfig
+//  Mac App Store distribution configuration for the PixelWiz (Polymech / CodeEdit) app target.
+//
+//  Usage: in Xcode, add a new build configuration named "AppStore" for the PixelWiz target,
+//  set its base xcconfig to this file.  Add a matching "AppStore" scheme archiving against it.
+//
+//  IMPORTANT: for a real MAS archive you must also exclude the Sparkle package dependency
+//  from the PixelWiz target (SPM → Sparkle) in the AppStore build configuration so the
+//  Sparkle.framework binary does not end up in the bundle.  Swift-level guarding alone is
+//  insufficient because Apple's automated binary scan will flag the framework file itself.
+//
+
+#include "Release.xcconfig"
+#include? "../../../dist-osx/polymech-cmake-libs/polymech_codeedit_link.xcconfig"
+
+// ─── Mac App Store identity ───────────────────────────────────────────────────
+// Override the INFOPLIST_FILE to a version that omits Sparkle keys,
+// WebKitDeveloperExtras, and includes the ITS encryption declaration.
+INFOPLIST_FILE = PixlWiz/Info-AppStore.plist
+
+// Hardened runtime exceptions that are incompatible with MAS must be absent.
+// These settings OVERRIDE the values set in the Xcode project for this configuration:
+//   RUNTIME_EXCEPTION_ALLOW_JIT = NO     (no explicit key needed — absence is "NO")
+//   RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO
+// We set them to empty / NO explicitly so that any project-level YES is overridden.
+RUNTIME_EXCEPTION_ALLOW_JIT = NO
+RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO
+
+// ─── Compilation flag ─────────────────────────────────────────────────────────
+// Enables #if APP_STORE / #if !APP_STORE guards in Swift source:
+//   • Strips Sparkle (SoftwareUpdater) — updates go through the App Store.
+//   • Hides CLI installer (symlink to /usr/local/bin not permitted in sandbox).
+//   • Any other power-user features blocked by MAS policy.
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = APP_STORE $(inherited)
+
+// ─── Code signing ─────────────────────────────────────────────────────────────
+// These are intentionally left empty here; fill in your AppStore provisioning
+// profile and team in the Xcode scheme / build settings UI, not in source control.
+CODE_SIGN_IDENTITY = Apple Distribution
